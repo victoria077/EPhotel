@@ -8,10 +8,23 @@ body {
     letter-spacing: 1.3px;
     font-weight: bold;
     font-size: 16px;
+    width: 100%;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  margin: 0 auto;
+}
+
+
 .logo{
-  background-image: url("https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg");
+  background-image: url("../images/Logo.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 105.69px;
+  margin: 15px 0 0 15px;
 }
 
 .mobile-menu {
@@ -21,7 +34,6 @@ body {
   font-style: normal;
   font-weight: normal;
   color: rgba(31, 32, 65, 0.5);
-  text-align: right;
   position: relative;
 }
 
@@ -140,7 +152,7 @@ body {
 }
 
 .btn-register {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: $violet-gradient;
   border-radius: 22px;
   font-family: Montserrat-Regular, sans-serif;
   font-style: normal;
@@ -152,7 +164,6 @@ body {
   color: #fff;
   padding: 15px 28px;
   border: none;
-  margin-right: 100px;
 }
 /*Responsive Styles*/
 

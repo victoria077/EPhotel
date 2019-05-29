@@ -1,7 +1,5 @@
 
-import "./components/main_ui/main_ui.scss";
-import "./components/header/header.scss";
-import "./components/landing_page/landing_page.scss";
+import "./scss/main.scss";
 import "./index.pug";
 require('./fonts.scss');
 

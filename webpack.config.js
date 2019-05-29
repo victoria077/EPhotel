@@ -32,6 +32,14 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"]
       },
       {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
+      },
+      {
         test: /\.(woff(2)?|ttf|eot|svg)?$/,
         exclude: /node_modules/,
         loader: 'url-loader',
