@@ -1,0 +1,14 @@
+$color-blue: #3d6cb0;
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1900px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 3vw;
+    grid-gap: 3vw;
+}

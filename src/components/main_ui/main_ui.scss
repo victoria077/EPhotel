@@ -1,0 +1,194 @@
+.text-field {
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.text-field:hover,
+.text-field:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.button.first-click {
+  width: 99px;
+  height: 44px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px; /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button.second-click {
+  width: 99px;
+  height: 44px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.5;
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px; /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button.third-click {
+  width: 99px;
+  height: 44px;
+  border: 2px solid #bc9cff;
+  border-radius: 22px;
+  background-color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px; /* identical to box height */
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.button.fourth-click {
+  width: 99px;
+  height: 44px;
+  border: 2px solid #bc9cff;
+  border-radius: 22px;
+  opacity: 0.5;
+  background-color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px; /* identical to box height */
+  text-transform: uppercase;
+
+  color: #bc9cff;
+}
+
+.tgl {
+  display: none;
+
+  // add default box-sizing for this scope
+  &,
+  &:after,
+  &:before,
+  & *,
+  & *:after,
+  & *:before,
+  & + .tgl-btn {
+    box-sizing: border-box;
+    &::selection {
+      background: none;
+    }
+  }
+
+  + .tgl-btn {
+    width: 40px;
+    height: 20px;
+    background: #ffffff;
+    /* Primary Color */
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    outline: 0;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 12px;
+      height: 12px;
+      top: 1px;
+    }
+
+    &:after {
+      left: 0;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:checked + .tgl-btn:after {
+    left: 60%;
+  }
+}
+
+// themes
+.tgl-light {
+  + .tgl-btn {
+    background: #fff;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+    &:after {
+      border-radius: 50%;
+      background: rgba(31, 32, 65, 0.25);
+      transition: all 0.2s ease;
+    }
+  }
+
+  &:checked + .tgl-btn {
+    border: 1px solid #bc9cff;
+  }
+  &:checked + .tgl-btn:after {
+    border-radius: 50%;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    transition: all 0.2s ease;
+  }
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 24px;
+  color: #aaa;
+  text-decoration: none;
+}
+.rate:not(:checked) > label:before {
+  content: "★";
+}
+.rate > input:checked ~ label {
+  color: #8ba4f9;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #8ba4f9;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #8ba4f9;
+}
+

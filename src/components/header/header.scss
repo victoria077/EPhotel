@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Montserrat-Regular, sans-serif;
+    font-style: normal;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo{
+  background-image: url("https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg");
+}
+
+.mobile-menu {
+  display: block;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  text-align: right;
+  position: relative;
+}
+
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+  display: inline-block;
+  margin: 10px 25px;
+  /*float: left;
+      margin-right: 1px;*/
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+  display: block;
+  margin-left: 0px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+  padding: 20px 0;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+  color: #fff;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+.mobile-menu li:active a {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+  color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #8aa8bd;
+  text-align: center;
+  padding: 10px 15px;
+  display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span {
+  padding-left: 35px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type="checkbox"] {
+  display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type="checkbox"]:checked ~ #menu {
+  display: block;
+}
+
+.btn-login {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  font-size: 15px;
+  line-height: 15px; /* identical to box height */
+  text-transform: uppercase;
+  color: #bc9cff;
+  padding: 13px 24px;
+  border-radius: 22px;
+  border: 2px solid #bc9cff;
+  background: #fff;
+  margin: 0 30px;
+}
+
+.btn-register {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px; /* identical to box height */
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 28px;
+  border: none;
+  margin-right: 100px;
+}
+/*Responsive Styles*/
+
+@media screen and (max-width: 800px) {
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8;
+    border-top: 5px solid #f8f8f8;
+    content: "";
+    height: 5px;
+    width: 20px;
+    padding-right: 15px;
+    float: right;
+  }
+  /*Make dropdown links appear inline*/
+  .mobile-menu ul {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  .mobile-menu li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  .mobile-menu ul li,
+  .mobile-menu li a {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-login,
+  .btn-register {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-login {
+    margin-bottom: 10px;
+  }
+  /*Display 'show menu' link*/
+  .mobile-menu .show-menu {
+    display: block;
+  }
+}
