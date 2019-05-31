@@ -1,78 +1,112 @@
+@mixin container {
+  width: 81vw;
+  margin: 0 auto;
+}
+
 @mixin input_text {
-    width: 320px;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
-    &::placeholder{
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 18px;
-      color: rgba(31, 32, 65, 0.25);
-      padding-left: 15px;
-    }
-    &:hover{
-      border: 2px solid rgba(#8BA4F9, .7);
-    }
-     &:active{
-      border: 2px solid rgba(#8BA4F9, .7);
-    }
-  }
-  
-  /* style for text of button*/
-  @mixin btn-text{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  @mixin btn-link{
-    display: inline-block;
-    padding: 10px 30px;
-    border: 1px solid #BC9CFF;
-    border-radius: 22px;
-    @include btn-text;
-  }
-  
-  @mixin btn-violet{
-    height: 44px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    @include btn-text;
-  }
-  
-  @mixin title{
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1F2041;
-  }
-  
-  @mixin label{
-    @include btn-text;
-    color: #1F2041;
-    text-align: left;
-    padding-left: 30px;
-  }
-  
-  @mixin text{
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  &::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
+    color: rgba(31, 32, 65, 0.25);
+    padding-left: 15px;
   }
+  &:hover {
+    border: 2px solid rgba(#8ba4f9, 0.7);
+  }
+  &:active {
+    border: 2px solid rgba(#8ba4f9, 0.7);
+  }
+}
+
+/* style for text of button*/
+@mixin btn-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@mixin btn-link {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2.4px solid $violet-text;
+  text-transform: uppercase;
+  border-radius: 22px;
+  color: $violet-text;
+  text-decoration: none;
+}
+
+@mixin btn-violet {
+  border: none;
+  padding: 15px 10px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  text-transform: uppercase;
+  color: $white-color;
+  margin: 30px 0;
+}
+
+@mixin btn-small-violet {
+  letter-spacing: 1.8px;
+  border: none;
+  padding: 15px 35px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  text-transform: uppercase;
+  color: $white-color;
+  font-weight: bold;
+}
+
+@mixin title {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $black-title;
+}
+
+@mixin label {
+  @include btn-text;
+  color: $black-title;
+  text-align: left;
+  padding-left: 30px;
+}
+
+@mixin text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  // color: #000000;
+}
+
+@mixin small-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: $black-title;
+}

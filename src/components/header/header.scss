@@ -1,209 +1,165 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-    font-family: Montserrat-Regular, sans-serif;
-    font-style: normal;
-    letter-spacing: 1.3px;
-    font-weight: bold;
-    font-size: 16px;
-    width: 100%;
-}
-
-.container{
-  display: flex;
-  justify-content: space-between;
-  width: 82%;
-  margin: 0 auto;
-}
-
-
 .logo{
-  background-image: url("../images/Logo.svg");
-  background-repeat: no-repeat;
-  height: 40px;
+  background-image: url(../images/Logo.svg);
   width: 105.69px;
-  margin: 15px 0 0 15px;
+  height: 40px;height: 40px;
+  background-repeat: no-repeat;
+  margin: 36px 0;
 }
 
-.mobile-menu {
+.header ul {
+  margin: 26px 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
   display: block;
-  width: 100%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  color: rgba(31, 32, 65, 0.5);
-  position: relative;
+  text-decoration: none;
+  @include text;
+  color: $light-black-color;
+  padding: 18px;
+  //   
+  font-weight: 900;
+
 }
 
-/*Strip the ul of padding and list styling*/
-.mobile-menu ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding-left: 0;
-  width: 100%;
-  position: absolute;
-}
-
-/*Create a horizontal list with spacing*/
-.mobile-menu li {
+.menu > li:nth-child(2) > a:after{
+  content: '';
+  padding: 5px;
+//   //set tickness
+  box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
-  margin: 10px 25px;
-  /*float: left;
-      margin-right: 1px;*/
+  transform: rotate(-45deg);
+  margin-left: 10px;
+  color: $black-text;
 }
 
-/*Style for menu links*/
-.mobile-menu li a {
+.menu > li:nth-child(5) > a:after{
+  content: '';
+  padding: 5px;
+//   //set tickness
+  box-shadow: 2px -2px 0 0 $black-text inset;
+  display: inline-block;
+  transform: rotate(-45deg);
+  margin-left: 10px;
+  color: $black-text;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
   display: block;
-  margin-left: 0px;
-  text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgba(31, 32, 65, 0.5);
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
   text-decoration: none;
-  padding: 20px 0;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
 }
 
-/*Hover state for top level links*/
-.mobile-menu li:hover a {
-  color: #fff;
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
-/*Style for dropdown links*/
-.mobile-menu li:hover ul a {
-  color: #2f3036;
-  height: 40px;
-  line-height: 40px;
-}
+/* menu icon */
 
-.mobile-menu li:active a {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-/*Hover state for dropdown links*/
-.mobile-menu li:hover .mobile-menu ul a:hover {
-  color: #4db3ff;
-}
-
-/*Hide dropdown links until they are needed*/
-.mobile-menu li ul {
-  display: none;
-}
-
-/*Make dropdown links vertical*/
-.mobile-menu li ul li {
-  display: block;
-  float: none;
-}
-
-/*Prevent text wrapping*/
-.mobile-menu li ul li a {
-  width: auto;
-  min-width: 100px;
-  padding: 0 20px;
-}
-
-/*Style 'show menu' label button and hide it by default*/
-.mobile-menu .show-menu {
-  text-decoration: none;
-  color: #fff;
-  background: #8aa8bd;
-  text-align: center;
-  padding: 10px 15px;
-  display: none;
+.header .menu-icon {
   cursor: pointer;
-  text-transform: uppercase;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  top: -50px;
+  left: 90%;
+
 }
 
-.mobile-menu .show-menu span {
-  padding-left: 35px;
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  margin-top: -50px;
 }
 
-/*Hide checkbox*/
-.mobile-menu input[type="checkbox"] {
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+  color: red;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+  color: red;
+}
+
+/* menu btn */
+
+.header .menu-btn {
   display: none;
 }
 
-/*Show menu when invisible checkbox is checked*/
-.mobile-menu input[type="checkbox"]:checked ~ #menu {
-  display: block;
+.header .menu-btn:checked ~ .menu {
+  max-height: 440px;
 }
 
-.btn-login {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1.3px;
-  font-size: 15px;
-  line-height: 15px; /* identical to box height */
-  text-transform: uppercase;
-  color: #bc9cff;
-  padding: 13px 24px;
-  border-radius: 22px;
-  border: 2px solid #bc9cff;
-  background: #fff;
-  margin: 0 30px;
+.header .menu-btn:checked ~ .menu {
+  max-height: 440px;
 }
 
-.btn-register {
-  background: $violet-gradient;
-  border-radius: 22px;
-  font-family: Montserrat-Regular, sans-serif;
-  font-style: normal;
-  letter-spacing: 1.3px;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 15px; /* identical to box height */
-  text-transform: uppercase;
-  color: #fff;
-  padding: 15px 28px;
-  border: none;
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
 }
-/*Responsive Styles*/
 
-@media screen and (max-width: 800px) {
-  .mobile-menu .lines {
-    border-bottom: 15px double #f8f8f8;
-    border-top: 5px solid #f8f8f8;
-    content: "";
-    height: 5px;
-    width: 20px;
-    padding-right: 15px;
-    float: right;
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.btn-link-menu{
+  margin-right: 30px;
+  margin-left: 15px;
+}
+/* 48em = 768px */
+
+@media (min-width: 1290px) {
+
+  .header li {
+    float: left;
   }
-  /*Make dropdown links appear inline*/
-  .mobile-menu ul {
-    position: static;
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
     display: none;
   }
-  /*Create vertical spacing*/
-  .mobile-menu li {
-    margin-bottom: 1px;
-  }
-  /*Make all menu links full width*/
-  .mobile-menu ul li,
-  .mobile-menu li a {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .btn-login,
-  .btn-register {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .btn-login {
-    margin-bottom: 10px;
-  }
-  /*Display 'show menu' link*/
-  .mobile-menu .show-menu {
-    display: block;
-  }
 }
+

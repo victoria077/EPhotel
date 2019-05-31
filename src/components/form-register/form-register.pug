@@ -2,30 +2,32 @@
   .wrap
       h1(
         class="title main-title"
-      ) Title
+      ) Регистрация аккаунта
 
       input(
         type='text'
         class="input_text"
-        placeholder="Name"
+        placeholder="Имя"
       )
 
       input(
         type='text'
         class="input_text"
-        placeholder="Surname"
+        placeholder="Фамилия"
       )
+
+      label(class="label") Дата рождения
+      input(class="input_text" placeholder="ДД.ММ.ГГГГ")
       
-      label(class="label") date of birth
-      input(class="input_text" placeholder="DD.MM.YY")
-      
-      label(class="label") Data for sign in
+      label(class="label") Данные для входа в сервис
       input(class="input_text" placeholder="Email")
-      input(class="input_text" placeholder="Password")
+      input(class="input_text" placeholder="Пароль")
 
+      input#cb1.tgl.tgl-light(type = "checkbox") 
+      label.tgl-btn(for = "cb1")
 
-      button(type="button" class="btn btn-width-violet") Signin
+      button(type="button" class="btn btn-width-violet") Перейти к оплате
       
-      .float
-        p(class="text") Text
-        a(class='button' href='#' class="btn btn-link") Google
+      .flex
+        p(class="formtext") Уже есть аккаунт на Toxin
+        a(class='button' href='#' class="btn btn-link linkform") Войти

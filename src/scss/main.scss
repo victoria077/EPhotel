@@ -2,5 +2,30 @@
 @import "../components/mixins.scss";
 @import "../components/main_ui/main_ui.scss";
 @import "../components/header/header.scss";
-@import "../components/landing_page/landing_page.scss";
 @import "../components/form-register/form-register.scss";
+@import "../components/footer/footer.scss";
+@import "../components/landing_page/landing_page.scss";
+
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+  
+.container{
+    @include container;
+}
+
+.main-title{
+    @include title;
+    margin-bottom: 20px;
+  }
+
+.btn-small-violet{
+    @include btn-small-violet;
+}
+
+h3{
+    @include small-title;
+}
