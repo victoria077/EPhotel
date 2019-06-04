@@ -1,6 +1,11 @@
 
 import "./scss/main.scss";
 import "./index.pug";
+import "../src/components/signin-form/signin-form.pug"
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
 require('./fonts.scss');
 
 

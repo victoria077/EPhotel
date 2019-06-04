@@ -157,6 +157,16 @@ a:hover {
     /*space between social icons*/
 }
 
+.social-icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/facebook.svg);
+}
+
+#fon{
+    color: #fff;}
+
 /** Viewport <= 800px **/
 
 @media (max-width: 800px) {
@@ -168,3 +178,4 @@ a:hover {
         padding-top: 50px;
     }
 }
+

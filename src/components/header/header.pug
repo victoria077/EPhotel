@@ -1,18 +1,38 @@
-nav(class="container header")
-  a.logo.logo-menu
-  input(class="menu-btn" type="checkbox" id="menu-btn")
-  label(class="menu-icon" for="menu-btn")
-    .navicon
+//- nav(class="container header")
+//-   a.logo.logo-menu
+//-   input(class="menu-btn" type="checkbox" id="menu-btn")
+//-   label(class="menu-icon" for="menu-btn")
+//-     .navicon
+//-   ul(class="menu")
+//-     li
+//-       a О нас
+//-     li 
+//-       a Услуги
+//-     li
+//-       a Вакансии
+//-     li
+//-       a Новости
+//-     li 
+//-       a Соглашения
+//-     a(class='button' href='#' class="btn btn-link btn-link-menu") Войти
+//-     button(type="button" class="btn btn-small-violet") Зарегистрироватьcя
+
+nav.container
+  #logo 
+    img
+  label(for="drop" class="toggle") Menu
+  input(type="checkbox" id="drop")
   ul(class="menu")
     li
-      a О нас
-    li 
-      a Услуги
+      a(href="") О нас
     li
-      a Вакансии
+      a(href="#") Услуги
     li
-      a Новости
+      a(href="#") Вакансии
+    li
+      a(href="#") Новости
+    li
+      a(href="#") Соглашения
     li 
-      a Соглашения
-    a(class='button' href='#' class="btn btn-link btn-link-menu") Войти
-    button(type="button" class="btn btn-small-violet") Зарегистрироватьcя
+     a(class='button' href='./signin-form/signin-form.pug' class="btn btn-link btn-link-menu") Войти
+    button(type="button" class="btn btn-small-violet btn-menu") Зарегистрироватьcя

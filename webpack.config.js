@@ -57,7 +57,8 @@ module.exports = {
       chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
-      template: "./src/index.pug"
+      template: "./src/index.pug",
+      templaty: "./src/components/signin-form/signin-form.pug",
     }),
   ]
 };

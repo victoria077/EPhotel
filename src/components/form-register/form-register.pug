@@ -18,6 +18,17 @@
 
       label(class="label") Дата рождения
       input(class="input_text" placeholder="ДД.ММ.ГГГГ")
+
+      .cont
+         ul 
+           li 
+            input(type="radio" id="men" name="selector")
+            label(for="men") Мужчина
+            .check
+           li 
+             input(type="radio" id="women" name="selector")
+             label(for="women") Женщина
+             .check
       
       label(class="label") Данные для входа в сервис
       input(class="input_text" placeholder="Email")
