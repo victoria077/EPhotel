@@ -58,7 +58,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.pug",
-      templaty: "./src/components/signin-form/signin-form.pug",
+    }),
+    // We need to set our desired filename for other html files though.
+    new HtmlWebpackPlugin({
+      filename: 'signin-page.html',
+      template: './src/components/signin-page/signin-page.pug'
     }),
   ]
 };
