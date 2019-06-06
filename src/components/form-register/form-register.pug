@@ -1,38 +1,24 @@
-.wrapper
-  .wrap
+include ../mixins.pug
+
+.wrap
       h1(
         class="title main-title"
       ) Регистрация аккаунта
 
-      input(
-        type='text'
-        class="input_text"
-        placeholder="Имя"
-      )
-
-      input(
-        type='text'
-        class="input_text"
-        placeholder="Фамилия"
-      )
+      +input-text("Имя")
+      +input-text("Фамилия")
 
       label(class="label") Дата рождения
-      input(class="input_text" placeholder="ДД.ММ.ГГГГ")
+      +input-text("ДД.ММ.ГГГГ")
 
-      .cont
-         ul 
-           li 
-            input(type="radio" id="men" name="selector")
-            label(for="men") Мужчина
-            .check
-           li 
-             input(type="radio" id="women" name="selector")
-             label(for="women") Женщина
-             .check
+      .row
+         +radio-button("Man")
+         +radio-button("Women")
       
       label(class="label") Данные для входа в сервис
-      input(class="input_text" placeholder="Email")
-      input(class="input_text" placeholder="Пароль")
+      +input-text("Email")
+      +input-text("Пароль")
+
 
       input#cb1.tgl.tgl-light(type = "checkbox") 
       label.tgl-btn(for = "cb1")
@@ -41,4 +27,4 @@
       
       .flex
         p(class="formtext") Уже есть аккаунт на Toxin
-        a(class='button' href='#' class="btn btn-link linkform") Войти
+        +button-signin('Войти', 'signin-page.html')

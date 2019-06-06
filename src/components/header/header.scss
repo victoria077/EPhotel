@@ -164,48 +164,48 @@
 //   }
 // }
 
-.toggle,
-[id^=drop] {
-	display: none;
-}
-nav { 
-	margin:0;
-	padding: 0;
-}
 #logo {
+	background-image: url(../images/Logo.svg);
+	width: 105.69px;
+	height: 40px;
+	margin-top: 15px;
+	background-repeat: no-repeat;
 	display: block;
 	padding: 10px 0 0 30px;
 	float: left;
 }
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-nav:after {
-	content:"";
-	display:table;
-	clear:both;
-}
-nav ul {
-	float: right;
-	padding:0;
+
+nav{
 	margin:0;
-	list-style: none;
-	position: relative;
-}
-nav ul li {
-	margin: 0px;
-	display:inline-block;
-	float: left;
-}
-nav a {
-	display:block;
-  text-decoration:none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 17px;
-  color: $black-text;
-  padding:26px 20px;	
+	padding: 0;
+	& after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+	& ul {
+		float: right;
+		padding:0;
+		margin:0;
+		list-style: none;
+		position: relative;
+		& li {
+			margin: 0px;
+			display:inline-block;
+			float: left;
+			& a {
+				display:block;
+			  text-decoration:none;
+			  font-family: Montserrat;
+			  font-style: normal;
+			  font-weight: normal;
+			  font-size: 20px;
+			  line-height: 17px;
+			  color: $black-text;
+			  padding:26px 20px;	
+			}
+		}
+	}
 }
 
 nav li:nth-child(2) > a:after{
@@ -230,21 +230,9 @@ nav li:nth-child(5) > a:after{
   color: $black-text;
 }
 
-img{
-  background-image: url(../images/Logo.svg);
-  width: 105.69px;
-  height: 40px;
-}
-
-.logo{
-  background-image: url(../images/Logo.svg);
-  width: 105.69px;
-  height: 40px;
-  background-repeat: no-repeat;
-}
-
-img.banner {
-	width: 100%;
+.toggle,
+[id^=drop] {
+	display: none;
 }
 
 .btn-link-menu{
@@ -253,7 +241,7 @@ img.banner {
   margin-top: 13px;
 }
 
-.btn-menu{
+.btn-signup{
   margin-top: 13px;
 }
 @media (max-width :1300px) {
@@ -266,10 +254,15 @@ img.banner {
 	}
 	nav {
 		margin: 0;
-	}
-	nav ul {
-		float: left;
-		width: 100%;
+		& ul{
+		    float: left;
+			width: 100%;
+			& li{
+				display: block;
+				width: 100%;
+				margin-top: -20px;
+			}
+		}
 	}
 	.toggle + a,
 	.menu {
@@ -288,11 +281,6 @@ img.banner {
 	[id^=drop]:checked + ul {
 		display: block;
 	}
-	nav ul li {
-		display: block;
-    width: 100%;
-    margin-top: -20px;
-    }
   
   .btn-menu{
     margin-bottom: 10px;

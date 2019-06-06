@@ -1,0 +1,23 @@
+mixin logo()
+    img.logo
+
+mixin input-text(name)
+  input(placeholder = name, type = "text", class="input_text")
+
+mixin list(name)
+  li 
+    a= name
+
+mixin button-signin(name, link)
+  a(class="btn btn-link btn-link-menu", href= link)= name
+
+mixin button-signup(name)
+  button(type="button" class="btn btn-signup")= name
+
+mixin radio-button(name)
+  .radio-button
+      ul
+        li 
+          input(type="radio" id = name name="selector")
+          label(for= name)= name
+          .check

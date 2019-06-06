@@ -17,22 +17,17 @@
 //-     a(class='button' href='#' class="btn btn-link btn-link-menu") Войти
 //-     button(type="button" class="btn btn-small-violet") Зарегистрироватьcя
 
-nav.container
-  #logo 
-    img
+include ../mixins.pug
+
+nav.container.header
+  #logo
   label(for="drop" class="toggle") Menu
   input(type="checkbox" id="drop")
   ul(class="menu")
-    li
-      a(href="") О нас
-    li
-      a(href="#") Услуги
-    li
-      a(href="#") Вакансии
-    li
-      a(href="#") Новости
-    li
-      a(href="#") Соглашения
-    li 
-     a(class='button' href='signin-page.html' class="btn btn-link btn-link-menu") Войти
-    button(type="button" class="btn btn-small-violet btn-menu") Зарегистрироватьcя
+    +list('О нас')
+    +list('Услуги')
+    +list('Вакансии')
+    +list('Новости')
+    +list('Соглашения')
+    +button-signin('Войти', 'signin-page.html')
+    +button-signup('Зарегистрироватьcя')
