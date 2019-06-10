@@ -6,8 +6,10 @@ import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
+import "../src/components/form-search/form-search.js";
 require('./fonts.scss');
-
+require('jquery');
+require('jquery-ui-bundle');
 
 window.onload = function(){
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);

@@ -1,0 +1,163 @@
+.ui-datepicker {
+  width: 320px;
+  padding: 2px 4px;
+  background: white;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  margin-top: 5px;
+  .ui-datepicker-header {
+    background: #fff;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    .ui-datepicker-prev {
+      width: 33px;
+      height: 33px;
+      left: 5px;
+      top: 10px;
+      background: url("../images/arrow_back.svg");
+      z-index: 5;
+    }
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      border: none;
+      cursor: pointer;
+      .ui-icon {
+        display: none;
+      }
+    }
+    .ui-datepicker-next {
+      right: 13px;
+      top: 10px;
+      width: 33px;
+      height: 33px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAAEg4/L5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6lJREFUeNpi5A1KYYCC/0DMCGIwIQnAaSYkAbgOJpgWJMAI086ITAMEECPUogqoYAcLmnntMG0Mn9bOZkB2BgNfcCqYZoEaBjcDIIBghvIA8WcGTMALxF9AxtQhK4CZDwUg8WomdK3P3n1AF2KGWccPxB+wWCcAxB8BAogRKURB4AyUNoEJsKCFLgMaHxx+TxhwgycgBdLIIlJCAshcaQzffPnxE4WPoaAoyBM1EoG+eAKzRoSPl+HNJ5QAfgoyQQbGQ5MEARkWtFSAEQ4AAYQeUCBwFYi18Hj9GhBrIwuwYAlAQkALObCxpXcU8GbldAZjVUV8BsLzxz1cKkTCMxku3H0ITnqcbKy4lN1jIuT2v//+MXz/9ZvBx9wIpxpQmCjh8s62plKGT9++M4hHZuGzR4kRrWAgFTCiJzNGKL5GQOM1JLVgABBA2NIJCICipBeIjaH8s0BcDMT3sYUHMvAG4i1YDJQD4kAo2weIt2LLLdtxaEYHW6BqUQyYCcQeJASiB1QP2ABOIE4jIyZAejhBBlzCJsvGwsLwcvk0QoZcAhmggk3m158/DNO37mG4MbsbnwEqeJN2w5J14Pyxp60CpxqCeSOiYwqDCD8vQ6KrHXkGgLK5koQYw/zdh0g3AFQG7++ogldWuAy4g0sSFICCoen47LgDygugdPCNgTzABXLBdyCeRYZmkJ7vsDAAufMgCZoPQvWgBKIDEAcRoTkIqhZrLKyHFhZK0Cz7Aoq3QsUYoWrgACDAcBUoKHU9ECcAcSkQq5PgzZtADMoHC0BlNT6FTHgs7oKWuX+AeA6JDmCAqp8D1f8fah4zMY5gA+K9UI2lDNQFpVBz90LtweoIPyAGtVScGGgLnKD2BKI7Ih+IN5JUuno6MVhqqlDimHVQe8GOsATiCaSa8A/YKtjZUs5wb34fuAAjE4DstQTlju0k1lMooC8tmiHF3YHh6sOnDO41neDWBolgB8gRn6ENe7IBqKG1tqaAwUZbjWHb6YsM0V3TwO0nIsFHJmqkNFBjbcrmXWCLXQy1CTUlsTbmjlASHdry0gybG4rBjfjyeSuAdfVeUo04DnJEEzmOEOThBrc4QY5Yuv8YQ+aU+eT6ownkiONAXEBKDgE1b67N7GS48fgZuMkLig4yAcje48h1RwgQr2agHwgF4jXoJSZIgIvEupgcsA9qzxpcdcd3aB3NBa39qAkWQM11htpDsBYFKUqE1v0s0JbHTRItvQnVBxt1SES3HAYAEaDvn+18U+wAAAAASUVORK5CYII=");
+    }
+    .ui-datepicker-title {
+      line-height: normal;
+      font-size: 0;
+      font-weight: bold;
+      font-size: 19px;
+      text-align: center;
+      color: #1f2041;
+      .ui-datepicker-month {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .ui-datepicker-year {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .ui-datepicker-group {
+    margin: 0;
+    width: calc(50% - 4px) !important;
+    color: $violet-text;
+  }
+  .ui-datepicker-calendar {
+    table-layout: fixed;
+    td,
+    th {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 0;
+      background: white;
+      color: $violet-text;
+    }
+    th {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      color: $violet-text;
+      font-size: 13px;
+      font-family: Montserrat;
+    }
+    .sejour {
+      > a {
+        background: rgba(#8ba4f9, 0.3);
+        border: none;
+      }
+    }
+    .current {
+      > a {
+        background: red;
+      }
+    }
+    .start {
+      > a {
+        border: 1px solid linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        position: relative;
+        background: $violet-gradient;
+        border-radius: 22px;
+        font-weight: bold;
+        color: #ffffff;
+        &:after {
+        }
+      }
+    }
+    .end {
+      > a {
+        border: 1px solid linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 15px;
+        position: relative;
+        background: $violet-gradient;
+        border-radius: 22px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+    .ui-state-default {
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 23px;
+      text-align: center;
+      padding: 0;
+      border: none;
+      outline: 0;
+      background: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      padding-top: 10px;
+      color: rgba(31, 32, 65, 0.5);
+      &:hover {
+        background: red;
+      }
+    }
+  }
+}
+
+#ui-datepicker-div .ui-state-highlight {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 27px;
+}
+
+.flexs {
+  justify-content: space-between;
+}
+
+// .dp-highlight .ui-state-default {
+//   background: #484;
+//   color: #FFF;
+// }
+// .ui-datepicker.ui-datepicker-multi  {
+//   width: 100% !important;
+// }
+// .ui-datepicker-multi .ui-datepicker-group {
+// float:none;
+// }
+// #datepicker {
+//   height: 300px;
+//   overflow-x: scroll;
+// }
+// .ui-widget { font-size: 100% }

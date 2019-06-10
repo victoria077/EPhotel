@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var webpack = require('webpack');
 module.exports = {
   module: {
     rules: [
@@ -29,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /.*\.(gif|png|jpe?g)$/i,
@@ -49,9 +50,14 @@ module.exports = {
           }
       },
       { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
-    ]
+    ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      "$":"jquery",
+      "jQuery":"jquery",
+      "window.jQuery":"jquery"
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
@@ -64,5 +70,10 @@ module.exports = {
       filename: 'signin-page.html',
       template: './src/components/signin-page/signin-page.pug'
     }),
+    new webpack.ProvidePlugin({
+      $:"jquery",
+      jQuery:"jquery",
+      jQuery:"jquery"
+    })
   ]
 };
