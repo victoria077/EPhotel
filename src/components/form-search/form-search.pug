@@ -10,11 +10,35 @@ include ../mixins.pug
     .row.flexs
       .block
         label(for="start-date" class="label") прибытие
-        input(type="text" name="start-date" id="start-date" placeholder="Start date" class="input-date start-date")
+        input(type="text" name="start-date" id="start-date" placeholder="ДД.ММ.ГГГГ" class="input-date start-date")
       .block
         label(for="end-date" class="label") выезд
-        input( type="text" name="end-date" id="end-date" placeholder="End date" class="input-date")
+        input( type="text" name="end-date" id="end-date" placeholder="ДД.ММ.ГГГГ" class="input-date")
+      
 
-    +input-text("Email")
+    .dropdown
+      label.label Гости
+        .dropdowns
+          .dd-button  Сколько гостей
+          input(type="checkbox" class="dd-input" id="test")
+          ul(class="dd-menu")
+            li
+              p(class="titles") взрослые
+              .flexs
+                button(class="plus button") +
+                p(class="texts") 0
+                button(class="minus button") -
+            li
+              p(class="titles") дети
+              .flexs
+                button(class="plus button") +
+                p(class="texts") 0
+                button(class="minus button") -
+            li
+              p(class="titles") младенцы
+              .flexs
+                button(class="plus button") +
+                p(class="texts") 0
+                button(class="minus button") -
 
     button(type="button" class="btn btn-width-violet") Перейти к оплате

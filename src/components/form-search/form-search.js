@@ -23,6 +23,7 @@ $(function () {
 		constrainInput: true,
 		  numberOfMonths: 1,
 		showOtherMonths: true,
+		dateFormat: 'dd.mm.yy',
 		beforeShowDay: function(date){
 			// 0: published
 			// 1: class
@@ -59,6 +60,8 @@ $(function () {
 		constrainInput: true,
 		  numberOfMonths: 1,
 		showOtherMonths: true,
+		dateFormat: 'dd.mm.yy',
+		regional: "ru",
 		beforeShowDay: function(date){
 			var timestamp_date = date.getTime();
 			var result = getDateClass(timestamp_date, timestamp_start_date, timestamp_end_date);
