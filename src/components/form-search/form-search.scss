@@ -6,6 +6,7 @@
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
+  display: none;
   .ui-datepicker-header {
     background: #fff;
     border: none;
@@ -121,11 +122,6 @@
     }
   }
 }
-
-.ui-datepicker.container {
-  margin: 0 auto;
-}
-
 #ui-datepicker-div .ui-state-highlight {
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 27px;
@@ -191,8 +187,6 @@
   border: 1px solid gray;
   background-color: #fff;
   border-radius: 4px;
-  padding-left: 15px;
-  padding-top: 14px;
   width: 320px;
   height: 44px;
 }
@@ -291,3 +285,7 @@
   padding-left: 15px;
 }
 
+
+.form-search{
+  margin: 70px 0 0 140px;
+}

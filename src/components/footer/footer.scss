@@ -1,18 +1,3 @@
-/*This code is property of Conor McNamara*/
-/*https://codepen.io/conorjmcnamara/*/
-
-*,
-*:after,
-*:before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #767676;
-    /*the copyright colors text*/
-}
-
-/** Footer **/
 
 .footer {
     padding: 10px 200px;
@@ -55,7 +40,20 @@
         padding-bottom: 10px;
     }
 }
+.svg-inline--fa{
+    font-size: 24px;
+line-height: 23px;
+/* identical to box height */
 
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Primary Gradient */
+
+color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    margin-right: 20px;
+}
 /** Viewport <= 800px **/
 
 @media (max-width: 800px) {

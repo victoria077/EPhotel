@@ -1,0 +1,17 @@
+mixin card(originalLink, originalTitlenumber, price, level, quantity)
+  .card
+    .card-wrapper
+      .container
+          div(class="owl-carousel owl-theme fxSoftScale")
+             .item
+                 img(src= originalLink, alt= originalTitle )
+             .item
+                 img(src= originalLink, alt= originalTitle )
+      .row
+         h3= number
+         h4= price
+      .row
+         p= level
+         p= quantity
+           
++card("http://placehold.it/1600x500/238f45/ffffff", "title", 123, 789709, 'iop', 'uiup')
