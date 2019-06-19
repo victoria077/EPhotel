@@ -8,12 +8,15 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import "../src/components/form-search/form-search.js";
 import "../src/components/card-room/card-room.js";
+import "../src/components/room-page/room-page.js";
 require('./fonts.scss');
 require('jquery');
 require('jquery-ui-bundle');
-import 'owl.carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+require("../node_modules/jquery-ui-themes/themes/ui-lightness/jquery-ui.css");
+require("../node_modules/jquery-ui-themes/themes/ui-lightness/theme.css");
+// import 'owl.carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
 
 window.onload = function(){
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);

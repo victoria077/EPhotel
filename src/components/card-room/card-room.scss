@@ -1,164 +1,44 @@
-/*Owl Animation*/
-.owl-item{
-    overflow: hidden;
-}
-
-%owl-animate{
-    .owl-stage{
-        transform: none !important;
-        width: 100% !important;
-        position: relative;
-        height: 0;
-        border: none;
-        overflow: hidden;
-        display: block;
-        padding-top: 31.25%; // 1600x500
+.card {
+    width: 270px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    & img{
+       width: 270px;
+       height: 150px;
+       background-color: red; 
     }
-
-    .owl-item{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0 !important;
-        left: 0 !important;
-        opacity: 0;
-        z-index: 10;
-
-        &.active{
-            z-index: 20;
-            opacity: 1;
-        }
-
-        &.owl-animated-out{
-            opacity: 1;
-        }
-
-        &.owl-animated-in{
-            opacity: 0;
-        }
+    &_container{
+        padding: 20px;
     }
-}
-
-
-/*****************************************/
-/* Soft Scale */
-/*****************************************/
-.fxSoftScale{
-    .animated{
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    &-number{
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1F2041;}
+    &-price{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
     }
-}
-
-.fxSoftScaleOutNext {
-    animation-name: scaleUp;
-}
-
-.fxSoftScaleInNext {
-    animation-name: scaleDownUp;
-}
-
-.fxSoftScaleOutPrev {
-    animation-name: scaleDown;
-}
-
-.fxSoftScaleInPrev {
-    animation-name: scaleUpDown;
-}
-
-@keyframes scaleUp {
-    from {
-        opacity: 1;
+    &-span{
+        font-weight: normal;
     }
-    to {
-        transform: scale(1.2);
-        opacity: 0;
-    }
-}
-
-@keyframes scaleDownUp {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes scaleDown {
-    from {}
-    to {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-}
-
-@keyframes scaleUpDown {
-    from {
-        transform: scale(1.2);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-
-// Common styles
-// ====================================
-body{
-    font: 16px/1.5 Verdana, sans-serif;
-    color: #333;
-    background-color: #fff;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.owl-nav{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    text-align: left !important;
-    margin-top: 0;
-    height: 0;
-
-    [class*=owl-]{
-        transform: translateY(-50%);
-        margin: 0 20px !important;
-        padding: 8px 14px !important;
-    }
-}
-
-.owl-next{
-    float: right;
-}
-
-.owl-dots{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-    .owl-dot span{
-        width: 14px !important;
-        height: 14px !important;
-    }
-}
-
-.owl-carousel{
-    margin-bottom: 10px;
-    background-color: #333;
-}
-
-select{
-    font: inherit;
-    padding: 10px;
-}
+  }
+  
+  
+  
+  
+  .row{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .line{
+      border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  }

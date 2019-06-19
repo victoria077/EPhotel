@@ -1,0 +1,68 @@
+include ../mixins.pug
+
+
+.settings.container
+    .left-side
+        .dropdown
+            label.label Гости
+              .dropdowns
+                .dd-button  Сколько гостей
+                input(type="checkbox" class="dd-input" id="test")
+                ul(class="dd-menu")
+                    li
+                    p(class="titles") взрослые
+                    .flexs
+                        button(class="plus button") +
+                        p(class="texts") 0
+                        button(class="minus button") -
+                    li
+                    p(class="titles") дети
+                    .flexs
+                        button(class="plus button") +
+                        p(class="texts") 0
+                        button(class="minus button") -
+                    li
+                    p(class="titles") младенцы
+                    .flexs
+                        button(class="plus button") +
+                        p(class="texts") 0
+                        button(class="minus button") -
+
+        p 
+            label(for="amount") Price range:
+            input(type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;")
+        div(id="slider-range")                
+
+        +checkbox("smoking", "Можно курить")
+        +checkbox("pets", "Можно с питомцами")
+        +checkbox("guests", "Можно пригласить гостей (до 10 человек)")
+         
+        
+
+        //- p 
+        //-     label(for="amount") Price range:
+        //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
+        //- div(id="slider-range")
+    .right-room
+        .row
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+        .row
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+        .row
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+        .row
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+            +card-room( 888, 909, 45)
+        div(class="content_detail__pagination cdp" actpage="1")
+            a(href="#!-1" class="cdp_i") prev
+            a(href="#!1" class="cdp_i") 1
+            a(href="#!2" class="cdp_i") 2
+            a(href="#!3" class="cdp_i") 3
+            a(href="#!+1" class="cdp_i") next
