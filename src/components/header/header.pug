@@ -1,29 +1,11 @@
-//- nav(class="container header")
-//-   a.logo.logo-menu
-//-   input(class="menu-btn" type="checkbox" id="menu-btn")
-//-   label(class="menu-icon" for="menu-btn")
-//-     .navicon
-//-   ul(class="menu")
-//-     li
-//-       a О нас
-//-     li 
-//-       a Услуги
-//-     li
-//-       a Вакансии
-//-     li
-//-       a Новости
-//-     li 
-//-       a Соглашения
-//-     a(class='button' href='#' class="btn btn-link btn-link-menu") Войти
-//-     button(type="button" class="btn btn-small-violet") Зарегистрироватьcя
 
 include ../mixins.pug
 
-nav.container.header
-  #logo
-  label(for="drop" class="toggle") Menu
-  input(type="checkbox" id="drop")
-  ul(class="menu")
+nav.container.menu
+  div(id="logo" class="menu__logo")
+  label(for="drop" class="menu__logo_toggle") Menu
+  input(type="checkbox" class="menu__logo_drop" id="drop")
+  ul(class="menu__nav")
     +list('О нас')
     +list('Услуги')
     +list('Вакансии')
