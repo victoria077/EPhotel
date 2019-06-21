@@ -4,14 +4,14 @@
     border-top: 1px solid #dbdbdb;
     background-color: $white-color;
     /*bg color*/
-    & .footer-content {
+    &__nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 10px 10px;
         border-bottom: 1px solid #dbdbdb;
         margin-top: 100px;
-        & .footer-list {
+        &__block {
             margin: 0 10px 10px;
             text-decoration: none;
             & p{
@@ -32,7 +32,7 @@
             }
         }
     }
-    & .footer-about {
+    & .footer__details {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -61,7 +61,7 @@ color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         padding: 0 30px;
         padding-bottom: 30px;
     }
-    .footer-content {
+    .footer__nav{
         padding-top: 50px;
     }
 

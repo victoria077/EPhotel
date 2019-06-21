@@ -1,9 +1,9 @@
-footer.footer
-  .footer-content
-    .footer-list
-      .logo
-    .footer-list
-      h3 Навигация
+footer.footer.container
+  .footer__nav
+    .footer__nav__block
+      .logo(class="footer__block logo")
+    .footer__nav__block
+      h3(class="footer__block title") Навигация
       ul
         li 
           a О нас
@@ -13,8 +13,8 @@ footer.footer
           a Служба поддержки
         li
           a Услуги
-    .footer-list
-      h3 О нас
+    .footer__nav__block
+      h3(class="footer__block title") О нас
       ul
         li 
           a О сервисе
@@ -24,8 +24,8 @@ footer.footer
           a Вакансии
         li 
           a Инвесторы
-    .footer-list
-      h3 Служба поддержки
+    .footer__nav__block
+      h3(class="footer__block title") Служба поддержки
       ul
         li 
           a Соглашения
@@ -33,12 +33,12 @@ footer.footer
           a  Сообщества
         li
           a Связь с нами
-    .footer-list
-      h3 Подписка
+    .footer__nav__block
+      h3(class="footer__block title") Подписка
       p Получайте специальныe
       input(class="input-footer" placeholder="Email")
-  .footer-about.flex
-      .copyright Copyright &copy; 2018 Toxin отель. Все права зачищены.
+  .footer__details.container
+      .footer__details__copyright Copyright &copy; 2018 Toxin отель. Все права зачищены.
       ul.about-list.row
         li
           a(href="#")
