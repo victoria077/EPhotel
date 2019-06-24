@@ -1,5 +1,6 @@
 
 window.onload = function(){
+  
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);
     $('.cdp_i').on('click', function(){
       var go = $(this).attr('href').replace('#!', '');
@@ -27,3 +28,5 @@ window.onload = function(){
     $( "#amount" ).val( "₽" + $( "#slider-range" ).slider( "values", 0 ) +
       " - ₽" + $( "#slider-range" ).slider( "values", 1 ) );
   } );
+
+
