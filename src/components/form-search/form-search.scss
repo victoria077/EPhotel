@@ -285,6 +285,28 @@
   padding-left: 15px;
 }
 
+.input__date--single{
+  width: 266px;
+height: 44px;
+background: #FFFFFF;
+/* Dark 25% */
+
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.input__date--single::before{
+  content: "";
+  padding: 5px;
+  //   //set tickness
+  box-shadow: 2px -2px 0 0 $black-text inset;
+  display: inline-block;
+  transform: rotate(-45deg);
+  margin-left: 30px;
+  color: $black-text;
+  background-repeat: no-repeat;
+}
 
 .form-search{
   margin: 70px 0 0 140px;

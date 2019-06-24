@@ -33,25 +33,21 @@ mixin card-room(number, price, feedback)
                 p(class="card-price")= price  
                     span(class="card-span")  в сутки
             .row
-                .rate
-                    input(type="radio" id="star5" name="rating" value="5")
-                    label(for="star5" title="Outstanding")
-                    input(type="radio" id="star4" name="rating" value="4")
-                    label(for="star4" title="Very Good")
-                    input(type="radio" id="star3" name="rating" value="3")
-                    label(for="star3" title="Good")
-                    input(type="radio" id="star2" name="rating" value="2")
-                    label(for="star2" title="Poor")
-                    input(type="radio" id="star1" name="rating" value="1")
-                    label(for="star1" title="Very Poor")
-                p(class="card-price")= feedback
+              +stars("--rating: 3")
+              p(class="card-price")= feedback
                     span(class="card-span")   отзывов
         
 
 mixin checkbox(name, label)
-  input(type="checkbox" id= name name= name value= name)
-  label(for= name)= label
-  
+  div(class="checkbox__button")
+    input(type="checkbox" class="checkbox__button checkbox__box" id= name name= name value= name)
+    label(class="checkbox__button checkbox__name" for= name)= label
+
+mixin description-checkbox(name, label, descr)
+  div(class="checkbox__button checkbox__button__descr")
+    input(type="checkbox" class="checkbox__button__descr checkbox__box" id= name name= name value= name)
+    label(for= name class="checkbox__button__descr checkbox__name")= label
+    span(class="checkbox__button__descr checkbox__span")= descr
   
 mixin stars(style="--rating: level")
    div(class="Stars" style= style)

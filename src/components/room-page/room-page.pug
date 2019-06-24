@@ -3,8 +3,11 @@ include ../mixins.pug
 
 .settings.container
     .left-side
-        .dropdown
-            label.label Гости
+        h3(class="title") даты пребывания в отеле
+        include ../datepicker/datepicker.pug
+        h3(class="title") гости
+        .dropdown.settings__dropdown
+            label.label
               .dropdowns
                 .dd-button  Сколько гостей
                 input(type="checkbox" class="dd-input" id="test")
@@ -28,17 +31,20 @@ include ../mixins.pug
                         p(class="texts") 0
                         button(class="minus button") -
 
-        p 
-            label(for="amount") Price range:
-            input(type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;")
-        div(id="slider-range")                
-
-        +checkbox("smoking", "Можно курить")
-        +checkbox("pets", "Можно с питомцами")
-        +checkbox("guests", "Можно пригласить гостей (до 10 человек)")
-         
-        
-
+        h3(class="title") диапазон цены
+        input(type="text" class="slider__range__price" id="amount" style="border:0; color:#f6931f; font-weight:bold;")
+        div(id="slider-range")  
+        span Стоимость за сутки пребывания в номере 
+        h3(class="title") Checkbox Buttons             
+        .blocks
+            +checkbox("smoking", "Можно курить")
+            +checkbox("pets", "Можно с питомцами")
+            +checkbox("guests", "Можно пригласить гостей (до 10 человек)")
+        h3(class="title") доступность 
+        .blocks
+            +description-checkbox("hole", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+            +description-checkbox("help", "Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
+        h3(class="title") удобства номера
         //- p 
         //-     label(for="amount") Price range:
         //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
