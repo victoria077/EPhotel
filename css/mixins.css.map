@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAqCA,6BAA6B",
+    "sources": [
+        "../src/components/mixins.scss"
+    ],
+    "names": [],
+    "file": "mixins.css"
+}

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: '8143';
+  src: url("fonts/Montserrat-Regular.eot") format("eot"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg#Samplino") format("svg");
+}
+
+@font-face {
+  font-family: '8141';
+  src: url("fonts/8141.eot?") format("eot"), url("fonts/8141.woff") format("woff"), url("fonts/8141.ttf") format("truetype"), url("fonts/8141.svg#Samplino") format("svg");
+}
+
+body {
+  font-family: '8141', '8143';
+}
+/*# sourceMappingURL=fonts.css.map */

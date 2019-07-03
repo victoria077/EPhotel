@@ -1,0 +1,12 @@
+.main-background {
+  min-height: 800px;
+  background-image: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.clear {
+  clear: both;
+}
+/*# sourceMappingURL=landing_page.css.map */

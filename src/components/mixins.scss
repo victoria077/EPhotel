@@ -26,12 +26,18 @@
     line-height: 18px;
     color: rgba(31, 32, 65, 0.25);
     padding-left: 15px;
+    &:hover{
+      color: rgba(31, 32, 65, 0.75);
+    }
   }
   &:hover {
-    border: 2px solid rgba(#8ba4f9, 0.7);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    &::placeholder {
+      color: rgba(31, 32, 65, 0.75);}
   }
   &:active {
-    border: 2px solid rgba(#8ba4f9, 0.7);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 0.75);
   }
 }
 
