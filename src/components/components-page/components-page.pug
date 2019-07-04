@@ -10,3 +10,20 @@ mixin input-subscription(placeholder)
     button(type="submit")
         i(class="fa fa-arrow-right")
 +input-subscription("Name")
+
+mixin checkbox(name, label)
+  div(class="checkbox__button")
+    input(type="checkbox" class="checkbox__button checkbox__box" id= name name= name value= name)
+    label(class="checkbox__button checkbox__name" for= name)= label
+
++checkbox("Cote", "cote")
+
+mixin radio-button(name)
+    div(class="radio-button")
+      ul
+        li 
+          input(type="radio" id = name name="selector")
+          label(for= name)= name
+          .check
+
++radio-button("Men")
