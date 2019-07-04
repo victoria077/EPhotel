@@ -2,3 +2,11 @@ mixin text-field(placeholder)
     input(class="input_text" placeholder= placeholder)
 
 +text-field("Email")
+
+
+mixin input-subscription(placeholder)
+  form(class="form__subscribe")
+    input(type="text" placeholder= placeholder) 
+    button(type="submit")
+        i(class="fa fa-arrow-right")
++input-subscription("Name")
