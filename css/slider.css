@@ -62,7 +62,7 @@
   background: rgba(255, 255, 255, 0.38) !important;
 }
 
-span {
+.owl-nav span {
   font-size: 70px;
   position: relative;
   top: -5px;

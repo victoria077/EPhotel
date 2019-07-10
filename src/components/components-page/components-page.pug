@@ -1,3 +1,4 @@
+
 mixin text-field(placeholder)
     input(class="input_text" placeholder= placeholder)
 
@@ -27,3 +28,48 @@ mixin radio-button(name)
           .check
 
 +radio-button("Men")
+
+mixin stars(style="--rating: level")
+   div(class="Stars" style= style)
+
++stars("--rating:4")
+
+
+mixin bullet-list(li1, li2, li3)
+  ul(class="bullet-list")
+    li= li1 
+    li= li2
+    li= li3
++bullet-list(" Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
+
+
+mixin room-information(icon, quality, descr)
+    div(class="room__information")
+      div(class="room__information__wrapper")
+         i(class="room__information__icon" class= icon)
+         div(class="room__information__wrapper__description")
+            h4= quality
+            p= descr
+          
+          
++room-information("fa fa-laugh", "Комфорт", "Шумопоглощающие стены")
+
+mixin feedback( personName, date)
+  div(class="room__feedback")
+    div(class="room__feedback__wrapper")
+      div(class="room__feedback__wrapper__person")
+        img(src="../images/twitter.svg")
+        div(class="room__feedback__wrapper__person--name")
+          h4= personName
+          p= date
+      div(class="room__feedback__wrapper__evaluation")
+        button(type: "button")
+          i.fa.fa-heart(class="icon")
+          span 0
+        p= text
+
+           
++feedback( "Мурад Сарафанов", '5 дней назад')
+
+input(class="slider-input" type="text" id="amount" readonly style="border:0; color:rgba(31, 32, 65, 0.5); margin-bottom: 20px; font-weight:bold; margin-left: 120px; font-size: 16px; line-height: 15px; text-align: right; text-transform: uppercase;")
+div(id="slider-range") 

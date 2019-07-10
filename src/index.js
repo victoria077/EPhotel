@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-free/js/brands'
 import "../src/components/form-search/form-search.js";
 import "../src/components/card-room/card-room.js";
 import "../src/components/room-page/room-page.js";
+import "../src/components/components-page/components-page.js";
 import "../src/components/datepicker/datepicker.js";
 import "../src/components/slider/slider.js";
 require('./fonts.scss');

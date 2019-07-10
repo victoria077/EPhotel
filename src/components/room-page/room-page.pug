@@ -1,4 +1,3 @@
-include ../mixins.pug
 
 
 .settings.container
@@ -37,38 +36,14 @@ include ../mixins.pug
         span Стоимость за сутки пребывания в номере 
         h3(class="title") Checkbox Buttons             
         .blocks
-            +checkbox("smoking", "Можно курить")
-            +checkbox("pets", "Можно с питомцами")
-            +checkbox("guests", "Можно пригласить гостей (до 10 человек)")
+            
         h3(class="title") доступность 
         .blocks
-            +description-checkbox("hole", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
-            +description-checkbox("help", "Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
+
         h3(class="title") удобства номера
         //- p 
         //-     label(for="amount") Price range:
         //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
         //- div(id="slider-range")
     .right-room
-        .row
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-        .row
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-        .row
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-        .row
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-            +card-room( 888, 909, 45)
-        div(class="content_detail__pagination cdp" actpage="1")
-            a(href="#!-1" class="cdp_i") prev
-            a(href="#!1" class="cdp_i") 1
-            a(href="#!2" class="cdp_i") 2
-            a(href="#!3" class="cdp_i") 3
-            a(href="#!+1" class="cdp_i") next
+       
