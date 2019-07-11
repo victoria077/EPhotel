@@ -10,16 +10,13 @@
 @import "../components/card-room/card-room.scss";
 @import "../components/room-page/room-page.scss";
 @import "../components/slider/slider.scss";
+@import "../components/signin-form/signin-form.scss";
 @import "../components/components-page/components-page.scss";
-
-
 
 html,
 body {
   margin: 0;
   height: 100%;
-  font-family: "OpenSans";
-  letter-spacing: 1.5px;
 }
 
 .container {
@@ -30,9 +27,12 @@ body {
   @include logo;
 }
 
-.main-title {
-  @include title;
-  margin-bottom: 20px;
+.title__main {
+  font-family:  "OpenSans-Bold";
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 30px;
 }
 
 .btn-signup {
@@ -55,28 +55,28 @@ a {
 }
 
 .btn-width-violet {
-  width: 320px;
-  height: 44px;
+  width: 426px;
+  height: 56px;
   background-color: #bc9cff;
-  border-radius: 22px;
+  border-radius: 45px;
   border: none;
   box-sizing: border-box;
-  border-radius: 22px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
   /* identical to box height */
-
+  font-family: "OpenSans-Bold";
   text-align: center;
   text-transform: uppercase;
-
   color: #ffffff;
-  margin-top: 20px;
   background-image: url(../images/white-arrow.svg);
   background-repeat: no-repeat;
-  background-position-x: 23em;
-  background-position-y: 0.9em;
+  background-position-x: 24em;
+  background-position-y: 1.2em;
   top: 20px;
+  &:focus{
+    outline: none;
+  }
 }
 
 .btn-link {
@@ -190,7 +190,6 @@ a {
   color: rgba(31, 32, 65, 0.75);
 }
 
-
-.input-date{
+.input-date {
   @include input-date;
 }

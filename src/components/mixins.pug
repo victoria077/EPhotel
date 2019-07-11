@@ -8,8 +8,8 @@ mixin list(name)
   li 
     a= name
 
-mixin button-signin(name, link)
-  a(class="btn btn-link btn-link-menu", href= link)= name
+mixin button-signin(name, link, className)
+  a(class="btn btn-link btn-link-menu", href= link, class= className)= name
 
 mixin button-signup(name)
   button(type="button" class="btn btn-signup")= name

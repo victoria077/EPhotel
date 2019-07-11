@@ -1,14 +1,15 @@
 .wrapper
   .wrap
-      h1(
-        class="title main-title"
-      ) Войти
+    .container__form
+        h1(
+          class="title title__main"
+        ) Войти
 
-      input(class="input_text" placeholder="Email")
-      input(class="input_text" placeholder="Пароль")
+        input(class="input_text input__signin" placeholder="Email")
+        input(class="input_text input__signin input__signin--second" placeholder="Пароль")
 
-      button(type="button" class="btn btn-width-violet") Перейти к оплате
-      
-      .flex
-        p(class="formtext") Уже есть аккаунт на Toxin
-        a(class='button' href='#' class="btn btn-link linkform") Войти
+        button(type="button" class="btn btn-width-violet btn__signin") Войти
+        
+        .display__flex
+          div(class="text text__signin") Нет аккаунта на Toxin?
+          +button-signin('Создать', 'signin-page.html', "btn__create")

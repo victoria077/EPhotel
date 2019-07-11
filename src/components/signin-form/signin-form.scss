@@ -1,0 +1,35 @@
+.container__form {
+  align-content: center;
+  margin: 0 auto;
+}
+
+.input__signin {
+  margin-top: 8px;
+}
+
+.input__signin--second {
+  margin-top: 12px;
+}
+
+.btn__signin {
+  margin-top: 26px;
+}
+
+.text {
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text__signin{
+    margin-top: 62px;
+}
+
+.btn__create{
+    margin-top: 45px;
+}
+
+.display__flex{
+    display: flex;
+    justify-content: space-between;
+}

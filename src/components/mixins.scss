@@ -17,7 +17,6 @@
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
   &::placeholder {
     font-family: "Open Sans";
     font-style: normal;
@@ -54,12 +53,13 @@
 
 @mixin btn-link {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border: 2.4px solid $violet-text;
   text-transform: uppercase;
-  border-radius: 22px;
+  border-radius: 30px;
   color: $violet-text;
   text-decoration: none;
+  font-family: "OpenSans-Bold";
 }
 
 @mixin btn-violet {
@@ -99,16 +99,12 @@
 }
 
 @mixin text {
-  font-family: Montserrat;
+  font-family: "OpenSans-Bold";
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
-  // color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+
 }
 
 @mixin small-title {

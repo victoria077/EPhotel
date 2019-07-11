@@ -1,19 +1,25 @@
-
 @font-face {
-    font-family:  'OpenSans';
-    src: 
-    url("fonts/subset-OpenSans.woff") format("woff"),
+  font-family: "OpenSans";
+  src: url("fonts/subset-OpenSans.woff") format("woff"),
     url("fonts/subset-OpenSans.ttf") format("truetype"),
     url("fonts/subset-OpenSans.svg#Samplino") format("svg");
-    }
+}
 
 @font-face {
-    font-family: '8141';
-    src: url("fonts/8141.eot?") format("eot"),
-        url("fonts/8141.woff") format("woff"),
-        url("fonts/8141.ttf") format("truetype"),
-        url("fonts/8141.svg#Samplino") format("svg"),
-        }
-body{
-    font-family: 'OpenSans';
+  font-family: "8141";
+  src: url("fonts/8141.eot?") format("eot"),
+    url("fonts/8141.woff") format("woff"),
+    url("fonts/8141.ttf") format("truetype"),
+    url("fonts/8141.svg#Samplino") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("fonts/OpenSans-Bold.eot?") format("eot"),
+    url("fonts/OpenSans-Bold.woff") format("woff"),
+    url("fonts/OpenSans-Bold.ttf") format("truetype"),
+    url("fonts/OpenSans-Bold.svg#Samplino") format("svg");
+}
+body {
+  font-family: "OpenSans";
 }
