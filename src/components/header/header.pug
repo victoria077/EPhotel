@@ -1,7 +1,7 @@
 
 include ../mixins.pug
 
-nav.container.menu
+nav(class="container menu")
   div(id="logo" class="menu__logo")
   label(for="drop" class="menu__logo_toggle") Menu
   input(type="checkbox" class="menu__logo_drop" id="drop")
@@ -11,5 +11,5 @@ nav.container.menu
     +list('Вакансии')
     +list('Новости')
     +list('Соглашения')
-    +button-signin('Войти', 'signin-page.html')
+    +button-signin-header('Войти', 'signin-page.html', "header__btn--signin" )
     +button-signup('Зарегистрироватьcя')

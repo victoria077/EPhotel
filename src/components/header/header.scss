@@ -35,13 +35,13 @@
       & a {
         display: block;
         text-decoration: none;
-        font-family: Montserrat;
+        font-family: "OpenSans-Bold";
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 17px;
+        font-size: 18px;
         color: $black-text;
-        padding: 26px 20px;
+        padding: 26px 14px;
+        letter-spacing: 0.8px;
       }
     }
   }
@@ -113,4 +113,17 @@
   .btn-menu {
     margin-bottom: 10px;
   }
+}
+
+
+.header__btn--signin{
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2.4px solid $violet-text;
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: $violet-text;
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+  margin: 22px;
 }

@@ -11,6 +11,9 @@ mixin list(name)
 mixin button-signin(name, link, className)
   a(class="btn btn-link btn-link-menu", href= link, class= className)= name
 
+mixin button-signin-header(name, link, className)
+  a(class="btn  btn-link-menu", href= link, class= className)= name
+
 mixin button-signup(name)
   button(type="button" class="btn btn-signup")= name
 
@@ -53,3 +56,10 @@ mixin description-checkbox(name, label, descr)
     label(for= name class="checkbox__button__descr checkbox__name")= label
     span(class="checkbox__button__descr checkbox__span")= descr
   
+
+
+mixin input-subscription(placeholder)
+  form(class="form__subscribe")
+    input(type="text" placeholder= placeholder) 
+    button(type="submit")
+        i(class="fa fa-arrow-right")
