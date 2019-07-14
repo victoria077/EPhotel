@@ -1,12 +1,13 @@
 @mixin container {
-  width: 81vw;
+  width: 82.5vw;
   margin: 0 auto;
 }
 
 @mixin logo {
   background-image: url(../images/Logo.svg);
   background-repeat: no-repeat;
-  width: 5em; height: 2em;
+  width: 140px; height: 55px;
+  margin-top: 5px;
 }
 
 @mixin input_text {

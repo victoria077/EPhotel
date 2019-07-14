@@ -1,12 +1,15 @@
 .footer {
-  padding: 10px 200px;
-  border-top: 1px solid #dbdbdb;
+  padding: 0 0 80px 0;
   background-color: $white-color;
-  &__title{
+  &__title {
     font-size: 16px;
     font-family: "OpenSans-Bold";
     text-transform: uppercase;
     letter-spacing: 1px;
+    &--describtion {
+      margin-top: 25px;
+      margin-bottom: 29px;
+    }
   }
   /*bg color*/
   &__nav {
@@ -14,23 +17,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px 10px;
-    border-bottom: 1px solid #dbdbdb;
     margin-top: 100px;
     &__block {
       margin: 0 10px 10px;
       text-decoration: none;
       & p {
-        @include text;
         color: $black-text;
-        line-height: 32px;
-        letter-spacing: 0.5px;
+        font-family: "OpenSans";
+        font-weight: bold;
+        letter-spacing: 1.3px;
+        font-size: 18px;
+        line-height: 33px;
       }
       & ul {
-          padding: 0;
+        padding: 0;
         li {
-          margin: 20px 0;
+          margin: 27px 0;
           & a {
-            @include text;
+            font-family: "OpenSans";
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            font-size: 18px;
             color: $light-black-color;
           }
         }
@@ -40,27 +47,43 @@
       }
     }
   }
-  & .footer__details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 10px;
+}
+
+.footer__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  &__copyright {
+    color: $black-text;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    font-size: 19px;
+    margin-left: 20px;
   }
 }
-.footer .svg-inline--fa {
-  font-size: 27px;
-  line-height: 23px;
-  /* identical to box height */
 
+.footer__details .svg-inline--fa {
+  font-size: 30px;
+  line-height: 23px;
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: 15px;
+  &:last-child{
+    margin-right: 20px;
+  }
+}
 
-  /* Primary Gradient */
-
-  color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  margin-right: 20px;
+.fa-twitter{
+  cursor: pointer;
+  background: pink;
+	background: -webkit-radial-gradient(33% 100% circle, #515ECF 4%, #9B36B7 30%, #D92E7F 62%, #F15245 85%, #FED373);
+	background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 /** Viewport <= 800px **/
 
