@@ -42,7 +42,6 @@
 
 /* style for text of button*/
 @mixin btn-text {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -110,7 +109,6 @@
 }
 
 @mixin small-title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -135,7 +133,6 @@
   background-position-y: 0.8em;
   top: 20px;
   &::placeholder {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

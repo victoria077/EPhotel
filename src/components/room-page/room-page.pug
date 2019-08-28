@@ -1,49 +1,67 @@
 
-
+include ../mixins.pug
 .settings.container
-    .left-side
-        h3(class="title") даты пребывания в отеле
-        include ../datepicker/datepicker.pug
-        h3(class="title") гости
-        .dropdown.settings__dropdown
-            label.label
-              .dropdowns
-                .dd-button  Сколько гостей
-                input(type="checkbox" class="dd-input" id="test")
-                ul(class="dd-menu")
-                    li
-                    p(class="titles") взрослые
-                    .flexs
-                        button(class="plus button") +
-                        p(class="texts") 0
-                        button(class="minus button") -
-                    li
-                    p(class="titles") дети
-                    .flexs
-                        button(class="plus button") +
-                        p(class="texts") 0
-                        button(class="minus button") -
-                    li
-                    p(class="titles") младенцы
-                    .flexs
-                        button(class="plus button") +
-                        p(class="texts") 0
-                        button(class="minus button") -
+    #left-side.left-side
+        div(class="sidebar" id="sidebar")
+            a(href="#" class="close")
+                i(class="fab fa-instagram")
+            h3(class="title") даты пребывания в отеле
+            //- include ../datepicker/datepicker.pug
+            h3(class="title") гости
+            //- .dropdown.settings__dropdown
+            //-     label.label
+            //-       .dropdowns
+            //-         .dd-button  Сколько гостей
+            //-         input(type="checkbox" class="dd-input" id="test")
+            //-         ul(class="dd-menu")
+            //-             li
+            //-             p(class="titles") взрослые
+            //-             .flexs
+            //-                 button(class="plus button") +
+            //-                 p(class="texts") 0
+            //-                 button(class="minus button") -
+            //-             li
+            //-             p(class="titles") дети
+            //-             .flexs
+            //-                 button(class="plus button") +
+            //-                 p(class="texts") 0
+            //-                 button(class="minus button") -
+            //-             li
+            //-             p(class="titles") младенцы
+            //-             .flexs
+            //-                 button(class="plus button") +
+            //-                 p(class="texts") 0
+            //-                 button(class="minus button") -
 
-        h3(class="title") диапазон цены
-        input(type="text" class="slider__range__price" id="amount" style="border:0; color:#f6931f; font-weight:bold;")
-        div(id="slider-range")  
-        span Стоимость за сутки пребывания в номере 
-        h3(class="title") Checkbox Buttons             
-        .blocks
-            
-        h3(class="title") доступность 
-        .blocks
-
-        h3(class="title") удобства номера
-        //- p 
-        //-     label(for="amount") Price range:
-        //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
-        //- div(id="slider-range")
-    .right-room
-       
+            h3(class="title") диапазон цены
+            input(type="text" class="slider__range__price" id="amount")
+            div(id="slider-range")  
+            span Стоимость за сутки пребывания в номере 
+            h3(class="title") Checkbox Buttons             
+            .blocks
+                +checkbox('Smoking', 'Можно курить', "room__checkbox")
+                +checkbox('Pets', 'Можно с питомцами', "room__checkbox")
+                +checkbox('Guests',  "Можно пригласить гостей (до 10 человек)",
+            "room__checkbox")
+            h3(class="title") доступность 
+            .blocks
+                +description-checkbox("Широкий коридор", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+                +description-checkbox("Помощник для инвалидов", "Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
+            h3(class="title") удобства номера
+                img(src="../images/logo.svg")
+            //- p 
+            //-     label(for="amount") Price range:
+            //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
+            //- div(id="slider-range")
+    .right-side
+        span(class="slide" id="slide")
+            a(href="#")
+                i(class="fab fa-instagram")
+        .wrapper_content
+            .content
+                +card-room(800, 800, "--rating: 3.5",800, "room-card__decor")
+                +card-room(800, 800, "--rating: 3.5",800, "room-card__decor")
+                +card-room(800, 800, "--rating: 3.5",800, "room-card__decor") 
+                +card-room(800, 800, "--rating: 3.5",800, "room-card__decor")
+                +card-room(800, 800, "--rating: 3.5",800, "room-card__decor")
+                +card-room(800, 800, "--rating: 3.5",800, "room-card__decor")

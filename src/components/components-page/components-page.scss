@@ -97,8 +97,8 @@
     content: "\2714";
     border-radius: 0.2em;
     display: inline-block;
-    width: 26px;
-    height: 26px;
+    width: 27px;
+    height: 27px;
     vertical-align: bottom;
     color: transparent;
     transition: 0.2s;
@@ -106,6 +106,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     margin-right: 10px;
+    padding-left: 5px;
   }
 }
 
@@ -124,6 +125,12 @@
 .checkbox__box:checked + .checkbox__name:before {
   color: #bc9cff;
   border: 1.5px solid #bc9cff;
+}
+
+.checkbox__name__descr{
+  font-weight: bold;
+  padding-left: 10px;
+  font-family: "OpenSans";
 }
 
 .bullet-list {
@@ -249,7 +256,8 @@
 
 
 #slider-range {
-  width: 350px;
+  position: relative;
+  width: 270px;
   height: 6px;
   background-color: white;
 }
@@ -279,4 +287,5 @@
 #slider-range .ui-widget-header {
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
+
 

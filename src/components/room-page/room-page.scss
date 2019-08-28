@@ -1,5 +1,14 @@
+// .settings{
+//   flex-wrap: wrap;
+// }
+
+.left-side{
+  width: 19vw;
+  margin: 0 4vw 0 0;
+}
+
 #slider-range {
-  width: 266px;
+  width: 270px;
   height: 6px;
   background-color: white;
 }
@@ -39,6 +48,15 @@
   flex-direction: column;
 }
 
+.title {
+  letter-spacing: 1.5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
 // .checkbox__button{
 //   background-color: #ffffff;
 // }
@@ -61,73 +79,75 @@
 //   vertical-align: text-top;
 // }
 
-.checkbox__span {
+.checkbox__span__descr {
   display: block;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
+  margin-left: 2.4vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
 }
 
-// .checkbox__button{
-//   & input[type="checkbox"] {
-//   display: none;
-//   }
-//   & label {
-//     color: #000;
-//     cursor: default;
-//     font-weight: normal;
-//     line-height: 30px;
-//     padding: 10px 0;
-//     vertical-align: middle;
-//     &::before{
-//       content: " ";
-//       color: #000;
-//       display: inline-block;
-//       /* шрифт Awesome*/
-//       font: 20px/30px FontAwesome;
-//       margin-right: 15px;
-//       position: relative;
-//       text-align: center;
-//       text-indent: 0px;
-//       background: #fff;
-//       border: 1px solid #e3e3e3;
-//       border-image: initial;
-//       vertical-align: middle;
-//       width: 20px;
-//       height: 20px;
-    
-//       border: 1px solid rgba(31, 32, 65, 0.25);
-//       box-sizing: border-box;
-//       border-radius: 4px;
-//     }
-//   }
-// }
-
-
-// input:checked + label:before {
-//   /* глифон - галочка */
-//   content: "\2714	";
-//   color:  $violet-gradient;
-//   border: 1px solid $violet-gradient;
-// }
-
-// input:disabled + label:before {
-//   background: #eee;
-//   color: #aaa;
-// }
-
-
-.slider__range__price{
+.slider__range__price {
   float: right;
-  margin-top: -29px;
+  margin-top: -3vh;
+  color: black;
+  border: none;
+  margin-right: -3vw;
 }
 
-.settings__dropdown .dd-button{
+.settings__dropdown .dd-button {
   width: 266px;
-height: 44px;
+  height: 44px;
 }
 
+
+.room__checkbox{
+  margin-bottom: 20px;
+}
+
+.right-side{
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+div.room-card__decor{
+  flex-basis: 360px;
+}
+
+.show{
+  position: relative;
+  width: 340px;
+  z-index: 10;
+}
+
+.slide{
+  display: none;
+}
+
+.card-number__symbol{
+  font-size: 20px;
+}
+.close{
+  display: none;
+}
+@media only screen and (max-width: 1250px) {
+  #left-side{
+    display: none;
+  }
+
+  .slide{
+    display: block;
+  }
+
+  .close{
+    display: block;
+  }
+}
 

@@ -26,38 +26,38 @@ mixin radio-button(name)
           .check
 
 
-mixin card-room(number, price, feedback)
-    .card
-        div(id="carousel" class="owl-carousel")
-          div(class="item")
-            img(class="owl-lazy" data-src="https://cdn.britannica.com/s:300x300/88/137188-004-A05832DA.jpg" alt="")
-          div(class="item")
-            img(class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtXRoJ9zEe08pUDUCfAbCm3iPQmuzlWYaecBWe8-Ay_VDdq9ig" alt="")
+mixin card-room(number, price, style="--rating: level", feedback, className)
+    div(class= className, class="card")
+        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtXRoJ9zEe08pUDUCfAbCm3iPQmuzlWYaecBWe8-Ay_VDdq9ig" alt="")
+        //- div(id="carousel" class="owl-carousel")
+        //-   div(class="item")
+        //-     img(class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtXRoJ9zEe08pUDUCfAbCm3iPQmuzlWYaecBWe8-Ay_VDdq9ig" alt="")
+        //-   div(class="item")
+        //-     img(class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtXRoJ9zEe08pUDUCfAbCm3iPQmuzlWYaecBWe8-Ay_VDdq9ig" alt="")
         .card_container
             .row.line
-                p(class="card-number") N  
+                p(class="card-number") 
+                    span(class="card-number__symbol") &#8470; 
                     span=  number
                 p(class="card-price")= price  
                     span(class="card-span")  в сутки
             .row
-              +stars("--rating: 3")
+              div(class="Stars stars__decor" style= style)
               p(class="card-price")= feedback
-                    span(class="card-span")   отзывов
+                    span(class="card-span")   Oтзывов
         
 
-mixin checkbox(name, label)
-  div(class="checkbox__button")
+mixin checkbox(name, label, nameClass)
+  div(class="checkbox__button" class=nameClass)
     input(type="checkbox" class="checkbox__button checkbox__box" id= name name= name value= name)
     label(class="checkbox__button checkbox__name" for= name)= label
 
 mixin description-checkbox(name, label, descr)
   div(class="checkbox__button checkbox__button__descr")
     input(type="checkbox" class="checkbox__button__descr checkbox__box" id= name name= name value= name)
-    label(for= name class="checkbox__button__descr checkbox__name")= label
-    span(class="checkbox__button__descr checkbox__span")= descr
+    label(for= name class="checkbox__button__descr checkbox__name checkbox__name__descr")= label
+    span(class="checkbox__button__descr checkbox__span__descr")= descr
   
-
-
 mixin input-subscription(placeholder)
   form(class="form__subscribe")
     input(type="text" placeholder= placeholder) 
