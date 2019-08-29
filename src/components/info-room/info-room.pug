@@ -1,0 +1,29 @@
+include ../mixins.pug
+div(class="information" class="container")
+    div(class="information_top-part")
+    div(class="information_bottom-part")
+        div(class="bottom-part__left")
+            div(class="row")
+                .blocks
+                    h3(class="title") Сведения о номере
+                    +room-information("fa fa-laugh", "Комфорт", "Шумопоглощающие стены")
+                    +room-information("fa fa-laugh", "Удобство", "Окно в каждой из спален")
+                    +room-information("fa fa-laugh", "Уют", "Номер оснащён камином")
+                .blocks
+                    h3(class="title") Впечатления от номера
+            .blocks
+                h3(class="title") Отзывы посетителей номера
+                +feedback( "Мурад Сарафанов", '5 дней назад')
+            div(class="row")
+                .blocks
+                    h3(class="title") Правила
+                    +bullet-list(" Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
+                .blocks
+                    h3(class="title") Отмена
+                    p(style='white-space:pre;')
+                        | Бесплатная отмена в течение 48 ч. После
+                        | этого при отмене не позднее чем за 5 дн. до 
+                        | прибытия вы получите полный возврат за 
+                        | вычетом сбора за услуги.
+        div(class="bottom-part__right")
+

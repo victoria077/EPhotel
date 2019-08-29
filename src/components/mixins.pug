@@ -63,3 +63,32 @@ mixin input-subscription(placeholder)
     input(type="text" placeholder= placeholder) 
     button(type="submit")
         i(class="fa fa-arrow-right")
+
+
+mixin room-information(icon, quality, descr)
+    div(class="room__information")
+      div(class="room__information__wrapper")
+         i(class="room__information__icon" class= icon)
+         div(class="room__information__wrapper__description")
+            h4= quality
+            p= descr
+
+mixin feedback( personName, date)
+  div(class="room__feedback")
+    div(class="room__feedback__wrapper")
+      div(class="room__feedback__wrapper__person")
+        img(src="../images/twitter.svg")
+        div(class="room__feedback__wrapper__person--name")
+          h4= personName
+          p= date
+      div(class="room__feedback__wrapper__evaluation")
+        button(type: "button")
+          i.fa.fa-heart(class="icon")
+          span 0
+        p= text
+
+mixin bullet-list(li1, li2, li3)
+  ul(class="bullet-list")
+    li= li1 
+    li= li2
+    li= li3
