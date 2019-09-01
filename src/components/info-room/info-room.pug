@@ -1,23 +1,26 @@
 include ../mixins.pug
+
 div(class="information" class="container")
     div(class="information_top-part")
-    div(class="information_bottom-part")
+    div(class="information_bottom-part row")
         div(class="bottom-part__left")
             div(class="row")
                 .blocks
-                    h3(class="title") Сведения о номере
-                    +room-information("fa fa-laugh", "Комфорт", "Шумопоглощающие стены")
-                    +room-information("fa fa-laugh", "Удобство", "Окно в каждой из спален")
-                    +room-information("fa fa-laugh", "Уют", "Номер оснащён камином")
+                    h3(class="title information__title") Сведения о номере
+                    +room-information("mood", "Комфорт", "Шумопоглощающие стены", " information__border") 
+                    +room-information("location_city", "Удобство", "Окно в каждой из спален", " information__border")
+                    +room-information("whatshot", "Уют", "Номер оснащён камином")
                 .blocks
-                    h3(class="title") Впечатления от номера
-            .blocks
-                h3(class="title") Отзывы посетителей номера
-                +feedback( "Мурад Сарафанов", '5 дней назад')
+                    h3(class="title information__title") Впечатления от номера
+                    hr
+            .blocks 
+                h3(class="title information__title information__title--details") Отзывы посетителей номера
+                +feedback(require("./images/photo1.jpg"), "Мурад Сарафанов", '5 дней назад', "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+                +feedback(require("./images/photo2.jpg"), "Патрисия Стёклышкова", 'Неделю назад', "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
             div(class="row")
                 .blocks
                     h3(class="title") Правила
-                    +bullet-list(" Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
+                    +bullet-list("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
                 .blocks
                     h3(class="title") Отмена
                     p(style='white-space:pre;')
@@ -26,4 +29,4 @@ div(class="information" class="container")
                         | прибытия вы получите полный возврат за 
                         | вычетом сбора за услуги.
         div(class="bottom-part__right")
-
+            include ../../blocks/calculator/calculator.pug

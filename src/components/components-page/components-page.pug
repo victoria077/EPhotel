@@ -58,14 +58,14 @@ mixin feedback( personName, date)
   div(class="room__feedback")
     div(class="room__feedback__wrapper")
       div(class="room__feedback__wrapper__person")
-        img(src="../images/twitter.svg")
+        img()
         div(class="room__feedback__wrapper__person--name")
           h4= personName
           p= date
       div(class="room__feedback__wrapper__evaluation")
         button(type: "button")
-          i.fa.fa-heart(class="icon")
-          span 0
+          i(class="icon") favorite_border
+          span 12
         p= text
 
            

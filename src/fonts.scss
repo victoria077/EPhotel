@@ -20,6 +20,14 @@
     url("fonts/OpenSans-Bold.ttf") format("truetype"),
     url("fonts/OpenSans-Bold.svg#Samplino") format("svg");
 }
+
+@font-face {
+  font-family: "MaterialIcons";
+  src: url("fonts/MaterialIcons-Regular.eot?") format("eot"),
+    url("fonts/MaterialIcons-Regular.woff") format("woff"),
+    url("fonts/MaterialIcons-Regular.ttf") format("truetype"),
+    url("fonts/MaterialIcons-Regular.svg#Samplino") format("svg");
+}
 body {
   font-family: "OpenSans";
 }

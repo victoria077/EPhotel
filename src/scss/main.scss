@@ -10,15 +10,47 @@
 @import "../components/card-room/card-room.scss";
 @import "../components/room-page/room-page.scss";
 @import "../components/slider/slider.scss";
+@import "../components/info-room/info-room.scss";
 @import "../components/signin-form/signin-form.scss";
 @import "../components/components-page/components-page.scss";
 @import "../components/datepicker/datepicker.scss";
+@import "../blocks/calculator/calculator.scss";
 
 html,
 body {
   margin: 0;
   height: 100%;
   font-family: "OpenSans", sans-serif;
+}
+
+.material-icons {
+  font-family: 'MaterialIcons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 64px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #8BA4F9;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.material-icons__like{
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .container {
@@ -41,9 +73,9 @@ body {
   @include btn-small-violet;
 }
 
-h3 {
-  @include small-title;
-}
+// h3 {
+//   @include small-title;
+// }
 ol,
 ul {
   list-style: none;

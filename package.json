@@ -38,12 +38,16 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-material-design-icons": "^0.1.0"
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
     "jquery-ui-themes": "^1.12.0",
+    "material-design-icons": "^3.0.1",
+    "material-icons": "^0.3.1",
     "owl.carousel": "^2.3.4",
     "owl.carousel2": "^2.2.1",
     "start": "^5.1.0",
