@@ -140,19 +140,18 @@
   vertical-align: middle;
   color: rgba(grey, 0.5);
   border-radius: 5px;
-  padding: 2em;
-  margin: 2%;
+  margin-left: -30px;
   > li {
     list-style: none;
     position: relative;
-    padding: 0 0 0 2em;
-    margin: 0 0 0.5em 10px;
+    padding: 0 0 0 1.5em;
     transition: 0.12s;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "OpenSans";
-    letter-spacing: 2.2px;
+    letter-spacing: 1.7px;
     font-weight: normal;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
     &::before {
       position: absolute;
       content: "\2022";
@@ -161,9 +160,9 @@
       top: -5px;
       left: 0;
       text-align: center;
-      font-size: 3.2em;
+      font-size: 2.2em;
       opacity: 0.5;
-      line-height: 0.75;
+      line-height: 1;
       transition: 0.5s;
     }
   }

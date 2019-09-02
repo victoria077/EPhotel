@@ -1,10 +1,12 @@
 include ../mixins.pug
 
-div(class="information" class="container")
+div(class="information")
     div(class="information_top-part")
-    div(class="information_bottom-part row")
+        div(class="backgound__big")
+            img(src=require("./images/mainA.jpg"))
+    div(class="information_bottom-part row" class="container")
         div(class="bottom-part__left")
-            div(class="row")
+            div(class="row row-flex")
                 .blocks
                     h3(class="title information__title") Сведения о номере
                     +room-information("mood", "Комфорт", "Шумопоглощающие стены", " information__border") 
@@ -17,12 +19,12 @@ div(class="information" class="container")
                 h3(class="title information__title information__title--details") Отзывы посетителей номера
                 +feedback(require("./images/photo1.jpg"), "Мурад Сарафанов", '5 дней назад', "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
                 +feedback(require("./images/photo2.jpg"), "Патрисия Стёклышкова", 'Неделю назад', "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
-            div(class="row")
+            div(class="row row-flex")
                 .blocks
-                    h3(class="title") Правила
-                    +bullet-list("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
+                    h3(class="title  information__title information__title--rules") Правила
+                    +bullet-list("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" +"," + "   "  +"а выезд до 12:00 ")
                 .blocks
-                    h3(class="title") Отмена
+                    h3(class="title  information__title") Отмена
                     p(style='white-space:pre;')
                         | Бесплатная отмена в течение 48 ч. После
                         | этого при отмене не позднее чем за 5 дн. до 

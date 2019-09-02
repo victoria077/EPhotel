@@ -22,6 +22,7 @@ import 'owl.carousel';
 import "../src/components/card-room/card-room.js";
 import "../src/components/room-page/room-page.js";
 import "../node_modules/material-icons/css/material-icons.min.css"
+import "../src/blocks/airdatepicker/airdatepicker.js";
 
 window.onload = function(){
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);

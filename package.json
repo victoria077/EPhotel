@@ -42,6 +42,7 @@
     "webpack-material-design-icons": "^0.1.0"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "chart.js": "^2.8.0",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",

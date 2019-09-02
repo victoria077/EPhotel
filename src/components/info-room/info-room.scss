@@ -10,6 +10,15 @@
     margin-left: 15px;
 }
 
+.information_top-part{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backgound__big img{
+    width: 1920px;
+}
+
 .information__border{
     border-bottom: 2px solid grey;
     margin-bottom: 13px;
@@ -17,4 +26,19 @@
 
 .information__title--details{
     letter-spacing: 2.2px;
+}
+
+.information__title--rules{
+    margin-left: 40px;
+    margin-top: 37px;
+}
+
+.information_bottom-part{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-flex{
+    display: flex;
+    flex-wrap: wrap;
 }
