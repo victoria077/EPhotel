@@ -1,0 +1,116 @@
+svg{
+    width: 300px;
+    height: 250px;
+}
+.circle {
+    cx: 85px;
+    cy: 85px;
+    r: 75px;
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 7px;
+  }
+  .circle1 {
+    cx: 85px;
+    cy: 85px;
+    r: 75px;
+    fill: #fff;
+    stroke: #FFBA9C;
+    stroke-width: 5px;
+    stroke-dasharray: 230px;
+    stroke-dashoffset: 340px;
+  }
+  
+  .circle2 {
+    cx: 84px;
+    cy: 84px;
+    r: 75px;
+    fill: transparent;
+    stroke: #6FCF97;
+    stroke-width: 5px;
+    stroke-dasharray: 240px;
+    stroke-dashoffset: 485px;
+    transform: rotate(-90deg) translateX(-169px);
+  }
+  
+  .circle3 {
+    cx: 84px;
+    cy: 84px;
+    r: 75px;
+    fill: transparent;
+    stroke: #8BA4F9;
+    stroke-width: 10px;
+    stroke-dasharray: 450px;
+    stroke-dashoffset: 330px;
+    transform: rotate(-90deg) translateX(-171px);
+  }
+  
+  .figure-key-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .figure-key-list li {
+    margin: 0 0 8px;
+    padding: 0;
+  }
+  .shape-circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+  }
+  .shape-fuschia {
+    background:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+  }
+  .shape-lemon-lime {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  }
+  .shape-blue {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+  .shape-grey {
+    background:  linear-gradient(180deg, #919191 0%, #3D4975 100%);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  .chart-text {
+    /*font: 16px/1.4em "Montserrat", Arial, sans-serif;*/
+    fill: #8BA4F9;
+    -moz-transform: translateY(0.25em);
+    -ms-transform: translateY(0.25em);
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
+  }
+  .chart-number {
+    font-size: 2.3em;
+    line-height: 1;
+    text-anchor: middle;
+    font-family: "OpenSans";
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+  }
+  .chart-label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-anchor: middle;
+    -moz-transform: translateY(0.7em);
+    -ms-transform: translateY(0.7em);
+    -webkit-transform: translateY(0.7em);
+    transform: translateY(0.7em);
+  }
+  

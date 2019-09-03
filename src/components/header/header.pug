@@ -3,7 +3,8 @@ include ../mixins.pug
 
 nav(class="container menu")
   div(id="logo" class="menu__logo")
-  label(for="drop" class="menu__logo_toggle") Menu
+  label(for="drop" class="menu__logo_toggle") 
+      i(class="fa fa-bars" aria-hidden="true")
   input(type="checkbox" class="menu__logo_drop" id="drop")
   ul(class="menu__nav")
     +list('О нас')
@@ -12,4 +13,4 @@ nav(class="container menu")
     +list('Новости')
     +list('Соглашения')
     +button-signin-header('Войти', 'signin-page.html', "header__btn--signin" )
-    +button-signup('Зарегистрироватьcя')
+    +button-signup('Зарегистрироватьcя').header__btn--signup

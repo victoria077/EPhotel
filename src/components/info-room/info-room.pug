@@ -15,7 +15,7 @@ div(class="information")
                     +room-information("whatshot", "Уют", "Номер оснащён камином")
                 .blocks
                     h3(class="title information__title") Впечатления от номера
-                    hr
+                    include ../../blocks/donutChart/donutChart.pug
             .blocks 
                 h3(class="title information__title information__title--details") Отзывы посетителей номера
                 +feedback(require("./images/photo1.jpg"), "Мурад Сарафанов", '5 дней назад', "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
@@ -33,3 +33,5 @@ div(class="information")
                         | вычетом сбора за услуги.
         div(class="bottom-part__right")
             include ../../blocks/calculator/calculator.pug
+
+            
