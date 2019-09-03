@@ -7,8 +7,11 @@ include ../mixins.pug
       h1(class="title__main" style='white-space:pre;') 
         |Найдём номера под 
         |ваши пожелания
-
-      p(class="form-search__label") Гости
+      .row
+        label(class="form-search__label") Гости
+        label(class="form-search__label") Гости
+      include ../../blocks/airdatepicker/airdatepicker.pug
+      label(class="form-search__label") Гости
       include ../../blocks/dropdown/dropdown.pug
       //- .row.flexs
       //-   .block
