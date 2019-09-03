@@ -1,80 +1,4 @@
 
-/* Dropdown */
-.dropdown {
-  margin-top: 20px;
-}
-.dropdowns {
-  display: inline-block;
-  position: relative;
-}
-
-.dd-button {
-  display: inline-block;
-  border: 1px solid gray;
-  background-color: #fff;
-  border-radius: 4px;
-  width: 320px;
-  height: 44px;
-}
-
-.dd-button:after {
-  content: "";
-  padding: 4px;
-  //   //set tickness
-  box-shadow: 2px -2px 0 0 $black-text inset;
-  display: inline-block;
-  transform: rotate(-45deg);
-  margin-left: 165px;
-  color: $black-text;
-}
-
-.dd-button:hover {
-  background-color: #eeeeee;
-}
-
-.dd-input {
-  display: none;
-}
-
-.dd-menu {
-  width: 320px;
-  position: absolute;
-  top: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  margin: 0 0 0 0;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  list-style-type: none;
-}
-
-.titles{
-  color: #1F2041;
-  margin-top: 7px;
-}
-
-.dd-input + .dd-menu {
-  display: none;
-}
-
-.dd-input:checked + .dd-menu {
-  display: block;
-}
-
-.dd-menu li {
-  padding: 10px 20px;
-  cursor: pointer;
-  white-space: nowrap;
-  width: 310px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dd-menu li:hover {
-  background-color: #f6f6f6;
-}
-
 .flexs {
   display: flex;
   justify-content: space-between;
@@ -135,5 +59,31 @@ border-radius: 4px;
 }
 
 .form-search{
-  margin: 70px 0 0 140px;
+  width: 510px;
+  height: 511px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  margin-left: 180px;
+}
+
+.container-form{
+  padding-top: 40px;
+};
+
+.form-search__label{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.wrapper-search{
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
 }

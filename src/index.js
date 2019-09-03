@@ -2,10 +2,10 @@
 import "./scss/main.scss";
 import "./index.pug";
 import "../src/components/signin-form/signin-form.pug"
-// import '@fortawesome/fontawesome-free/js/fontawesome'
-// import '@fortawesome/fontawesome-free/js/solid'
-// import '@fortawesome/fontawesome-free/js/regular'
-// import '@fortawesome/fontawesome-free/js/brands'
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
 import "../src/components/form-search/form-search.js";
 import "../src/components/components-page/components-page.js";
 import "../src/components/datepicker/datepicker.js";
@@ -23,6 +23,8 @@ import "../src/components/card-room/card-room.js";
 import "../src/components/room-page/room-page.js";
 import "../node_modules/material-icons/css/material-icons.min.css"
 import "../src/blocks/airdatepicker/airdatepicker.js";
+import "../src/blocks/dropdown/dropdown.js";
+
 
 window.onload = function(){
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);
