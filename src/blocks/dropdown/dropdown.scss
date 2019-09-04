@@ -8,9 +8,20 @@
     display: inline-block;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
-    padding: 15px 30px 0 20px;
-    width: 370px;
+    width: 410px;
     height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    color: $color-standart;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
   }
   
   .dropdowns .dd-button:after {
@@ -20,7 +31,8 @@
     box-shadow: 2px -2px 0 0 $black-text inset;
     display: inline-block;
     transform: rotate(-45deg);
-    margin-left: 10px;
+    margin-left: 55%;
+    margin-top: 20px;
     color: $black-text;
   }
   
@@ -43,6 +55,7 @@
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
     background-color: #ffffff;
     list-style-type: none;
+    margin-left: 15px;
   }
   
   .dropdowns .dd-input + .dd-menu {
@@ -76,7 +89,7 @@
   }
   
   .dropdowns .title{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;

@@ -2239,7 +2239,7 @@ let dateRange = $('.dateRange').datepicker({
     range: true,
     multipleDates: 2,
     formatDate: "dd.mm.yyyy",
-    inline: true,
+    inline: false,
     onSelect: function(startDateText, endDateText){
         startDateText = dateRange.selectedDates[0];
         endDateText = dateRange.selectedDates[1];
