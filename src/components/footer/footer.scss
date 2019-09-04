@@ -3,14 +3,16 @@
   background-color: $white-color;
   &__title {
     font-size: 16px;
-    font-family: "OpenSans-Bold";
+    font-family: "Montserrat";
     text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-block-start: 0.7em;
     &--describtion {
       margin-top: 25px;
       margin-bottom: 29px;
     }
   }
+
+
   /*bg color*/
   &__nav {
     display: flex;
@@ -23,21 +25,18 @@
       text-decoration: none;
       & p {
         color: $black-text;
-        font-family: "OpenSans";
+        font-family: "Montserrat";
         font-weight: bold;
-        letter-spacing: 1.3px;
-        font-size: 18px;
+        font-size: 18.6px;
         line-height: 33px;
       }
       & ul {
         padding: 0;
         li {
-          margin: 27px 0;
+          margin: 28px 0;
           & a {
-            font-family: "OpenSans";
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            font-size: 18px;
+            font-family: "Montserrat";
+            font-size: 18.5px;
             color: $light-black-color;
           }
         }
@@ -50,21 +49,26 @@
 }
 
 .footer__details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 20px;
+  justify-content: space-between;
   &__copyright {
     color: $black-text;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Montserrat";
     font-weight: bold;
-    letter-spacing: 0.3px;
-    font-size: 19px;
+    font-size: 18.6px;
+    line-height: 33px;
     margin-left: 20px;
+    margin-block-start: 0.8em;
   }
 }
 
+.footer__details ul li{
+  height: 30px;
+  width: 40px;
+  margin-top: -255px;
+  margin-right: 22px;
+}
 .footer__details .svg-inline--fa {
   font-size: 30px;
   line-height: 23px;
@@ -79,7 +83,6 @@
 
 .div {
   display:flex;
-  justify-content:center;
   font-size:50px;
   color: red;
 }
@@ -90,7 +93,14 @@
 
 /** Viewport <= 800px **/
 
-@media (max-width: 800px) {
+.footer-row{
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
   .footer {
     padding: 0 30px;
     padding-bottom: 30px;

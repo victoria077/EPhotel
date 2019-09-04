@@ -24,7 +24,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .material-icons {
@@ -58,7 +58,8 @@ body {
 }
 
 .container {
-  @include container;
+  width: 82.7vw;
+  margin: 0 auto;
 }
 
 .logo {
@@ -77,9 +78,6 @@ body {
   @include btn-small-violet;
 }
 
-// h3 {
-//   @include small-title;
-// }
 ol,
 ul {
   list-style: none;

@@ -8,6 +8,10 @@
     height: 40px;
 }
 
+.datepicker--pointer {
+    display: none!important;
+}
+  
 #ui-datepicker-div{
     display: none!important;
 }
@@ -277,7 +281,7 @@
       bottom: 10px; }
     .-left-center- .datepicker--pointer, .-right-center- .datepicker--pointer {
       top: calc(50% - 10px / 2); }
-  
+
   .datepicker--body {
     display: none; }
     .datepicker--body.active {

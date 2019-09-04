@@ -2239,12 +2239,12 @@ let dateRange = $('.dateRange').datepicker({
     range: true,
     multipleDates: 2,
     formatDate: "dd.mm.yyyy",
-    inline: false,
+    inline: true,
     onSelect: function(startDateText, endDateText){
         startDateText = dateRange.selectedDates[0];
         endDateText = dateRange.selectedDates[1];
-        $("#startDate").val(startDateText.getDate() + "/" + startDateText.getMonth() + "/" + startDateText.getFullYear());
-        $("#endDate").val(endDateText.getDate() + "/" + endDateText.getMonth() + "/" + endDateText.getFullYear());
+        $("#startDate").val(startDateText.getDate() + "." + startDateText.getMonth() + "." + startDateText.getFullYear());
+        $("#endDate").val(endDateText.getDate() + "." + endDateText.getMonth() + "." + endDateText.getFullYear());
 
     }
 }).data('datepicker');
