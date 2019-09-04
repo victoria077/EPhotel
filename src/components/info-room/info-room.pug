@@ -13,7 +13,7 @@ div(class="information")
                     +room-information("mood", "Комфорт", "Шумопоглощающие стены", " information__border") 
                     +room-information("location_city", "Удобство", "Окно в каждой из спален", " information__border")
                     +room-information("whatshot", "Уют", "Номер оснащён камином")
-                .blocks
+                .blocks.information__impression
                     h3(class="title information__title") Впечатления от номера
                     include ../../blocks/donutChart/donutChart.pug
             .blocks 
@@ -34,4 +34,3 @@ div(class="information")
         div(class="bottom-part__right")
             include ../../blocks/calculator/calculator.pug
 
-            

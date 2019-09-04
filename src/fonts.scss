@@ -9,12 +9,12 @@
   }
 
 
-@font-face {
-  font-family: "OpenSans";
-  src: url("fonts/subset-OpenSans.woff") format("woff"),
-    url("fonts/subset-OpenSans.ttf") format("truetype"),
-    url("fonts/subset-OpenSans.svg#Samplino") format("svg");
-}
+// @font-face {
+//   font-family: "OpenSans";
+//   src: url("fonts/subset-OpenSans.woff") format("woff"),
+//     url("fonts/subset-OpenSans.ttf") format("truetype"),
+//     url("fonts/subset-OpenSans.svg#Samplino") format("svg");
+// }
 
 @font-face {
   font-family: "8141";
@@ -39,6 +39,4 @@
     url("fonts/MaterialIcons-Regular.ttf") format("truetype"),
     url("fonts/MaterialIcons-Regular.svg#Samplino") format("svg");
 }
-body {
-  font-family: "OpenSans";
-}
+

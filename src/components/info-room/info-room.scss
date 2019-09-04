@@ -3,9 +3,9 @@
 }
 
 .information__title{
+    font-family: "OpenSans-Bold";
     text-transform: none;
-    font-size: 24px;
-    letter-spacing: 1.7px;
+    font-size: 25.5px;
     font-weight: bold;
     margin-left: 15px;
 }
@@ -15,17 +15,17 @@
     flex-wrap: wrap;
 }
 
+.information_bottom-part{
+    padding-top: 70px;
+}
+
 .backgound__big img{
     width: 1920px;
 }
 
 .information__border{
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid  rgba(31, 32, 65, 0.1);
     margin-bottom: 13px;
-}
-
-.information__title--details{
-    letter-spacing: 2.2px;
 }
 
 .information__title--rules{
@@ -36,6 +36,10 @@
 .information_bottom-part{
     display: flex;
     flex-wrap: wrap;
+}
+
+.information__impression{
+    margin-left: 4.9vw;
 }
 
 .row-flex{
