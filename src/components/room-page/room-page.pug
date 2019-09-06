@@ -8,23 +8,22 @@ include ../mixins.pug
             h3(class="title") даты пребывания в отеле
             //- include ../datepicker/datepicker.pug
             h3(class="title") гости
-
-            h3(class="title") диапазон цены
+            include ../../blocks/littleDropdown/littleDropdown.pug
+            h3(class="title room__title--price") диапазон цены
             input(type="text" class="slider__range__price" id="amount")
             div(id="slider-range")  
-            span Стоимость за сутки пребывания в номере 
-            h3(class="title") Checkbox Buttons             
+            div.slider__range__title Стоимость за сутки пребывания в номере 
+            h3(class="title room__title--checkboxes") Checkbox Buttons             
             .blocks
                 +checkbox('Smoking', 'Можно курить', "room__checkbox")
                 +checkbox('Pets', 'Можно с питомцами', "room__checkbox")
                 +checkbox('Guests',  "Можно пригласить гостей (до 10 человек)",
             "room__checkbox")
-            h3(class="title") доступность 
+            h3(class="title room__title--availability") доступность 
             .blocks
                 +description-checkbox("Широкий коридор", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
                 +description-checkbox("Помощник для инвалидов", "Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
-            h3(class="title") удобства номера
-                img(src="../images/logo.svg")
+            h3(class="title  room__title--comfort") удобства номера
             //- p 
             //-     label(for="amount") Price range:
             //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")

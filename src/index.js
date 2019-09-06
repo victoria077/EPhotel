@@ -24,6 +24,7 @@ import "../src/components/room-page/room-page.js";
 import "../node_modules/material-icons/css/material-icons.min.css"
 import "../src/blocks/airdatepicker/airdatepicker.js";
 import "../src/blocks/dropdown/dropdown.js";
+import "../src/blocks/littleDropdown/littleDropdown.js";
 import "../src/blocks/panagination/panagination.js";
 
 

@@ -1,0 +1,132 @@
+
+.little-dropdowns {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .little-dropdowns .dd-button {
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 340px;
+    height: 42px;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-standart;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+  }
+  
+  .little-dropdowns .dd-button:after {
+    content: "";
+    padding: 5px;
+    //   //set tickness
+    box-shadow: 2px -2px 0 0 $black-text inset;
+    display: inline-block;
+    transform: rotate(-45deg);
+    margin-left: 45%;
+    margin-top: 20px;
+    color: $black-text;
+  }
+  
+  .little-dropdowns .dd-button:hover {
+    background-color: #eeeeee;
+  }
+  
+  
+  .little-dropdowns .dd-input {
+    display: none;
+  }
+  
+  .little-dropdowns .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+    z-index: 10;
+  }
+  
+  .little-dropdowns .dd-input + .dd-menu {
+    display: none;
+  } 
+  
+  .little-dropdowns .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  
+  .little-dropdowns  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .little-dropdowns .dd-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .little-dropdowns .button{
+    width: 30px;
+  height: 30px;
+  
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  }
+  
+  .little-dropdowns .title{
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 15px;
+  /* identical to box height */
+  
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #1F2041;
+  }
+  
+  .dropdowns   .flex{
+    display: flex;
+  }
+  
+  .little-dropdowns  .text{
+    margin: 7px 30px 0 30px;
+  }
+
+  .clean{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    border: none;
+    background: transparent;
+     outline: none;
+  }
+
+  .apply{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    border: none;
+    background: transparent;
+    outline: none;
+  }

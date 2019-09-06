@@ -103,17 +103,18 @@
     border: $border-state;
     box-sizing: border-box;
     border-radius: 4px;
-    margin-right: 10px;
+    margin-right: 12px;
     padding-left: 5px;
   }
 }
 
-.checkbox__box {
-  display: none;
+.checkbox__name{
+  font-size: 18px;
+  letter-spacing: .5px;
 }
 
-.checkbox__name {
-  padding-left: 10px;
+.checkbox__box {
+  display: none;
 }
 .checkbox__box + .checkbox__name:active:before {
   transform: scale(0);
@@ -126,7 +127,8 @@
 
 .checkbox__name__descr {
   font-weight: bold;
-  padding-left: 10px;
+  letter-spacing: .9px;
+  margin-top: -3px;
 }
 
 .bullet-list {
@@ -134,25 +136,26 @@
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-  color: rgba(grey, 0.5);
+  color: rgba(31, 32, 65, 0.75);
   border-radius: 5px;
   margin-left: -30px;
+  margin-top: 10px;
   > li {
     list-style: none;
     position: relative;
-    padding: 0 0 0 1.5em;
+    padding: 0 0 0 1.7em;
     transition: 0.12s;
-    font-size: 18px;
+    font-size: 18.7px;
     font-weight: normal;
-    margin-bottom: 1em;
+    margin-bottom: 1.3em;
     font-weight: bold;
     &::before {
       position: absolute;
       content: "\2022";
       font-family: Arial;
       color: grey;
-      top: -5px;
-      left: 0;
+      top: -7px;
+      left: 5px;
       text-align: center;
       font-size: 2.2em;
       opacity: 0.5;
@@ -208,37 +211,38 @@
     display: flex;
     flex-direction: row;
     margin-left: -15px;
+    margin-top: -7px;
     & img {
       width: 120px;
       height: 120px;
     }
     & h4 {
       margin-block-start: 1em;
-      margin-block-end: 0.35em;
+      margin-block-end: 0.40em;
       font-size: 19.2px;
       font-weight: bold;
-      margin-left: -15px;
+      margin-left: -14px;
     }
     & p {
       margin-block-start: 0em;
       margin-block-end: 0em;
       font-size: 18.5px;
       font-weight: 300;
-      margin-left: -15px;
+      margin-left: -14px;
     }
   }
   &__evaluation {
     display: flex;
-    margin-top: -25px;
+    margin-top: -24px;
     & p {
-      margin-left: 25px;
+      margin-left: 27px;
       margin-top: -2px;
       font-size: 18.6px;
       font-weight: 500;
-      line-height: 30px;
+      line-height: 32px;
     }
     & button {
-      width: 88px;
+      width: 70px;
       height: 27px;
       background: #ffffff;
       border: 1px solid rgba(31, 32, 65, 0.25);
@@ -270,7 +274,7 @@
 
 #slider-range {
   position: relative;
-  width: 270px;
+  width: 350px;
   height: 6px;
   background-color: white;
 }

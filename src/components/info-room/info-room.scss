@@ -19,8 +19,17 @@
     padding-top: 70px;
 }
 
-.backgound__big img{
-    width: 1920px;
+.backgound__first img{
+    width: 133%;
+    height: auto;
+    flex: 2;
+}
+
+.backgound__second img{
+    width: 66%;
+    margin-left: 35%;
+    height: auto;
+    flex: 1;
 }
 
 .information__border{
@@ -28,9 +37,27 @@
     margin-bottom: 13px;
 }
 
+.information__rules{
+    width: 360px;
+}
+
+.information__cancel{
+    margin-left: 136px;
+    margin-top: 5px;
+}
+
+.information__cancel p {
+    font-size: 18.6px;
+    line-height: 32px;
+}
 .information__title--rules{
     margin-left: 40px;
-    margin-top: 37px;
+    margin-top: 30px;
+}
+
+.information__title--cancel{
+    margin-left: 0;
+    margin-bottom: 11px;
 }
 
 .information_bottom-part{
@@ -42,6 +69,9 @@
     margin-left: 4.9vw;
 }
 
+.information__impression-second{
+    margin-top: 5px;
+}
 .row-flex{
     display: flex;
     flex-wrap: wrap;
