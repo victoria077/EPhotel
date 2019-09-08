@@ -6,7 +6,7 @@ include ../mixins.pug
             a(href="#" class="close")
                 i(class="fab fa-instagram")
             h3(class="title") даты пребывания в отеле
-            //- include ../datepicker/datepicker.pug
+            include ../../blocks/input-dates/input-dates.pug
             h3(class="title") гости
             include ../../blocks/littleDropdown/littleDropdown.pug
             h3(class="title room__title--price") диапазон цены
@@ -35,17 +35,17 @@ include ../mixins.pug
                 i(class="fab fa-instagram")
         .wrapper_content
             .content
-                +card-room("carousel", require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), 800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel1", require("./images/room2.jpg"), require("./images/room2.jpg"), require("./images/room2.jpg"), require("./images/room2.jpg"),800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel2", require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), 800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel3", require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"),  800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel4", require("./images/room5.jpg"), require("./images/room5.jpg"), require("./images/room5.jpg"), require("./images/room5.jpg"), 800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel5", require("./images/room6.jpg"), require("./images/room6.jpg"), require("./images/room6.jpg"), require("./images/room6.jpg"),800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel6", require("./images/room7.jpg"), require("./images/room7.jpg"), require("./images/room7.jpg"), require("./images/room7.jpg"), 800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel7", require("./images/room8.jpg"), require("./images/room8.jpg"), require("./images/room8.jpg"), require("./images/room8.jpg"),  800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel8", require("./images/room9.jpg"), require("./images/room9.jpg"), require("./images/room9.jpg"), require("./images/room9.jpg"), 800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel9", require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"),800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel10", require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), 800, 800, "--rating: 3.5",800, "room-card__decor")
-                +card-room("carousel11", require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"),  800, 800, "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel", require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), 888, "9 900P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel1", require("./images/room2.jpg"), require("./images/room2.jpg"), require("./images/room2.jpg"), require("./images/room2.jpg"), 840,"9 900P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel2", require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), 980, "8 500P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel3", require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"), 856, "7 300P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel4", require("./images/room5.jpg"), require("./images/room5.jpg"), require("./images/room5.jpg"), require("./images/room5.jpg"), 740, "6 000P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel5", require("./images/room6.jpg"), require("./images/room6.jpg"), require("./images/room6.jpg"), require("./images/room6.jpg"), 982, "5 800P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel6", require("./images/room7.jpg"), require("./images/room7.jpg"), require("./images/room7.jpg"), require("./images/room7.jpg"), 678, "5 500P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel7", require("./images/room8.jpg"), require("./images/room8.jpg"), require("./images/room8.jpg"), require("./images/room8.jpg"), 450, "5 300P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel8", require("./images/room9.jpg"), require("./images/room9.jpg"), require("./images/room9.jpg"), require("./images/room9.jpg"), 350, "5 000P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel9", require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), require("./images/room1.jpg"), 666, "5 000P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel10", require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), require("./images/room3.jpg"), 444, "5 000P", "--rating: 3.5",800, "room-card__decor")
+                +card-room("carousel11", require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"), require("./images/room4.jpg"),  352, "5 000P", "--rating: 3.5",800, "room-card__decor")
 
         include ../../blocks/panagination/panagination.pug

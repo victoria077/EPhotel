@@ -74,10 +74,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.pug",
     }),
+    new HtmlWebpackPlugin({
+      filename: 'signup-page.html',
+      template: './src/components/signup-page/signup-page.pug'
+    }),
     // We need to set our desired filename for other html files though.
     new HtmlWebpackPlugin({
       filename: 'signin-page.html',
       template: './src/components/signin-page/signin-page.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'filter-page.html',
+      template: './src/components/filter-page/filter-page.pug'
     }),
     new webpack.ProvidePlugin({
       $:"jquery",

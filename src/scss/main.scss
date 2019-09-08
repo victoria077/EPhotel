@@ -4,7 +4,7 @@
 @import "../components/header/header.scss";
 @import "../components/form-register/form-register.scss";
 @import "../components/footer/footer.scss";
-@import "../components/landing_page/landing_page.scss";
+@import "../components/signup-page/signup-page.scss";
 @import "../components/form-search/form-search.scss";
 @import "../components/search-page/search-page.scss";
 @import "../components/card-room/card-room.scss";
@@ -21,6 +21,7 @@
 @import "../blocks/panagination/panagination.scss";
 @import "../blocks/donutChart/donutChart.scss";
 @import "../blocks/slick/slick.scss";
+@import "../blocks/input-dates/input-dates.scss";
 html,
 body {
   margin: 0;

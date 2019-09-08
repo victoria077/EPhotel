@@ -14,8 +14,8 @@ mixin button-signin(name, link, className)
 mixin button-signin-header(name, link, className)
   a(class="btn  btn-link-menu", href= link, class= className)= name
 
-mixin button-signup(name)
-  button(type="button" class="btn btn-signup")= name
+mixin button-signup(name, link)
+  a( class="btn btn-signup", href= link)= name
 
 mixin radio-button(name)
   .radio-button
