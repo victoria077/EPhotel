@@ -1,75 +1,79 @@
 
-mixin text-field(placeholder)
-    input(class="input_text" placeholder= placeholder)
+//- mixin text-field(placeholder)
+//-     input(class="input_text" placeholder= placeholder)
 
-+text-field("Email")
-
-
-mixin input-subscription(placeholder)
-  form(class="form__subscribe")
-    input(type="text" placeholder= placeholder) 
-    button(type="submit")
-        i(class="fa fa-arrow-right")
-+input-subscription("Name")
-
-mixin checkbox(name, label)
-  div(class="checkbox__button")
-    input(type="checkbox" class="checkbox__button checkbox__box" id= name name= name value= name)
-    label(class="checkbox__button checkbox__name" for= name)= label
-
-+checkbox("Cote", "cote")
-
-mixin radio-button(name)
-    div(class="radio-button")
-      ul
-        li 
-          input(type="radio" id = name name="selector")
-          label(for= name)= name
-          .check
-
-+radio-button("Men")
-
-mixin stars(style="--rating: level")
-   div(class="Stars" style= style)
-
-+stars("--rating:4")
+//- +text-field("Email")
 
 
-mixin bullet-list(li1, li2, li3)
-  ul(class="bullet-list")
-    li= li1 
-    li= li2
-    li= li3
-+bullet-list(" Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
+//- mixin input-subscription(placeholder)
+//-   form(class="form__subscribe")
+//-     input(type="text" placeholder= placeholder) 
+//-     button(type="submit")
+//-         i(class="fa fa-arrow-right")
+//- +input-subscription("Name")
+
+//- mixin checkbox(name, label)
+//-   div(class="checkbox__button")
+//-     input(type="checkbox" class="checkbox__button checkbox__box" id= name name= name value= name)
+//-     label(class="checkbox__button checkbox__name" for= name)= label
+
+//- +checkbox("Cote", "cote")
+
+//- mixin radio-button(name)
+//-     div(class="radio-button")
+//-       ul
+//-         li 
+//-           input(type="radio" id = name name="selector")
+//-           label(for= name)= name
+//-           .check
+
+//- +radio-button("Men")
+
+//- mixin stars(style="--rating: level")
+//-    div(class="Stars" style= style)
+
+//- +stars("--rating:4")
 
 
-mixin room-information(icon, quality, descr)
-    div(class="room__information")
-      div(class="room__information__wrapper")
-         i(class="room__information__icon" class= icon)
-         div(class="room__information__wrapper__description")
-            h4= quality
-            p= descr
+//- mixin bullet-list(li1, li2, li3)
+//-   ul(class="bullet-list")
+//-     li= li1 
+//-     li= li2
+//-     li= li3
+//- +bullet-list(" Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + "а выезд до 12:00 ")
+
+
+//- mixin room-information(icon, quality, descr)
+//-     div(class="room__information")
+//-       div(class="room__information__wrapper")
+//-          i(class="room__information__icon" class= icon)
+//-          div(class="room__information__wrapper__description")
+//-             h4= quality
+//-             p= descr
           
           
-+room-information("fa fa-laugh", "Комфорт", "Шумопоглощающие стены")
+//- +room-information("fa fa-laugh", "Комфорт", "Шумопоглощающие стены")
 
-mixin feedback( personName, date)
-  div(class="room__feedback")
-    div(class="room__feedback__wrapper")
-      div(class="room__feedback__wrapper__person")
-        img()
-        div(class="room__feedback__wrapper__person--name")
-          h4= personName
-          p= date
-      div(class="room__feedback__wrapper__evaluation")
-        button(type: "button")
-          i(class="icon") favorite_border
-          span 12
-        p= text
+//- mixin feedback( personName, date)
+//-   div(class="room__feedback")
+//-     div(class="room__feedback__wrapper")
+//-       div(class="room__feedback__wrapper__person")
+//-         img()
+//-         div(class="room__feedback__wrapper__person--name")
+//-           h4= personName
+//-           p= date
+//-       div(class="room__feedback__wrapper__evaluation")
+//-         button(type: "button")
+//-           i(class="icon") favorite_border
+//-           span 12
+//-         p= text
 
            
-+feedback( "Мурад Сарафанов", '5 дней назад')
+//- +feedback( "Мурад Сарафанов", '5 дней назад')
 
-input(class="slider-input" type="text" id="amount" readonly style="border:0; color:rgba(31, 32, 65, 0.5); margin-bottom: 20px; font-weight:bold; margin-left: 120px; font-size: 16px; line-height: 15px; text-align: right; text-transform: uppercase;")
-div(id="slider-range") 
+//- input(class="slider-input" type="text" id="amount" readonly style="border:0; color:rgba(31, 32, 65, 0.5); margin-bottom: 20px; font-weight:bold; margin-left: 120px; font-size: 16px; line-height: 15px; text-align: right; text-transform: uppercase;")
+//- div(id="slider-range") 
+
+
+include ../header/header.pug
+include ../footer/footer.pug

@@ -134,17 +134,16 @@
   margin-bottom: 13px;
 }
 
-.right-side{
-}
 
 .content{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 div.room-card__decor{
   flex-basis: 360px;
+  margin-right: 17px;
+  margin-top: 4px;
 }
 
 .show{

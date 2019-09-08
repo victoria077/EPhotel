@@ -22,7 +22,7 @@
     animation-timeout: 200ms;
   
     &_i {
-      font-size: 14px;
+      font-size: 17px;
       text-decoration: none;
       
       transition: background 250ms;
@@ -54,13 +54,15 @@
     }
   
     &_i:hover {
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       color: #fff;
     }
   
     &:not([actpage="1"]) &_i:nth-child(1) {
       display: inline-block;
     }
+  }
+  .cdp_i_back{
+    padding-top: 10px;
   }
   @for $i from 1 through 80 {
     .cdp[actpage="#{$i}"] {
@@ -121,3 +123,23 @@
     }
   }
   
+  .content_detail__pagination .material-icons{
+    font-family: 'MaterialIcons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #fff;
+    padding: 7px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 50%;
+    &:hover{
+      background: none;
+    }
+  }

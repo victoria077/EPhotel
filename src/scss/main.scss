@@ -20,7 +20,7 @@
 @import "../blocks/littleDropdown/littleDropdown.scss";
 @import "../blocks/panagination/panagination.scss";
 @import "../blocks/donutChart/donutChart.scss";
-
+@import "../blocks/slick/slick.scss";
 html,
 body {
   margin: 0;
@@ -61,6 +61,12 @@ body {
 .container {
   width: 82.7vw;
   margin: 0 auto;
+}
+
+.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .logo {

@@ -26,22 +26,46 @@ mixin radio-button(name)
           .check
 
 
-mixin card-room(imgName, number, price, style="--rating: level", feedback, className)
+mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, number, price, style="--rating: level", feedback, className)
     div(class= className, class="card")
-        img(src= imgName)
-        //- div(id="carousel" class="owl-carousel")
-        //-   div(class="item")
-        //-     img(class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtXRoJ9zEe08pUDUCfAbCm3iPQmuzlWYaecBWe8-Ay_VDdq9ig" alt="")
-        //-   div(class="item")
-        //-     img(class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtXRoJ9zEe08pUDUCfAbCm3iPQmuzlWYaecBWe8-Ay_VDdq9ig" alt="")
+        .carousel-container
+          div(class= slickName)
+              input(type="radio" id= slickName + "-1" name="carousel[]" checked)
+              input(type="radio" id= slickName + "-2" name="carousel[]")
+              input(type="radio" id= slickName + "-3" name="carousel[]")
+              input(type="radio" id= slickName + "-4" name="carousel[]")
+              ul(class= slickName + "__items")
+                li(class= slickName + "__item")
+                  img(src= imgNameOne)
+                li(class=  slickName + "__item")
+                  img(src= imgNameTwo)
+                li(class=  slickName + "__item")
+                  img(src= imgNameThree)
+                li(class=  slickName + "__item")
+                  img(src= imgNameFour)
+              .carousel__prev
+                label(for= slickName + "-1")
+                label(for= slickName + "-2")
+                label(for= slickName + "-3")
+                label(for= slickName + "-4")
+              .carousel__next
+                label(for= slickName + "-1")
+                label(for= slickName + "-2")
+                label(for= slickName + "-3")
+                label(for= slickName + "-4")
+              .carousel__nav
+                label(for= slickName + "-1")
+                label(for= slickName + "-2")
+                label(for= slickName + "-3")
+                label(for= slickName + "-4")
         .card_container
-            .row.line
+            .flex-row.card-border
                 p(class="card-number") 
                     span(class="card-number__symbol") &#8470; 
                     span=  number
                 p(class="card-price")= price  
                     span(class="card-span")  в сутки
-            .row
+            .flex-row
               div(class="Stars stars__decor" style= style)
               p(class="card-price")= feedback
                     span(class="card-span")   Oтзывов

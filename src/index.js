@@ -26,6 +26,7 @@ import "../src/blocks/airdatepicker/airdatepicker.js";
 import "../src/blocks/dropdown/dropdown.js";
 import "../src/blocks/littleDropdown/littleDropdown.js";
 import "../src/blocks/panagination/panagination.js";
+import "../src/blocks/slick/slick.js";
 
 
 
