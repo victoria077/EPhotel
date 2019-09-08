@@ -59,7 +59,3 @@ $("#clean").on("click", function(){
   $("#child_text").html(0); 
   $("#adult_text").html(0); 
 });
-
-$("#baby_plus").on("click", function(){
-    console.log("sdaf");
-})

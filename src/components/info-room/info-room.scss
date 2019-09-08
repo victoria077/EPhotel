@@ -19,17 +19,14 @@
     padding-top: 70px;
 }
 
-.backgound__first img{
-    width: 133%;
-    height: auto;
-    flex: 2;
-}
-
-.backgound__second img{
-    width: 66%;
-    margin-left: 35%;
-    height: auto;
-    flex: 1;
+.backgound__first{
+    min-height: 720px;
+    background-image: url(../images/mainA.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 220px;
+    width: 100%;
 }
 
 .information__border{
@@ -46,16 +43,22 @@
     margin-top: 5px;
 }
 
-.information__cancel p {
+.information__cancel {
     font-size: 18.6px;
     line-height: 32px;
 }
 .information__title--rules{
     margin-left: 40px;
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.information__title--details{
+    margin-bottom: 10px;
 }
 
 .information__title--cancel{
+    margin-top: 20px;
     margin-left: 0;
     margin-bottom: 11px;
 }

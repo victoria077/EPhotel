@@ -9,10 +9,7 @@
 	opacity: 1 !important;
 	z-index: 3;
   }
-  
- .carousel-container{
-	 width: 350px;
- }
+
   @mixin carousel($items, $animation: 'default') {
 	.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5, .carousel6, .carousel7, .carousel8, .carousel9, .carousel10, .carousel11{
 	  width: 100%;
@@ -185,6 +182,7 @@
 		z-index: 1;
 		transition: opacity 2s;
 		-webkit-transition: opacity 2s;
+		padding-right: 20px;
   
 		img {
 		  width: 100%;
