@@ -3,29 +3,33 @@ include ../mixins.pug
 .wrap
   .container__form
       h1(
-        class="title title__main"
+        class="title__main"
       ) Регистрация аккаунта
-
+      div(class="signup__input--name")
       +input-text("Имя")
+      div(class="signup__input--surname")
       +input-text("Фамилия")
 
-      label(class="label") Дата рождения
-      +input-text("ДД.ММ.ГГГГ")
-
       .row
-         +radio-button("Man")
-         +radio-button("Women")
+         +radio-button("Мужчина")
+         +radio-button("Женщина")
+
+      div(class="signup__input--birthday")
+      label(class="title signup__title") Дата рождения
+      +input-text("ДД.ММ.ГГГГ")
       
-      label(class="label") Данные для входа в сервис
+      div(class="signup__input--data")
+      label(class="title signup__title") Данные для входа в сервис
       +input-text("Email")
-      +input-text("Пароль")
+      div(class="signup__input--data--password")
+        +input-text("Пароль")
 
 
-      input#cb1.tgl.tgl-light(type = "checkbox") 
+      input#cb1.tgl.tgl-light(type ="checkbox") 
       label.tgl-btn(for = "cb1")
 
-      button(type="button" class="btn btn-width-violet") Перейти к оплате
+      button(type="button" class="btn btn-width-violet signup__button--payment") Перейти к оплате
       
-      .flex
-        p(class="formtext") Уже есть аккаунт на Toxin
+      .flex-row
+        p(class="sugnup__text") Уже есть аккаунт на Toxin
         +button-signin('Войти', 'signin-page.html')
