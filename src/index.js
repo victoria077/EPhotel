@@ -29,8 +29,6 @@ import "../src/blocks/panagination/panagination.js";
 import "../src/blocks/slick/slick.js";
 
 
-
-
     function closeSideBar(){
       $("sidebar").on("click", function() {
         $("sidebar").css("width", "250")
