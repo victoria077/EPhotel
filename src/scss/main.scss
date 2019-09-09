@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  width: 82.7vw;
+  width: 82vw;
   margin: 0 auto;
 }
 
@@ -79,7 +79,7 @@ body {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 30.5px;
+  font-size: 34px;
 }
 
 .btn-signup {
@@ -234,4 +234,53 @@ a {
 
 .input-date {
   @include input-date;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .title__main {
+    font-size: 28px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .container{
+      width: 95%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title__main {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-width-violet {
+    width: 310px;
+    height: 40px;
+    background-color: #bc9cff;
+    border-radius: 45px;
+    margin-left: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height */
+    font-family: "OpenSans-Bold";
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-image: url(../images/white-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 24em;
+    background-position-y: 1.2em;
+    top: 20px;
+    &:focus{
+      outline: none;
+    }
+  }
+  
 }

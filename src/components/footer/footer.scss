@@ -102,10 +102,39 @@
 
 @media only screen and (max-width: 800px) {
   .footer {
-    padding: 0 30px;
     padding-bottom: 30px;
+    &__nav {
+      padding: 0 0px 10px;
+      &__block {
+        margin: 0 0px 10px;
+        text-decoration: none;
+        & p {
+          color: $black-text;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 33px;
+        }
+        & ul {
+          padding: 0;
+          li {
+            margin: 28px 0;
+            & a {
+              font-size: 16px;
+              color: $light-black-color;
+            }
+          }
+        }
+        & .input-footer {
+          @include input-footer;
+        }
+      }
+    }
   }
   .footer__nav {
     padding-top: 50px;
+    margin-top: 20px;
   }
 }
+
+.footer__details {
+  display: none;}

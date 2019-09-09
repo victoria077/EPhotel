@@ -1,5 +1,7 @@
 .bottom-part__left{
     width: 53vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .information__title{
@@ -10,17 +12,18 @@
     margin-left: 15px;
 }
 
-.information_top-part{
-    display: flex;
-    flex-wrap: wrap;
-}
+// .information_top-part{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+// }
 
 .information_bottom-part{
     padding-top: 70px;
 }
 
 .backgound__first{
-    min-height: 720px;
+    height: 720px;
     background-image: url(../images/mainA.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -38,14 +41,11 @@
     width: 360px;
 }
 
-.information__cancel{
-    margin-left: 136px;
-    margin-top: 5px;
-}
-
 .information__cancel {
     font-size: 18.6px;
     line-height: 32px;
+    margin-left: 136px;
+    margin-top: 5px;
 }
 .information__title--rules{
     margin-left: 40px;
@@ -79,3 +79,43 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.room__information--info{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1650px) {
+    .backgound__first{
+        height: 520px;
+    }
+
+    .bottom-part__left{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .information__impression{
+        margin-left: 10px;
+    }
+
+    .information__cancel {
+        margin-left: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .backgound__first{
+        height: 320px;
+    }
+
+    .information__title{
+        font-size: 20.5px;
+    }
+      
+    .information__cancel {
+        font-size: 16px;
+        line-height: 24px;
+    }
+  }

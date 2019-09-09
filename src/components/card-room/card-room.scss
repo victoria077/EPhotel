@@ -1,78 +1,117 @@
 .card {
-    width: 490px;
+  width: 490px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 7px;
+  margin: 20px 0;
+  & img {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  &_container {
+    padding: 10px 20px;
+  }
+  &-number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 17px;
+    color: #1f2041;
+  }
+  &-price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+  &-span {
+    font-weight: normal;
+    font-size: 20px;
+  }
+}
+
+.line {
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+:root {
+  --star-size: 24px;
+  --star-outline: #4caf50 solid 1px;
+  --star-color: #fff;
+  --star-background: #bc9cff;
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1;
+}
+
+.Stars::before {
+  content: "★★★★★";
+  font-size: 39px;
+  letter-spacing: 3px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--star-background)),
+    to(var(--star-color))
+  );
+  background: linear-gradient(
+    90deg,
+    var(--star-background) var(--percent),
+    var(--star-color) var(--percent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #bc9cff;
+}
+
+.stars__decor {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1550px) {
+  .card {
+    width: 350px;
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 7px;
     margin: 20px 0;
-    & img{
-       width: 100%;
-       height: 200px;
-       background-color: red; 
-       border-top-left-radius: 7px;
-       border-top-right-radius: 7px;
+    & img {
+      width: 100%;
+      height: 200px;
+      background-color: red;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
     }
-    &_container{
-        padding: 10px 20px;
+    &_container {
+      padding: 10px 20px;
     }
-    &-number{
+    &-number {
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
       line-height: 17px;
-      color: #1F2041;}
-    &-price{
+      color: #1f2041;
+    }
+    &-price {
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
       line-height: 18px;
       color: rgba(31, 32, 65, 0.5);
     }
-    &-span{
-        font-weight: normal;
-        font-size: 17px;
+    &-span {
+      font-weight: normal;
+      font-size: 20px;
     }
   }
-  
-  
-  
-  
-  // .row{
-  //     display: flex;
-  //     justify-content: space-between;
-  // }
-  
-  .line{
-      border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-  }
-
-
-
-  :root {
-    --star-size: 24px;
-    --star-outline: #4CAF50 solid 1px;
-    --star-color: #fff;
-    --star-background: radiant-gradient( #BC9CFF, #8BA4F9 );
-  }
-  
-  .Stars {
-    --percent: calc(var(--rating) / 5 * 100%);
-    display: inline-block;
-    font-size: var(--star-size);
-    font-family: Times;
-    line-height: 1;
-  }
-  
-  .Stars::before {
-    content: '★★★★★';
-    font-size: 24px;
-    letter-spacing: 3px;
-    background: -webkit-gradient(linear, left top, right top, from(var(--star-background)), to(var(--star-color)));
-    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #8BA4F9;
-  }
-  
-  .stars__decor{
-    margin-top: 20px;
-  }
+}

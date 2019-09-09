@@ -3,12 +3,11 @@
 // }
 
 .left-side{
-  width: 19vw;
-  margin: 30px 4vw 0 0;
+  margin: 57px 90px 0 0;
 }
 
 #slider-range {
-  width: 350px;
+  width: 395px;
   height: 6px;
   background-color: white;
 }
@@ -41,23 +40,21 @@
 
 .settings {
   display: flex;
-}
-
-.blocks {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17.8px;
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
   letter-spacing: .2px;
   margin-block-end: 0.1em;
   margin-block-start: 0.1em;
+  margin-bottom: 5px;
+  margin-left: 3px;
 }
 
 .room__title--price{
@@ -65,12 +62,13 @@
 }
 
 .room__title--checkboxes{
-  margin-bottom: 24px;
+  margin-top: 11px;
+  margin-bottom: 26px;
 }
 
 .room__title--availability{
   margin-top: 32px;
-  margin-bottom: 23px;
+  margin-bottom: 29px;
 }
 
 .room__title--comfort{
@@ -109,8 +107,8 @@
   display: block;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
   margin-left: 2vw;
   margin-top: 0.5vw;
@@ -127,22 +125,24 @@
 }
 
 .slider__range__title {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 38px;
+  font-size: 17.7px;
 }
 .room__checkbox{
-  margin-bottom: 13px;
+  margin-bottom: 17px;
 }
 
 
 .content{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+
 div.room-card__decor{
-  flex-basis: 360px;
-  margin-right: 17px;
+  flex-basis: 400px;
   margin-top: 4px;
 }
 
@@ -162,9 +162,18 @@ div.room-card__decor{
 .close{
   display: none;
 }
-@media only screen and (max-width: 1250px) {
+
+.right-side{
+  margin-top: 30px;
+}
+
+.fa-arrow-left{
+  font-size: 30px;
+}
+@media only screen and (max-width: 900px) {
   #left-side{
     display: none;
+    margin-left: 0;
   }
 
   .slide{
@@ -176,3 +185,9 @@ div.room-card__decor{
   }
 }
 
+@media only screen and (max-width: 1450px) {
+
+  div.room-card__decor{
+    flex-basis: 350px;
+  }
+}

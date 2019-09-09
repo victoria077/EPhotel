@@ -1,32 +1,33 @@
-div(class="calculator")
-    .calculator__container
-        .flex-row
-            p(class="card-number") 
-                span(class="card-number__symbol") &#8470; 
-                span 888
-            p(class="card-price") 9 990P 
-                    span(class="card-span")  в сутки
-        .row.form__search__title
-            label(class="form-search__label form-search__label-arrival") Прибытие
-            label(class="form-search__label") Выезд
-        include ../../blocks/airdatepicker/airdatepicker.pug
-        label(class="form-search__label form-search__label-guests") Гости
-        include ../../blocks/dropdown/dropdown.pug
-        .flex-row
-            p 9 990P x 4 сутки
-            p 39 900P
-        .flex-row
-            p Сбор за услуги: скидка 2 179₽
-                span(class="calculator__hint")
-            p 0P
-        .flex-row 
-            p(style='white-space:pre;')
-                | Сбор за дополнительные 
-                | услуги
-            p 300P
-        p(class="calculator__total") Итого....................................................................38 081₽
-        button(type="button" class="btn btn-width-violet") Забронировать
-        
+.calculator-wrapper
+    div(class="calculator")
+        .calculator__container
+            .flex-row
+                p(class="card-number") 
+                    span(class="card-number__symbol") &#8470; 
+                    span 888
+                p(class="card-price") 9 990P 
+                        span(class="card-span")  в сутки
+            .row.form__search__title
+                label(class="form-search__label form-search__label-arrival") Прибытие
+                label(class="form-search__label") Выезд
+            include ../../blocks/airdatepicker/airdatepicker.pug
+            label(class="form-search__label form-search__label-guests") Гости
+            include ../../blocks/dropdown/dropdown.pug
+            .flex-row
+                p 9 990P x 4 сутки
+                p 39 900P
+            .flex-row
+                p Сбор за услуги: скидка 2 179₽
+                    span(class="calculator__hint")
+                p 0P
+            .flex-row 
+                p(style='white-space:pre;')
+                    | Сбор за дополнительные 
+                    | услуги
+                p 300P
+            p(class="calculator__total") Итого....................................................................38 081₽
+            button(type="button" class="btn btn-width-violet") Забронировать
+            
 
 
             

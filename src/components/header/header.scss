@@ -1,6 +1,8 @@
+
 .menu {
   margin: 0;
   padding: 0;
+  height: 70px;
   & after {
     content: "";
     display: table;
@@ -10,9 +12,8 @@
     background-image: url(../images/Logo.svg);
     background-image: url(../images/Logo.svg);
     background-repeat: no-repeat;
-    width: 115px; height: 55px;
+    width: 210px; height: 60px;
     margin-top: 10px;
-    margin-left: 27px;
     background-repeat: no-repeat;
     display: block;
     padding: 10px 0 0 30px;
@@ -39,9 +40,9 @@
         text-decoration: none;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 20.5px;
         color: $black-text;
-        padding: 26px 14px;
+        padding: 26px 18.5px;
       }
     }
   }
@@ -118,18 +119,13 @@
 
 .header__btn--signin{
   display: inline-block;
-  padding: 10px 25px;
+  padding: 11px 30px;
   border: 2.4px solid $violet-text;
   text-transform: uppercase;
   border-radius: 30px;
+  font-size: 17.5px;
   color: $violet-text;
   text-decoration: none;
   font-family: "OpenSans-Bold";
-  margin: 16px 16px  16px 23px;
-}
-
-.btn-signup{
-  margin-bottom: 30px;
-  margin-right: 10px;
-  margin-left: 7px;
+  margin: 16px 25px  16px 23px;
 }

@@ -9,7 +9,6 @@
   border-radius: 4px;
   width: 425px;
   height: 60px;
-  margin-left: 10px;
   margin-top: 5px;
   font-style: normal;
   font-weight: normal;
@@ -126,4 +125,39 @@
   background: transparent;
   outline: none;
   margin: 10px 15px 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdowns .dd-button {
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 390px;
+    height: 55px;
+  }
+
+  .dropdowns .dd-menu {
+    margin-left: 0px;
+  }
+
+  .dropdowns .dd-menu li {
+    padding: 10px 0;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 385px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdowns .dd-button:after {
+    content: "";
+    padding: 5px;
+    //   //set tickness
+    box-shadow: 2px -2px 0 0 $black-text inset;
+    display: inline-block;
+    transform: rotate(-45deg);
+    margin-left: 200px;
+    margin-top: 25px;
+    color: $black-text;
+  }
 }
