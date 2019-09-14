@@ -1,17 +1,6 @@
 .footer {
   padding: 0 0 80px 0;
   background-color: $white-color;
-  &__title {
-    font-size: 16px;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    margin-block-start: 0.7em;
-    &--describtion {
-      margin-top: 25px;
-      margin-bottom: 29px;
-    }
-  }
-
 
   /*bg color*/
   &__nav {
@@ -27,7 +16,7 @@
         color: $black-text;
         font-family: "Montserrat";
         font-weight: bold;
-        font-size: 18.6px;
+        font-size: 20.6px;
         line-height: 33px;
       }
       & ul {
@@ -36,7 +25,7 @@
           margin: 28px 0;
           & a {
             font-family: "Montserrat";
-            font-size: 18.5px;
+            font-size: 20.6px;
             color: $light-black-color;
           }
         }
@@ -56,34 +45,34 @@
     color: $black-text;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 18.6px;
+    font-size: 20.6px;
     line-height: 33px;
     margin-left: 20px;
     margin-block-start: 0.8em;
   }
 }
 
-.footer__details ul li{
+.footer__details ul li {
   height: 30px;
   width: 40px;
   margin-top: -255px;
   margin-right: 22px;
 }
 .footer__details .svg-inline--fa {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 23px;
   display: flex;
   align-items: center;
   text-align: center;
   margin-left: 15px;
-  &:last-child{
+  &:last-child {
     margin-right: 20px;
   }
 }
 
 .div {
-  display:flex;
-  font-size:50px;
+  display: flex;
+  font-size: 50px;
   color: red;
 }
 
@@ -93,11 +82,11 @@
 
 /** Viewport <= 800px **/
 
-.footer-row{
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+.footer-row {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 800px) {
@@ -137,4 +126,5 @@
 }
 
 .footer__details {
-  display: none;}
+  display: none;
+}

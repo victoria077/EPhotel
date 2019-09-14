@@ -2248,3 +2248,9 @@ let dateRange = $('.dateRange').datepicker({
 
     }
 }).data('datepicker');
+
+$('#single__input__range').datepicker({ range: true,
+    multipleDates: 2,
+    formatDate: "dd.mm.yyyy"})
+// Access instance of plugin
+$('#single__input__range').data('datepicker')

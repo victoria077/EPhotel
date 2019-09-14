@@ -11,8 +11,8 @@ include ../mixins.pug
       +input-text("Фамилия")
 
       .row
-         +radio-button("Мужчина")
-         +radio-button("Женщина")
+         +radio-button("radio-button1", "Мужчина")
+         +radio-button("radio-button2", "Женщина")
 
       div(class="signup__input--birthday")
       label(class="title signup__title") Дата рождения
@@ -28,7 +28,7 @@ include ../mixins.pug
       input#cb1.tgl.tgl-light(type ="checkbox") 
       label.tgl-btn(for = "cb1")
 
-      button(type="button" class="btn btn-width-violet signup__button--payment") Перейти к оплате
+      button(type="button" class="btn btn-confirm signup__button--payment") Перейти к оплате
       
       .flex-row
         p(class="sugnup__text") Уже есть аккаунт на Toxin

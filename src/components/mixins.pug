@@ -17,13 +17,10 @@ mixin button-signin-header(name, link, className)
 mixin button-signup(name, link)
   a( class="btn btn-signup", href= link)= name
 
-mixin radio-button(name)
-  .radio-button
-      ul
-        li 
-          input(type="radio" id = name name="selector")
-          label(for= name)= name
-          .check
+mixin radio-button(idName, labelName)
+  div(class="radio")
+    input(id= idName name="radio" type="radio" checked)
+    label(for= idName class="radio-label")= labelName
 
 
 mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, number, price, style="--rating: level", feedback, className)
@@ -65,10 +62,11 @@ mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, nu
                     span=  number
                 p(class="card-price")= price  
                     span(class="card-span")  в сутки
+            hr
             .flex-row
               div(class="Stars stars__decor" style= style)
               p(class="card-price")= feedback
-                    span(class="card-span")   Oтзывов
+                    span   Oтзывов
         
 
 mixin checkbox(name, label, nameClass)
@@ -83,7 +81,7 @@ mixin description-checkbox(name, label, descr)
     span(class="checkbox__button__descr checkbox__span__descr")= descr
   
 mixin input-subscription(placeholder)
-  form(class="form__subscribe")
+  form(class="form-subscribe")
     input(type="text" placeholder= placeholder) 
     button(type="submit")
         i(class="fa fa-arrow-right")

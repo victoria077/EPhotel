@@ -9,11 +9,11 @@ html(lang="en")
     body
         .wrapper    
             //- include components/main_ui/main_ui.pug
-            //- include components/header/header.pug
-            //- include components/footer/footer.pug
-            //- include components/signup-page/signup-page.pug
+            //- //- include components/header/header.pug
+            //- //- include components/footer/footer.pug
+            //- //- include components/signup-page/signup-page.pug
             //- include components/signin-page/signin-page.pug
-            //- include components/search-page/search-page.pug
+            include components/search-page/search-page.pug
             //- include components/card-room/card-room.pug
             //- include components/room-page/room-page.pug
             //- include components/datepicker/datepicker.pug
@@ -30,5 +30,6 @@ html(lang="en")
             //- include components/filter-page/filter-page.pug
             //- include components/form-register/form-register.pug
             //- include blocks/input-dates/input-dates.pug
-            include components/info-page/info-page.pug
+            //- include components/info-page/info-page.pug
+            //- include blocks/airdatepicker/single_airpicker.pug
         script(src="src/index.js")

@@ -29,11 +29,11 @@
       
       display: inline-block;
       text-transform: uppercase;
-      margin: 0 3px 6px;
-      height: 38px;
-      min-width: 38px;
+      margin: 0 0px 6px;
+      height: 58px;
+      min-width: 58px;
       border-radius: 38px;
-      line-height: 38px;
+      line-height: 58px;
       padding: 0;
       color: rgba(31, 32, 65, 0.5);
       font-weight: 700;
@@ -62,7 +62,7 @@
     }
   }
   .cdp_i_back{
-    padding-top: 10px;
+    margin-top: 20px;
   }
   @for $i from 1 through 80 {
     .cdp[actpage="#{$i}"] {
@@ -136,7 +136,7 @@
     white-space: nowrap;
     direction: ltr;
     color: #fff;
-    padding: 7px;
+    padding: 18px;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 50%;
     &:hover{

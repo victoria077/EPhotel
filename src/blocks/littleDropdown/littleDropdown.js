@@ -1,6 +1,6 @@
 let valueAd, valueChild, valueBaby;
 $("#adult_plus").on("click", function(){
-    var newScore = $("#adult_text").html();
+    let newScore = $("#adult_text").html();
     valueAd = parseInt(newScore) + 1;
     $("#adult_text").html(valueAd); 
     return valueAd;
@@ -8,7 +8,7 @@ $("#adult_plus").on("click", function(){
 
 $("#adult_minus").on("click", function(){
   
-    var newScore = $("#adult_text").html();
+    let newScore = $("#adult_text").html();
     if(newScore > 0) {
     valueAd = parseInt(newScore) - 1;
     $("#adult_text").html(valueAd); }
@@ -17,14 +17,14 @@ $("#adult_minus").on("click", function(){
 )
 
 $("#child_plus").on("click", function(){
-    var newScore = $("#child_text").html();
+    let newScore = $("#child_text").html();
     valueChild= parseInt(newScore) + 1;
     $("#child_text").html(valueChild); 
     return valueChild;
 })
 
 $("#child_minus").on("click", function(){
-    var newScore = $("#child_text").html();
+    let newScore = $("#child_text").html();
    if(newScore > 0) {
     valueChild = parseInt(newScore) - 1;
     $("#child_text").html(valueChild); }
@@ -33,14 +33,14 @@ $("#child_minus").on("click", function(){
 )
 
 $("#baby_plus").on("click", function(){
-    var newScore = $("#baby_text").html();
+    let newScore = $("#baby_text").html();
     valueBaby = parseInt(newScore) + 1;
     $("#baby_text").html(valueBaby); 
     return valueBaby;
 })
 
 $("#baby_minus").on("click", function(){
-    var newScore = $("#baby_text").html();
+    let newScore = $("#baby_text").html();
    if(newScore > 0) {
     valueBaby = parseInt(newScore) - 1;
     $("#baby_text").html(valueBaby); }

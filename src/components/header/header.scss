@@ -1,8 +1,8 @@
+nav{
+  padding-bottom: 10px;
+}
 
 .menu {
-  margin: 0;
-  padding: 0;
-  height: 70px;
   & after {
     content: "";
     display: table;
@@ -80,7 +80,8 @@
     &__logo {
       display: block;
       padding: 20px 0 10px 0;
-      width: 100%;
+      width: 180px;
+      height: 50px;
       text-align: center;
       float: none;
       &_toggle {
@@ -114,10 +115,20 @@
   .btn-menu {
     margin-bottom: 10px;
   }
+
+  .menu__logo_toggle{
+    
+    margin-left: 90%;
+    margin-top: -65px;
+  }
+
+  .fa-bars{
+    font-size: 34px;
+  }
 }
 
 
-.header__btn--signin{
+.header-btn-signin{
   display: inline-block;
   padding: 11px 30px;
   border: 2.4px solid $violet-text;

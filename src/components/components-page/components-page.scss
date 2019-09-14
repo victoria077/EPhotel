@@ -1,6 +1,6 @@
 @mixin input_text {
-  width: 425px;
-  height: 59px;
+  width: 475px;
+  height: 65px;
   background: #ffffff;
   border: $border-state;
   box-sizing: border-box;
@@ -17,73 +17,68 @@
   &::placeholder {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 22.5px;
     line-height: 18px;
     color: $color-standart;
   }
 }
 
 // Style for input with arrow
-.form__subscribe {
-  width: 345px;
-}
-
-.form__subscribe input {
-  padding: 17.5px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-  box-sizing: border-box;
-  background: #ffffff;
-  border: $border-state;
-  box-sizing: border-box;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-right: none;
-  &::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 18px;
-    color: $color-standart;
-  }
-  &:hover,
-  &:focus {
-    outline: none;
+.form-subscribe {
+  width: 385px;
+  & input {
+    padding: 24px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: $border-state;
+    box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
     &::placeholder {
-      color: $black-darken;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 18px;
+      color: $color-standart;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      &::placeholder {
+        color: $black-darken;
+      }
     }
   }
 }
-.form__subscribe button {
+.form-subscribe button {
   float: left;
   width: 20%;
   padding: 14.5px;
   background: #fff;
   color: #bc9cff;
-  font-size: 17px;
+  font-size: 24px;
   border: $border-state;
   border-left: none;
   cursor: pointer;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-}
-
-.form__subscribe button:hover {
-  color: #bc9cff;
-  opacity: 0.7;
-}
-
-.form__subscribe button:focus {
-  outline: none;
-}
-
-.form__subscribe::after {
-  content: "";
-  clear: both;
-  display: table;
+  &:hover {
+    color: #bc9cff;
+    opacity: 0.7;
+  }
+  &:focus {
+    outline: none;
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 // Styles for checkbox

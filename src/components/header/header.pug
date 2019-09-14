@@ -1,16 +1,17 @@
 
 include ../mixins.pug
 
-nav(class="container menu")
-  div(id="logo" class="menu__logo")
-  label(for="drop" class="menu__logo_toggle") 
-      i(class="fa fa-bars" aria-hidden="true")
-  input(type="checkbox" class="menu__logo_drop" id="drop")
-  ul(class="menu__nav")
-    +list('О нас')
-    +list('Услуги')
-    +list('Вакансии')
-    +list('Новости')
-    +list('Соглашения')
-    +button-signin-header('Войти', 'signin-page.html', "header__btn--signin" )
-    +button-signup('Зарегистрироватьcя', 'signup-page.html').header__btn--signup
+nav
+  div(class="container menu")
+    div(id="logo" class="menu__logo")
+    label(for="drop" class="menu__logo_toggle") 
+        i(class="fa fa-bars" aria-hidden="true")
+    input(type="checkbox" class="menu__logo_drop" id="drop")
+    ul(class="menu__nav")
+      +list('О нас')
+      +list('Услуги')
+      +list('Вакансии')
+      +list('Новости')
+      +list('Соглашения')
+      +button-signin-header('Войти', 'signin-page.html', "header-btn-signin" )
+      +button-signup('Зарегистрироватьcя', 'signup-page.html').header__btn--signup
