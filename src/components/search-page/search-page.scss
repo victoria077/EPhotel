@@ -1,9 +1,10 @@
 .main-background-search{
-    height: 1300px;
+    max-height: 1300px;
     background-image: url(../images/image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 95px;
+    padding-left: 180px;
 }
 
 .clear{
@@ -15,4 +16,22 @@
     font-size: 20px;
     left: 70%;
     margin-top: 600px;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .main-background-search{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .slogan{
+        display: none;
+    }
+    
+
 }

@@ -1,25 +1,25 @@
 label.dropdowns
-  input(class="dd-button" id="dd-text" placeholder="Сколько гостей")
+  .dd-button(id="dd-text")  Сколько гостей
   input(type="checkbox" class="dd-input" id="test")
   ul(class="dd-menu")
     li()
       p(class="title") Взрослые
-      .flex
+      .flex-row
         button(class="plus button" id="adult_plus") +
         p(class="text" id='adult_text') 0
         button(class="minus button" id="adult_minus") -
     li()
       p(class="title") Дети
-      .flex
+      .flex-row
          button(class="plus button" id='child_plus') +
          p(class="text" id="child_text") 0
          button(class="minus button" id="child_minus") -
     li( )
        p(class="title") Младенцы
-       .flex
+       .flex-row
          button(class="plus button" id="baby_plus") +
          p(class="text" id="baby_text") 0
          button(class="minus button" id="baby_minus") -
-    .flex-row
+    li( )
          button(class="clean" id="clean") Очистить
          button(class="apply" id="apply") Применить

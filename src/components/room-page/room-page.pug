@@ -9,11 +9,13 @@ include ../mixins.pug
             div(class="settings__datepicker")
                 include ../../blocks/airdatepicker/single_airpicker.pug
             h3(class="title") гости
-            include ../../blocks/littleDropdown/littleDropdown.pug
+            div(class="settings__dropdown")
+                include ../../blocks/littleDropdown/littleDropdown.pug
             h3(class="title room__title--price") диапазон цены
-            input(type="text" class="slider__range__price" id="amount")
-            div(id="slider-range")  
-            div.slider__range__title Стоимость за сутки пребывания в номере 
+            div(class="settings__range")
+                input(type="text" class="slider__range__price" id="amount")
+                div(id="slider-range")  
+                div.slider__range__title Стоимость за сутки пребывания в номере 
             h3(class="title room__title--checkboxes") Checkbox Buttons             
             .blocks
                 +checkbox('Smoking', 'Можно курить', "room__checkbox")

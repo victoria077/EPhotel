@@ -24,9 +24,11 @@
 @import "../blocks/input-dates/input-dates.scss";
 html,
 body {
+  padding: 0;
   margin: 0;
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 p {
@@ -41,7 +43,7 @@ p {
   font-family: 'MaterialIcons';
   font-weight: normal;
   font-style: normal;
-  font-size: 65px;  /* Preferred icon size */
+  font-size: 69px;  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -122,7 +124,7 @@ hr{
   border: none;
   box-sizing: border-box;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19.4px;
   line-height: 15px;
   /* identical to box height */
   font-family: "OpenSans-Bold";
@@ -131,7 +133,7 @@ hr{
   color: #ffffff;
   background-image: url(../images/white-arrow.svg);
   background-repeat: no-repeat;
-  background-position-x: 24em;
+  background-position-x: 22em;
   background-position-y: 1.2em;
   top: 20px;
   &:focus{
@@ -141,15 +143,43 @@ hr{
 
 .btn-link {
   display: inline-block;
-  padding: 17px 27px;
+  width: 145px;
+  height: 65px;
   border: 2.4px solid $violet-text;
   text-transform: uppercase;
-  border-radius: 30px;
+  border-radius: 35px;
   font-size: 19px;
+  text-align: center;
   color: $violet-text;
   text-decoration: none;
   font-family: "OpenSans-Bold";
+  padding-top: 15px;
 }
+
+
+.btn-like {
+  border: 2px solid #BC9CFF;
+  outline: none;
+  color: #BC9CFF;
+  background: #FFFFFF;
+  border-radius: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 90px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.btn-like span{
+  margin-left: 5px;
+}
+
+/* Darker background on mouse-over */
+.btn-like:hover {
+  color: #8BA4F9;
+}
+
 
 .subtitle {
   font-size: 18px;
@@ -186,8 +216,11 @@ hr{
   flex-direction: row;
 }
 
+.radio-buttons{
+  margin: 19px 0 30px 0;
+}
+
 .radio {
-  margin: 0.5rem;
   input[type="radio"] {
     position: absolute;
     opacity: 0;
@@ -196,12 +229,12 @@ hr{
         content: '';
         background: #fff;
         border-radius: 100%;
-        border: 1px solid #BC9CFF;
+        border: 2px solid #BC9CFF;
         display: inline-block;
-        width: 1.4em;
-        height: 1.4em;
+        width: 1.9em;
+        height: 1.9em;
         position: relative;
-        top: -0.2em;
+        top: -0.1em;
         margin-right: 1em; 
         vertical-align: top;
         cursor: pointer;
@@ -233,6 +266,12 @@ hr{
       }
     }
   }
+}
+
+.label-radio{
+  font-size: 20.6px;
+  margin-left: 15px;
+  margin-right: 28px;
 }
 
 .input-date {

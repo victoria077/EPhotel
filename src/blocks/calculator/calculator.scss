@@ -1,6 +1,5 @@
 .calculator {
-  width: 490px;
-  height: 700px;
+  width: 560px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -9,34 +8,65 @@
 }
 
 .calculator__container{
-  margin: 30px;
+  margin: 55px 41px;
 }
 
 .calculator__container p {
   font-size: 20px;
 }
+
+.form__search__title{
+  margin-top:30px; 
+}
 .calculator__total{
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
+  margin-top: 45px;
+}
+
+.room-number{
+  font-size: 32px;
+  margin-top: 0;
+
+}
+
+.calculator-count{
+  margin-top: 25px;
+}
+
+.calculator-count--price{
+  margin-top: 35px;
 }
 
 @media only screen and (max-width: 600px) {
   .calculator {
-    width: 400px;
-    height: 600px;
-    margin-left: 40px;
+    width: 395px;
   }
 
   
 .calculator__container{
-  margin: 5px;
+  margin: 10px;
 }
 
+.calculator-datepicker .range{
+  width: 180px;
+}
+
+.calculator-datepicker .datepicker{
+  width: 280px;
+}
+.calculator-dropdown .dropdowns .dd-button{
+  width: 370px;
+}
 .calculator__container p {
   font-size: 16px;
 }
 .calculator__total{
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
 } 
+
+.calculator .btn-confirm{
+  width: 370px;
+}
 }

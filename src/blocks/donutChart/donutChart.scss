@@ -1,8 +1,9 @@
-svg{
+.donut svg{
     width: 205px;
     height: 250px;
     margin-top: 7px;
     margin-left: 7px;
+    margin-right: 15px;
 }
 .circle {
     cx: 85px;
@@ -48,7 +49,7 @@ svg{
   }
   
   .figure-key{
-      margin-top: 50px;
+      margin-top: 65px;
   }
   .figure-key-list {
     margin: 0;
@@ -63,8 +64,8 @@ svg{
   .shape-circle {
     display: inline-block;
     vertical-align: middle;
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
@@ -110,7 +111,7 @@ svg{
     transform: translateY(-0.25em);
   }
   .chart-label {
-    font-size: 1em;
+    font-size: 1.5em;
     text-transform: uppercase;
     text-anchor: middle;
     -moz-transform: translateY(0.7em);

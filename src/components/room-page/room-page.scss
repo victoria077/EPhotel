@@ -2,7 +2,7 @@
 //   flex-wrap: wrap;
 // }
 
-.left-side{
+.left-side {
   margin: 57px 90px 0 0;
 }
 
@@ -50,28 +50,27 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   margin-block-end: 0.1em;
   margin-block-start: 0.1em;
   margin-bottom: 5px;
-  margin-left: 3px;
 }
 
-.room__title--price{
+.room__title--price {
   padding: 45px 0 31px 0;
 }
 
-.room__title--checkboxes{
+.room__title--checkboxes {
   margin-top: 11px;
   margin-bottom: 26px;
 }
 
-.room__title--availability{
+.room__title--availability {
   margin-top: 32px;
   margin-bottom: 29px;
 }
 
-.room__title--comfort{
+.room__title--comfort {
   margin-top: 27px;
 }
 // .checkbox__button{
@@ -96,12 +95,10 @@
 //   vertical-align: text-top;
 // }
 
-
-.checkbox__name__descr{
+.checkbox__name__descr {
   font-size: 18px;
   letter-spacing: 1.2px;
 }
-
 
 .checkbox__span__descr {
   display: block;
@@ -115,13 +112,17 @@
   margin-bottom: 1vw;
 }
 
+.settings__range {
+  position: relative;
+}
 .slider__range__price {
   float: right;
-  margin-top: -5.5vh;
+  position: absolute;
+  top: -3.3em;
+  left: 18em;
   font-size: 16px;
   color: black;
   border: none;
-  margin-right: -4vw;
 }
 
 .slider__range__title {
@@ -129,75 +130,109 @@
   padding-bottom: 38px;
   font-size: 17.7px;
 }
-.room__checkbox{
+.room__checkbox {
   margin-bottom: 17px;
 }
 
-
-.content{
+.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-
-div.room-card__decor{
+div.room-card__decor {
   flex-basis: 400px;
   margin-top: 4px;
 }
 
-.show{
+.show {
   position: relative;
   width: 340px;
   z-index: 10;
 }
 
-.slide{
+.slide {
   display: none;
 }
 
-.card-number__symbol{
+.card-number__symbol {
   font-size: 20px;
 }
-.close{
+.close {
   display: none;
 }
 
-.right-side{
+.right-side {
   margin-top: 30px;
 }
 
-.fa-arrow-left{
+.fa-arrow-left {
   font-size: 30px;
   color: #6fcf97;
 }
 
-.settings__datepicker{
+.settings__datepicker .datepickers-container{
+  // background: #fff;
+  // border: 1px solid #dbdbdb;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  // border-radius: 4px;
+  // box-sizing: content-box;
+  // font-family: "Montserrat";
+  // font-style: normal;
+  // font-size: 18px;
+  // color: #1F2041;
+  width: 400px;
+}
+
+.settings__datepicker {
   margin-top: 10px;
   margin-bottom: 40px;
 }
-.right-side .fa-arrow-right{
+.right-side .fa-arrow-right {
   font-size: 30px;
   color: #6fcf97;
 }
-@media only screen and (max-width: 900px) {
-  #left-side{
+
+@media only screen and (max-width: 1000px) {
+  .left-side {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #left-side {
     display: none;
     margin-left: 0;
   }
 
-  .slide{
+  .slide {
     display: block;
   }
 
-  .close{
+  .close {
     display: block;
   }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 400px) {
+  .settings__datepicker #single__input__range {
+    width: 300px;
+  }
 
-  div.room-card__decor{
-    flex-basis: 350px;
+  .settings__dropdown .little-dropdowns .dd-button {
+    width: 300px;
+  }
+
+  .settings__range #slider-range {
+    width: 300px;
+  }
+
+  .slider__range__price {
+    left: 12em;
   }
 }
+// @media only screen and (max-width: 1450px) {
+
+//   div.room-card__decor{
+//     flex-basis: 350px;
+//   }
+// }

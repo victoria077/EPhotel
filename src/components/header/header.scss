@@ -1,22 +1,24 @@
-nav{
+.nav-wrapper{
   padding-bottom: 10px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .menu {
-  & after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  // & after {
+  //   content: "";
+  //   // display: table;
+  //   clear: both;
+  // }
   &__logo {
     background-image: url(../images/Logo.svg);
     background-image: url(../images/Logo.svg);
     background-repeat: no-repeat;
-    width: 210px; height: 60px;
-    margin-top: 10px;
+    width: 210px; 
+    height: 60px;
+    margin-top: 25px;
     background-repeat: no-repeat;
     display: block;
-    padding: 10px 0 0 30px;
+    // padding: 20px 0 0 30px;
     float: left;
     &_toggle {
       display: none;
@@ -27,7 +29,7 @@ nav{
   }
   &__nav {
     float: right;
-    padding: 0;
+    padding: 15px 0;
     margin: 0;
     list-style: none;
     position: relative;
@@ -70,6 +72,19 @@ nav{
   color: $black-text;
 }
 
+
+.header-btn-signin{
+  display: inline-block;
+  padding: 11px 30px;
+  border: 2.4px solid $violet-text;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-size: 17.5px;
+  color: $violet-text;
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+  margin: 16px 25px  16px 23px;
+}
 
 .btn-signup {
   margin-top: 13px;
@@ -128,15 +143,8 @@ nav{
 }
 
 
-.header-btn-signin{
-  display: inline-block;
-  padding: 11px 30px;
-  border: 2.4px solid $violet-text;
-  text-transform: uppercase;
-  border-radius: 30px;
-  font-size: 17.5px;
-  color: $violet-text;
-  text-decoration: none;
-  font-family: "OpenSans-Bold";
-  margin: 16px 25px  16px 23px;
+@media (max-width: 600px) {
+  .header-btn-signin{
+    margin: 10px 25px  16px 0px;
+  }
 }

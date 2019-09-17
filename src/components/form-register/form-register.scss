@@ -13,12 +13,12 @@
     padding: 32px 30px 40px 40px;
   }
 
-  .flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 10px;
-  }
+  // .flex{
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-around;
+  //   margin-top: 10px;
+  // }
 
   .signup__input--name{
     padding-top: 5px;
@@ -48,5 +48,7 @@
   }
 
   .sugnup__text{
+    margin-top: 20px;
     font-size: 19px;
   }
+

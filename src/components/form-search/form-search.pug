@@ -10,9 +10,11 @@ include ../mixins.pug
       .row.form__search__title
         label(class="form-search__label form-search__label-arrival") Прибытие
         label(class="form-search__label") Выезд
-      include ../../blocks/airdatepicker/airdatepicker.pug
+      div(class="search-dropdown")
+        include ../../blocks/airdatepicker/airdatepicker.pug
       label(class="form-search__label form-search__label-guests") Гости
-      include ../../blocks/dropdown/dropdown.pug
+      div(class="search-dropdown")
+        include ../../blocks/dropdown/dropdown.pug
       //- .row.flexs
       //-   .block
       //-     label(for="start-date" class="label") прибытие
@@ -22,5 +24,5 @@ include ../mixins.pug
       //-     input( type="text" name="end-date" id="end-date" placeholder="ДД.ММ.ГГГГ" class="input-date")
         
       a(href="filter-page.html")
-         button(type="button" class="btn  btn-confirm form__search__btn") подобрать номер
+         button(type="button" class="btn  btn-confirm") подобрать номер
       

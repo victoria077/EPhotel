@@ -2,18 +2,23 @@ include ../mixins.pug
 
 div(class="information")
     div(class="information_top-part")
-        div(class="backgound__first")
-            //- img(src=require("./images/mainA.jpg") class="bigImg")
-    div(class="information_bottom-part row" class="container")
+        div(class="gallery-top")
+            img(src=require("./images/mainA.jpg") class="bigImg")
+        div(class="gallery-bottom")
+            div(class="gallery-bottom--first")
+                img(src=require("./images/gallery-first.jpg") class="bigImg")
+            div(class="gallery-bottom--second")
+                img(src=require("./images/gallery-second.jpg") class="bigImg")
+    div(class="information_bottom-part row" class="container flex-row")
         div(class="bottom-part__left")
             div(class="row room__information--info")
                 .blocks
-                    h3(class="title information__title") Сведения о номере
+                    h3(class="title information__title information__title--info") Сведения о номере
                     +room-information("mood", "Комфорт", "Шумопоглощающие стены", " information__border") 
                     +room-information("location_city", "Удобство", "Окно в каждой из спален", " information__border")
                     +room-information("whatshot", "Уют", "Номер оснащён камином")
                 .blocks.information__impression
-                    h3(class="title information__title") Впечатления от номера
+                    h3(class="title information__title information__title--impression") Впечатления от номера
                     include ../../blocks/donutChart/donutChart.pug
             .blocks 
                 h3(class="title information__title information__title--details") Отзывы посетителей номера
@@ -26,7 +31,7 @@ div(class="information")
                     +bullet-list("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00" + ", "   +  " а выезд до 12:00 ")
                 .blocks.information__cancel
                     h3(class="title  information__title information__title--cancel") Отмена
-                    p(style='white-space:pre;')
+                    p(style='white-space:pre;' class="information-text")
                         | Бесплатная отмена в течение 48 ч. После
                         | этого при отмене не позднее чем за 5 дн. до 
                         | прибытия вы получите полный возврат за 

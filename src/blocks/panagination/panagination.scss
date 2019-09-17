@@ -1,145 +1,141 @@
-
 @keyframes cdp-in {
-    from {
-      transform: scale(1.5);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
+  from {
+    transform: scale(1.5);
+    opacity: 0;
   }
-  
-  .cdp {
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0;
-    z-index: 6;
-    margin: 50px 0;
-    
-    animation: cdp-in 500ms ease both;
-    animation-timeout: 200ms;
-  
-    &_i {
-      font-size: 17px;
-      text-decoration: none;
-      
-      transition: background 250ms;
-      
-      display: inline-block;
-      text-transform: uppercase;
-      margin: 0 0px 6px;
-      height: 58px;
-      min-width: 58px;
-      border-radius: 38px;
-      line-height: 58px;
-      padding: 0;
-      color: rgba(31, 32, 65, 0.5);
-      font-weight: 700;
-      letter-spacing: .03em;
-      display: none;
-  
-      &:first-child,
-      &:last-child {
-        padding: 0 16px;
-        margin: 0 12px 6px;
-      }
-  
-      &:last-child,
-      &:nth-child(2),
-      &:nth-last-child(2) {
-        display: inline-block;
-      }
-    }
-  
-    &_i:hover {
-      color: #fff;
-    }
-  
-    &:not([actpage="1"]) &_i:nth-child(1) {
-      display: inline-block;
-    }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
-  .cdp_i_back{
-    margin-top: 20px;
-  }
-  @for $i from 1 through 80 {
-    .cdp[actpage="#{$i}"] {
-      // 3 before
-      .cdp_i:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
-        display: inline-block;
-        pointer-events: none;
-        color: transparent;
-        border-color: transparent;
-        width: 50px;
-        &:after {
-          content: '...';
-           color: rgba(31, 32, 65, 0.5);
-          font-size: 32px;
-          margin-left: -6px;
-        }
-      }
-      // 2 before
-      .cdp_i:nth-child(#{$i - 1}):not(:first-child) {
-        display: inline-block;
-      }
-      // before
-      .cdp_i:nth-child(#{$i}):not(:first-child) {
-        display: inline-block;
-      }
-      // active
-      .cdp_i:nth-child(#{$i + 1}) {
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-         color: rgba(31, 32, 65, 0.5);
-        display: inline-block;
-  
-        +.cdp_i:last-child {
-          display: none !important;
-        }
-      }
-      // next
-      .cdp_i:nth-child(#{$i + 2}):not(:last-child) {
-        display: inline-block;
-      }
-      // 2 next
-      .cdp_i:nth-child(#{$i + 3}):not(:last-child) {
-        display: inline-block;
-      }
-      // 3 next
-      .cdp_i:nth-child(#{$i + 4}):not(:last-child):not(:nth-last-child(2)) {
-        display: inline-block;
-        pointer-events: none;
-        color: transparent;
-        border-color: transparent;
-        width: 50px;
-        &:after {
-          content: '...';
-           color: rgba(31, 32, 65, 0.5);
-          font-size: 32px;
-          margin-left: -6px;
-        }
-      }
-    }
-  }
-  
-  .content_detail__pagination .material-icons{
-    font-family: 'MaterialIcons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+}
+
+.cdp {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0;
+  z-index: 6;
+  margin: 20px 0;
+
+  animation: cdp-in 500ms ease both;
+  animation-timeout: 200ms;
+
+  &_i {
+    font-size: 17px;
+    text-decoration: none;
+    transition: background 250ms;
     display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    color: #fff;
-    padding: 18px;
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    border-radius: 50%;
-    &:hover{
-      background: none;
+    text-transform: uppercase;
+    margin: 0 0px 6px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 38px;
+    line-height: 58px;
+    padding: 0;
+    color: rgba(31, 32, 65, 0.5);
+    font-weight: 700;
+    display: none;
+
+    &:first-child,
+    &:last-child {
+      padding: 0 16px;
+      margin: 0 12px 6px;
+    }
+
+    &:last-child,
+    &:nth-child(2),
+    &:nth-last-child(2) {
+      display: inline-block;
     }
   }
+
+  &_i:hover {
+    color: #fff;
+  }
+
+  &:not([actpage="1"]) &_i:nth-child(1) {
+    display: inline-block;
+  }
+}
+.cdp_i_back {
+  margin-top: 25px;
+}
+@for $i from 1 through 80 {
+  .cdp[actpage="#{$i}"] {
+    // 3 before
+    .cdp_i:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
+      display: inline-block;
+      pointer-events: none;
+      color: transparent;
+      border-color: transparent;
+      width: 50px;
+      &:after {
+        content: "...";
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 32px;
+        margin-left: -6px;
+      }
+    }
+    // 2 before
+    .cdp_i:nth-child(#{$i - 1}):not(:first-child) {
+      display: inline-block;
+    }
+    // before
+    .cdp_i:nth-child(#{$i}):not(:first-child) {
+      display: inline-block;
+    }
+    // active
+    .cdp_i:nth-child(#{$i + 1}) {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: rgba(31, 32, 65, 0.5);
+      display: inline-block;
+
+      + .cdp_i:last-child {
+        display: none !important;
+      }
+    }
+    // next
+    .cdp_i:nth-child(#{$i + 2}):not(:last-child) {
+      display: inline-block;
+    }
+    // 2 next
+    .cdp_i:nth-child(#{$i + 3}):not(:last-child) {
+      display: inline-block;
+    }
+    // 3 next
+    .cdp_i:nth-child(#{$i + 4}):not(:last-child):not(:nth-last-child(2)) {
+      display: inline-block;
+      pointer-events: none;
+      color: transparent;
+      border-color: transparent;
+      width: 50px;
+      &:after {
+        content: "...";
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 32px;
+        margin-left: -6px;
+      }
+    }
+  }
+}
+
+.content_detail__pagination .material-icons {
+  font-family: "MaterialIcons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #fff;
+  padding: 18px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 50%;
+  &:hover {
+    background: none;
+  }
+}

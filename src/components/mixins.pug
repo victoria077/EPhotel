@@ -20,7 +20,8 @@ mixin button-signup(name, link)
 mixin radio-button(idName, labelName)
   div(class="radio")
     input(id= idName name="radio" type="radio" checked)
-    label(for= idName class="radio-label")= labelName
+    label(for= idName class="radio-label")
+    label(for= idName class="label-radio")= labelName
 
 
 mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, number, price, style="--rating: level", feedback, className)
@@ -103,11 +104,12 @@ mixin feedback(imgName, personName, date, text)
         div(class="room__feedback__wrapper__person--name")
           h4= personName
           p= date
-      div(class="room__feedback__wrapper__evaluation")
-        button(type: "button")
-          i(class="material-icons material-icons__like") favorite_border
-          span 12
-        p= text
+      div(class="room__feedback__wrapper__evaluation") 
+        button(class="btn-like") 
+          .row
+              i(class="fas fa-heart") 
+              span 12
+        p(class="room__feedback__text")= text
 
 mixin bullet-list(li1, li2, li3)
   ul(class="bullet-list")

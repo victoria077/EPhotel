@@ -7,7 +7,7 @@
   display: inline-block;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  width: 475px;
+  width: 480px;
   height: 65px;
   margin-top: 5px;
   font-style: normal;
@@ -15,20 +15,23 @@
   font-size: 18px;
   line-height: 18px;
   color: $color-standart;
-  margin-bottom:35px;
-  padding-left: 10px;
+  // margin-bottom:35px;
+  padding-left: 15px;
+  padding-top: 20px;
+  color:  rgba(31, 32, 65, 0.75);
 }
 
-.dropdowns .dd-button:after {
+.dropdowns .dd-button::after{
   content: "";
   padding: 5px;
   //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
-  margin-left: 55%;
-  margin-top: 25px;
+  // margin-left: 45%;
+  // margin-top: 25px;
   color: $black-text;
+  margin-left: 16em;
 }
 
 .dropdowns .dd-input {
@@ -36,17 +39,16 @@
 }
 
 .dropdowns .dd-menu {
+  width: 480px;
   position: absolute;
   top: 100%;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0;
-  margin: 2px 0 0 0;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   list-style-type: none;
-  margin-left: 13px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .dropdowns .dd-input + .dd-menu {
@@ -61,7 +63,6 @@
   padding: 10px 20px;
   cursor: pointer;
   white-space: nowrap;
-  width: 420px;
   display: flex;
   justify-content: space-between;
 }
@@ -111,7 +112,7 @@
   border: none;
   background: transparent;
   outline: none;
-  margin: 10px 0 10px 15px;
+  margin: 10px 0 10px 0px;
 }
 
 .apply {
@@ -124,7 +125,7 @@
   border: none;
   background: transparent;
   outline: none;
-  margin: 10px 15px 10px 0;
+  margin: 10px 0px 10px 0;
 }
 
 // @media only screen and (max-width: 600px) {

@@ -10,7 +10,7 @@ include ../mixins.pug
       div(class="signup__input--surname")
       +input-text("Фамилия")
 
-      .row
+      .row.radio-buttons
          +radio-button("radio-button1", "Мужчина")
          +radio-button("radio-button2", "Женщина")
 
@@ -31,5 +31,5 @@ include ../mixins.pug
       button(type="button" class="btn btn-confirm signup__button--payment") Перейти к оплате
       
       .flex-row
-        p(class="sugnup__text") Уже есть аккаунт на Toxin
+        p(class="text sugnup__text") Уже есть аккаунт на Toxin
         +button-signin('Войти', 'signin-page.html')
