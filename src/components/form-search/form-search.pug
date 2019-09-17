@@ -7,7 +7,7 @@ include ../mixins.pug
       h1(class="title__main" style='white-space:pre;') 
         |Найдём номера под 
         |  ваши пожелания
-      .row.form__search__title
+      .row
         label(class="form-search__label form-search__label-arrival") Прибытие
         label(class="form-search__label") Выезд
       div(class="search-dropdown")
@@ -22,7 +22,7 @@ include ../mixins.pug
       //-   .block
       //-     label(for="end-date" class="label") выезд
       //-     input( type="text" name="end-date" id="end-date" placeholder="ДД.ММ.ГГГГ" class="input-date")
-        
-      a(href="filter-page.html")
-         button(type="button" class="btn  btn-confirm") подобрать номер
+      div(class="search-btn-confirm")  
+        a(href="filter-page.html")
+          button(type="button" class="btn  btn-confirm") подобрать номер
       

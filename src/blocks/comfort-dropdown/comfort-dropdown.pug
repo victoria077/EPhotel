@@ -1,0 +1,25 @@
+label.comfort
+  .comfort-button(id="comfort-button")  Удобства
+  input(type="checkbox" class="comfort-input" id="comfort-input")
+  ul(class="comfort-menu")
+    li.flex-row
+      p(class="title") Спальни
+      .flex-row
+        button(class="plus button" id="bedroom_plus") +
+        p(class="text" id='bedroom_text') 0
+        button(class="minus button" id="bedroom_minus") -
+    li.flex-row
+      p(class="title") Кровати
+      .flex-row
+         button(class="plus button" id='bed_plus') +
+         p(class="text" id="bed_text") 0
+         button(class="minus button" id="bed_minus") -
+    li.flex-row
+       p(class="title") Ванные комнаты
+       .flex-row
+         button(class="plus button" id="bathroom_plus") +
+         p(class="text" id="bathroom_text") 0
+         button(class="minus button" id="bathroom_minus") -
+    li.flex-row
+         button(class="clean" id="comfort-clean") Очистить
+         button(class="apply" id="comfort-apply") Применить

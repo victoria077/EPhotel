@@ -5,13 +5,13 @@ include ../mixins.pug
         div(class="sidebar" id="sidebar")
             a(href="#" class="close")
                 i(class="fa fa-arrow-left")
-            h3(class="title") даты пребывания в отеле
+            h3(class="title") Даты пребывания в отеле
             div(class="settings__datepicker")
                 include ../../blocks/airdatepicker/single_airpicker.pug
             h3(class="title") гости
             div(class="settings__dropdown")
                 include ../../blocks/littleDropdown/littleDropdown.pug
-            h3(class="title room__title--price") диапазон цены
+            h3(class="title room__title--price") Диапазон цены
             div(class="settings__range")
                 input(type="text" class="slider__range__price" id="amount")
                 div(id="slider-range")  
@@ -22,11 +22,13 @@ include ../mixins.pug
                 +checkbox('Pets', 'Можно с питомцами', "room__checkbox")
                 +checkbox('Guests',  "Можно пригласить гостей (до 10 человек)",
             "room__checkbox")
-            h3(class="title room__title--availability") доступность 
+            h3(class="title room__title--availability") Доступность 
             .blocks
                 +description-checkbox("Широкий коридор", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
                 +description-checkbox("Помощник для инвалидов", "Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
-            h3(class="title  room__title--comfort") удобства номера
+            h3(class="title  room__title--comfort") Удобства номера
+            div(class="settings-comfort")
+                include ../../blocks/comfort-dropdown/comfort-dropdown.pug
             //- p 
             //-     label(for="amount") Price range:
             //-     input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")

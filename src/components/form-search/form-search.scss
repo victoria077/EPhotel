@@ -8,14 +8,14 @@
   margin: 7px 10px 0 10px;
 }
 
-.button {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-}
+// .button {
+//   width: 40px;
+//   height: 40px;
+//   background-color: #fff;
+//   border: 1px solid rgba(31, 32, 65, 0.25);
+//   box-sizing: border-box;
+//   border-radius: 22px;
+// }
 
 .start-date::before {
   content: "";
@@ -85,7 +85,7 @@ border-radius: 4px;
 }
 
 .form-search__label-guests{
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 // .form__search__btn{
@@ -94,6 +94,10 @@ border-radius: 4px;
 
 .search-dropdown .dropdowns .dd-button{
   margin-bottom: 20px;
+}
+
+.search-btn-confirm{
+  margin: 25px 0;
 }
 
 @media only screen and (max-width: 600px) {
