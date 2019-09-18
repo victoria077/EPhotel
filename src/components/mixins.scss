@@ -1,35 +1,4 @@
 
-@mixin input_text {
-  width: 35
-  0px;
-  height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  &::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.25);
-    padding-left: 15px;
-    &:hover {
-      color: rgba(31, 32, 65, 0.75);
-    }
-  }
-  &:hover {
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    &::placeholder {
-      color: rgba(31, 32, 65, 0.75);
-    }
-  }
-  &:active {
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    color: rgba(31, 32, 65, 0.75);
-  }
-}
-
 /* style for text of button*/
 @mixin btn-text {
   font-style: normal;

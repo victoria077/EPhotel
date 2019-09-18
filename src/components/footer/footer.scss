@@ -3,13 +3,13 @@
   background-color: $white-color;
 
   /*bg color*/
-  &__nav {
+  &-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px 10px;
     margin-top: 100px;
-    &__block {
+    &-block {
       margin: 0 10px 10px;
       text-decoration: none;
       & p {
@@ -56,11 +56,11 @@
   }
 }
 
-.footer__details {
+.footer-details {
   padding-top: 5px;
   padding-bottom: 20px;
   justify-content: space-between;
-  &__copyright {
+  &-copyright {
     color: $black-text;
     font-family: "Montserrat";
     font-weight: bold;
@@ -71,13 +71,13 @@
   }
 }
 
-.footer__details ul li {
+.footer-details ul li {
   height: 30px;
   width: 40px;
   margin-top: -25px;
   margin-right: 22px;
 }
-.footer__details .svg-inline--fa {
+.footer-details .svg-inline--fa {
   font-size: 35px;
   line-height: 23px;
   display: flex;
@@ -103,19 +103,12 @@
 
 /** Viewport <= 800px **/
 
-.footer-row {
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 @media only screen and (max-width: 600px) {
   .footer {
     padding-bottom: 30px;
-    &__nav {
+    &-nav {
       padding: 0 0px 10px;
-      &__block {
+      &-block {
         margin: 0 0px 10px;
         text-decoration: none;
         & p {
@@ -139,12 +132,12 @@
       }
     }
   }
-  .footer__nav {
+  .footer-nav {
     padding-top: 50px;
     margin-top: 20px;
   }
 
-  .footer__nav__block .form-subscribe {
+  .footer-nav-block .form-subscribe {
     width: 350px;
   }
 
@@ -152,13 +145,13 @@
     display: none;
   }
 
-  .footer__details {
+  .footer-details {
     display: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .footer__nav__block .form-subscribe {
+  .footer-nav-block .form-subscribe {
     width: 300px;
   }
 }

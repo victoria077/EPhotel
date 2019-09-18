@@ -1,27 +1,27 @@
-@mixin input_text {
-  width: 475px;
-  height: 65px;
-  background: #ffffff;
-  border: $border-state;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 0 20px 0 20px;
-  &:hover,
-  &:focus {
-    border: 1.5px solid rgba(31, 32, 65, 0.5);
-    outline: none;
-    &::placeholder {
-      color: $black-darken;
-    }
-  }
-  &::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22.5px;
-    line-height: 18px;
-    color: $color-standart;
-  }
-}
+// @mixin input_text {
+//   width: 475px;
+//   height: 65px;
+//   background: #ffffff;
+//   border: $border-state;
+//   box-sizing: border-box;
+//   border-radius: 5px;
+//   padding: 0 20px 0 20px;
+//   &:hover,
+//   &:focus {
+//     border: 1.5px solid rgba(31, 32, 65, 0.5);
+//     outline: none;
+//     &::placeholder {
+//       color: $black-darken;
+//     }
+//   }
+//   &::placeholder {
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 22.5px;
+//     line-height: 18px;
+//     color: $color-standart;
+//   }
+// }
 
 // Style for input with arrow
 .form-subscribe {

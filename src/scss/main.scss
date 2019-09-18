@@ -23,6 +23,9 @@
 @import "../blocks/slick/slick.scss";
 @import "../blocks/input-dates/input-dates.scss";
 @import "../blocks/comfort-dropdown/comfort-dropdown.scss";
+@import "../blocks/range-slider/range-slider.scss";
+@import "../blocks/toggle/toggle.scss";
+
 html,
 body {
   padding: 0;
@@ -30,6 +33,7 @@ body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  font-size: 18px;
 }
 
 p {
@@ -41,10 +45,10 @@ p {
 }
 
 .material-icons {
-  font-family: 'MaterialIcons';
+  font-family: "MaterialIcons";
   font-weight: normal;
   font-style: normal;
-  font-size: 69px;  /* Preferred icon size */
+  font-size: 69px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -52,7 +56,7 @@ p {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: #8BA4F9;
+  color: #8ba4f9;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -63,9 +67,9 @@ p {
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
-.material-icons__like{
+.material-icons__like {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.25);
 }
@@ -75,7 +79,7 @@ p {
   margin: 0 auto;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -84,16 +88,30 @@ p {
 .logo {
   background-image: url(../images/Logo.svg);
   background-repeat: no-repeat;
-  width: 210px; height: 60px;
+  width: 210px;
+  height: 60px;
   margin-top: 5px;
 }
 
-.title__main {
+.title-main {
   font-family: "OpenSans-Bold";
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 34px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.8px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  letter-spacing: 0.2px;
+  margin-block-end: 0.1em;
+  margin-block-start: 0.1em;
+  margin-bottom: 5px;
 }
 
 .btn-signup {
@@ -108,13 +126,34 @@ a {
   text-decoration: none;
 }
 
-hr{
+hr {
   background: rgba(31, 32, 65, 0.1);
   height: 1.5px;
 }
 
-.input_text {
-  @include input_text;
+.input-text {
+  width: 475px;
+  height: 65px;
+  background: #ffffff;
+  border: $border-state;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+  &:hover,
+  &:focus {
+    border: 1.5px solid rgba(31, 32, 65, 0.5);
+    outline: none;
+    &::placeholder {
+      color: $black-darken;
+    }
+  }
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    line-height: 18px;
+    color: $color-standart;
+  }
 }
 
 .btn-confirm {
@@ -137,7 +176,7 @@ hr{
   background-position-x: 22em;
   background-position-y: 1.2em;
   top: 20px;
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
@@ -157,12 +196,11 @@ hr{
   padding-top: 15px;
 }
 
-
 .btn-like {
-  border: 2px solid #BC9CFF;
+  border: 2px solid #bc9cff;
   outline: none;
-  color: #BC9CFF;
-  background: #FFFFFF;
+  color: #bc9cff;
+  background: #ffffff;
   border-radius: 15px;
   font-size: 14px;
   cursor: pointer;
@@ -172,15 +210,14 @@ hr{
   margin-top: 5px;
 }
 
-.btn-like span{
+.btn-like span {
   margin-left: 5px;
 }
 
 /* Darker background on mouse-over */
 .btn-like:hover {
-  color: #8BA4F9;
+  color: #8ba4f9;
 }
-
 
 .subtitle {
   font-size: 18px;
@@ -217,7 +254,7 @@ hr{
   flex-direction: row;
 }
 
-.radio-buttons{
+.radio-buttons {
   margin: 19px 0 30px 0;
 }
 
@@ -227,16 +264,16 @@ hr{
     opacity: 0;
     + .radio-label {
       &:before {
-        content: '';
+        content: "";
         background: #fff;
         border-radius: 100%;
-        border: 2px solid #BC9CFF;
+        border: 2px solid #bc9cff;
         display: inline-block;
         width: 1.9em;
         height: 1.9em;
         position: relative;
         top: -0.1em;
-        margin-right: 1em; 
+        margin-right: 1em;
         vertical-align: top;
         cursor: pointer;
         text-align: center;
@@ -246,7 +283,7 @@ hr{
     &:checked {
       + .radio-label {
         &:before {
-          background:   linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
           box-shadow: inset 0 0 0 4px #fff;
         }
       }
@@ -269,7 +306,7 @@ hr{
   }
 }
 
-.label-radio{
+.label-radio {
   font-size: 20.6px;
   margin-left: 15px;
   margin-right: 28px;
@@ -279,21 +316,17 @@ hr{
   @include input-date;
 }
 
-
 @media only screen and (max-width: 900px) {
-  .title__main {
+  .title-main {
     font-size: 28px;
   }
 }
 
-
-
 @media only screen and (max-width: 1000px) {
-  .container{
-      width: 95%;
+  .container {
+    width: 95%;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   // .title__main {
@@ -326,5 +359,4 @@ hr{
   //     outline: none;
   //   }
   // }
-  
 }

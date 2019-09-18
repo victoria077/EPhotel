@@ -2,61 +2,16 @@
 //   flex-wrap: wrap;
 // }
 
-.left-side {
-  margin: 57px 90px 0 0;
-}
-
-#slider-range {
-  width: 395px;
-  height: 6px;
-  background-color: white;
-}
-
-#slider-range .ui-state-default,
-#slider-range .ui-widget-content .ui-state-default,
-#slider-range .ui-widget-header .ui-state-default {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  outline: 0;
-  margin-top: -3px;
-}
-
-#slider-range .ui-slider-horizontal {
-  background: #ffffff;
-  /* Dark 25% */
-
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 3px;
-}
-
-#slider-range .ui-widget-header {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-}
-
 .settings {
   display: flex;
   justify-content: space-between;
 }
 
-.title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17.8px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  letter-spacing: 0.2px;
-  margin-block-end: 0.1em;
-  margin-block-start: 0.1em;
-  margin-bottom: 5px;
+.left-side {
+  margin: 57px 90px 0 0;
 }
 
-.room__title--price {
+.room-title--price {
   padding: 45px 0 31px 0;
 }
 
@@ -65,12 +20,12 @@
   margin-bottom: 26px;
 }
 
-.room__title--availability {
+.room-title--availability {
   margin-top: 32px;
   margin-bottom: 29px;
 }
 
-.room__title--comfort {
+.room-title--comfort {
   margin-top: 27px;
 }
 // .checkbox__button{
@@ -112,10 +67,10 @@
   margin-bottom: 1vw;
 }
 
-.settings__range {
+.settings-range {
   position: relative;
 }
-.slider__range__price {
+.slider-range-price {
   float: right;
   position: absolute;
   top: -3.3em;
@@ -171,7 +126,7 @@ div.room-card__decor {
   color: #6fcf97;
 }
 
-.settings__datepicker .datepickers-container{
+.settings-datepicker .datepickers-container{
   // background: #fff;
   // border: 1px solid #dbdbdb;
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -184,7 +139,7 @@ div.room-card__decor {
   width: 400px;
 }
 
-.settings__datepicker {
+.settings-datepicker {
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -214,19 +169,19 @@ div.room-card__decor {
 }
 
 @media only screen and (max-width: 400px) {
-  .settings__datepicker #single__input__range {
+  .settings-datepicker #single__input__range {
     width: 300px;
   }
 
-  .settings__dropdown .little-dropdowns .dd-button {
+  .settings-dropdown .little-dropdowns .dd-button {
     width: 300px;
   }
 
-  .settings__range #slider-range {
+  .settings-range #slider-range {
     width: 300px;
   }
 
-  .slider__range__price {
+  .slider-range-price {
     left: 12em;
   }
 }

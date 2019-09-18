@@ -4,24 +4,17 @@ include ../mixins.pug
 .form-search
   div.wrapper-search
     div.container-form
-      h1(class="title__main" style='white-space:pre;') 
+      h1(class="title-main" style='white-space:pre;') 
         |Найдём номера под 
         |  ваши пожелания
       .row
-        label(class="form-search__label form-search__label-arrival") Прибытие
-        label(class="form-search__label") Выезд
+        h3(class="title") Прибытие
+        h3(class="title") Выезд
       div(class="search-dropdown")
         include ../../blocks/airdatepicker/airdatepicker.pug
-      label(class="form-search__label form-search__label-guests") Гости
+      h3(class="title") Гости
       div(class="search-dropdown")
         include ../../blocks/dropdown/dropdown.pug
-      //- .row.flexs
-      //-   .block
-      //-     label(for="start-date" class="label") прибытие
-      //-     input(type="text" name="start-date" id="start-date" placeholder="ДД.ММ.ГГГГ" class="input-date start-date")
-      //-   .block
-      //-     label(for="end-date" class="label") выезд
-      //-     input( type="text" name="end-date" id="end-date" placeholder="ДД.ММ.ГГГГ" class="input-date")
       div(class="search-btn-confirm")  
         a(href="filter-page.html")
           button(type="button" class="btn  btn-confirm") подобрать номер

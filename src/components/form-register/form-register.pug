@@ -1,35 +1,32 @@
 include ../mixins.pug
 
 .wrap
-  .container__form
-      h1(
-        class="title__main"
-      ) Регистрация аккаунта
-      div(class="signup__input--name")
+  .container-form
+      h1( class="title-main") Регистрация аккаунта
+      div(class="signup-input--name")
       +input-text("Имя")
-      div(class="signup__input--surname")
+      div(class="signup-input--surname")
       +input-text("Фамилия")
 
       .row.radio-buttons
          +radio-button("radio-button1", "Мужчина")
          +radio-button("radio-button2", "Женщина")
 
-      div(class="signup__input--birthday")
-      label(class="title signup__title") Дата рождения
+      div(class="signup-input--birthday")
+      label(class="title signup-title") Дата рождения
       +input-text("ДД.ММ.ГГГГ")
       
-      div(class="signup__input--data")
-      label(class="title signup__title") Данные для входа в сервис
+      div(class="signup-input--data")
+      label(class="title signup-title") Данные для входа в сервис
       +input-text("Email")
-      div(class="signup__input--data--password")
+      div(class="signup-input--data--password")
         +input-text("Пароль")
 
 
-      input#cb1.tgl.tgl-light(type ="checkbox") 
-      label.tgl-btn(for = "cb1")
+      include ../../blocks/toggle/toggle.pug
 
-      button(type="button" class="btn btn-confirm signup__button--payment") Перейти к оплате
+      button(type="button" class="btn btn-confirm signup-button--payment") Перейти к оплате
       
       .flex-row
-        p(class="text sugnup__text") Уже есть аккаунт на Toxin
+        p(class="text sugnup-text") Уже есть аккаунт на Toxin
         +button-signin('Войти', 'signin-page.html')

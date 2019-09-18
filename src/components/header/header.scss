@@ -9,7 +9,7 @@
   //   // display: table;
   //   clear: both;
   // }
-  &__logo {
+  &-logo {
     background-image: url(../images/Logo.svg);
     background-image: url(../images/Logo.svg);
     background-repeat: no-repeat;
@@ -20,14 +20,14 @@
     display: block;
     // padding: 20px 0 0 30px;
     float: left;
-    &_toggle {
+    &-toggle {
       display: none;
     }
-    &_drop {
+    &-drop {
       display: none;
     }
   }
-  &__nav {
+  &-nav {
     float: right;
     padding: 15px 0;
     margin: 0;
@@ -92,14 +92,14 @@
 @media (max-width: 1300px) {
   .menu {
     margin: 0;
-    &__logo {
+    &-logo {
       display: block;
       padding: 20px 0 10px 0;
       width: 180px;
       height: 50px;
       text-align: center;
       float: none;
-      &_toggle {
+      &-toggle {
         display: block;
         padding: 14px 20px;
         color: $violet-gradient;
@@ -111,11 +111,11 @@
           display: none;
         }
       }
-      &_drop:checked + ul {
+      &-drop:checked + ul {
         display: block;
       }
     }
-    &__nav {
+    &-nav {
       float: left;
       width: 100%;
       display: none;
@@ -131,7 +131,7 @@
     margin-bottom: 10px;
   }
 
-  .menu__logo_toggle{
+  .menu-logo-toggle{
     
     margin-left: 90%;
     margin-top: -65px;
