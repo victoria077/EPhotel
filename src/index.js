@@ -8,9 +8,7 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import "../src/components/form-search/form-search.js";
 import "../src/components/components-page/components-page.js";
-// import "../src/components/datepicker/datepicker.js";
 import "../src/components/slider/slider.js";
-import "../src/blocks/chart/chart.js";
 require('./fonts.scss');
 require('jquery');
 require('jquery-ui-bundle');
@@ -29,17 +27,17 @@ import "../src/blocks/panagination/panagination.js";
 import "../src/blocks/slick/slick.js";
 import "../src/blocks/comfort-dropdown/comfort-dropdown.js"
 
-    function closeSideBar(){
-      $("sidebar").on("click", function() {
-        $("sidebar").css("width", "250")
-      })
-      document.getElementById("left-side").style.marginLeft = "0";
-      console.log("fgfhg");
-    }
+    // function closeSideBar(){
+    //   $("sidebar").on("click", function() {
+    //     $("sidebar").css("width", "250")
+    //   })
+    //   document.getElementById("left-side").style.marginLeft = "0";
+    //   console.log("fgfhg");
+    // }
   
   
-    function openSideBar(){
-      document.getElementById("sidebar").style.width = "250px";
-      document.getElementById("left-side").style.marginLeft = "250px";
-    }
+    // function openSideBar(){
+    //   document.getElementById("sidebar").style.width = "250px";
+    //   document.getElementById("left-side").style.marginLeft = "250px";
+    // }
   

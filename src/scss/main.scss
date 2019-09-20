@@ -13,7 +13,6 @@
 @import "../components/info-room/info-room.scss";
 @import "../components/signin-form/signin-form.scss";
 @import "../components/components-page/components-page.scss";
-@import "../components/datepicker/datepicker.scss";
 @import "../blocks/calculator/calculator.scss";
 @import "../blocks/airdatepicker/airdatepicker.scss";
 @import "../blocks/dropdown/dropdown.scss";
@@ -21,7 +20,6 @@
 @import "../blocks/panagination/panagination.scss";
 @import "../blocks/donutChart/donutChart.scss";
 @import "../blocks/slick/slick.scss";
-@import "../blocks/input-dates/input-dates.scss";
 @import "../blocks/comfort-dropdown/comfort-dropdown.scss";
 @import "../blocks/range-slider/range-slider.scss";
 @import "../blocks/toggle/toggle.scss";
@@ -115,7 +113,16 @@ p {
 }
 
 .btn-signup {
-  @include btn-small-violet;
+  font-family: "OpenSans-Bold";
+  letter-spacing: 1.3px;
+  border: none;
+  padding: 15px 32px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: $white-color;
+  font-weight: bold;
+  font-size: 17.5px;
 }
 
 ol,

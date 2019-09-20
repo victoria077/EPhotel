@@ -32,25 +32,10 @@
     margin-left: 15px;
 }
 
-// .information_top-part{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-// }
 
 .information-bottom-part{
     padding-top: 70px;
 }
-
-// .backgound__first{
-//     height: 720px;
-//     background-image: url(../images/mainA.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     padding-top: 220px;
-//     width: 100%;
-// }
 
 .information-border{
     border-bottom: 2px solid  rgba(31, 32, 65, 0.1);
@@ -105,10 +90,6 @@
 .information-impression--second{
     margin-top: 5px;
 }
-// .row-flex{
-//     display: flex;
-//     flex-wrap: wrap;
-// }
 
 .room-information--info{
     display: flex;
@@ -145,10 +126,6 @@
         flex-wrap: wrap;
     }
 
-    // .backgound__first{
-    //     height: 520px;
-    // }
-
     .bottom-part--left{
         width: 100%;
         display: flex;
@@ -165,14 +142,6 @@
   }
 
   @media only screen and (max-width: 600px) {
-
-    // .backgound-first{
-    //     height: 320px;
-    // }
-
-    // .information-title{
-    //     font-size: 20.5px;
-    // }
       
     .information-title--rules{
         margin-left: 20px;
