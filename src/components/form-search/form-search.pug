@@ -3,19 +3,19 @@ include ../mixins.pug
 
 .form-search
   div.wrapper-search
-    div.container-form
-      h1(class="title-main" style='white-space:pre;') 
+    div.search-container-form
+      h1(class='title-main form-search-title' style='white-space:pre;') 
         |Найдём номера под 
         |  ваши пожелания
       .row
-        h3(class="title") Прибытие
-        h3(class="title") Выезд
-      div(class="search-dropdown")
+        h3(class='title') Прибытие
+        h3(class='title search-title-checkout') Выезд
+      div(class='search-dropdown')
         include ../../blocks/airdatepicker/airdatepicker.pug
-      h3(class="title") Гости
-      div(class="search-dropdown")
+      h3(class='title') Гости
+      div(class='search-dropdown')
         include ../../blocks/dropdown/dropdown.pug
-      div(class="search-btn-confirm")  
-        a(href="filter-page.html")
-          button(type="button" class="btn  btn-confirm") подобрать номер
+      div(class='search-btn-confirm')  
+        a(href='filter-page.html')
+          button(type='button' class='btn  btn-confirm') подобрать номер
       

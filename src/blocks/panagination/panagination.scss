@@ -72,7 +72,7 @@
       &:after {
         content: "...";
         color: rgba(31, 32, 65, 0.5);
-        font-size: 32px;
+        font-size: 1.8rem;
         margin-left: -6px;
       }
     }
@@ -112,7 +112,7 @@
       &:after {
         content: "...";
         color: rgba(31, 32, 65, 0.5);
-        font-size: 32px;
+        font-size: 1.8rem;
         margin-left: -6px;
       }
     }
@@ -137,5 +137,24 @@
   border-radius: 50%;
   &:hover {
     background: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cdp_i {
+    height: 40px;
+    min-width: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+  }
+
+  .cdp_i:first-child,
+  .cdp_i:last-child {
+    margin: 0 0px 6px;
+  }
+
+  .content_detail__pagination .material-icons {
+    padding: 12px;
+    margin-top: 4px;
   }
 }

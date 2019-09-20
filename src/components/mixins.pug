@@ -2,117 +2,118 @@ mixin logo()
     img.logo
 
 mixin input-text(name)
-  input(placeholder = name, type = "text", class="input-text")
+  input(placeholder = name, type = 'text', class='input-text')
 
 mixin list(name)
   li 
     a= name
 
 mixin button-signin(name, link, className)
-  a(class="btn btn-link btn-link-menu", href= link, class= className)= name
+  a(class='btn btn-link btn-link-menu', href= link, class= className)= name
 
 mixin button-signin-header(name, link, className)
-  a(class="btn  btn-link-menu", href= link, class= className)= name
+  a(class='btn  btn-link-menu', href= link, class= className)= name
 
 mixin button-signup(name, link)
-  a( class="btn btn-signup", href= link)= name
+  a( class='btn btn-signup', href= link)= name
 
 mixin radio-button(idName, labelName)
-  div(class="radio")
-    input(id= idName name="radio" type="radio" checked)
-    label(for= idName class="radio-label")
-    label(for= idName class="label-radio")= labelName
+  div(class='radio')
+    input(id= idName name='radio' type='radio' checked)
+    label(for= idName class='radio-label')
+    label(for= idName class='label-radio')= labelName
 
 
-mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, number, price, style="--rating: level", feedback, className)
-    div(class= className, class="card")
+mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, number, price, style='--rating: level', feedback, className)
+    div(class= className, class='card')
+      a(href="info-page.html")
         .carousel-container
           div(class= slickName)
-              input(type="radio" id= slickName + "-1" name="carousel[]" checked)
-              input(type="radio" id= slickName + "-2" name="carousel[]")
-              input(type="radio" id= slickName + "-3" name="carousel[]")
-              input(type="radio" id= slickName + "-4" name="carousel[]")
-              ul(class= slickName + "__items")
-                li(class= slickName + "__item")
+              input(type='radio' id= slickName + '-1' name='carousel[]' checked)
+              input(type='radio' id= slickName + '-2' name='carousel[]')
+              input(type='radio' id= slickName + '-3' name='carousel[]')
+              input(type='radio' id= slickName + '-4' name='carousel[]')
+              ul(class= slickName + '__items')
+                li(class= slickName + '__item')
                   img(src= imgNameOne)
-                li(class=  slickName + "__item")
+                li(class=  slickName + '__item')
                   img(src= imgNameTwo)
-                li(class=  slickName + "__item")
+                li(class=  slickName + '__item')
                   img(src= imgNameThree)
-                li(class=  slickName + "__item")
+                li(class=  slickName + '__item')
                   img(src= imgNameFour)
               .carousel__prev
-                label(for= slickName + "-1")
-                label(for= slickName + "-2")
-                label(for= slickName + "-3")
-                label(for= slickName + "-4")
+                label(for= slickName + '-1')
+                label(for= slickName + '-2')
+                label(for= slickName + '-3')
+                label(for= slickName + '-4')
               .carousel__next
-                label(for= slickName + "-1")
-                label(for= slickName + "-2")
-                label(for= slickName + "-3")
-                label(for= slickName + "-4")
+                label(for= slickName + '-1')
+                label(for= slickName + '-2')
+                label(for= slickName + '-3')
+                label(for= slickName + '-4')
               .carousel__nav
-                label(for= slickName + "-1")
-                label(for= slickName + "-2")
-                label(for= slickName + "-3")
-                label(for= slickName + "-4")
-        .card_container
+                label(for= slickName + '-1')
+                label(for= slickName + '-2')
+                label(for= slickName + '-3')
+                label(for= slickName + '-4')
+        .card-container
             .flex-row.card-border
-                p(class="card-number") 
-                    span(class="card-number__symbol") &#8470; 
+                p(class='card-number') 
+                    span(class='card-number__symbol') &#8470; 
                     span=  number
-                p(class="card-price")= price  
-                    span(class="card-span")  в сутки
+                p(class='card-price')= price  
+                    span(class='card-span')  в сутки
             hr
             .flex-row
-              div(class="Stars stars__decor" style= style)
-              p(class="card-price")= feedback
+              div(class='Stars stars__decor' style= style)
+              p(class='card-price')= feedback
                     span   Oтзывов
         
 
 mixin checkbox(name, label, nameClass)
-  div(class="checkbox__button" class=nameClass)
-    input(type="checkbox" class="checkbox__button checkbox__box" id= name name= name value= name)
-    label(class="checkbox__button checkbox__name" for= name)= label
+  div(class='checkbox__button' class=nameClass)
+    input(type='checkbox' class='checkbox__button checkbox__box' id= name name= name value= name)
+    label(class='checkbox__button checkbox__name' for= name)= label
 
 mixin description-checkbox(name, label, descr)
-  div(class="checkbox__button checkbox__button__descr")
-    input(type="checkbox" class="checkbox__button__descr checkbox__descr__box checkbox__box" id= name name= name value= name)
-    label(for= name class="checkbox__button__descr checkbox__name checkbox__name__descr")= label
-    span(class="checkbox__button__descr checkbox__span__descr")= descr
+  div(class='checkbox__button checkbox__button__descr')
+    input(type='checkbox' class='checkbox__button__descr checkbox__descr__box checkbox__box' id= name name= name value= name)
+    label(for= name class='checkbox__button__descr checkbox__name checkbox__name__descr')= label
+    span(class='checkbox__button__descr checkbox__span__descr')= descr
   
 mixin input-subscription(placeholder)
-  form(class="form-subscribe")
-    input(type="text" placeholder= placeholder) 
-    button(type="submit")
-        i(class="fa fa-arrow-right")
+  form(class='form-subscribe')
+    input(type='text' placeholder= placeholder) 
+    button(type='submit')
+        i(class='fa fa-arrow-right')
 
 
 mixin room-information(icon, quality, descr, className)
-    div(class="room__information")
-      div(class="room__information__wrapper" class= className)
-         i(class="material-icons")= icon
-         div(class="room__information__wrapper__description")
+    div(class='room__information')
+      div(class='room__information__wrapper' class= className)
+         i(class='material-icons')= icon
+         div(class='room__information__wrapper__description')
             h4= quality
             p= descr
 
 mixin feedback(imgName, personName, date, text)
-  div(class="room__feedback")
-    div(class="room__feedback__wrapper")
-      div(class="room__feedback__wrapper__person")
+  div(class='room__feedback')
+    div(class='room__feedback__wrapper')
+      div(class='room__feedback__wrapper__person')
         img(src= imgName)
-        div(class="room__feedback__wrapper__person--name")
+        div(class='room__feedback__wrapper__person--name')
           h4= personName
           p= date
-      div(class="room__feedback__wrapper__evaluation") 
-        button(class="btn-like") 
+      div(class='room__feedback__wrapper__evaluation') 
+        button(class='btn-like') 
           .row
-              i(class="fas fa-heart") 
+              i(class='fas fa-heart') 
               span 12
-        p(class="room__feedback__text")= text
+        p(class='room__feedback__text')= text
 
 mixin bullet-list(li1, li2, li3)
-  ul(class="bullet-list")
+  ul(class='bullet-list')
     li= li1 
     li= li2
     li= li3

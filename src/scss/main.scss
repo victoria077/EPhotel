@@ -44,11 +44,11 @@ p {
   margin-inline-end: 0px;
 }
 
-.material-icons {
+.room-information--info .material-icons {
   font-family: "MaterialIcons";
   font-weight: normal;
   font-style: normal;
-  font-size: 69px; /* Preferred icon size */
+  font-size: 3.83rem; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -56,7 +56,7 @@ p {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: #8ba4f9;
+  color:#9BA1FB;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -98,7 +98,7 @@ p {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 34px;
+  font-size: 1.89rem;
 }
 
 .title {
@@ -315,13 +315,6 @@ hr {
 .input-date {
   @include input-date;
 }
-
-@media only screen and (max-width: 900px) {
-  .title-main {
-    font-size: 28px;
-  }
-}
-
 @media only screen and (max-width: 1000px) {
   .container {
     width: 95%;
@@ -329,34 +322,15 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-  // .title__main {
-  //   font-size: 20px;
-  //   text-align: center;
-  // }
+  html,
+  body {
+    font-size: 16px;
+  }
+}
 
-  // .btn-width-violet {
-  //   width: 310px;
-  //   height: 40px;
-  //   background-color: #bc9cff;
-  //   border-radius: 45px;
-  //   margin-left: 40px;
-  //   text-align: center;
-  //   box-sizing: border-box;
-  //   font-weight: bold;
-  //   font-size: 14px;
-  //   line-height: 15px;
-  //   /* identical to box height */
-  //   font-family: "OpenSans-Bold";
-  //   text-align: center;
-  //   text-transform: uppercase;
-  //   color: #ffffff;
-  //   background-image: url(../images/white-arrow.svg);
-  //   background-repeat: no-repeat;
-  //   background-position-x: 24em;
-  //   background-position-y: 1.2em;
-  //   top: 20px;
-  //   &:focus{
-  //     outline: none;
-  //   }
-  // }
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 14px;
+  }
 }

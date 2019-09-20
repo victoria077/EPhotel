@@ -15,18 +15,19 @@
   padding: 45px 0 31px 0;
 }
 
-.room__title--checkboxes {
-  margin-top: 11px;
-  margin-bottom: 26px;
+.room-title--checkboxes {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .room-title--availability {
-  margin-top: 32px;
-  margin-bottom: 29px;
+  padding-top: 35px;
+  padding-bottom: 20px;
 }
 
 .room-title--comfort {
-  margin-top: 27px;
+  padding-top: 30px;
+  padding-bottom: 8px;
 }
 // .checkbox__button{
 //   background-color: #ffffff;
@@ -51,7 +52,7 @@
 // }
 
 .checkbox__name__descr {
-  font-size: 18px;
+  font-size: 1rem;
   letter-spacing: 1.2px;
 }
 
@@ -59,7 +60,7 @@
   display: block;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
   margin-left: 2vw;
@@ -70,21 +71,7 @@
 .settings-range {
   position: relative;
 }
-.slider-range-price {
-  float: right;
-  position: absolute;
-  top: -3.3em;
-  left: 18em;
-  font-size: 16px;
-  color: black;
-  border: none;
-}
 
-.slider__range__title {
-  padding-top: 25px;
-  padding-bottom: 38px;
-  font-size: 17.7px;
-}
 .room__checkbox {
   margin-bottom: 17px;
 }
@@ -111,7 +98,7 @@ div.room-card__decor {
 }
 
 .card-number__symbol {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 .close {
   display: none;
@@ -122,11 +109,11 @@ div.room-card__decor {
 }
 
 .fa-arrow-left {
-  font-size: 30px;
+  font-size: 1.67rem;
   color: #6fcf97;
 }
 
-.settings-datepicker .datepickers-container{
+.settings-datepicker .datepickers-container {
   // background: #fff;
   // border: 1px solid #dbdbdb;
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -144,8 +131,18 @@ div.room-card__decor {
   margin-bottom: 40px;
 }
 .right-side .fa-arrow-right {
-  font-size: 30px;
+  font-size: 1.67rem;
   color: #6fcf97;
+}
+
+.settings-comfort .comfort-button {
+  scroll-margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .settings-main-title{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -154,9 +151,8 @@ div.room-card__decor {
   }
 }
 @media only screen and (max-width: 750px) {
-  #left-side {
+  .right-side {
     display: none;
-    margin-left: 0;
   }
 
   .slide {
@@ -169,6 +165,17 @@ div.room-card__decor {
 }
 
 @media only screen and (max-width: 400px) {
+
+
+
+  .slide {
+    display: block;
+  }
+
+  .close {
+    display: block;
+  }
+
   .settings-datepicker #single__input__range {
     width: 300px;
   }

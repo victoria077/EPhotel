@@ -1,138 +1,140 @@
 .comfort {
-    display: inline-block;
-    position: relative;
-  }
-  
- .comfort-button {
-    display: inline-block;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
-    width: 395px;
-    height: 65px;
-    margin-top: 5px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 18px;
-    color: $color-standart;
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-  
- .comfort-button:after {
-    content: "";
-    padding: 5px;
-    //   //set tickness
-    box-shadow: 2px -2px 0 0 $black-text inset;
-    display: inline-block;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 30px;
-    left: 90%;
-    color: $black-text;
-  }
-  
+  display: inline-block;
+  position: relative;
+}
+
+.comfort-button {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 395px;
+  height: 65px;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.14rem;
+  line-height: 18px;
+  color: $color-standart;
+  // margin-bottom:35px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.comfort-button:after {
+  content: "";
+  padding: 5px;
+  //   //set tickness
+  box-shadow: 2px -2px 0 0 $black-text inset;
+  display: inline-block;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 30px;
+  left: 90%;
+  color: $black-text;
+}
+
 .comfort-input {
-    display: none;
+  display: none;
+}
+
+.comfort-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+  z-index: 10;
+  width: 395px;
+}
+
+.comfort-input + .comfort-menu {
+  display: none;
+}
+
+.comfort-input:checked + .comfort-menu {
+  display: block;
+}
+
+.comfort-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 390px;
+}
+
+.comfort-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  background: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.comfort .title {
+  margin-top: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #1f2041;
+}
+
+.comfort .flex {
+  display: flex;
+}
+
+.comfort .text {
+  margin: 7px 20px 0 20px;
+}
+
+.clean {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.apply {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .comfort-menu{
+    width: 360px;
   }
-  
- .comfort-menu {
-    position: absolute;
-    top: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0;
-    margin: 2px 0 0 0;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    list-style-type: none;
-    z-index: 10;
-    width: 395px;
-  }
-  
-  .comfort-input + .comfort-menu {
-    display: none;
-  }
-  
-  .comfort-input:checked + .comfort-menu {
-    display: block;
-  }
-  
-  .comfort-menu li {
-    padding: 10px 20px;
-    cursor: pointer;
-    white-space: nowrap;
-    width: 390px;
-  }
-  
-  .comfort-menu li:hover {
-    background-color: #f6f6f6;
-  }
-  
-  .button {
-    width: 45px;
-    height: 45px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 22px;
-    background: #ffffff;
-  }
-  
-  .comfort .title {
-    margin-top: 15px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 15px;
-    /* identical to box height */
-  
-    text-transform: uppercase;
-    vertical-align: middle;
-    color: #1f2041;
-  }
-  
-  .comfort .flex {
-    display: flex;
-  }
-  
-  .comfort .text {
-    margin: 7px 20px 0 20px;
-  }
-  
-  .clean {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
-    border: none;
-    background: transparent;
-    outline: none;
-  }
-  
-  .apply {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #bc9cff;
-    border: none;
-    background: transparent;
-    outline: none;
-  }
-  
-  // @media only screen and (max-width: 600px) {
-  //   .little-dropdowns .dd-button {
-  //     display: inline-block;
-  //     border: 1px solid rgba(31, 32, 65, 0.25);
-  //     border-radius: 4px;
-  //     width: 310px;
-  //     height: 55px;
-  //   }
-  // }
-  
+}

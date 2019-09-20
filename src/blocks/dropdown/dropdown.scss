@@ -4,6 +4,7 @@
 }
 
 .dropdowns .dd-button {
+  position: relative;
   display: inline-block;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
@@ -12,12 +13,13 @@
   margin-top: 5px;
   font-style: normal;
   font-weight: normal;
-  font-size: 20.6px;
+  font-size: 1.14rem;
   line-height: 18px;
   color: $color-standart;
   // margin-bottom:35px;
-  padding-left: 15px;
-  padding-top: 20px;
+  display:table-cell;
+vertical-align:middle;
+  padding-left: 20px;
   color:  rgba(31, 32, 65, 0.75);
 }
 
@@ -33,7 +35,7 @@
   color: $black-text;
   position: absolute;
   left: 21.5em;
-  top: 1.5em;
+  top: 1.2em;
 }
 
 .dropdowns .dd-input {
@@ -50,7 +52,7 @@
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   list-style-type: none;
-  margin-top: -20px;
+  margin-top: 0;
 }
 
 .dropdowns .dd-input + .dd-menu {
@@ -80,13 +82,15 @@
   box-sizing: border-box;
   border-radius: 22px;
   background: #ffffff;
+  outline: none;
+  cursor: pointer;
 }
 
 .dropdowns .title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 15px;
   
   /* identical to box height */
@@ -107,7 +111,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 15px;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
@@ -115,12 +119,13 @@
   background: transparent;
   outline: none;
   margin: 30px 0 10px 0px;
+  cursor: pointer;
 }
 
 .apply {
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 15px;
   text-transform: uppercase;
   color: #bc9cff;
@@ -128,6 +133,7 @@
   background: transparent;
   outline: none;
   margin: 30px 0px 10px 0;
+  cursor: pointer;
 }
 
 // @media only screen and (max-width: 600px) {
@@ -164,3 +170,9 @@
 //     color: $black-text;
 //   }
 // }
+
+@media only screen and (max-width: 450px) {
+  .dropdowns .dd-menu{
+    width: 310px;
+  }
+}

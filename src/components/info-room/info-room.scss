@@ -1,3 +1,4 @@
+
 .information-top-part{
     display: flex;
 }
@@ -6,6 +7,9 @@
     flex: 2;
 }
 
+.gallery-top--responsive{
+    display: none;
+}
 .gallery-bottom{
     flex: 1;
 }
@@ -23,7 +27,7 @@
 .information-title{
     font-family: "OpenSans-Bold";
     text-transform: none;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-left: 15px;
 }
@@ -112,11 +116,29 @@
 }
 
 .information-text{
-    font-size: 20.6px;
+    font-size: 1.14rem;
     margin-top: 40px;
     line-height: 36px;
 }
 @media only screen and (max-width: 1850px) {
+    .gallery-top{
+        display: none;
+    }
+
+    .gallery-top--responsive{
+        display: block;
+    }
+    
+
+    .gallery-top--responsive img{
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-bottom{
+        display: none;
+    }
+    
     .bottom-part--left{
         width: 30vw;
         display: flex;
@@ -148,16 +170,16 @@
     //     height: 320px;
     // }
 
-    .information-title{
-        font-size: 20.5px;
-    }
+    // .information-title{
+    //     font-size: 20.5px;
+    // }
       
     .information-title--rules{
         margin-left: 20px;
     }
 
     .information-cancel {
-        font-size: 16px;
+        // font-size: 16px;
         line-height: 24px;
         margin-left: 15px;
     }
@@ -167,7 +189,19 @@
       }
 
     .information-text{
-        font-size: 16px;
+        // font-size: 16px;
         line-height: 26px;
+    }
+
+    .bottom-part__right{
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    .information-impression{
+        display: none;
     }
   }

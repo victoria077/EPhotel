@@ -20,7 +20,7 @@
 .card-number {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.78rem;
   line-height: 17px;
   color: #1F2041;
 }
@@ -28,7 +28,7 @@
 .card-price {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.78rem;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
 }

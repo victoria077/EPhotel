@@ -2,31 +2,32 @@ include ../mixins.pug
 
 .wrap
   .container-form
-      h1( class="title-main") Регистрация аккаунта
-      div(class="signup-input--name")
-      +input-text("Имя")
-      div(class="signup-input--surname")
-      +input-text("Фамилия")
+      h1( class='title-main') Регистрация аккаунта
+      div(class='signup-input--name')
+      +input-text('Имя')
+      div(class='signup-input--surname')
+      +input-text('Фамилия')
 
       .row.radio-buttons
-         +radio-button("radio-button1", "Мужчина")
-         +radio-button("radio-button2", "Женщина")
+         +radio-button('radio-button1', 'Мужчина')
+         +radio-button('radio-button2', 'Женщина')
 
-      div(class="signup-input--birthday")
-      label(class="title signup-title") Дата рождения
-      +input-text("ДД.ММ.ГГГГ")
+      div(class='signup-input--birthday')
+      label(class='title signup-title') Дата рождения
+      +input-text('ДД.ММ.ГГГГ')
       
-      div(class="signup-input--data")
-      label(class="title signup-title") Данные для входа в сервис
-      +input-text("Email")
-      div(class="signup-input--data--password")
-        +input-text("Пароль")
+      div(class='signup-input--data')
+      label(class='title signup-title') Данные для входа в сервис
+      +input-text('Email')
+      div(class='signup-input--data--password')
+        +input-text('Пароль')
 
+      .row
+        include ../../blocks/toggle/toggle.pug
+        p(class="signup-offer") Получать спецпредложения
 
-      include ../../blocks/toggle/toggle.pug
-
-      button(type="button" class="btn btn-confirm signup-button--payment") Перейти к оплате
+      button(type='button' class='btn btn-confirm signup-button--payment') Перейти к оплате
       
       .flex-row
-        p(class="text sugnup-text") Уже есть аккаунт на Toxin
+        p(class='text sugnup-text') Уже есть аккаунт на Toxin
         +button-signin('Войти', 'signin-page.html')

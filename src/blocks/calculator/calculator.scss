@@ -12,22 +12,39 @@
 }
 
 .calculator__container p {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 .form__search__title{
   margin-top:30px; 
 }
 .calculator__total{
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 45px;
 }
 
+.title-checkout{
+  margin-left: 28%;
+}
 .room-number{
-  font-size: 32px;
+  font-size: 1.78rem;
   margin-top: 0;
 
+}
+
+.material-icons--info{
+  font-size: 24px;
+  font-family: "MaterialIcons";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .calculator-count{
@@ -39,6 +56,46 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .calculator {
+    width: 480px;
+  }
+
+  
+.calculator__container{
+  margin: 10px;
+}
+
+.calculator-datepicker .range{
+  width: 180px;
+}
+
+.calculator-datepicker .datepicker{
+  width: 280px;
+}
+.calculator-dropdown .dropdowns .dd-button{
+  width: 460px;
+}
+
+.title-checkout{
+  margin-left: 40%;
+}
+
+.calculator  .dropdowns .dd-menu {
+  width: 460px;
+}
+
+.calculator__total{
+  font-weight: bold;
+} 
+
+.calculator .btn-confirm{
+  width: 460px;
+ }
+
+}
+
+
+@media only screen and (max-width: 450px) {
   .calculator {
     width: 395px;
   }
@@ -58,15 +115,66 @@
 .calculator-dropdown .dropdowns .dd-button{
   width: 370px;
 }
-.calculator__container p {
-  font-size: 16px;
+
+.calculator  .dropdowns .dd-menu {
+  width: 370px;
 }
+
+
 .calculator__total{
-  font-size: 22px;
   font-weight: bold;
 } 
 
 .calculator .btn-confirm{
   width: 370px;
+ }
+
+ 
+ .title-checkout{
+  margin-left: 25%;
+}
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .calculator {
+    width: 310px;
+  }
+
+  
+.calculator__container{
+  margin: 10px;
+}
+
+.calculator-datepicker .range{
+  width: 130px;
+  height: 50px;
+}
+
+.calculator-datepicker .datepicker{
+  width: 280px;
+}
+.calculator-dropdown .dropdowns .dd-button{
+  width: 290px;
+  height: 40px;
+}
+
+.calculator  .dropdowns .dd-menu {
+  width: 290px;
+}
+
+
+.calculator__total{
+  font-weight: bold;
+} 
+
+.calculator .btn-confirm{
+  width: 290px;
+  height: 40px;
+ }
+
+ .title-checkout{
+  margin-left: 20%;
 }
 }

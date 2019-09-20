@@ -2,13 +2,15 @@ include ../mixins.pug
 
 div(class="information")
     div(class="information-top-part")
+        div(class="gallery-top--responsive")
+            img(src=require("../images/mainA-resp.jpg"))
         div(class="gallery-top")
-            img(src=require("./images/mainA.jpg") class="bigImg")
+            img(src=require("../images/mainA.jpg"))
         div(class="gallery-bottom")
             div(class="gallery-bottom--first")
-                img(src=require("./images/gallery-first.jpg") class="bigImg")
+                img(src=require('../images/gallery-first.jpg'))
             div(class="gallery-bottom--second")
-                img(src=require("./images/gallery-second.jpg") class="bigImg")
+                img(src=require("../images/gallery-second.jpg"))
     div(class="information-bottom-part row" class="container flex-row")
         div(class="bottom-part--left")
             div(class="row room-information--info")
@@ -22,9 +24,9 @@ div(class="information")
                     include ../../blocks/donutChart/donutChart.pug
             .blocks 
                 h3(class="information-title information-title--details") Отзывы посетителей номера
-                +feedback(require("./images/photo1.jpg"), "Мурад Сарафанов", '5 дней назад', "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+                +feedback(require("../images/photo1.jpg"), "Мурад Сарафанов", '5 дней назад', "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
                 div(class="information-impression--second")
-                    +feedback(require("./images/photo2.jpg"), "Патрисия Стёклышкова", 'Неделю назад', "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+                    +feedback(require("../images/photo2.jpg"), "Патрисия Стёклышкова", 'Неделю назад', "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
             div(class="flex-row")
                 .blocks.information-rules
                     h3(class="information-title information-title--rules") Правила
