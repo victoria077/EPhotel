@@ -66,7 +66,6 @@
   padding: 10px 20px;
   cursor: pointer;
   white-space: nowrap;
-  width: 390px;
 }
 
 .comfort-menu li:hover {
@@ -135,6 +134,23 @@
 
 @media only screen and (max-width: 500px) {
   .comfort-menu{
-    width: 360px;
+    width: 395px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .comfort-menu{
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .comfort-menu{
+    width: 300px;
+  }
+
+  .comfort-menu li {
+    padding: 10px 0px;
   }
 }

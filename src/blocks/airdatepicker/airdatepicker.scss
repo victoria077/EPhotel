@@ -321,24 +321,25 @@
 }
 
 .datepicker {
-  background: #fff;
-  border: 1px solid #dbdbdb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-sizing: content-box;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-size: 18px;
-  color: #1f2041;
-  width: 26.5em;
-  position: absolute;
-  left: -100000px;
-  opacity: 0;
-  transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
-  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
-    -webkit-transform 0.3s ease;
-  z-index: 100;
+  display: none;
+  // background: #fff;
+  // border: 1px solid #dbdbdb;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  // border-radius: 4px;
+  // box-sizing: content-box;
+  // font-family: "Montserrat";
+  // font-style: normal;
+  // font-size: 18px;
+  // color: #1f2041;
+  // width: 26.5em;
+  // position: absolute;
+  // left: -100000px;
+  // opacity: 0;
+  // transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  // transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
+  // transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
+  //   -webkit-transform 0.3s ease;
+  // z-index: 100;
 }
 .datepicker.-from-top- {
   -webkit-transform: translateY(-8px);
