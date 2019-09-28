@@ -16,22 +16,18 @@
   font-size: 1.14rem;
   line-height: 18px;
   color: $color-standart;
-  // margin-bottom:35px;
-  display:table-cell;
-vertical-align:middle;
+  display: table-cell;
+  vertical-align: middle;
   padding-left: 20px;
-  color:  rgba(31, 32, 65, 0.75);
+  color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdowns .dd-button::after{
+.dropdowns .dd-button::after {
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
-  // margin-left: 45%;
-  // margin-top: 25px;
   color: $black-text;
   position: absolute;
   left: 21.5em;
@@ -92,8 +88,6 @@ vertical-align:middle;
   font-weight: bold;
   font-size: 1rem;
   line-height: 15px;
-  
-  /* identical to box height */
   margin-top: 20px;
   text-transform: uppercase;
   color: #1f2041;
@@ -136,9 +130,8 @@ vertical-align:middle;
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 450px) {
-  .dropdowns .dd-menu{
+  .dropdowns .dd-menu {
     width: 310px;
   }
 }

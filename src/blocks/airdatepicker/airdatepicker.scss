@@ -13,7 +13,6 @@
   left: 80%;
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
@@ -32,23 +31,12 @@
   left: 87%;
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
   color: $black-text;
 }
-
-// #single__input__range {
-//   width: 395px;
-//   height: 65px;
-//   border: 1px solid rgba(31, 32, 65, 0.25);
-//   box-sizing: border-box;
-//   border-radius: 4px;
-//   font-size: 1rem;
-//   padding-left: 20px;
-// }
 
 .range {
   width: 220px;
@@ -92,7 +80,7 @@
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
       -webkit-transform 0.3s ease;
-    // z-index: 100;
+    z-index: 100;
   }
 }
 
@@ -167,7 +155,6 @@
   -ms-flex-pack: center;
   justify-content: center;
   height: 62px;
-  // z-index: 1;
 }
 .datepicker--cell.-focus- {
   background: #f0f0f0;
@@ -359,7 +346,6 @@
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
     -webkit-transform 0.3s ease;
-  // z-index: 100;
 }
 .datepicker.-from-top- {
   -webkit-transform: translateY(-8px);
@@ -417,7 +403,6 @@
   border-right: 1px solid #dbdbdb;
   width: 10px;
   height: 10px;
-  // z-index: -1;
 }
 .-top-left- .datepicker--pointer,
 .-top-center- .datepicker--pointer,
@@ -963,6 +948,5 @@
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
       -webkit-transform 0.3s ease;
-    // z-index: 100;
   }
 }

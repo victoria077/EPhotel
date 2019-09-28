@@ -8,7 +8,6 @@
 .start-date::before {
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
@@ -25,8 +24,6 @@
   width: 266px;
   height: 44px;
   background: #ffffff;
-  /* Dark 25% */
-
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
@@ -35,7 +32,6 @@
 .input__date--single::before {
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
@@ -51,7 +47,6 @@
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
-  // padding: 30px 40px;
 }
 
 .search-title-checkout {

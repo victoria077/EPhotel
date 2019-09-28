@@ -16,7 +16,6 @@
   font-size: 1.14rem;
   line-height: 18px;
   color: $color-standart;
-  // margin-bottom:35px;
   display: table-cell;
   vertical-align: middle;
   padding-left: 20px;
@@ -26,7 +25,6 @@
 .comfort-button:after {
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
@@ -90,8 +88,6 @@
   font-weight: bold;
   font-size: 1rem;
   line-height: 15px;
-  /* identical to box height */
-
   text-transform: uppercase;
   vertical-align: middle;
   color: #1f2041;

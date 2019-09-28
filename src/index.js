@@ -8,7 +8,6 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import "../src/components/form-search/form-search.js";
 import "../src/components/components-page/components-page.js";
-import "../src/components/slider/slider.js";
 require('./fonts.scss');
 require('jquery');
 require('jquery-ui-bundle');

@@ -13,7 +13,6 @@
   left: 80%;
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
@@ -32,7 +31,6 @@
   left: 87%;
   content: "";
   padding: 5px;
-  //   //set tickness
   box-shadow: 2px -2px 0 0 $black-text inset;
   display: inline-block;
   transform: rotate(-45deg);
@@ -972,20 +970,3 @@
     width: 290px;
   }
 }
-
-// @media only screen and (max-width: 380px) {
-
-//   .comfort-menu{
-//     width: 330px;
-//   }
-// }
-
-// @media only screen and (max-width: 380px) {
-//   .little-dropdowns .dd-menu {
-//     width: 300px;
-//   }
-
-//   .little-dropdowns .dd-menu  li {
-//     padding: 10px 0px;
-//   }
-// }

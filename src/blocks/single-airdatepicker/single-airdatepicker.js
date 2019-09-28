@@ -2235,19 +2235,6 @@
 })();
  })(window, jQuery);
 
-// let dateRange = $('.dateRange').datepicker({
-//     range: true,
-//     multipleDates: 2,
-//     formatDate: "dd.mm.yyyy",
-//     inline: false,
-//     onSelect: function(startDateText, endDateText){
-//         startDateText = dateRange.selectedDates[0];
-//         endDateText = dateRange.selectedDates[1];
-//         $("#startDate").val(startDateText.getDate() + "." + startDateText.getMonth() + "." + startDateText.getFullYear());
-//         $("#endDate").val(endDateText.getDate() + "." + endDateText.getMonth() + "." + endDateText.getFullYear());
-
-//     }
-// }).data('datepicker');
 
 $('#single__input__range').datepicker({ range: true,
     multipleDates: 2,
@@ -2255,5 +2242,5 @@ $('#single__input__range').datepicker({ range: true,
         days: 'MM yyyy'
     },
     dateFormat: "d M"})
-// Access instance of plugin
+
 $('#single__input__range').data('datepicker')
