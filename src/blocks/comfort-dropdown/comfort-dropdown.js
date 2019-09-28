@@ -54,7 +54,7 @@ $("#comfort-clean").on("click", function() {
   $("#bedroom_text").html(0);
   $("#bed_text").html(0);
   $("#bathroom_text").html(0);
-  $("#comfort").html("Удобства");
+  $("#comfort-button").html("Удобства");
   bedroom = 0;
   bed = 0; 
   bathroom = 0;

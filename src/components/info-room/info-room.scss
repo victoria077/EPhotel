@@ -100,7 +100,124 @@
     font-size: 1.14rem;
     margin-top: 40px;
     line-height: 36px;
+    color: rgba(31, 32, 65, 0.75);
 }
+
+.room__information {
+    width: 410px;
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 25px 10px 25px 13px;
+      &__description {
+        & h4 {
+          margin-block-start: 0em;
+          margin-block-end: 0.1em;
+          margin-left: 0.83rem;
+          font-style: normal;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 24px;
+          color: rgba(31, 32, 65, 0.75);
+        }
+        & p {
+          margin-block-start: 0;
+          margin-block-end: 0em;
+          margin-top: 10px;
+          font-style: normal;
+          font-size: 18px;
+          color: rgba(31, 32, 65, 0.75);
+          margin-left: 15px;
+          font-style: normal;
+          font-size: 1.14rem;
+          font-weight: 300;
+        }
+      }
+    }
+    &__icon {
+      font-size: 40px;
+      color: #bc9cff;
+    }
+  }
+  
+  
+.bullet-list {
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    color: rgba(31, 32, 65, 0.75);
+    border-radius: 5px;
+    margin-left: -30px;
+    margin-top: 10px;
+    > li {
+      list-style: none;
+      position: relative;
+      padding: 5px 0 0 1.7em;
+      transition: 0.12s;
+      font-size: 20.6px;
+      font-weight: normal;
+      margin-bottom: 1.3em;
+      &::before {
+        position: absolute;
+        content: "\2022";
+        font-family: Arial;
+        color: rgba(31, 32, 65, 0.75);
+        top: -7px;
+        left: 5px;
+        text-align: center;
+        font-size: 2.5em;
+        opacity: 0.5;
+        line-height: 1;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .border {
+    border-bottom: 1px solid grey;
+  }
+  
+  .room__feedback__wrapper {
+    &__person {
+      display: flex;
+      flex-direction: row;
+      margin-left: -15px;
+      margin-top: 30px;
+      & img {
+        width: 120px;
+        height: 120px;
+      }
+      & h4 {
+        margin-block-start: 1em;
+        margin-block-end: 0.4em;
+        font-size: 21px;
+        font-weight: bold;
+      }
+      & p {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(31, 32, 65, 0.75);
+      }
+    }
+    &__evaluation {
+      display: flex;
+      margin-top: -24px;
+      & p {
+        margin-left: 27px;
+        margin-top: 2px;
+        font-weight: 500;
+        line-height: 36px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+    }
+  }
+  
+  .room__feedback__text{
+    margin-left: 20px;
+  }
 @media only screen and (max-width: 1850px) {
     .gallery-top{
         display: none;
@@ -141,10 +258,35 @@
     }
   }
 
+  @media only screen and (max-width: 1100px) {
+    .information-text {
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+
+    .information-title--cancel {
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+  }
+
+
   @media only screen and (max-width: 600px) {
+
+    .information-bottom-part {
+        padding-top: 0px;
+    }
       
+    .bullet-list > li {
+        font-size: 14px;
+    }
+
     .information-title--rules{
         margin-left: 20px;
+    }
+
+    .information-text {
+        font-size: 1rem;
     }
 
     .information-cancel {
@@ -153,6 +295,12 @@
         margin-left: 15px;
     }
 
+    .information-title--cancel {
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+      
+
     .calculator-container{
         margin: 0px;
       }
@@ -160,6 +308,11 @@
     .information-text{
         // font-size: 16px;
         line-height: 26px;
+            margin-left: 0px;
+    }
+
+    .room__information__wrapper {
+        padding: 25px 10px 25px 0px;
     }
 
     .bottom-part__right{
@@ -172,5 +325,14 @@
   @media only screen and (max-width: 400px) {
     .information-impression{
         display: none;
+    }
+
+    .bullet-list > li {
+        font-size: 11px;
+    }
+
+    .information-text {
+        font-size: 12px;
+        margin-top: 20px;
     }
   }

@@ -21,15 +21,16 @@
             .flex-row.calculator-count
                 .row
                     p Сбор за услуги: скидка 2 179₽
-                        span(class='calculator__hint')
-                    i(class="material-icons material-icons--info") info
+                    div
+                        span.calculator-count-info i
                 p 0P
             .flex-row.calculator-count
                 .row
                     p(style='white-space:pre;')
                         | Сбор за дополнительные 
                         | услуги
-                    i(class="material-icons material-icons--info") info
+                    div
+                        span.calculator-count-info.calculator-count-info--extra i
                 p 300P
             h3(class='calculator__total') Итого..................................................38 081₽
             button(type='button' class='btn btn-confirm') Забронировать

@@ -7,7 +7,7 @@
   border-radius: 4px;
 }
 
-.calculator__container{
+.calculator__container {
   margin: 55px 41px;
 }
 
@@ -15,25 +15,42 @@
   font-size: 1.1rem;
 }
 
-.form__search__title{
-  margin-top:30px; 
+.form__search__title {
+  margin-top: 30px;
 }
-.calculator__total{
+.calculator__total {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 45px;
 }
 
-.title-checkout{
+.calculator-count-info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding: 3px 12px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-left: 1vw;
+}
+
+.calculator-count-info--extra {
+  margin-left: 2.6vw;
+}
+
+.title-checkout {
   margin-left: 28%;
 }
-.room-number{
+.room-number {
   font-size: 1.78rem;
   margin-top: 0;
-
 }
 
-.material-icons--info{
+.material-icons--info {
   font-size: 24px;
   font-family: "MaterialIcons";
   font-weight: normal;
@@ -47,12 +64,18 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.calculator-count{
+.calculator-count {
   margin-top: 25px;
 }
 
-.calculator-count--price{
+.calculator-count--price {
   margin-top: 35px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .calculator {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,121 +83,112 @@
     width: 480px;
   }
 
-  
-.calculator__container{
-  margin: 10px;
+  .calculator__container {
+    margin: 10px;
+  }
+
+  .calculator-datepicker .range {
+    width: 180px;
+  }
+
+  .calculator-datepicker .datepicker {
+    width: 280px;
+  }
+  .calculator-dropdown .dropdowns .dd-button {
+    width: 460px;
+  }
+
+  .title-checkout {
+    margin-left: 40%;
+  }
+
+  .calculator .dropdowns .dd-menu {
+    width: 460px;
+  }
+
+  .calculator__total {
+    font-weight: bold;
+  }
+
+  .calculator .btn-confirm {
+    width: 460px;
+  }
 }
-
-.calculator-datepicker .range{
-  width: 180px;
-}
-
-.calculator-datepicker .datepicker{
-  width: 280px;
-}
-.calculator-dropdown .dropdowns .dd-button{
-  width: 460px;
-}
-
-.title-checkout{
-  margin-left: 40%;
-}
-
-.calculator  .dropdowns .dd-menu {
-  width: 460px;
-}
-
-.calculator__total{
-  font-weight: bold;
-} 
-
-.calculator .btn-confirm{
-  width: 460px;
- }
-
-}
-
 
 @media only screen and (max-width: 450px) {
   .calculator {
     width: 395px;
   }
 
-  
-.calculator__container{
-  margin: 10px;
+  .calculator__container {
+    margin: 10px;
+  }
+
+  .calculator-datepicker .range {
+    width: 180px;
+  }
+
+  .calculator-datepicker .datepicker {
+    width: 280px;
+  }
+  .calculator-dropdown .dropdowns .dd-button {
+    width: 370px;
+  }
+
+  .calculator .dropdowns .dd-menu {
+    width: 370px;
+  }
+
+  .calculator__total {
+    font-weight: bold;
+  }
+
+  .calculator .btn-confirm {
+    width: 370px;
+  }
+
+  .title-checkout {
+    margin-left: 25%;
+  }
 }
-
-.calculator-datepicker .range{
-  width: 180px;
-}
-
-.calculator-datepicker .datepicker{
-  width: 280px;
-}
-.calculator-dropdown .dropdowns .dd-button{
-  width: 370px;
-}
-
-.calculator  .dropdowns .dd-menu {
-  width: 370px;
-}
-
-
-.calculator__total{
-  font-weight: bold;
-} 
-
-.calculator .btn-confirm{
-  width: 370px;
- }
-
- 
- .title-checkout{
-  margin-left: 25%;
-}
-}
-
-
 
 @media only screen and (max-width: 400px) {
   .calculator {
     width: 310px;
   }
 
-  
-.calculator__container{
-  margin: 10px;
-}
+  .calculator__container {
+    margin: 10px;
+  }
 
-.calculator-datepicker .range{
-  width: 130px;
-  height: 50px;
-}
+  .calculator-datepicker .range {
+    width: 130px;
+    height: 55px;
+  }
 
-.calculator-datepicker .datepicker{
-  width: 280px;
-}
-.calculator-dropdown .dropdowns .dd-button{
-  width: 290px;
-  height: 40px;
-}
+  .calculator-datepicker .datepicker {
+    width: 280px;
+  }
+  .calculator-dropdown .dropdowns .dd-button {
+    width: 290px;
+    height: 55px;
+  }
 
-.calculator  .dropdowns .dd-menu {
-  width: 290px;
-}
+  .calculator .dropdowns .dd-menu {
+    width: 290px;
+  }
 
+  .calculator__total {
+    font-weight: bold;
+    font-size: 16px;
+  }
 
-.calculator__total{
-  font-weight: bold;
-} 
+  .calculator .btn-confirm {
+    width: 290px;
+    height: 55px;
+  }
 
-.calculator .btn-confirm{
-  width: 290px;
-  height: 40px;
- }
-
- .title-checkout{
-  margin-left: 20%;
-}
+  .title-checkout {
+    margin-left: 20%;
+  }
 }

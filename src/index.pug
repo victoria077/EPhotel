@@ -6,6 +6,19 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
         link(rel="stylesheet", href="header.pug")
+        link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="owlcarousel/owl.carousel.min.css")
+    link( rel="stylesheet" href="owlcarousel/owl.theme.default.min.css")
+    link(rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+    script(src="owlcarousel/owl.carousel.min.js")
+    script(src="/node_modules/jquery/dist/jquery.js")
+    script(src="/node_modules/owl.carousel/dist/owl.carousel.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js")
+    link(href="/src/blocks/airdatepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css")
+    script(src="/src/blocks/airdatepicker/dist/js/datepicker.min.js")
     body
         .wrapper    
             //- include components/main_ui/main_ui.pug
@@ -33,4 +46,6 @@ html(lang="en")
             //- include components/info-page/info-page.pug
             //- include blocks/airdatepicker/single_airpicker.pug
             //- include blocks/comfort-dropdown/comfort-dropdown.pug
+            //- include blocks/extracomfort-dropdown/extracomfort-dropdown.pug
+            //- include blocks/single-airdatepicker/single-airdatepicker.pug
         script(src="src/index.js")

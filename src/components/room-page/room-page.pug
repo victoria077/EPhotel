@@ -7,7 +7,7 @@ include ../mixins.pug
                 i(class='fa fa-arrow-left')
             h3(class='title') Даты пребывания в отеле
             div(class='settings-datepicker')
-                include ../../blocks/airdatepicker/single_airpicker.pug
+                include ../../blocks/single-airdatepicker/single-airdatepicker.pug
             h3(class='title') гости
             div(class='settings-dropdown')
                 include ../../blocks/littleDropdown/littleDropdown.pug
@@ -29,6 +29,8 @@ include ../mixins.pug
             h3(class='title  room-title--comfort') Удобства номера
             div(class='settings-comfort')
                 include ../../blocks/comfort-dropdown/comfort-dropdown.pug
+            div(class='settings-extracomfort')
+                include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
     .right-side
         h1(class='title-main settings-main-title') Номера, которые мы для вас подобрали
         span(class='slide' id='slide')
@@ -53,4 +55,5 @@ include ../mixins.pug
                     +card-room('carousel11', require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'),  352, '5 000₽', '--rating: 3', 55, 'room-card__decor')
 
         include ../../blocks/panagination/panagination.pug
+        p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды
 hr     

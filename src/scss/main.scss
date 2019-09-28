@@ -15,14 +15,17 @@
 @import "../components/components-page/components-page.scss";
 @import "../blocks/calculator/calculator.scss";
 @import "../blocks/airdatepicker/airdatepicker.scss";
+@import "../blocks/single-airdatepicker/single-airdatepicker.scss";
 @import "../blocks/dropdown/dropdown.scss";
 @import "../blocks/littleDropdown/littleDropdown.scss";
 @import "../blocks/panagination/panagination.scss";
 @import "../blocks/donutChart/donutChart.scss";
 @import "../blocks/slick/slick.scss";
 @import "../blocks/comfort-dropdown/comfort-dropdown.scss";
+@import "../blocks/extracomfort-dropdown/extracomfort-dropdown.scss";
 @import "../blocks/range-slider/range-slider.scss";
 @import "../blocks/toggle/toggle.scss";
+
 
 html,
 body {
@@ -158,7 +161,7 @@ hr {
     font-style: normal;
     font-weight: normal;
     font-size: 22.5px;
-    line-height: 18px;
+    line-height: 65px;
     color: $color-standart;
   }
 }
@@ -204,14 +207,14 @@ hr {
 }
 
 .btn-like {
-  border: 2px solid #bc9cff;
+  border: 2px solid rgba(31, 32, 65, 0.25);
   outline: none;
-  color: #bc9cff;
+  color: rgba(31, 32, 65, 0.25);
   background: #ffffff;
   border-radius: 15px;
   font-size: 14px;
   cursor: pointer;
-  width: 90px;
+  max-width: 90px;
   height: 30px;
   margin-left: 20px;
   margin-top: 5px;
@@ -219,11 +222,6 @@ hr {
 
 .btn-like span {
   margin-left: 5px;
-}
-
-/* Darker background on mouse-over */
-.btn-like:hover {
-  color: #8ba4f9;
 }
 
 .subtitle {
@@ -274,7 +272,7 @@ hr {
         content: "";
         background: #fff;
         border-radius: 100%;
-        border: 2px solid #bc9cff;
+        border: 2px solid rgba(31, 32, 65, 0.25);
         display: inline-block;
         width: 1.9em;
         height: 1.9em;
@@ -288,8 +286,10 @@ hr {
       }
     }
     &:checked {
+      opacity: 0;
       + .radio-label {
         &:before {
+          border: 2px solid  #BC9CFF;
           background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
           box-shadow: inset 0 0 0 4px #fff;
         }
@@ -333,11 +333,53 @@ hr {
   body {
     font-size: 16px;
   }
+
+  .input-text {
+    width: 440px;
+  }
+
+  .btn-confirm {
+    width: 440px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   html,
   body {
     font-size: 14px;
   }
+
+  .input-text {
+    width: 390px;
+  }
+
+  .btn-confirm {
+    width: 390px;
+  }
+
+  .btn-link {
+    margin: 0 auto;
+    margin-top: 10px;
+  }  
+}
+
+
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .input-text {
+    width: 300px;
+  }
+
+  .btn-confirm {
+    width: 300px;
+  }
+
+  .btn-link {
+    margin: 0 auto;
+    margin-top: 10px;
+  }  
 }

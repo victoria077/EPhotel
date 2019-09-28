@@ -2238,7 +2238,10 @@
 let dateRange = $('.dateRange').datepicker({
     range: true,
     multipleDates: 2,
-    formatDate: "dd.mm.yyyy",
+    navTitles: {
+        days: 'MM yyyy'
+    },
+    dateFormat: "d M",
     inline: false,
     onSelect: function(startDateText, endDateText){
         startDateText = dateRange.selectedDates[0];
@@ -2248,9 +2251,3 @@ let dateRange = $('.dateRange').datepicker({
 
     }
 }).data('datepicker');
-
-$('#single__input__range').datepicker({ range: true,
-    multipleDates: 2,
-    formatDate: "dd.mm.yyyy"})
-// Access instance of plugin
-$('#single__input__range').data('datepicker')

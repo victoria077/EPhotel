@@ -12,14 +12,12 @@
 .cdp {
   position: relative;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 0;
   font-size: 0;
   z-index: 6;
   margin: 20px 0;
-
   animation: cdp-in 500ms ease both;
   animation-timeout: 200ms;
-
   &_i {
     font-size: 17px;
     text-decoration: none;

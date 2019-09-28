@@ -83,6 +83,10 @@
 .btn-signup {
   margin-top: 13px;
 }
+
+.header-btn-signup{
+  display: inline-block;
+}
 @media (max-width: 1300px) {
   .menu {
     margin: 0;
@@ -139,5 +143,9 @@
 @media (max-width: 600px) {
   .header-btn-signin{
     margin: 10px 25px  16px 0px;
+  }
+
+  .header-btn-signup{
+    margin-top: 10px;
   }
 }

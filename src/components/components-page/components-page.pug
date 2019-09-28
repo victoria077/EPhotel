@@ -1,99 +1,40 @@
-
-//- mixin text-field(placeholder)
-//-     input(class='input_text' placeholder= placeholder)
-
-//- +text-field('Email')
-
-
-//- mixin input-subscription(placeholder)
-//-   form(class='form__subscribe')
-//-     input(type='text' placeholder= placeholder) 
-//-     button(type='submit')
-//-         i(class='fa fa-arrow-right')
-//- +input-subscription('Name')
-
-//- mixin checkbox(name, label)
-//-   div(class='checkbox__button')
-//-     input(type='checkbox' class='checkbox__button checkbox__box' id= name name= name value= name)
-//-     label(class='checkbox__button checkbox__name' for= name)= label
-
-//- +checkbox('Cote', 'cote')
-
-//- mixin radio-button(name)
-//-     div(class='radio-button')
-//-       ul
-//-         li 
-//-           input(type='radio' id = name name='selector')
-//-           label(for= name)= name
-//-           .check
-
-//- +radio-button('Men')
-
-//- mixin stars(style='--rating: level')
-//-    div(class='Stars' style= style)
-
-//- +stars('--rating:4')
-
-
-//- mixin bullet-list(li1, li2, li3)
-//-   ul(class='bullet-list')
-//-     li= li1 
-//-     li= li2
-//-     li= li3
-//- +bullet-list(' Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00' + 'а выезд до 12:00 ')
-
-
-//- mixin room-information(icon, quality, descr)
-//-     div(class='room__information')
-//-       div(class='room__information__wrapper')
-//-          i(class='room__information__icon' class= icon)
-//-          div(class='room__information__wrapper__description')
-//-             h4= quality
-//-             p= descr
-          
-          
-//- +room-information('fa fa-laugh', 'Комфорт', 'Шумопоглощающие стены')
-
-//- mixin feedback( personName, date)
-//-   div(class='room__feedback')
-//-     div(class='room__feedback__wrapper')
-//-       div(class='room__feedback__wrapper__person')
-//-         img()
-//-         div(class='room__feedback__wrapper__person--name')
-//-           h4= personName
-//-           p= date
-//-       div(class='room__feedback__wrapper__evaluation')
-//-         button(type: 'button')
-//-           i(class='icon') favorite_border
-//-           span 12
-//-         p= text
-
-           
-//- +feedback( 'Мурад Сарафанов', '5 дней назад')
-
-//- input(class='slider-input' type='text' id='amount' readonly style='border:0; color:rgba(31, 32, 65, 0.5); margin-bottom: 20px; font-weight:bold; margin-left: 120px; font-size: 16px; line-height: 15px; text-align: right; text-transform: uppercase;')
-//- div(id='slider-range') 
-
-
-include ../header/header.pug
-br
-
+include ../mixins.pug
 
 +input-text('Email')
+div
+    +input-subscription('Email')
+include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
+
 +room-information('mood', 'Комфорт', 'Шумопоглощающие стены', ' information__border') 
 +room-information('location_city', 'Удобство', 'Окно в каждой из спален', ' information__border')
 +checkbox('Smoking', 'Можно курить', 'room__checkbox')
 +checkbox('Pets', 'Можно с питомцами', 'room__checkbox')
 +checkbox('Guests',  'Можно пригласить гостей (до 10 человек)',
 'room__checkbox')
-br
-br
-+bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00' + ', '   +  ' а выезд до 12:00 ')
-br
 include ../../blocks/dropdown/dropdown.pug
+br
+.row
+    +radio-button('radio-button1', 'Мужчина')
+    +radio-button('radio-button2', 'Женщина')
+
+include ../../blocks/toggle/toggle.pug
+
+include ../../blocks/range-slider/range-slider.pug
+
++button-signin('Войти', 'signin-page.html')
+
+button(type='button' class='btn btn-confirm signup-button--payment') Перейти к оплате
+
+include ../../blocks/panagination/panagination.pug
+
+include ../../blocks/comfort-dropdown/comfort-dropdown.pug
+
+
++description-checkbox('Широкий коридор', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
++bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00' + ', '   +  ' а выезд до 12:00 ')
 +feedback(require('./images/photo1.jpg'), 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
-include ../../blocks/airdatepicker/airdatepicker.pug
 include ../signin-form/signin-form.pug
 include ../../blocks/donutChart/donutChart.pug
 +card-room('carousel', require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), 800, 800, '--rating: 3.5',800, 'room-card__decor')
+include ../header/header.pug
 include ../footer/footer.pug

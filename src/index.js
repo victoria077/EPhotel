@@ -21,23 +21,10 @@ import "../src/components/card-room/card-room.js";
 import "../src/components/room-page/room-page.js";
 import "../node_modules/material-icons/css/material-icons.min.css"
 import "../src/blocks/airdatepicker/airdatepicker.js";
+import "../src/blocks/single-airdatepicker/single-airdatepicker.js";
 import "../src/blocks/dropdown/dropdown.js";
 import "../src/blocks/littleDropdown/littleDropdown.js";
 import "../src/blocks/panagination/panagination.js";
 import "../src/blocks/slick/slick.js";
 import "../src/blocks/comfort-dropdown/comfort-dropdown.js"
 
-    // function closeSideBar(){
-    //   $("sidebar").on("click", function() {
-    //     $("sidebar").css("width", "250")
-    //   })
-    //   document.getElementById("left-side").style.marginLeft = "0";
-    //   console.log("fgfhg");
-    // }
-  
-  
-    // function openSideBar(){
-    //   document.getElementById("sidebar").style.width = "250px";
-    //   document.getElementById("left-side").style.marginLeft = "250px";
-    // }
-  
