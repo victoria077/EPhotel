@@ -1,6 +1,5 @@
 @import "../components/variables.scss";
 @import "../components/mixins.scss";
-@import "../components/main_ui/main_ui.scss";
 @import "../components/header/header.scss";
 @import "../components/form-register/form-register.scss";
 @import "../components/footer/footer.scss";
@@ -16,9 +15,9 @@
 @import "../blocks/airdatepicker/airdatepicker.scss";
 @import "../blocks/single-airdatepicker/single-airdatepicker.scss";
 @import "../blocks/dropdown/dropdown.scss";
-@import "../blocks/littleDropdown/littleDropdown.scss";
+@import "../blocks/little-dropdown/little-dropdown.scss";
 @import "../blocks/panagination/panagination.scss";
-@import "../blocks/donutChart/donutChart.scss";
+@import "../blocks/donut-chart/donut-chart.scss";
 @import "../blocks/slick/slick.scss";
 @import "../blocks/comfort-dropdown/comfort-dropdown.scss";
 @import "../blocks/extracomfort-dropdown/extracomfort-dropdown.scss";

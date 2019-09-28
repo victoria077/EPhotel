@@ -22,7 +22,7 @@ import "../node_modules/material-icons/css/material-icons.min.css"
 import "../src/blocks/airdatepicker/airdatepicker.js";
 import "../src/blocks/single-airdatepicker/single-airdatepicker.js";
 import "../src/blocks/dropdown/dropdown.js";
-import "../src/blocks/littleDropdown/littleDropdown.js";
+import "../src/blocks/little-dropdown/little-dropdown.js";
 import "../src/blocks/panagination/panagination.js";
 import "../src/blocks/slick/slick.js";
 import "../src/blocks/comfort-dropdown/comfort-dropdown.js"
