@@ -68,8 +68,8 @@ module.exports = {
       "window.jQuery":"jquery"
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: "main.css",
+      // chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
