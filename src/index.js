@@ -1,12 +1,10 @@
-
-import "./scss/main.scss";
 import "./index.pug";
 import "../src/components/signin-form/signin-form.pug"
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
-import "../src/components/form-search/form-search.js";
+// import "../src/components/form-search/form-search.js";
 import "../src/components/components-page/components-page.js";
 require('./fonts.scss');
 require('jquery');
@@ -16,14 +14,23 @@ require("../node_modules/jquery-ui-themes/themes/ui-lightness/theme.css");
 import 'owl.carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
-import "../src/components/card-room/card-room.js";
-import "../src/components/room-page/room-page.js";
+// import "../src/components/card-room/card-room.js";
+// import "../src/components/room-page/room-page.js";
 import "../node_modules/material-icons/css/material-icons.min.css"
-import "../src/blocks/airdatepicker/airdatepicker.js";
-import "../src/blocks/single-airdatepicker/single-airdatepicker.js";
-import "../src/blocks/dropdown/dropdown.js";
-import "../src/blocks/little-dropdown/little-dropdown.js";
-import "../src/blocks/panagination/panagination.js";
-import "../src/blocks/slick/slick.js";
-import "../src/blocks/comfort-dropdown/comfort-dropdown.js"
+// import "../src/blocks/airdatepicker/airdatepicker.js";
+// import "../src/blocks/single-airdatepicker/single-airdatepicker.js";
+// import "../src/blocks/dropdown/dropdown.js";
+// import "../src/blocks/little-dropdown/little-dropdown.js";
+// import "../src/blocks/panagination/panagination.js";
+// import "../src/blocks/slick/slick.js";
+// import "../src/blocks/comfort-dropdown/comfort-dropdown.js"
 
+
+const req = require.context("../src", true, /\.js$/)
+function loadStyles(){
+   req.keys().forEach(filename => req(filename))
+}
+loadStyles();
+
+require.context('./', true, /\.scss$/)
+.keys().forEach(require.context('./', true, /\.scss$/)); 

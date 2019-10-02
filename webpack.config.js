@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// importAll(require.context('./', true, /\.scss$/));
 var webpack = require('webpack');
 module.exports = {
   module: {
