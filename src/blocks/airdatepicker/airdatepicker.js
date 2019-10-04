@@ -2241,13 +2241,26 @@ let dateRange = $('.dateRange').datepicker({
     navTitles: {
         days: 'MM yyyy'
     },
-    dateFormat: "d M",
     inline: false,
     onSelect: function(startDateText, endDateText){
+        var d = new Date();
+        var month = new Array();
+        month[0] = "Янв";
+        month[1] = "Фев";
+        month[2] = "Мар";
+        month[3] = "Апр";
+        month[4] = "Май";
+        month[5] = "Июн";
+        month[6] = "Июл";
+        month[7] = "Авг";
+        month[8] = "Сен";
+        month[9] = "Окт";
+        month[10] = "Ноя";
+        month[11] = "Дек";
         startDateText = dateRange.selectedDates[0];
         endDateText = dateRange.selectedDates[1];
-        $("#startDate").val(startDateText.getDate() + "." + startDateText.getMonth() + "." + startDateText.getFullYear());
-        $("#endDate").val(endDateText.getDate() + "." + endDateText.getMonth() + "." + endDateText.getFullYear());
+        $("#startDate").val(startDateText.getDate() + " " +  month[d.getMonth()]);
+        $("#endDate").val(endDateText.getDate() + " " +  month[d.getMonth()]);
 
-    }
+    },
 }).data('datepicker');

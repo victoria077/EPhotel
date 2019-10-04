@@ -12,34 +12,23 @@ footer
       .footer-nav-block
         h3(class='footer-block subtitle') Навигация
         ul
-          li 
-            a О нас
-          li
-            a Новости
-          li 
-            a Служба поддержки
-          li
-            a Услуги
+          +list('О нас') 
+          +list('Новости') 
+          +list('Служба поддержки') 
+          +list('Услуги') 
       .footer-nav-block
         h3(class='footer-block subtitle') О нас
         ul
-          li 
-            a О сервисе
-          li 
-            a Наша команда
-          li 
-            a Вакансии
-          li 
-            a Инвесторы
+          +list('О сервисе') 
+          +list('Наша команда') 
+          +list('Вакансии') 
+          +list('Инвесторы') 
       .footer-nav-block
         h3(class='footer-block subtitle') Служба поддержки
         ul
-          li 
-            a Соглашения
-          li
-            a  Сообщества
-          li
-            a Связь с нами
+          +list('Соглашения') 
+          +list('Сообщества') 
+          +list('Связь с нами') 
       .footer-nav-block
         h3(class='footer-block subtitle') Подписка
         p(style='white-space:pre;' class='subtitle-describtion')

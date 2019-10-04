@@ -1,0 +1,7 @@
+mixin room-information(icon, quality, descr, className)
+    div(class='room__information')
+      div(class='room__information__wrapper' class= className)
+         i(class='material-icons')= icon
+         div(class='room__information__wrapper__description')
+            h4= quality
+            p= descr

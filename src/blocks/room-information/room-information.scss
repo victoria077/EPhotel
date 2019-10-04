@@ -1,0 +1,142 @@
+.room__feedback__wrapper {
+  &__person {
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    margin-top: 30px;
+    & img {
+      width: 120px;
+      height: 120px;
+    }
+    & h4 {
+      margin-block-start: 1em;
+      margin-block-end: 0.4em;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    & p {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      font-size: 20px;
+      font-weight: 300;
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+  &__evaluation {
+    display: flex;
+    margin-top: -24px;
+    & p {
+      margin-left: 27px;
+      margin-top: 2px;
+      font-weight: 500;
+      line-height: 36px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+}
+
+.room__feedback__text {
+  margin-left: 20px;
+}
+
+.room-information--info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.room__information__wrapper {
+  padding: 25px 10px 25px 0px;
+}
+
+.room-information--info .material-icons {
+  font-family: "MaterialIcons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.83rem;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #9ba1fb;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@media only screen and (max-width: 600px) {
+  .room__feedback__wrapper {
+    &__person {
+      display: flex;
+      flex-direction: row;
+      margin-left: -15px;
+      margin-top: -7px;
+      & img {
+        width: 120px;
+        height: 120px;
+      }
+      & h4 {
+        margin-block-start: 1em;
+        margin-block-end: 0.4em;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: -14px;
+      }
+      & p {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: -14px;
+      }
+    }
+    &__evaluation {
+      display: flex;
+      margin-top: -24px;
+      & p {
+        margin-left: 27px;
+        margin-top: -2px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+      & button {
+        width: 70px;
+        height: 27px;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 25px;
+        outline: none;
+        color: rgba(31, 32, 65, 0.25);
+        margin-left: 17px;
+        & span {
+          margin-left: 5px;
+        }
+        &:hover {
+          color: #bc9cff;
+          transform: scale(1.2);
+          border-color: #bc9cff;
+          span {
+            opacity: 1;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

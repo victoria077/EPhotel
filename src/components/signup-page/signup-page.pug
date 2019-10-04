@@ -1,10 +1,11 @@
+include ../header/header.pug
 doctype html
 html
   head
     title my jade template
     meta(name="viewport", content="width=, initial-scale=1.0")
   body
-    include ../header/header.pug
+    +header()
     .clear
 
     .sugnup-background

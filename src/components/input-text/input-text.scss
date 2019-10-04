@@ -1,0 +1,44 @@
+@import "../components/variables.scss";
+
+.input-text {
+  width: 475px;
+  height: 65px;
+  background: #ffffff;
+  border: $border-state;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+  &:hover,
+  &:focus {
+    border: 1.5px solid rgba(31, 32, 65, 0.5);
+    outline: none;
+    &::placeholder {
+      color: $black-darken;
+    }
+  }
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    line-height: 65px;
+    color: $color-standart;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input-text {
+    width: 440px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .input-text {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .input-text {
+    width: 300px;
+  }
+}

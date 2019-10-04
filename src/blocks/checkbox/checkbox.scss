@@ -1,0 +1,63 @@
+@import "../../components/variables.scss";
+
+.checkbox__box,
+.checkbox__name {
+  display: block;
+  cursor: pointer;
+  &:before {
+    content: "\2714";
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: 0.2s;
+    border: $border-state;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 14px;
+    padding-left: 5px;
+  }
+}
+
+.checkbox__name {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.checkbox__box {
+  display: none;
+}
+.checkbox__box + .checkbox__name:active:before {
+  transform: scale(0);
+}
+
+.checkbox__box:checked + .checkbox__name:before {
+  color: #bc9cff;
+  border: 1.5px solid #bc9cff;
+}
+
+.checkbox__name__descr {
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  margin-top: -3px;
+}
+
+.checkbox__name__descr {
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+}
+
+.checkbox__span__descr {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}

@@ -19,31 +19,6 @@ p {
   margin-inline-end: 0px;
 }
 
-.room-information--info .material-icons {
-  font-family: "MaterialIcons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 3.83rem;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  color:#9BA1FB;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
 .material-icons__like {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.25);
@@ -113,31 +88,6 @@ a {
 hr {
   background: rgba(31, 32, 65, 0.1);
   height: 1.5px;
-}
-
-.input-text {
-  width: 475px;
-  height: 65px;
-  background: #ffffff;
-  border: $border-state;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 0 20px 0 20px;
-  &:hover,
-  &:focus {
-    border: 1.5px solid rgba(31, 32, 65, 0.5);
-    outline: none;
-    &::placeholder {
-      color: $black-darken;
-    }
-  }
-  &::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22.5px;
-    line-height: 65px;
-    color: $color-standart;
-  }
 }
 
 .btn-confirm {
@@ -308,10 +258,6 @@ hr {
     font-size: 16px;
   }
 
-  .input-text {
-    width: 440px;
-  }
-
   .btn-confirm {
     width: 440px;
   }
@@ -321,10 +267,6 @@ hr {
   html,
   body {
     font-size: 14px;
-  }
-
-  .input-text {
-    width: 390px;
   }
 
   .btn-confirm {
@@ -342,10 +284,6 @@ hr {
   html,
   body {
     font-size: 14px;
-  }
-
-  .input-text {
-    width: 300px;
   }
 
   .btn-confirm {

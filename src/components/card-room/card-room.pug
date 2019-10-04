@@ -1,51 +1,45 @@
-include ../mixins.pug
-
-mixin card-room(number, price, feedback)
-    .card
-        .carousel
-            input(type='radio' id='carousel-1' name='carousel[]' checked)
-            input(type='radio' id='carousel-2' name='carousel[]')
-            input(type='radio' id='carousel-3' name='carousel[]')
-            input(type='radio' id='carousel-4' name='carousel[]')
-            input(type='radio' id='carousel-5' name='carousel[]')
-            ul(class='carousel__items')
-            li(class='carousel__item')
-                img(src='//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG' alt='')
-            li(class='carousel__item')
-                img(src='//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg' alt='')
-            li(class='carousel__item')
-                img(src='//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg' alt='')
-            li(class='carousel__item')
-                img(src='//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg' alt='')
-            li(class='carousel__item')
-                img(src='//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg' alt='') 
-            .carousel__prev
-            label(for='carousel-1')
-            label(for='carousel-2')
-            label(for='carousel-3')
-            label(for='carousel-4')
-            label(for='carousel-5')
-            .carousel__next
-            label(for='carousel-1')
-            label(for='carousel-2')
-            label(for='carousel-3')
-            label(for='carousel-4')
-            label(for='carousel-5')
-            .carousel__nav
-            label(for='carousel-1')
-            label(for='carousel-2')
-            label(for='carousel-3')
-            label(for='carousel-4')
-            label(for='carousel-5')
+mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, number, price, style='--rating: level', feedback, className)
+    div(class= className, class='card')
+      a(href="info-page.html")
+        .carousel-container
+          div(class= slickName)
+              input(type='radio' id= slickName + '-1' name='carousel[]' checked)
+              input(type='radio' id= slickName + '-2' name='carousel[]')
+              input(type='radio' id= slickName + '-3' name='carousel[]')
+              input(type='radio' id= slickName + '-4' name='carousel[]')
+              ul(class= slickName + '__items')
+                li(class= slickName + '__item')
+                  img(src= imgNameOne)
+                li(class=  slickName + '__item')
+                  img(src= imgNameTwo)
+                li(class=  slickName + '__item')
+                  img(src= imgNameThree)
+                li(class=  slickName + '__item')
+                  img(src= imgNameFour)
+              .carousel__prev
+                label(for= slickName + '-1')
+                label(for= slickName + '-2')
+                label(for= slickName + '-3')
+                label(for= slickName + '-4')
+              .carousel__next
+                label(for= slickName + '-1')
+                label(for= slickName + '-2')
+                label(for= slickName + '-3')
+                label(for= slickName + '-4')
+              .carousel__nav
+                label(for= slickName + '-1')
+                label(for= slickName + '-2')
+                label(for= slickName + '-3')
+                label(for= slickName + '-4')
         .card-container
-            .row.line
-                p(class='card-number') N  
+            .flex-row.card-border
+                p(class='card-number') 
+                    span(class='card-number__symbol') &#8470; 
                     span=  number
                 p(class='card-price')= price  
                     span(class='card-span')  в сутки
-            .row.flex-row
-                p(class='card-price')= feedback
-                    span(class='card-span')   отзывов
-        
-
-+card-room( 888, 909, 45)
+            .line
+            .flex-row
+              div(class='Stars stars__decor' style= style)
+              p(class='card-price')= feedback
+                    span   Oтзывов
