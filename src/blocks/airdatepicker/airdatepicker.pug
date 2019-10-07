@@ -1,15 +1,17 @@
-div.flex-wrap
-    div.arrow__wrapper
-        input(type='text'
-            data-range='true'
-            data-multiple-dates-separator=' - ' 
-            class='dateRange range'
-            class='datepicker-here'
-            id='startDate'
-            placeholder='ДД.ММ.ГГГГ')
-            
-    div.arrow__wrapper
-        input(type='text'
-            class='range'
-            id='endDate'
-            placeholder='ДД.ММ.ГГГГ')
+
+mixin datepicker()
+    .flex-row
+        .datepicker__input
+            input(type='text'
+                data-range='true'
+                data-multiple-dates-separator=' - ' 
+                class='dateRange range'
+                class='datepicker-here'
+                id='startDate'
+                placeholder='ДД.ММ.ГГГГ')
+                
+        .datepicker__input
+            input(type='text'
+                class='range'
+                id='endDate'
+                placeholder='ДД.ММ.ГГГГ')

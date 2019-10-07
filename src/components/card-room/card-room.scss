@@ -4,17 +4,17 @@
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 7px;
   margin: 20px 0;
-  &-container {
+  &__container {
     padding: 25px 30px;
   }
-  &-number {
+  &__number {
     font-style: normal;
     font-weight: bold;
     font-size: 1.3rem;
     margin-top: 5px;
     color: #1f2041;
   }
-  &-price {
+  &__price, &__feedback {
     font-style: normal;
     font-weight: bold;
     font-size: 1.16rem;
@@ -22,7 +22,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  &-span {
+  &_perday {
     font-weight: normal;
     font-size: 1rem;
   }

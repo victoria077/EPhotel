@@ -1,5 +1,9 @@
 include ../mixins.pug
 include ../../blocks/room-information/room-information.pug
+include ../../blocks/feedback/feedback.pug
+include ../../blocks/bullet-list/bullet-list.pug
+include ../../blocks/donut-chart/donut-chart.pug
+
 div(class='information')
     div(class='information-top-part')
         div(class='gallery-top--responsive')
@@ -21,7 +25,7 @@ div(class='information')
                     +room-information('whatshot', 'Уют', 'Номер оснащён камином')
                 .blocks.information-impression
                     h3(class='information-title information-title--impression') Впечатления от номера
-                    include ../../blocks/donut-chart/donut-chart.pug
+                    +chart-donut('260', 'Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован')
             .blocks 
                 h3(class='information-title information-title--details') Отзывы посетителей номера
                 +feedback(require('./images/photo1.jpg'), 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')

@@ -1,6 +1,6 @@
 include ../mixins.pug
-
-
+include ../../blocks/dropdown/dropdown.pug
+include ../../blocks/airdatepicker/airdatepicker.pug
 .form-search
   div.wrapper-search
     div.search-container-form
@@ -11,10 +11,10 @@ include ../mixins.pug
         h3(class='title') Прибытие
         h3(class='title search-title-checkout') Выезд
       div(class='search-dropdown')
-        include ../../blocks/airdatepicker/airdatepicker.pug
+        +datepicker()
       h3(class='title') Гости
       div(class='search-dropdown')
-        include ../../blocks/dropdown/dropdown.pug
+        +dropdown('Сколько гостей', 'Взрослые', 'Дети', 'Младенцы')
       div(class='search-btn-confirm')  
         a(href='filter-page.html')
           button(type='button' class='btn  btn-confirm') подобрать номер

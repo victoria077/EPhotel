@@ -1,14 +1,14 @@
 
 include ../mixins.pug
-
+include ../signup-button/signup-button.pug
 mixin header()
-  div(class='nav-wrapper')
-    div(class='container menu')
-      div(id='logo' class='menu-logo')
-      label(for='drop' class='menu-logo-toggle') 
+  div(class='menu')
+    div(class='container')
+      div(id='logo' class='menu__logo')
+      label(for='drop' class='menu__logo__toggle') 
           i(class='fa fa-bars' aria-hidden='true')
-      input(type='checkbox' class='menu-logo-drop' id='drop')
-      ul(class='menu-nav')
+      input(type='checkbox' class='menu__logo__drop' id='drop')
+      ul(class='menu__nav')
         +list('О нас')
         +list('Услуги')
         +list('Вакансии')

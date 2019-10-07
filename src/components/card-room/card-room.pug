@@ -31,15 +31,15 @@ mixin card-room(slickName, imgNameOne, imgNameTwo, imgNameThree, imgNameFour, nu
                 label(for= slickName + '-2')
                 label(for= slickName + '-3')
                 label(for= slickName + '-4')
-        .card-container
+        .card__container
             .flex-row.card-border
-                p(class='card-number') 
-                    span(class='card-number__symbol') &#8470; 
+                p(class='card__number') 
+                    span(class='card__number_symbol') &#8470; 
                     span=  number
-                p(class='card-price')= price  
-                    span(class='card-span')  в сутки
+                p(class='card__price')= price  
+                    span(class='card__price_per day')  в сутки
             .line
             .flex-row
               div(class='Stars stars__decor' style= style)
-              p(class='card-price')= feedback
+              p(class='card__feedback')= feedback
                     span   Oтзывов

@@ -1,23 +1,24 @@
-div(class='row donut')
-    svg
-        circle(class='circle')
-        circle(class='circle1')
-        circle(class='circle2')
-        circle(class='circle3')   
-        g(class='chart-text')
-            text(x='42%' y='35%' class='chart-number') 260
-            text(x='42%' y='36%' class='chart-label') голосов
-    figcaption(class='figure-key')
-        ul(class='figure-key-list' aria-hidden='true' role='presentation')
-            li
-                span(class='shape-circle shape-fuschia')            
-                |             Великолепно
-            li
-                span(class='shape-circle shape-lemon-lime') 
-                |             Хорошо
-            li
-                span(class='shape-circle shape-blue')
-                |             Удовлетворительно
-            li
-                span(class='shape-circle shape-grey')
-                |             Разочарован
+mixin chart-donut(voices, grade1, grade2, grade3, grade4)
+    .row.donut
+        svg
+            circle(class='circle')
+            circle(class='circle1')
+            circle(class='circle2')
+            circle(class='circle3')   
+            g(class='chart-text')
+                text(x='42%' y='35%' class='chart-number')= voices
+                text(x='42%' y='36%' class='chart-label') голосов
+        figcaption(class='figure-key')
+            ul(class='figure-key-list' aria-hidden='true' role='presentation')
+                li
+                    span(class='shape-circle shape-fuschia')
+                    = grade1
+                li
+                    span(class='shape-circle shape-lemon-lime') 
+                    = grade2
+                li
+                    span(class='shape-circle shape-blue')
+                    = grade3
+                li
+                    span(class='shape-circle shape-grey')
+                    = grade4

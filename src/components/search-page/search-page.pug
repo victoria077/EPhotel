@@ -1,9 +1,10 @@
+include ../header/header.pug
 doctype html
 html
   head
     title my jade template
   body
-    include ../header/header.pug
+    +header()
     .clear
     .main-background-search
       include ../form-search/form-search.pug

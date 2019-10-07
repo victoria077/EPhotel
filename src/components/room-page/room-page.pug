@@ -2,6 +2,9 @@
 include ../mixins.pug
 include ../card-room/card-room.pug
 include ../../blocks/checkbox/checkbox.pug
+include ../../blocks/description-checkbox/description-checkbox.pug
+include ../../blocks/range-slider/range-slider.pug
+
 .container.settings
     #left-side.left-side
         div(class='sidebar' id='sidebar')
@@ -17,7 +20,7 @@ include ../../blocks/checkbox/checkbox.pug
                 h3(class='title room-title--price') Диапазон цены
                 input(type='text' class='slider-range-price' id='amount')
             div(class='settings-range')
-                include ../../blocks/range-slider/range-slider.pug
+                +range-slider('Стоимость за сутки пребывания в номере')
             h3(class='title room-title--checkboxes') Checkbox Buttons             
             .blocks
                 +checkbox('Smoking', 'Можно курить', 'room__checkbox')

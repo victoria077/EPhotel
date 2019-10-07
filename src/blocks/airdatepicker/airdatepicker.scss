@@ -1,14 +1,10 @@
 @import "../components/variables.scss";
-.flex-wrap {
-  display: flex;
-  justify-content: space-between;
-}
 
-.arrow__wrapper {
+.datepicker__input {
   position: relative;
   display: inline-block;
 }
-.arrow__wrapper::before {
+.datepicker__input::before {
   position: absolute;
   top: 25%;
   left: 80%;

@@ -1,0 +1,21 @@
+.btn-link {
+  display: inline-block;
+  width: 145px;
+  height: 65px;
+  border: 2.4px solid #BC9CFF;
+  text-transform: uppercase;
+  border-radius: 35px;
+  font-size: 19px;
+  text-align: center;
+  color: #BC9CFF;
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+  .btn-link {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}

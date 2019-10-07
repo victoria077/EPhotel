@@ -1,0 +1,14 @@
+mixin feedback(imgName, personName, date, text)
+  div(class='room__feedback')
+    div(class='room__feedback__wrapper')
+      div(class='room__feedback__wrapper__person')
+        img(src= imgName)
+        div(class='room__feedback__wrapper__person--name')
+          h4= personName
+          p= date
+      div(class='room__feedback__wrapper__evaluation') 
+        button(class='btn-like') 
+          .row
+              i(class='fas fa-heart') 
+              span 12
+        p(class='room__feedback__text')= text

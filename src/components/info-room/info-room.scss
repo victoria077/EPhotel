@@ -97,39 +97,6 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.bullet-list {
-  overflow: hidden;
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-  color: rgba(31, 32, 65, 0.75);
-  border-radius: 5px;
-  margin-left: -30px;
-  margin-top: 10px;
-  > li {
-    list-style: none;
-    position: relative;
-    padding: 5px 0 0 1.7em;
-    transition: 0.12s;
-    font-size: 20.6px;
-    font-weight: normal;
-    margin-bottom: 1.3em;
-    &::before {
-      position: absolute;
-      content: "\2022";
-      font-family: Arial;
-      color: rgba(31, 32, 65, 0.75);
-      top: -7px;
-      left: 5px;
-      text-align: center;
-      font-size: 2.5em;
-      opacity: 0.5;
-      line-height: 1;
-      transition: 0.5s;
-    }
-  }
-}
-
 .border {
   border-bottom: 1px solid grey;
 }
@@ -190,10 +157,6 @@
     padding-top: 0px;
   }
 
-  .bullet-list > li {
-    font-size: 14px;
-  }
-
   .information-title--rules {
     margin-left: 20px;
   }
@@ -230,10 +193,6 @@
 @media only screen and (max-width: 400px) {
   .information-impression {
     display: none;
-  }
-
-  .bullet-list > li {
-    font-size: 11px;
   }
 
   .information-text {
