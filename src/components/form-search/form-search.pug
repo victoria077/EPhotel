@@ -2,20 +2,19 @@ include ../mixins.pug
 include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/airdatepicker/airdatepicker.pug
 .form-search
-  div.wrapper-search
-    div.search-container-form
-      h1(class='title-main form-search-title' style='white-space:pre;') 
+    .form-search__container
+      h1(class='title-main form-search__title' style='white-space:pre;') 
         |Найдём номера под 
         |  ваши пожелания
       .row
         h3(class='title') Прибытие
-        h3(class='title search-title-checkout') Выезд
-      div(class='search-dropdown')
+        h3(class='title form-search__title_checkout') Выезд
+      div(class='form-search__dropdown')
         +datepicker()
       h3(class='title') Гости
-      div(class='search-dropdown')
+      div(class='form-search__dropdown')
         +dropdown('Сколько гостей', 'Взрослые', 'Дети', 'Младенцы')
-      div(class='search-btn-confirm')  
+      div(class='form-search__button_confirm')  
         a(href='filter-page.html')
           button(type='button' class='btn  btn-confirm') подобрать номер
       

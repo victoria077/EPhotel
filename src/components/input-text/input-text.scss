@@ -1,10 +1,8 @@
-@import "../components/variables.scss";
-
 .input-text {
   width: 475px;
   height: 65px;
   background: #ffffff;
-  border: $border-state;
+  border:  1.5px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 5px;
   padding: 0 20px 0 20px;
@@ -13,7 +11,7 @@
     border: 1.5px solid rgba(31, 32, 65, 0.5);
     outline: none;
     &::placeholder {
-      color: $black-darken;
+      color: #1f2041;
     }
   }
   &::placeholder {
@@ -21,7 +19,7 @@
     font-weight: normal;
     font-size: 22.5px;
     line-height: 65px;
-    color: $color-standart;
+    color: rgba(31, 32, 65, 0.35);
   }
 }
 

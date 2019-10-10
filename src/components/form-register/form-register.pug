@@ -6,30 +6,30 @@ include ../../blocks/radio-button/radio-button.pug
 .wrap
   .container-form
       h1( class='title-main') Регистрация аккаунта
-      div(class='signup-input--name')
+      div(class='signup__input_name')
       +input-text('Имя')
-      div(class='signup-input--surname')
+      div(class='signup__input_surname')
       +input-text('Фамилия')
 
       .row.radio-buttons
          +radio-button('radio-button1', 'Мужчина')
          +radio-button('radio-button2', 'Женщина')
 
-      div(class='signup-input--birthday')
+      div(class='signup__input_birthday')
       label(class='title signup-title') Дата рождения
       +input-text('ДД.ММ.ГГГГ')
       
-      div(class='signup-input--data')
+      div(class='signup__input_data')
       label(class='title signup-title') Данные для входа в сервис
       +input-text('Email')
-      div(class='signup-input--data--password')
+      div(class='signup__input_data_password')
         +input-text('Пароль')
 
       .row
         include ../../blocks/toggle/toggle.pug
-        p(class='signup-offer') Получать спецпредложения
+        p(class='signup__offer') Получать спецпредложения
 
-      button(type='button' class='btn btn-confirm signup-button--payment') Перейти к оплате
+      button(type='button' class='btn btn-confirm signup__button_payment') Перейти к оплате
       
       .flex-row
         p(class='text sugnup-text') Уже есть аккаунт на Toxin

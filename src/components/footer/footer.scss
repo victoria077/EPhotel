@@ -1,18 +1,18 @@
-@import "../components/variables.scss";
+
 .footer {
   padding: 0 0 80px 0;
-  background-color: $white-color;
-  &-nav {
+  background-color:#fff;
+  &__nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px 10px;
     margin-top: 100px;
-    &-block {
+    &__column {
       margin: 0 10px 10px;
       text-decoration: none;
       & p {
-        color: $black-text;
+        color: #1F2041;
         font-family: "Montserrat";
         font-weight: bold;
         font-size: 1.14rem;
@@ -25,42 +25,20 @@
           & a {
             font-family: "Montserrat";
             font-size: 1.14rem;
-            color: $light-black-color;
+            color:rgba(31, 32, 65, 0.5);
           }
-        }
-      }
-      & .input-footer {
-        width: 260px;
-        height: 44px;
-        background: #ffffff;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        box-sizing: border-box;
-        border-radius: 4px;
-        margin-top: 20px;
-        background-image: url(../images/arrow.svg);
-        background-repeat: no-repeat;
-        background-position-x: 17em;
-        background-position-y: 0.8em;
-        top: 20px;
-        &::placeholder {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 18px;
-          color: rgba(31, 32, 65, 0.25);
-          padding-left: 15px;
         }
       }
     }
   }
 }
 
-.footer-details {
+.footer__details {
   padding-top: 5px;
   padding-bottom: 20px;
   justify-content: space-between;
   &-copyright {
-    color: $black-text;
+    color: #1F2041;
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 1.14rem;
@@ -70,13 +48,13 @@
   }
 }
 
-.footer-details ul li {
+.footer__details ul li {
   height: 30px;
   width: 40px;
   margin-top: -25px;
   margin-right: 22px;
 }
-.footer-details .svg-inline--fa {
+.footer__details .svg-inline--fa {
   font-size: 35px;
   line-height: 23px;
   display: flex;
@@ -87,7 +65,7 @@
     margin-right: 20px;
   }
 }
-.footer-slogan {
+.footer__slogan {
   margin-top: 20px;
 }
 .div {
@@ -104,13 +82,13 @@
 @media only screen and (max-width: 600px) {
   .footer {
     padding-bottom: 30px;
-    &-nav {
+    &__nav {
       padding: 0 0px 10px;
-      &-block {
+      &__column{
         margin: 0 0px 10px;
         text-decoration: none;
         & p {
-          color: $black-text;
+          color: #1F2041;
           font-weight: bold;
           font-size: 0.9rem;
           line-height: 33px;
@@ -121,24 +99,22 @@
             margin: 28px 0;
             & a {
               font-size: 0.9rem;
-              color: $light-black-color;
+              color: #1F2041;
             }
           }
-        }
-        & .input-footer {
         }
       }
     }
   }
-  .footer-nav {
+  .footer__nav {
     padding-top: 50px;
     margin-top: 20px;
   }
-  .footer-strip {
+  .footer__strip {
     display: none;
   }
 
-  .footer-details {
+  .footer__details {
     display: none;
   }
 }

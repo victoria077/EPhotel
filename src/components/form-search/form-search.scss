@@ -1,5 +1,3 @@
-@import "../components/variables.scss";
-
 .texts {
   margin: 7px 10px 0 10px;
 }
@@ -8,11 +6,11 @@
 .start-date::before {
   content: "";
   padding: 5px;
-  box-shadow: 2px -2px 0 0 $black-text inset;
+  box-shadow: 2px -2px 0 0 #1F2041 inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: $black-text;
+  color: #1F2041;
   background-repeat: no-repeat;
 }
 
@@ -32,11 +30,11 @@
 .input__date--single::before {
   content: "";
   padding: 5px;
-  box-shadow: 2px -2px 0 0 $black-text inset;
+  box-shadow: 2px -2px 0 0 #1F2041 inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 30px;
-  color: $black-text;
+  color: #1F2041;
   background-repeat: no-repeat;
 }
 
@@ -49,15 +47,15 @@
   border-radius: 7px;
 }
 
-.search-title-checkout {
-  margin-left: 32%;
-}
-
-.search-container-form {
+.form-search__container{
   padding: 6% 7%;
 }
 
-.search-dropdown .dropdowns .dd-button {
+.form-search__title_checkout {
+  margin-left: 32%;
+}
+
+.form-search__dropdown .dropdowns .dd-button {
   margin-bottom: 20px;
 }
 
@@ -90,7 +88,7 @@
     margin: 0 auto;
   }
 
-  .search-container-form {
+  .form-search__container {
     padding: 3% 1%;
   }
 
@@ -110,10 +108,10 @@
     margin: 0 auto;
   }
 
-  .search-dropdown .range {
+  .form-search__dropdown .range {
     width: 150px;
   }
-  .search-dropdown .dropdowns .dd-button {
+  .form-search__dropdown .dropdowns .dd-button {
     width: 320px;
   }
 

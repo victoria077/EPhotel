@@ -1,4 +1,4 @@
-@import "../components/variables.scss";
+// @import "../components/variables.scss";
 
 .menu{
   padding-bottom: 10px;
@@ -39,7 +39,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.12rem;
-        color: $black-text;
+        color:  #1F2041;
         padding: 26px 18.5px;
       }
     }
@@ -50,33 +50,33 @@
   content: "";
   padding: 5px;
   //   //set tickness
-  box-shadow: 2px -2px 0 0 $black-text inset;
+  box-shadow: 2px -2px 0 0  #1F2041 inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: $black-text;
+  color:  #1F2041;
 }
 
 .menu li:nth-child(5) > a:after {
   content: "";
   padding: 5px;
   //   //set tickness
-  box-shadow: 2px -2px 0 0 $black-text inset;
+  box-shadow: 2px -2px 0 0 #1F2041 inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: $black-text;
+  color: #1F2041;
 }
 
 
 .header-btn-signin{
   display: inline-block;
   padding: 11px 30px;
-  border: 2.4px solid $violet-text;
+  border: 2.4px solid #BC9CFF;
   text-transform: uppercase;
   border-radius: 30px;
   font-size: 17.5px;
-  color: $violet-text;
+  color: #BC9CFF;
   text-decoration: none;
   font-family: "OpenSans-Bold";
   margin: 16px 25px  16px 23px;
@@ -102,7 +102,7 @@
       &__toggle {
         display: block;
         padding: 14px 20px;
-        color: $violet-gradient;
+        color: linear-gradient(180deg, rgb(188,156,255), rgb(139,164,249) 100%);
         font-size: 17px;
         text-decoration: none;
         border: none;

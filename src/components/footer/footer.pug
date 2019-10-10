@@ -1,78 +1,77 @@
 include ../mixins.pug
 include ../../blocks/input-subscription/input-subscription.pug
 
-footer
-  .footer.container
-    .footer-nav
-      .footer-nav-block
-        .logo(class='footer-block logo')
-        div
-          p(style='white-space:pre;' class='footer-slogan')
-            | Бронирование номеров в лучшем 
-            | отеле 2019 года по версии
-            | ассоциации «Отельные взгляды»
-      .footer-nav-block
-        h3(class='footer-block subtitle') Навигация
-        ul
-          +list('О нас') 
-          +list('Новости') 
-          +list('Служба поддержки') 
-          +list('Услуги') 
-      .footer-nav-block
-        h3(class='footer-block subtitle') О нас
-        ul
-          +list('О сервисе') 
-          +list('Наша команда') 
-          +list('Вакансии') 
-          +list('Инвесторы') 
-      .footer-nav-block
-        h3(class='footer-block subtitle') Служба поддержки
-        ul
-          +list('Соглашения') 
-          +list('Сообщества') 
-          +list('Связь с нами') 
-      .footer-nav-block
-        h3(class='footer-block subtitle') Подписка
-        p(style='white-space:pre;' class='subtitle-describtion')
-          | Получайте специальные
-          | предложения и новости сервиса
-        +input-subscription('Email')
-  hr(class='footer-strip')
-  div(class='footer-details').container
-     .flex-row
-        p(class='footer-details-copyright') Сорyright &copy; 2018 Тохin отель. Все права зачищены. 
-        ul.row
-            li
-              a(href='#')
-                svg(width='0' height='0')
-                  radialGradient(id='rg' r='150%' cx='30%' cy='107%')
-                    stop(stop-color='#8BA4F9' offset='0')
-                    stop(stop-color='#8BA4F9' offset='0.05')
-                    stop(stop-color='#8BA4F9' offset='0.45')
-                    stop(stop-color='#BC9CFF' offset='0.6')
-                    stop(stop-color='#BC9CFF' offset='0.9')
-                div.div
-                  i(class='fab fa-twitter' aria-hidden='true')
-            li
-              a(href='#')
-                svg(width='0' height='0')
-                  radialGradient(id='rg' r='150%' cx='30%' cy='107%')
-                    stop(stop-color='#BC9CFF' offset='0')
-                    stop(stop-color='#BC9CFF' offset='0.05')
-                    stop(stop-color='#8BA4F9' offset='0.45')
-                    stop(stop-color='#8BA4F9' offset='0.6')
-                    stop(stop-color='#8BA4F9' offset='0.9')
-                div.div
-                  i(class='fab fa-facebook-square' aria-hidden='true')
-            li
-              a(href='#')
-                svg(width='0' height='0')
-                  radialGradient(id='rg' r='150%' cx='30%' cy='107%')
-                    stop(stop-color='#8BA4F9' offset='0')
-                    stop(stop-color='#8BA4F9' offset='0.05')
-                    stop(stop-color='#8BA4F9' offset='0.45')
-                    stop(stop-color='#8BA4F9' offset='0.6')
-                    stop(stop-color='#8BA4F9' offset='0.9')
-                div.div
-                  i(class='fab fa-instagram' aria-hidden='true')
-            
+mixin footer(item)
+  footer.footer
+    .container
+      .footer__nav
+        .footer__nav__column
+          .logo(class='logo')
+          div
+            p(style='white-space:pre;' class='footer__slogan')
+              | Бронирование номеров в лучшем 
+              | отеле 2019 года по версии
+              | ассоциации «Отельные взгляды»
+        .footer__nav__column
+          h3(class='subtitle') Навигация
+          ul
+            each item in list
+              li
+               a= item
+        .footer__nav__column
+          h3(class='subtitle') О нас
+          ul
+            +list('О сервисе') 
+            +list('Наша команда') 
+            +list('Вакансии') 
+            +list('Инвесторы') 
+        .footer__nav__column
+          h3(class='subtitle') Служба поддержки
+          ul
+            +list('Соглашения') 
+            +list('Сообщества') 
+            +list('Связь с нами') 
+        .footer__nav__column
+          h3(class='subtitle') Подписка
+          p(style='white-space:pre;' class='subtitle_describtion')
+            | Получайте специальные
+            | предложения и новости сервиса
+          +input-subscription('Email')
+    hr(class='footer__strip')
+    div(class='footer__details').container
+      .flex-row
+          p(class='footer__details__copyright') Сорyright &copy; 2018 Тохin отель. Все права зачищены. 
+          ul.row
+              li
+                a(href='#')
+                  svg(width='0' height='0')
+                    radialGradient(id='rg' r='150%' cx='30%' cy='107%')
+                      stop(stop-color='#8BA4F9' offset='0')
+                      stop(stop-color='#8BA4F9' offset='0.05')
+                      stop(stop-color='#8BA4F9' offset='0.45')
+                      stop(stop-color='#BC9CFF' offset='0.6')
+                      stop(stop-color='#BC9CFF' offset='0.9')
+                  div.div
+                    i(class='fab fa-twitter' aria-hidden='true')
+              li
+                a(href='#')
+                  svg(width='0' height='0')
+                    radialGradient(id='rg' r='150%' cx='30%' cy='107%')
+                      stop(stop-color='#BC9CFF' offset='0')
+                      stop(stop-color='#BC9CFF' offset='0.05')
+                      stop(stop-color='#8BA4F9' offset='0.45')
+                      stop(stop-color='#8BA4F9' offset='0.6')
+                      stop(stop-color='#8BA4F9' offset='0.9')
+                  div.div
+                    i(class='fab fa-facebook-square' aria-hidden='true')
+              li
+                a(href='#')
+                  svg(width='0' height='0')
+                    radialGradient(id='rg' r='150%' cx='30%' cy='107%')
+                      stop(stop-color='#8BA4F9' offset='0')
+                      stop(stop-color='#8BA4F9' offset='0.05')
+                      stop(stop-color='#8BA4F9' offset='0.45')
+                      stop(stop-color='#8BA4F9' offset='0.6')
+                      stop(stop-color='#8BA4F9' offset='0.9')
+                  div.div
+                    i(class='fab fa-instagram' aria-hidden='true')

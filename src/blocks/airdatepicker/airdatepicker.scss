@@ -1,4 +1,3 @@
-@import "../components/variables.scss";
 
 .datepicker__input {
   position: relative;
@@ -10,11 +9,11 @@
   left: 80%;
   content: "";
   padding: 5px;
-  box-shadow: 2px -2px 0 0 $black-text inset;
+  box-shadow: 2px -2px 0 0 #1F2041 inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: $black-text;
+  color: #1F2041;
 }
 
 .single-arrow-wrapper {
@@ -28,11 +27,11 @@
   left: 87%;
   content: "";
   padding: 5px;
-  box-shadow: 2px -2px 0 0 $black-text inset;
+  box-shadow: 2px -2px 0 0 #1F2041 inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: $black-text;
+  color: #1F2041;
 }
 
 .range {
@@ -49,11 +48,9 @@
     font-weight: normal;
     font-size: 1rem;
     line-height: 18px;
-    color: $color-standart;
     color: rgba(31, 32, 65, 0.75);
   }
 }
-
 @media only screen and (max-width: 400px) {
   .range {
     padding-left: 10px;
