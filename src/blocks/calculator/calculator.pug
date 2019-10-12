@@ -1,39 +1,41 @@
-.calculator
-        .calculator__container
-            .flex-row
-                p(class='card-number') 
-                    span(class='card-number__symbol') &#8470; 
-                    span(class='room-number') 888
-                p(class='card-price') 9 990P 
-                        span(class='card-span')  в сутки
-            .row.form__search__title
-                p(class='title') Прибытие
-                p(class='title title-checkout') Выезд
-            div(class='calculator-datepicker')
-                include ../../blocks/airdatepicker/airdatepicker.pug
-            p(class='title')
-            div(class='calculator-dropdown')
-                include ../../blocks/dropdown/dropdown.pug
-            .flex-row.calculator-count.calculator-count--price
-                p 9 990P x 4 сутки
-                p 39 900P
-            .flex-row.calculator-count
-                .row
-                    p Сбор за услуги: скидка 2 179₽
-                    div
-                        span.calculator-count-info i
-                p 0P
-            .flex-row.calculator-count
-                .row
-                    p(style='white-space:pre;')
-                        | Сбор за дополнительные 
-                        | услуги
-                    div
-                        span.calculator-count-info.calculator-count-info--extra i
-                p 300P
-            h3(class='calculator__total') Итого..................................................38 081₽
-            button(type='button' class='btn btn-confirm') Забронировать
-            
+include ../airdatepicker/airdatepicker.pug
+mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, additionalTax, totalPrice )
+    .calculator
+            .calculator__container
+                .flex-row
+                    p(class='calculator__room') 
+                        span(class='calculator__room__symbol') &#8470;
+                        span(class='calculator__room__number')= roomNumber
+                    p(class='calculator__room__price')= pricePerDay
+                        span= day
+                .row.calculator__title_datepicker
+                    p(class='title')= checkin
+                    p(class='title calculator__title_datepicker_checkout')= checkout
+                div(class='calculator__datepicker')
+                    +datepicker
+                p(class='title')= titleDropdown
+                .calculator__dropdown
+                    include ../../blocks/dropdown/dropdown.pug
+                .flex-row.calculator__count.calculator__count__price
+                    p= calculationOfThePrice
+                    p= fullPrice
+                .flex-row.calculator__count
+                    .row
+                        p= tax
+                        div
+                            span.calculator__count__info i
+                    p 0P
+                .flex-row.calculator__count
+                    .row
+                        p(style='white-space:pre;')
+                            | Сбор за дополнительные 
+                            | услуги
+                        div
+                            span.calculator__count__info.calculator__count__info_extra i
+                    p= additionalTax
+                h3(class='calculator__total-price')= totalPrice
+                button(type='button' class='btn btn-confirm') Забронировать
+                
 
 
             

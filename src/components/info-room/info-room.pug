@@ -1,8 +1,9 @@
-include ../mixins.pug
 include ../../blocks/room-information/room-information.pug
 include ../../blocks/feedback/feedback.pug
 include ../../blocks/bullet-list/bullet-list.pug
 include ../../blocks/donut-chart/donut-chart.pug
+include ../../blocks/calculator/calculator.pug
+
 
 div(class='information')
     div(class='information-top-part')
@@ -43,5 +44,7 @@ div(class='information')
                         | прибытия вы получите полный возврат за 
                         | вычетом сбора за услуги.
         div(class='bottom-part__right')
-            include ../../blocks/calculator/calculator.pug
+            +calculator(888, '9 990₽', 'в сутки', 'прибытие', 'выезд', 'гости', '9 990₽ х 4 суток', '39 960₽', 'Сбор за услуги: скидка 2 179₽', '300₽', 'Итого..................................................38 081₽')
 
+
+calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, additionalTax, totalPrice )
