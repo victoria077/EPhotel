@@ -1,7 +1,7 @@
 
 include ../mixins.pug
 include ../signup-button/signup-button.pug
-mixin header()
+mixin header( menuLinks)
   div(class='menu')
     div(class='container')
       div(id='logo' class='menu__logo')
@@ -9,11 +9,8 @@ mixin header()
           i(class='fa fa-bars' aria-hidden='true')
       input(type='checkbox' class='menu__logo__drop' id='drop')
       ul(class='menu__nav')
-        +list('О нас')
-        +list('Услуги')
-        +list('Вакансии')
-        +list('Новости')
-        +list('Соглашения')
-        +button-signin-header('Войти', 'signin-page.html', 'header-btn-signin' )
-        .header-btn-signup
-          +button-signup('Зарегистрироватьcя', 'signup-page.html')
+        each link in menuLinks
+          li
+            a= link
+        if block
+          block

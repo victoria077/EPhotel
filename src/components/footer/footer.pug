@@ -1,7 +1,7 @@
 include ../mixins.pug
 include ../../blocks/input-subscription/input-subscription.pug
 
-mixin footer(item)
+mixin footer(linkList1, linkList2, linkList3)
   footer.footer
     .container
       .footer__nav
@@ -15,22 +15,21 @@ mixin footer(item)
         .footer__nav__column
           h3(class='subtitle') Навигация
           ul
-            each item in list
+            each link in linkList1
               li
-               a= item
+               a= link
         .footer__nav__column
           h3(class='subtitle') О нас
           ul
-            +list('О сервисе') 
-            +list('Наша команда') 
-            +list('Вакансии') 
-            +list('Инвесторы') 
+            each link in linkList2
+              li
+               a= link
         .footer__nav__column
           h3(class='subtitle') Служба поддержки
           ul
-            +list('Соглашения') 
-            +list('Сообщества') 
-            +list('Связь с нами') 
+            each link in linkList3
+              li
+               a= link
         .footer__nav__column
           h3(class='subtitle') Подписка
           p(style='white-space:pre;' class='subtitle_describtion')

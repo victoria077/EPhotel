@@ -3,34 +3,36 @@ include ../input-text/input-text.pug
 include ../signin-button/signin-button.pug
 include ../../blocks/radio-button/radio-button.pug
 
-.wrap
-  .container-form
-      h1( class='title-main') Регистрация аккаунта
-      div(class='signup__input_name')
-      +input-text('Имя')
-      div(class='signup__input_surname')
-      +input-text('Фамилия')
+mixin form-register(title, birthday,  data, offer, login)
+  .wrap
+    .container-form
+        h1( class='title-main')= title
+        div(class='signup__input_name')
+        +input-text('Имя')
+        div(class='signup__input_surname')
+        +input-text('Фамилия')
 
-      .row.radio-buttons
-         +radio-button('radio-button1', 'Мужчина')
-         +radio-button('radio-button2', 'Женщина')
+        .row.radio-buttons
+          +radio-button('radio-button1', 'Мужчина')
+          +radio-button('radio-button2', 'Женщина')
 
-      div(class='signup__input_birthday')
-      label(class='title signup-title') Дата рождения
-      +input-text('ДД.ММ.ГГГГ')
-      
-      div(class='signup__input_data')
-      label(class='title signup-title') Данные для входа в сервис
-      +input-text('Email')
-      div(class='signup__input_data_password')
-        +input-text('Пароль')
+        div(class='signup__input_birthday')
+          label(class='title signup-title')= birthday
+          +input-text('ДД.ММ.ГГГГ')
+        
+        div(class='signup__input_data')
+          label(class='title signup-title')= data
+          +input-text('Email')
 
-      .row
-        include ../../blocks/toggle/toggle.pug
-        p(class='signup__offer') Получать спецпредложения
+        div(class='signup__input_data_password')
+          +input-text('Пароль')
 
-      button(type='button' class='btn btn-confirm signup__button_payment') Перейти к оплате
-      
-      .flex-row
-        p(class='text sugnup-text') Уже есть аккаунт на Toxin
-        +button-signin('Войти', 'signin-page.html')
+        .row
+          include ../../blocks/toggle/toggle.pug
+          p(class='signup__offer')= offer
+
+        button(type='button' class='btn btn-confirm signup__button_payment') перейти к оплате
+        
+        .flex-row
+          p(class='text sugnup-text')= login
+          +button-signin('Войти', 'signin-page.html')

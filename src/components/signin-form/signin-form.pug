@@ -1,16 +1,18 @@
 include ../input-text/input-text.pug
 include ../signin-button/signin-button.pug
-.wrapper
-  .wrap
-    .signin-container-form
-        h1(class='title-main') Войти
-        
-        +input-text('Email')
-        div(class='input-signin input-signin--second')
-          +input-text('Пароль')
 
-        button(type='button' class='btn  btn-confirm btn-signin') Войти
-        
-        .flex-row
-          div(class='text text-signin') Нет аккаунта на Toxin?
-          +button-signin('Создать', 'signin-page.html', 'btn-create')
+mixin form-signin(title, login)
+  .wrapper
+    .wrap
+      .signin-container-form
+          h1(class='title-main')= title
+          
+          +input-text('Email')
+          div(class='input-signin input-signin--second')
+            +input-text('Пароль')
+
+          button(type='button' class='btn  btn-confirm btn-signin') Войти
+          
+          .flex-row
+            div(class='text text-signin')= login
+            +button-signin('Создать', 'signin-page.html', 'btn-create')

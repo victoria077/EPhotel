@@ -1,3 +1,5 @@
+include ../header/header.pug
+include ../footer/footer.pug
 doctype html
 html
   head
@@ -5,8 +7,11 @@ html
     meta(name="viewport", content="width=, initial-scale=1.0")
   body
   .info-page
-    include ../header/header.pug
+    +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
+        +button-signin-header('Войти', 'signin-page.html', 'header-btn-signin' )
+        .header-btn-signup
+          +button-signup('Зарегистрироватьcя', 'signup-page.html')
     .clear
     br
     include ../info-room/info-room.pug
-    include ../footer/footer.pug
+    +footer(['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'] )

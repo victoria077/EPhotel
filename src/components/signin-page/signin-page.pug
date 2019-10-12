@@ -1,11 +1,17 @@
+include ../footer/footer.pug
+include ../signin-form/signin-form.pug
+include ../header/header.pug
 doctype html
 html
   head
     title my jade template
     meta(name="viewport", content="width=, initial-scale=1.0")
   body
-    include ../header/header.pug
+    +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
+      +button-signin-header('Войти', 'signin-page.html', 'header-btn-signin' )
+      .header-btn-signup
+        +button-signup('Зарегистрироватьcя', 'signup-page.html')
     .clear
     .main-background
-      include ../signin-form/signin-form.pug
-    include ../footer/footer.pug
+      +form-signin('Войти', 'Нет аккаунта на Toxin?')
+    +footer(['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'] )

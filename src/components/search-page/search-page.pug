@@ -1,14 +1,19 @@
 include ../header/header.pug
+include ../form-search/form-search.pug
+include ../footer/footer.pug
 doctype html
 html
   head
     title my jade template
   body
-    +header()
+    +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
+      +button-signin-header('Войти', 'signin-page.html', 'header-btn-signin' )
+      .header-btn-signup
+        +button-signup('Зарегистрироватьcя', 'signup-page.html')
     .clear
     .main-background-search
-      include ../form-search/form-search.pug
+      +form-search('Найдём номера',  'под ваши пожелания', {checkin: 'Прибытие', checkout: 'Выезд', guests: 'Гости'})
       p(class='slogan' style='white-space:pre;') 
         |Лучшие номера для вашей работы, 
         |  отдыха и просто вдохновения
-    include ../footer/footer.pug
+    +footer(['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'] )
