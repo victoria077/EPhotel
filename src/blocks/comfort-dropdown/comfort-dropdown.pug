@@ -1,25 +1,26 @@
-label.comfort
-  .comfort__button(id='comfort-button') Удобства
-  input(type='checkbox' class='comfort__input' id='comfort__input')
-  ul(class='comfort__menu')
-    li.flex-row
-      p(class='title') Спальни
-      .flex-row
-        button(class='plus button' id='bedroom_plus') +
-        p(class='text' id='bedroom_text') 0
-        button(class='minus button' id='bedroom_minus') -
-    li.flex-row
-      p(class='title') Кровати
-      .flex-row
-         button(class='plus button' id='bed_plus') +
-         p(class='text' id='bed_text') 0
-         button(class='minus button' id='bed_minus') -
-    li.flex-row
-       p(class='title') Ванные комнаты
-       .flex-row
-         button(class='plus button' id='bathroom_plus') +
-         p(class='text' id='bathroom_text') 0
-         button(class='minus button' id='bathroom_minus') -
-    li.flex-row
-         button(class='clean' id='comfort-clean') Очистить
-         button(class='apply' id='comfort-apply') Применить
+mixin dropdown(title, subtitle1, subtitle2, subtitle3) 
+  label.comfort
+    .comfort__button(id= title.id)= title.name
+    input(type='checkbox' class='comfort__input' id='comfort__input')
+    ul(class='comfort__menu')
+      li.flex-row
+        p(class='title')= subtitle1.name
+        .flex-row
+          button(class='plus button' id= subtitle1.plus) +
+          p(class='text' id= subtitle1.nimber) 0
+          button(class='minus button' id= subtitle1.minus) -
+      li.flex-row
+        p(class='title')= subtitle2
+        .flex-row
+          button(class='plus button' id= subtitle2.plus) +
+          p(class='text' id= subtitle2.nimber) 0
+          button(class='minus button' id= subtitle2.minus) -
+      li.flex-row
+        p(class='title')= subtitle3
+        .flex-row
+          button(class='plus button' id= subtitle3.plus) +
+          p(class='text' id= subtitle3.number) 0
+          button(class='minus button' id= subtitle3.minus) -
+      li.flex-row
+          button(class='clean' id='comfort-clean') Очистить
+          button(class='apply' id='comfort-apply') Применить

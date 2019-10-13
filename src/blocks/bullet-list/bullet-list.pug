@@ -1,5 +1,5 @@
-mixin bullet-list(li1, li2, li3)
+mixin bullet-list(itemList)
   ul(class='bullet-list')
-    li= li1 
-    li= li2
-    li= li3
+    each item in itemList
+      li
+        a= item
