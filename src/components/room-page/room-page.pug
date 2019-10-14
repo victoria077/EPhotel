@@ -4,8 +4,9 @@ include ../card-room/card-room.pug
 include ../../blocks/checkbox/checkbox.pug
 include ../../blocks/description-checkbox/description-checkbox.pug
 include ../../blocks/range-slider/range-slider.pug
-include ../../blocks/panagination/panagination.pug
-
+include ../../blocks/pagination/pagination.pug
+include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
+include ../../blocks/little-dropdown/little-dropdown.pug
 .container.settings
         #left-side.left-side
             div(class='sidebar' id='sidebar')
@@ -16,7 +17,7 @@ include ../../blocks/panagination/panagination.pug
                     include ../../blocks/single-airdatepicker/single-airdatepicker.pug
                 h3(class='title') гости
                 div(class='settings__dropdown')
-                    include ../../blocks/little-dropdown/little-dropdown.pug
+                    +little-dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
                 .flex-row
                     h3(class='title settings__title_price') Диапазон цены
                     input(type='text' class='slider-range-price' id='amount')
@@ -36,7 +37,7 @@ include ../../blocks/panagination/panagination.pug
                 div(class='settings-comfort')
                     include ../../blocks/comfort-dropdown/comfort-dropdown.pug
                 div(class='settings__extracomfort')
-                    include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
+                    +expandable-checkbox-list(['Breakfast', 'Завтрак', 'Table', 'Письменный стол'])
         .right-side
             h1(class='title-main settings__title-main') Номера, которые мы для вас подобрали
             span(class='slide' id='slide')
@@ -59,5 +60,5 @@ include ../../blocks/panagination/panagination.pug
                     +card-room('carousel9', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 666, '5 000₽', '--rating: 5', 25, 'room-card__decor')
                     +card-room('carousel10', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 444, '5 000₽', '--rating: 4', 15, 'room-card__decor')
                     +card-room('carousel11', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')],  352, '5 000₽', '--rating: 3', 55, 'room-card__decor')
-            +panagination('arrow_back', 'arrow_forward')
+            +pagination('arrow_back', 'arrow_forward')
             p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды

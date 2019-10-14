@@ -1,25 +1,26 @@
-label.little-dropdowns
-  .dd-button(id='dd-text')  Сколько гостей
-  input(type='checkbox' class='dd-input' id='test')
-  ul(class='dd-menu')
-    li()
-      p(class='title') Взрослые
-      .flex-row
-        button(class='plus button' id='adult_plus') +
-        p(class='text' id='adult_text') 0
-        button(class='minus button' id='adult_minus') -
-    li()
-      p(class='title') Дети
-      .flex-row
-         button(class='plus button' id='child_plus') +
-         p(class='text' id='child_text') 0
-         button(class='minus button' id='child_minus') -
-    li( )
-       p(class='title') Младенцы
-       .flex-row
-         button(class='plus button' id='baby_plus') +
-         p(class='text' id='baby_text') 0
-         button(class='minus button' id='baby_minus') -
-    li( )
-         button(class='clean' id='clean') Очистить
-         button(class='apply' id='apply') Применить
+mixin little-dropdown(title,  subtitle1,  subtitle2,  subtitle3) 
+  label.little-dropdowns
+    .dd-button(id= title.id)= title.name
+    input(type='checkbox' class='dd-input' id='test')
+    ul(class='dd-menu')
+      li()
+        p(class='title')= subtitle1.name
+        .flex-row
+          button(class='plus button' id= subtitle1.plus) +
+          p(class='text' id= subtitle1.number) 0
+          button(class='minus button' id= subtitle1.minus) -
+      li()
+        p(class='title')= subtitle2.name
+        .flex-row
+          button(class='plus button' id= subtitle2.plus) +
+          p(class='text' id= subtitle2.number) 0
+          button(class='minus button' id= subtitle2.minus) -
+      li( )
+        p(class='title')= subtitle3.name
+        .flex-row
+          button(class='plus button' id= subtitle3.plus) +
+          p(class='text' id= subtitle3.number) 0
+          button(class='minus button' id= subtitle3.minus) -
+      li( )
+          button(class='clean' id='clean') Очистить
+          button(class='apply' id='apply') Применить  

@@ -1,22 +1,30 @@
-include ../../components/mixins.pug
+mixin expandable-checkbox-list(checkboxList)
+    label.extracomfort
+        .extracomfort-button(id='extracomfort-button') Дополнительные удобства
+        input(type='checkbox' class='extracomfort-input' id='extracomfort-input')
+        ul(class='extracomfort-menu')
+            each checkbox in checkboxList
+                li(class='extracomfort-menu-checkbox')
+                    +checkbox(checkbox)
 
-label.extracomfort
-  .extracomfort-button(id='extracomfort-button') Дополнительные удобства
-  input(type='checkbox' class='extracomfort-input' id='extracomfort-input')
-  ul(class='extracomfort-menu')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('Breakfast', 'Завтрак')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('Table', 'Письменный стол')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('Chair', 'Стул для кормления')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('Bed', 'Кроватка')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('TV', 'Телевизор')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('Shampoo', 'Шампунь')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('TV', 'Телевизор')
-    li(class='extracomfort-menu-checkbox')
-        +checkbox('Shampoo', 'Шампунь')
+
+//- label.extracomfort
+//-   .extracomfort-button(id='extracomfort-button') Дополнительные удобства
+//-   input(type='checkbox' class='extracomfort-input' id='extracomfort-input')
+//-   ul(class='extracomfort-menu')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('Breakfast', 'Завтрак')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('Table', 'Письменный стол')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('Chair', 'Стул для кормления')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('Bed', 'Кроватка')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('TV', 'Телевизор')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('Shampoo', 'Шампунь')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('TV', 'Телевизор')
+//-     li(class='extracomfort-menu-checkbox')
+//-         +checkbox('Shampoo', 'Шампунь')

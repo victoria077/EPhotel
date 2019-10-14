@@ -1,40 +1,44 @@
 include ../airdatepicker/airdatepicker.pug
 mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, additionalTax, totalPrice )
     .calculator
-            .calculator__container
-                .flex-row
-                    p(class='calculator__room') 
-                        span(class='calculator__room__symbol') &#8470;
-                        span(class='calculator__room__number')= roomNumber
-                    p(class='calculator__room__price')= pricePerDay
-                        span= day
-                .row.calculator__title_datepicker
-                    p(class='title')= checkin
-                    p(class='title calculator__title_datepicker_checkout')= checkout
-                div(class='calculator__datepicker')
-                    +datepicker
-                p(class='title')= titleDropdown
-                .calculator__dropdown
-                    include ../../blocks/dropdown/dropdown.pug
-                .flex-row.calculator__count.calculator__count__price
+        .calculator__container
+            .flex-row
+                p(class='calculator__room') 
+                    span(class='calculator__room room__symbol') &#8470;
+                    span(class='calculator__room room__number')= roomNumber
+                p(class='calculator__room room__price')= pricePerDay
+                    span= day
+            .row.calculator__title_datepicker
+                p(class='title')= checkin
+                p(class='title calculator__title_datepicker_checkout')= checkout
+            div(class='calculator__datepicker')
+                if block.datepicker
+                    block datepicker
+            p(class='title')= titleDropdown
+            .calculator__dropdown
+                //- if block
+                //-     block 
+                    //- include ../../blocks/dropdown/dropdown.pug
+            .flex-row.calculator__count
+                .count__price
                     p= calculationOfThePrice
                     p= fullPrice
-                .flex-row.calculator__count
-                    .row
-                        p= tax
-                        div
-                            span.calculator__count__info i
-                    p 0P
-                .flex-row.calculator__count
-                    .row
-                        p(style='white-space:pre;')
-                            | Сбор за дополнительные 
-                            | услуги
-                        div
-                            span.calculator__count__info.calculator__count__info_extra i
-                    p= additionalTax
-                h3(class='calculator__total-price')= totalPrice
-                button(type='button' class='btn btn-confirm') Забронировать
+            .flex-row.calculator__count
+                .row
+                    p= tax
+                    div
+                        span.count__info i
+                p 0P
+            .flex-row.calculator__count
+                .row
+                    p(style='white-space:pre;')
+                        | Сбор за дополнительные 
+                        | услуги
+                    div
+                        span.count__info.count__info_extra i
+                p= additionalTax
+            h3(class='calculator__total-price')= totalPrice
+            button(type='button' class='btn btn-confirm') Забронировать
                 
 
 

@@ -1,11 +1,9 @@
 import "./index.pug";
-import "../src/components/signin-form/signin-form.pug"
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 // import "../src/components/form-search/form-search.js";
-import "../src/components/components-page/components-page.js";
 require('./fonts.scss');
 require('jquery');
 require('jquery-ui-bundle');
