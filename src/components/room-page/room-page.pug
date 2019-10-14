@@ -4,61 +4,60 @@ include ../card-room/card-room.pug
 include ../../blocks/checkbox/checkbox.pug
 include ../../blocks/description-checkbox/description-checkbox.pug
 include ../../blocks/range-slider/range-slider.pug
+include ../../blocks/panagination/panagination.pug
 
 .container.settings
-    #left-side.left-side
-        div(class='sidebar' id='sidebar')
-            a(href='#' class='close')
-                i(class='fa fa-arrow-left')
-            h3(class='title') Даты пребывания в отеле
-            div(class='settings-datepicker')
-                include ../../blocks/single-airdatepicker/single-airdatepicker.pug
-            h3(class='title') гости
-            div(class='settings-dropdown')
-                include ../../blocks/little-dropdown/little-dropdown.pug
-            .flex-row
-                h3(class='title room-title--price') Диапазон цены
-                input(type='text' class='slider-range-price' id='amount')
-            div(class='settings-range')
-                +range-slider('Стоимость за сутки пребывания в номере')
-            h3(class='title room-title--checkboxes') Checkbox Buttons             
-            .blocks
-                +checkbox('Smoking', 'Можно курить', 'room__checkbox')
-                +checkbox('Pets', 'Можно с питомцами', 'room__checkbox')
-                +checkbox('Guests',  'Можно пригласить гостей (до 10 человек)',
-            'room__checkbox')
-            h3(class='title room-title--availability') Доступность 
-            .blocks
-                +description-checkbox('Широкий коридор', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
-                +description-checkbox('Помощник для инвалидов', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
-            h3(class='title  room-title--comfort') Удобства номера
-            div(class='settings-comfort')
-                include ../../blocks/comfort-dropdown/comfort-dropdown.pug
-            div(class='settings-extracomfort')
-                include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
-    .right-side
-        h1(class='title-main settings-main-title') Номера, которые мы для вас подобрали
-        span(class='slide' id='slide')
-            a(href='#')
-                i(class='fa fa-arrow-right')
-        .wrapper_content
-            .content
-                +card-room('carousel', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 888, '9  990₽', '--rating: 5', 145, 'room-card__decor')
-                +card-room('carousel1', [require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg')], 840,'9  900₽', '--rating: 4', 65 , 'room-card__decor')
-                +card-room('carousel2', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 980, '8 500₽', '--rating: 3', 35, 'room-card__decor')
-               
-                +card-room('carousel3', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')], 856, '7 300₽', '--rating: 5', 19, 'room-card__decor')
-                +card-room('carousel4', [require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg')], 740, '6 000₽', '--rating: 4', 44, 'room-card__decor')
-                +card-room('carousel5', [require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg')], 982, '5 800₽', '--rating: 3', 56, 'room-card__decor')
+        #left-side.left-side
+            div(class='sidebar' id='sidebar')
+                a(href='#' class='close')
+                    i(class='fa fa-arrow-left')
+                h3(class='title') Даты пребывания в отеле
+                div(class='settings__datepicker')
+                    include ../../blocks/single-airdatepicker/single-airdatepicker.pug
+                h3(class='title') гости
+                div(class='settings__dropdown')
+                    include ../../blocks/little-dropdown/little-dropdown.pug
+                .flex-row
+                    h3(class='title settings__title_price') Диапазон цены
+                    input(type='text' class='slider-range-price' id='amount')
+                div(class='settings__range')
+                    +range-slider('Стоимость за сутки пребывания в номере')
+                h3(class='title settings__title_checkboxes') Checkbox Buttons             
+                .blocks
+                    +checkbox('Smoking', 'Можно курить', 'room__checkbox')
+                    +checkbox('Pets', 'Можно с питомцами', 'room__checkbox')
+                    +checkbox('Guests',  'Можно пригласить гостей (до 10 человек)')
+                //- 'room__checkbox')
+                h3(class='title settings__title_availability') Доступность 
+                .blocks
+                    +description-checkbox('Широкий коридор', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+                    +description-checkbox('Помощник для инвалидов', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+                h3(class='title  settings__title_comfort') Удобства номера
+                div(class='settings-comfort')
+                    include ../../blocks/comfort-dropdown/comfort-dropdown.pug
+                div(class='settings__extracomfort')
+                    include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
+        .right-side
+            h1(class='title-main settings__title-main') Номера, которые мы для вас подобрали
+            span(class='slide' id='slide')
+                a(href='#')
+                    i(class='fa fa-arrow-right')
+            .wrapper_content
+                .content
+                    +card-room('carousel', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 888, '9  990₽', '--rating: 5', 145, 'room-card__decor')
+                    +card-room('carousel1', [require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg')], 840,'9  900₽', '--rating: 4', 65 , 'room-card__decor')
+                    +card-room('carousel2', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 980, '8 500₽', '--rating: 3', 35, 'room-card__decor')
                 
-                +card-room('carousel6', [require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg')], 678, '5 500₽', '--rating: 5', 45, 'room-card__decor')
-                +card-room('carousel7', [require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg')], 450, '5 300₽', '--rating: 4', 39, 'room-card__decor')
-                +card-room('carousel8', [require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg')], 350, '5 000₽', '--rating: 3', 77, 'room-card__decor')
-  
-                +card-room('carousel9', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 666, '5 000₽', '--rating: 5', 25, 'room-card__decor')
-                +card-room('carousel10', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 444, '5 000₽', '--rating: 4', 15, 'room-card__decor')
-                +card-room('carousel11', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')],  352, '5 000₽', '--rating: 3', 55, 'room-card__decor')
-
-        include ../../blocks/panagination/panagination.pug
-        p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды
-hr     
+                    +card-room('carousel3', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')], 856, '7 300₽', '--rating: 5', 19, 'room-card__decor')
+                    +card-room('carousel4', [require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg')], 740, '6 000₽', '--rating: 4', 44, 'room-card__decor')
+                    +card-room('carousel5', [require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg')], 982, '5 800₽', '--rating: 3', 56, 'room-card__decor')
+                    
+                    +card-room('carousel6', [require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg')], 678, '5 500₽', '--rating: 5', 45, 'room-card__decor')
+                    +card-room('carousel7', [require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg')], 450, '5 300₽', '--rating: 4', 39, 'room-card__decor')
+                    +card-room('carousel8', [require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg')], 350, '5 000₽', '--rating: 3', 77, 'room-card__decor')
+    
+                    +card-room('carousel9', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 666, '5 000₽', '--rating: 5', 25, 'room-card__decor')
+                    +card-room('carousel10', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 444, '5 000₽', '--rating: 4', 15, 'room-card__decor')
+                    +card-room('carousel11', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')],  352, '5 000₽', '--rating: 3', 55, 'room-card__decor')
+            +panagination('arrow_back', 'arrow_forward')
+            p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды

@@ -8,26 +8,26 @@
   margin: 57px 90px 0 0;
 }
 
-.room-title--price {
+.settings__title_price {
   padding: 45px 0 31px 0;
 }
 
-.room-title--checkboxes {
+.settings__title_checkboxes {
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-.room-title--availability {
+.settings__title_availability {
   padding-top: 35px;
   padding-bottom: 20px;
 }
 
-.room-title--comfort {
+.settings__title_comfort {
   padding-top: 30px;
   padding-bottom: 8px;
 }
 
-.settings-range {
+.settings__range {
   position: relative;
 }
 
@@ -72,11 +72,11 @@ div.room-card__decor {
   color: #6fcf97;
 }
 
-.settings-datepicker .datepickers-container {
+.settings__datepicker .datepickers-container {
   width: 400px;
 }
 
-.settings-datepicker {
+.settings__datepicker {
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -85,11 +85,11 @@ div.room-card__decor {
   color: #6fcf97;
 }
 
-.settings-comfort .comfort-button {
+.settings__comfort .comfort-button {
   scroll-margin-bottom: 20px;
 }
 
-.settings-extracomfort{
+.settings__extracomfort{
   margin-top: 15px;
 }
 
@@ -98,7 +98,7 @@ div.room-card__decor {
 }
 
 @media only screen and (max-width: 1600px) {
-  .settings-main-title{
+  .settings__title-main{
     text-align: center;
   }
 }
@@ -134,15 +134,15 @@ div.room-card__decor {
     display: block;
   }
 
-  .settings-datepicker #single__input__range {
+  .settings__datepicker #single__input__range {
     width: 300px;
   }
 
-  .settings-dropdown .little-dropdowns .dd-button {
+  .settings__dropdown .little-dropdowns .dd-button {
     width: 300px;
   }
 
-  .settings-range #slider-range {
+  .settings__range #slider-range {
     width: 300px;
   }
 

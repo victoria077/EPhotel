@@ -1,7 +1,7 @@
 include ../mixins.pug
 include ../../blocks/input-subscription/input-subscription.pug
 
-mixin footer(linkList1, linkList2, linkList3)
+mixin footer(title, linkList1, linkList2, linkList3, copyright)
   footer.footer
     .container
       .footer__nav
@@ -13,25 +13,25 @@ mixin footer(linkList1, linkList2, linkList3)
               | отеле 2019 года по версии
               | ассоциации «Отельные взгляды»
         .footer__nav__column
-          h3(class='subtitle') Навигация
+          h3(class='subtitle')= title.name1
           ul
             each link in linkList1
               li
                a= link
         .footer__nav__column
-          h3(class='subtitle') О нас
+          h3(class='subtitle')= title.name2
           ul
             each link in linkList2
               li
                a= link
         .footer__nav__column
-          h3(class='subtitle') Служба поддержки
+          h3(class='subtitle')= title.name3
           ul
             each link in linkList3
               li
                a= link
         .footer__nav__column
-          h3(class='subtitle') Подписка
+          h3(class='subtitle')= title.name4
           p(style='white-space:pre;' class='subtitle_describtion')
             | Получайте специальные
             | предложения и новости сервиса
@@ -39,7 +39,7 @@ mixin footer(linkList1, linkList2, linkList3)
     hr(class='footer__strip')
     div(class='footer__details').container
       .flex-row
-          p(class='footer__details__copyright') Сорyright &copy; 2018 Тохin отель. Все права зачищены. 
+          p(class='footer__details__copyright')= copyright 
           ul.row
               li
                 a(href='#')
