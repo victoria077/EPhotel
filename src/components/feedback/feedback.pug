@@ -1,14 +1,13 @@
 mixin feedback(imgName, personName, date, text)
-  div(class='room__feedback')
-    div(class='room__feedback__wrapper')
-      div(class='room__feedback__wrapper__person')
+  div(class='room-feedback')
+      div(class='room-feedback__person')
         img(src= imgName)
-        div(class='room__feedback__wrapper__person--name')
+        div
           h4= personName
           p= date
-      div(class='room__feedback__wrapper__evaluation') 
+      div(class='room-feedback__evaluation') 
         button(class='btn-like') 
           .row
               i(class='fas fa-heart') 
               span 12
-        p(class='room__feedback__text')= text
+        p(class='room-feedback__text')= text

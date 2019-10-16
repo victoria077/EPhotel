@@ -11,14 +11,6 @@ mixin card-room(slickName, imgList, number, price, style='--rating: level', feed
                 each img in imgList
                   li(class= slickName + '__item')
                     img(src= img)
-                //- li(class= slickName + '__item')
-                //-   img(src= imgNameOne)
-                //- li(class=  slickName + '__item')
-                //-   img(src= imgNameTwo)
-                //- li(class=  slickName + '__item')
-                //-   img(src= imgNameThree)
-                //- li(class=  slickName + '__item')
-                //-   img(src= imgNameFour)
               .carousel__prev
                 label(for= slickName + '-1')
                 label(for= slickName + '-2')
@@ -40,7 +32,7 @@ mixin card-room(slickName, imgList, number, price, style='--rating: level', feed
                     span(class='card__number_symbol') &#8470; 
                     span=  number
                 p(class='card__price')= price  
-                    span(class='card__price_per day')  в сутки
+                    span(class='card__price-per-day')  в сутки
             .line
             .flex-row
               div(class='Stars stars__decor' style= style)
