@@ -1,5 +1,5 @@
 include ../airdatepicker/airdatepicker.pug
-mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, additionalTax, totalPrice )
+mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, addTax, additionalTax, totalPrice )
     .calculator
         .calculator__container
             .flex-row
@@ -12,13 +12,10 @@ mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown,
                 p(class='title')= checkin
                 p(class='title calculator__title_datepicker_checkout')= checkout
             div(class='calculator__datepicker')
-                if block.datepicker
-                    block datepicker
+                +datepicker
             p(class='title')= titleDropdown
             .calculator__dropdown
-                //- if block
-                //-     block 
-                    //- include ../../blocks/dropdown/dropdown.pug
+                +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
             .flex-row.calculator__count
                 .count__price
                     p= calculationOfThePrice
@@ -31,9 +28,7 @@ mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown,
                 p 0P
             .flex-row.calculator__count
                 .row
-                    p(style='white-space:pre;')
-                        | Сбор за дополнительные 
-                        | услуги
+                    p(style='white-space:pre;')= addTax
                     div
                         span.count__info.count__info_extra i
                 p= additionalTax

@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.extracomfort-button {
+.extracomfort__button {
   position: relative;
   display: inline-block;
   border: none;
@@ -24,7 +24,7 @@
   letter-spacing: 0.2px;
 }
 
-.extracomfort-button:after {
+.extracomfort__button:after {
   content: "";
   padding: 5px;
   box-shadow: 2px -2px 0 0 black inset;
@@ -36,11 +36,11 @@
   color: black;
 }
 
-.extracomfort-input {
+.extracomfort__input {
   display: none;
 }
 
-.extracomfort-menu {
+.extracomfort__menu {
   position: absolute;
   top: 100%;
   border-radius: 4px;
@@ -52,19 +52,19 @@
   width: 395px;
 }
 
-.extracomfort-input + .extracomfort-menu {
+.extracomfort__input + .extracomfort__menu {
   display: none;
 }
 
-.extracomfort-input:checked + .extracomfort-menu {
+.extracomfort__input:checked + .extracomfort__menu {
   display: block;
 }
 
-.extracomfort-menu li {
+.extracomfort__menu li {
   cursor: pointer;
   white-space: nowrap;
 }
 
-.extracomfort-menu-checkbox{
+.extracomfort__checkbox{
   padding-bottom: 15px;
 }

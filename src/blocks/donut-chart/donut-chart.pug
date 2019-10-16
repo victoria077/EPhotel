@@ -1,4 +1,4 @@
-mixin chart-donut(voices, grade1, grade2, grade3, grade4)
+mixin chart-donut(voices, text, grade1, grade2, grade3, grade4)
     .row.donut
         svg
             circle(class='circle')
@@ -7,7 +7,7 @@ mixin chart-donut(voices, grade1, grade2, grade3, grade4)
             circle(class='circle3')   
             g(class='chart-text')
                 text(x='42%' y='35%' class='chart-number')= voices
-                text(x='42%' y='36%' class='chart-label') голосов
+                text(x='42%' y='36%' class='chart-label')= text
         figcaption(class='figure-key')
             ul(class='figure-key-list' aria-hidden='true' role='presentation')
                 li

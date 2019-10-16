@@ -5,7 +5,7 @@ include ../../blocks/checkbox/checkbox.pug
 include ../../blocks/description-checkbox/description-checkbox.pug
 include ../../blocks/range-slider/range-slider.pug
 include ../../blocks/pagination/pagination.pug
-include ../../blocks/extracomfort-dropdown/extracomfort-dropdown.pug
+include ../../blocks/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../../blocks/little-dropdown/little-dropdown.pug
 .container.settings
         #left-side.left-side
@@ -37,7 +37,7 @@ include ../../blocks/little-dropdown/little-dropdown.pug
                 div(class='settings-comfort')
                     include ../../blocks/comfort-dropdown/comfort-dropdown.pug
                 div(class='settings__extracomfort')
-                    +expandable-checkbox-list(['Breakfast', 'Завтрак', 'Table', 'Письменный стол'])
+                    +expandable-checkbox-list('Дополнительные удобства', ['Breakfast', 'Завтрак', 'Table', 'Письменный стол'])
         .right-side
             h1(class='title-main settings__title-main') Номера, которые мы для вас подобрали
             span(class='slide' id='slide')

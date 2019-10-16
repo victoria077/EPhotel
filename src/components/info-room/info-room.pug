@@ -26,7 +26,7 @@ div(class='information')
                     +room-information('whatshot', 'Уют', 'Номер оснащён камином')
                 div(class='information__impression')
                     h3(class='information__title information__title_impression') Впечатления от номера
-                    +chart-donut('260', 'Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован')
+                    +chart-donut('260', 'голосов', 'Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован')
             div
                 h3(class='information__title information__title_details') Отзывы посетителей номера
                 +feedback(require('./images/photo1.jpg'), 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
@@ -44,7 +44,4 @@ div(class='information')
                         | прибытия вы получите полный возврат за 
                         | вычетом сбора за услуги.
         div(class='information__bottom-part bottom-part__right')
-            +calculator(888, '9 990₽', 'в сутки', 'прибытие', 'выезд', 'гости', '9 990₽ х 4 суток', '39 960₽', 'Сбор за услуги: скидка 2 179₽', '300₽', 'Итого..................................................38 081₽')
-                block datepicker
-                    h1 My important announcement
-                    //- +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
+            +calculator(888, '9 990₽', 'в сутки', 'прибытие', 'выезд', 'гости', '9 990₽ х 4 суток', '39 960₽', 'Сбор за услуги: скидка 2 179₽', 'Сбор за дополнительные услуги','300₽', 'Итого..................................................38 081₽')
