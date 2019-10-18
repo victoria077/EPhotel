@@ -5,29 +5,29 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
   footer.footer
     .container
       .footer__nav
-        .footer__nav__column.column__slogan
+        .nav__column.nav__column_slogan
           .logo(class='logo')
           div
             p(class='footer__slogan')= slogan
-        .footer__nav__column
+        .nav__column
           h3(class='subtitle')= title.name1
           ul
             each link in linkList1
               li
                a= link
-        .footer__nav__column
+        .nav__column
           h3(class='subtitle')= title.name2
           ul
             each link in linkList2
               li
                a= link
-        .footer__nav__column
+        .nav__column
           h3(class='subtitle')= title.name3
           ul
             each link in linkList3
               li
                a= link
-        .footer__nav__column.column__offer
+        .nav__column.nav__column_offer
           h3(class='subtitle')= title.name4
           p(class='subtitle_describtion')= offer
           +input-subscription('Email')

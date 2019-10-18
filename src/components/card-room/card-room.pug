@@ -1,4 +1,4 @@
-mixin card-room(slickName, imgList, number, price, style='--rating: level', feedback, className)
+mixin card-room(slickName, imgList, number, price, style='--rating: level', day, feedback, textFeedback, className)
     div(class= className, class='card')
       a(href="info-page.html")
         .carousel-container
@@ -32,9 +32,9 @@ mixin card-room(slickName, imgList, number, price, style='--rating: level', feed
                     span(class='card__number_symbol') &#8470; 
                     span=  number
                 p(class='card__price')= price  
-                    span(class='card__price_per-day')  в сутки
+                    span(class='card__price_per-day')= day
             .line
             .flex-row
               div(class='Stars stars__decor' style= style)
               p(class='card__feedback')= feedback
-                    span   Oтзывов
+                    span= textFeedback

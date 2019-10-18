@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// importAll(require.context('./', true, /\.scss$/));
 var webpack = require('webpack');
 module.exports = {
   module: {
@@ -70,7 +69,6 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "main.css",
-      // chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
@@ -80,7 +78,6 @@ module.exports = {
       filename: 'signup-page.html',
       template: './src/components/signup-page/signup-page.pug'
     }),
-    // We need to set our desired filename for other html files though.
     new HtmlWebpackPlugin({
       filename: 'signin-page.html',
       template: './src/components/signin-page/signin-page.pug'

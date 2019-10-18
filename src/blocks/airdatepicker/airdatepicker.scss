@@ -16,11 +16,11 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.single-arrow-wrapper {
+.single-datepicker {
   position: relative;
   display: inline-block;
 }
-.single-arrow-wrapper::before {
+.single-datepicker::before {
   margin-top: 5px;
   position: absolute;
   top: 30%;

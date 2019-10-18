@@ -2,8 +2,9 @@ include ../mixins.pug
 include ../input-text/input-text.pug
 include ../signin-button/signin-button.pug
 include ../../blocks/radio-button/radio-button.pug
+include ../../blocks/toggle/toggle.pug
 
-mixin form-register(title, birthday,  data, offer, login)
+mixin form-register(title, birthday,  data, offer, button, login)
   .wrap
     .container-form
         h1( class='title-main')= title
@@ -28,10 +29,10 @@ mixin form-register(title, birthday,  data, offer, login)
           +input-text('Пароль')
 
         .row
-          include ../../blocks/toggle/toggle.pug
+          +toggle
           p(class='signup__offer')= offer
 
-        button(type='button' class='btn btn-confirm signup__button_payment') перейти к оплате
+        button(type='button' class='btn btn-confirm signup__button_payment')= button
         
         .flex-row
           p(class='text sugnup-text')= login

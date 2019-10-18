@@ -7,6 +7,7 @@ include ../../blocks/range-slider/range-slider.pug
 include ../../blocks/pagination/pagination.pug
 include ../../blocks/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../../blocks/little-dropdown/little-dropdown.pug
+include ../../blocks/single-airdatepicker/single-airdatepicker.pug
 .container.settings
         .left-side
             div(class='sidebar' id='sidebar')
@@ -14,7 +15,7 @@ include ../../blocks/little-dropdown/little-dropdown.pug
                     i(class='fa fa-arrow-left')
                 h3(class='title') Даты пребывания в отеле
                 div(class='settings__datepicker')
-                    include ../../blocks/single-airdatepicker/single-airdatepicker.pug
+                    +single-datepicker
                 h3(class='title') гости
                 div(class='settings__dropdown')
                     +little-dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
@@ -55,20 +56,20 @@ include ../../blocks/little-dropdown/little-dropdown.pug
                     i(class='fa fa-arrow-right')
             .wrapper_content
                 .content
-                    +card-room('carousel', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 888, '9  990₽', '--rating: 5', 145, 'room-card__decor')
-                    +card-room('carousel1', [require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg')], 840,'9  900₽', '--rating: 4', 65 , 'room-card__decor')
-                    +card-room('carousel2', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 980, '8 500₽', '--rating: 3', 35, 'room-card__decor')
+                    +card-room('carousel', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 888, '9  990₽', '--rating: 5', 'в сутки', 145, 'Отзывов',  'room-card__decor')
+                    +card-room('carousel1', [require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg'), require('./images/room2.jpg')], 840,'9  900₽', '--rating: 4', 'в сутки', 65 , 'Отзывов', 'room-card__decor')
+                    +card-room('carousel2', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 980, '8 500₽', '--rating: 3', 'в сутки', 35, 'Отзывов',  'room-card__decor')
                 
-                    +card-room('carousel3', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')], 856, '7 300₽', '--rating: 5', 19, 'room-card__decor')
-                    +card-room('carousel4', [require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg')], 740, '6 000₽', '--rating: 4', 44, 'room-card__decor')
-                    +card-room('carousel5', [require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg')], 982, '5 800₽', '--rating: 3', 56, 'room-card__decor')
+                    +card-room('carousel3', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')], 856, '7 300₽', '--rating: 5', 'в сутки', 19,  'Отзывов', 'room-card__decor')
+                    +card-room('carousel4', [require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg'), require('./images/room5.jpg')], 740, '6 000₽', '--rating: 4', 'в сутки', 44, 'Отзывов', 'room-card__decor')
+                    +card-room('carousel5', [require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg'), require('./images/room6.jpg')], 982, '5 800₽', '--rating: 3', 'в сутки', 56, 'Отзывов', 'room-card__decor')
                     
-                    +card-room('carousel6', [require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg')], 678, '5 500₽', '--rating: 5', 45, 'room-card__decor')
-                    +card-room('carousel7', [require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg')], 450, '5 300₽', '--rating: 4', 39, 'room-card__decor')
-                    +card-room('carousel8', [require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg')], 350, '5 000₽', '--rating: 3', 77, 'room-card__decor')
+                    +card-room('carousel6', [require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg'), require('./images/room7.jpg')], 678, '5 500₽', '--rating: 5', 'в сутки', 45, 'Отзывов', 'room-card__decor')
+                    +card-room('carousel7', [require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg'), require('./images/room8.jpg')], 450, '5 300₽', '--rating: 4', 'в сутки', 39, 'Отзывов', 'room-card__decor')
+                    +card-room('carousel8', [require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg'), require('./images/room9.jpg')], 350, '5 000₽', '--rating: 3', 'в сутки', 77, 'Отзывов', 'room-card__decor')
     
-                    +card-room('carousel9', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 666, '5 000₽', '--rating: 5', 25, 'room-card__decor')
-                    +card-room('carousel10', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 444, '5 000₽', '--rating: 4', 15, 'room-card__decor')
-                    +card-room('carousel11', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')],  352, '5 000₽', '--rating: 3', 55, 'room-card__decor')
+                    +card-room('carousel9', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 666, '5 000₽', '--rating: 5', 'в сутки', 25, 'Отзывов', 'room-card__decor')
+                    +card-room('carousel10', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 444, '5 000₽', '--rating: 4', 'в сутки', 15, 'Отзывов', 'room-card__decor')
+                    +card-room('carousel11', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')],  352, '5 000₽', '--rating: 3', 'в сутки', 55, 'Отзывов', 'room-card__decor')
             +pagination('arrow_back', 'arrow_forward')
             p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды

@@ -1,5 +1,5 @@
 include ../airdatepicker/airdatepicker.pug
-mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, addTax, additionalTax, totalPrice )
+mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, addTax, additionalTax, totalPrice, button )
     .calculator
         .calculator__container
             .flex-row
@@ -33,7 +33,7 @@ mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown,
                         span.count__info.count__info_extra i
                 p= additionalTax
             h3(class='calculator__total-price')= totalPrice
-            button(type='button' class='btn btn-confirm') Забронировать
+            button(type='button' class='btn btn-confirm')= button
                 
 
 

@@ -7,6 +7,9 @@
     justify-content: space-between;
     padding: 0 10px 10px;
     margin-top: 100px;
+}
+}
+.nav{
     &__column {
       margin: 0 10px 10px;
       text-decoration: none;
@@ -30,7 +33,6 @@
       }
     }
   }
-}
 
 .footer__details {
   padding-top: 5px;
@@ -76,7 +78,7 @@
   margin-top: 20px;
 }
 
-.column__slogan, .column__offer{
+.nav__column_slogan, .nav__column_offer{
   max-width: 380px;
 }
 .div {

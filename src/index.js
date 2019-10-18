@@ -1,9 +1,7 @@
-import "./index.pug";
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
-// import "../src/components/form-search/form-search.js";
 require('./fonts.scss');
 require('jquery');
 require('jquery-ui-bundle');
@@ -12,23 +10,13 @@ require("../node_modules/jquery-ui-themes/themes/ui-lightness/theme.css");
 import 'owl.carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
-// import "../src/components/card-room/card-room.js";
-// import "../src/components/room-page/room-page.js";
 import "../node_modules/material-icons/css/material-icons.min.css"
-// import "../src/blocks/airdatepicker/airdatepicker.js";
-// import "../src/blocks/single-airdatepicker/single-airdatepicker.js";
-// import "../src/blocks/dropdown/dropdown.js";
-// import "../src/blocks/little-dropdown/little-dropdown.js";
-// import "../src/blocks/panagination/panagination.js";
-// import "../src/blocks/slick/slick.js";
-// import "../src/blocks/comfort-dropdown/comfort-dropdown.js"
 
 
-const req = require.context("../src", true, /\.js$/)
-function loadStyles(){
-   req.keys().forEach(filename => req(filename))
-}
-loadStyles();
+function importAll(req) {
+   req.keys().forEach(req);
+ }
 
-require.context('./', true, /\.scss$/)
-.keys().forEach(require.context('./', true, /\.scss$/)); 
+ 
+ importAll(require.context("../src", true, /\.js$/))
+ importAll(require.context("./", true, /\.scss$/))
