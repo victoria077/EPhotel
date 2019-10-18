@@ -76,19 +76,19 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'signup-page.html',
-      template: './src/components/signup-page/signup-page.pug'
+      template: './src/pages/signup-page/signup-page.pug'
     }),
     new HtmlWebpackPlugin({
       filename: 'signin-page.html',
-      template: './src/components/signin-page/signin-page.pug'
+      template: './src/pages/signin-page/signin-page.pug'
     }),
     new HtmlWebpackPlugin({
       filename: 'info-page.html',
-      template: './src/components/info-page/info-page.pug'
+      template: './src/pages/info-page/info-page.pug'
     }),
     new HtmlWebpackPlugin({
       filename: 'filter-page.html',
-      template: './src/components/filter-page/filter-page.pug'
+      template: './src/pages/filter-page/filter-page.pug'
     }),
     new webpack.ProvidePlugin({
       $:"jquery",

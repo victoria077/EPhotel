@@ -1,0 +1,41 @@
+.main-background-search {
+  width: 100%;
+  max-height: 1300px;
+  background-image: url(../../components/images/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 95px;
+  padding-left: 180px;
+}
+
+.clear {
+  clear: both;
+}
+
+.slogan {
+  position: relative;
+  font-size: 1.1rem;
+  left: 70%;
+  margin-top: 50vh;
+  padding-bottom: 3vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-background-search {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  .slogan {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-background-search {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 20px;
+  }
+}

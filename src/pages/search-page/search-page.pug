@@ -1,0 +1,21 @@
+include ../../components/header/header.pug
+include ../../components/form-search/form-search.pug
+include ../../components/button-signin-header/button-signin-header.pug
+include ../../components/footer/footer.pug
+doctype html
+html
+  head
+    title
+  body
+    +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
+      +button-signin-header('Войти', 'signin-page.html', 'header-btn-signin' )
+      .header__btn_signup
+        +button-signup('Зарегистрироватьcя', 'signup-page.html')
+    .clear
+    .main-background-search
+      +form-search({checkin: 'Прибытие', checkout: 'Выезд', guests: 'Гости'}, 'подобрать номер')
+      p(class='slogan' style='white-space:pre;') 
+        |Лучшие номера для вашей работы, 
+        |  отдыха и просто вдохновения
+    +footer('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', {name1: 'навигация', name2: 'о нас', name3: 'Служба поддержки', name4: 'Подписка'}, ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'], 
+    'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.')
