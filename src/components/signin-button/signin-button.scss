@@ -1,4 +1,4 @@
-.btn-link {
+.btn__signin {
   display: inline-block;
   width: 145px;
   height: 65px;
@@ -14,7 +14,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .btn-link {
+  .btn__link {
     margin: 0 auto;
     margin-top: 10px;
   }

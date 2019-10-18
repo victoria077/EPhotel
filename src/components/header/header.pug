@@ -1,16 +1,16 @@
-
 include ../mixins.pug
 include ../signup-button/signup-button.pug
-mixin header( menuLinks)
+mixin header(menuLinks)
   div(class='menu')
     div(class='container')
-      div(id='logo' class='menu__logo')
-      label(for='drop' class='menu__logo__toggle') 
-          i(class='fa fa-bars' aria-hidden='true')
-      input(type='checkbox' class='menu__logo__drop' id='drop')
-      ul(class='menu__nav')
-        each link in menuLinks
-          li
-            a= link
-        if block
-          block
+      div(class='header')
+        div(id='logo' class='logo')
+        label(for='drop' class='menu__toggle') 
+            i(class='fa fa-bars' aria-hidden='true')
+        input(type='checkbox' class='menu__drop' id='drop')
+        ul(class='menu__nav')
+          each link in menuLinks
+            li
+              a= link
+          if block
+            block

@@ -1,6 +1,5 @@
 
 .footer {
-  padding: 0 0 80px 0;
   background-color:#fff;
   &__nav {
     display: flex;
@@ -12,7 +11,7 @@
       margin: 0 10px 10px;
       text-decoration: none;
       & p {
-        color: #1F2041;
+        color: rgba(31, 32, 65, 0.75);
         font-family: "Montserrat";
         font-weight: bold;
         font-size: 1.14rem;
@@ -48,6 +47,14 @@
   }
 }
 
+.details__copyright{
+  color: rgba(31, 32, 65, 0.75);
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.14rem;
+  line-height: 33px;
+}
+
 .footer__details ul li {
   height: 30px;
   width: 40px;
@@ -67,6 +74,10 @@
 }
 .footer__slogan {
   margin-top: 20px;
+}
+
+.column__slogan, .column__offer{
+  max-width: 380px;
 }
 .div {
   display: flex;

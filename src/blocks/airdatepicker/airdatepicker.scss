@@ -9,11 +9,11 @@
   left: 80%;
   content: "";
   padding: 5px;
-  box-shadow: 2px -2px 0 0 #1F2041 inset;
+  box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: #1F2041;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .single-arrow-wrapper {
@@ -27,11 +27,11 @@
   left: 87%;
   content: "";
   padding: 5px;
-  box-shadow: 2px -2px 0 0 #1F2041 inset;
+  box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: #1F2041;
+  color:rgba(31, 32, 65, 0.5); 
 }
 
 .range {

@@ -1,30 +1,21 @@
 // @import "../components/variables.scss";
 
-.menu{
-  padding-bottom: 10px;
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .menu {
-  &__logo {
-    background-image: url(../images/Logo.svg);
-    background-image: url(../images/Logo.svg);
-    background-repeat: no-repeat;
-    width: 210px; 
-    height: 60px;
-    margin-top: 25px;
-    background-repeat: no-repeat;
-    display: block;
-    float: left;
-    &__toggle {
-      display: none;
-    }
-    &__drop {
-      display: none;
-    }
+  &__toggle {
+    display: none;
+  }
+  &__drop {
+    display: none;
   }
   &__nav {
-    float: right;
     padding: 15px 0;
     margin: 0;
     list-style: none;
@@ -32,61 +23,45 @@
     & li {
       margin: 0px;
       display: inline-block;
-      float: left;
       & a {
         display: block;
         text-decoration: none;
         font-style: normal;
         font-weight: normal;
         font-size: 1.12rem;
-        color:  #1F2041;
+        color: rgba(31, 32, 65, 0.5);
         padding: 26px 18.5px;
       }
     }
   }
 }
-
 .menu li:nth-child(2) > a:after {
   content: "";
   padding: 5px;
   //   //set tickness
-  box-shadow: 2px -2px 0 0  #1F2041 inset;
+  box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color:  #1F2041;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .menu li:nth-child(5) > a:after {
   content: "";
   padding: 5px;
   //   //set tickness
-  box-shadow: 2px -2px 0 0 #1F2041 inset;
+  box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: #1F2041;
-}
-
-
-.header-btn-signin{
-  display: inline-block;
-  padding: 11px 30px;
-  border: 2.4px solid #BC9CFF;
-  text-transform: uppercase;
-  border-radius: 30px;
-  font-size: 17.5px;
-  color: #BC9CFF;
-  text-decoration: none;
-  font-family: "OpenSans-Bold";
-  margin: 16px 25px  16px 23px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .btn-signup {
   margin-top: 13px;
 }
 
-.header-btn-signup{
+.header-btn-signup {
   display: inline-block;
 }
 @media (max-width: 1300px) {
@@ -102,7 +77,11 @@
       &__toggle {
         display: block;
         padding: 14px 20px;
-        color: linear-gradient(180deg, rgb(188,156,255), rgb(139,164,249) 100%);
+        color: linear-gradient(
+          180deg,
+          rgb(188, 156, 255),
+          rgb(139, 164, 249) 100%
+        );
         font-size: 17px;
         text-decoration: none;
         border: none;
@@ -131,23 +110,22 @@
     margin-bottom: 10px;
   }
 
-  .menu__logo__toggle{ 
+  .menu__logo__toggle {
     margin-left: 90%;
     margin-top: -60px;
   }
 
-  .fa-bars{
+  .fa-bars {
     font-size: 34px;
   }
 }
 
-
 @media (max-width: 600px) {
-  .header-btn-signin{
-    margin: 10px 25px  16px 0px;
+  .header-btn-signin {
+    margin: 10px 25px 16px 0px;
   }
 
-  .header-btn-signup{
+  .header-btn-signup {
     margin-top: 10px;
   }
 }

@@ -1,4 +1,4 @@
-mixin dropdown(title, subtitle1, subtitle2, subtitle3) 
+mixin dropdown(title, subtitle1, subtitle2, subtitle3, clean, apply) 
   label.comfort
     .comfort__button(id= title.id)= title.name
     input(type='checkbox' class='comfort__input' id='comfort__input')
@@ -22,5 +22,5 @@ mixin dropdown(title, subtitle1, subtitle2, subtitle3)
           p(class='text' id= subtitle3.number) 0
           button(class='minus button' id= subtitle3.minus) -
       li.flex-row
-          button(class='clean' id='comfort-clean') Очистить
-          button(class='apply' id='comfort-apply') Применить
+          button(class='clean' id= clean.id)= clean.title
+          button(class='apply' id= clean.id)= apply.title

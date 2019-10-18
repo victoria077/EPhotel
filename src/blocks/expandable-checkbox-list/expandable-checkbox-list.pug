@@ -1,8 +1,7 @@
-mixin expandable-checkbox-list(title, checkboxList)
+mixin expandable-checkbox-list(title)
     label.extracomfort
-        .extracomfort-button(id='extracomfort__button')= title
+        .extracomfort-button.title(id='extracomfort__button')= title
         input(type='checkbox' class='extracomfort__input' id='extracomfort__input')
-        ul(class='extracomfort__menu')
-            each checkbox in checkboxList
-                li(class='extracomfort__checkbox')
-                    +checkbox(checkbox)
+        if block 
+            block
+

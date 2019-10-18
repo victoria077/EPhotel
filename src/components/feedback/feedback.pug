@@ -1,4 +1,4 @@
-mixin feedback(imgName, personName, date, text)
+mixin feedback(imgName, personName, date, quantity,  text)
   div(class='room-feedback')
       div(class='room-feedback__person')
         img(src= imgName)
@@ -9,5 +9,5 @@ mixin feedback(imgName, personName, date, text)
         button(class='btn-like') 
           .row
               i(class='fas fa-heart') 
-              span 12
+              span= quantity
         p(class='room-feedback__text')= text

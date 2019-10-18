@@ -1,17 +1,14 @@
 include ../mixins.pug
 include ../../blocks/input-subscription/input-subscription.pug
 
-mixin footer(title, linkList1, linkList2, linkList3, copyright)
+mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
   footer.footer
     .container
       .footer__nav
-        .footer__nav__column
+        .footer__nav__column.column__slogan
           .logo(class='logo')
           div
-            p(style='white-space:pre;' class='footer__slogan')
-              | Бронирование номеров в лучшем 
-              | отеле 2019 года по версии
-              | ассоциации «Отельные взгляды»
+            p(class='footer__slogan')= slogan
         .footer__nav__column
           h3(class='subtitle')= title.name1
           ul
@@ -30,16 +27,14 @@ mixin footer(title, linkList1, linkList2, linkList3, copyright)
             each link in linkList3
               li
                a= link
-        .footer__nav__column
+        .footer__nav__column.column__offer
           h3(class='subtitle')= title.name4
-          p(style='white-space:pre;' class='subtitle_describtion')
-            | Получайте специальные
-            | предложения и новости сервиса
+          p(class='subtitle_describtion')= offer
           +input-subscription('Email')
     hr(class='footer__strip')
     div(class='footer__details').container
       .flex-row
-          p(class='footer__details__copyright')= copyright 
+          p(class='footer__details details__copyright')= copyright 
           ul.row
               li
                 a(href='#')
