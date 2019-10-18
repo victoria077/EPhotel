@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,uBAAuB,CAAA;EACnB,UAAU,EAAE,KAAK;EACjB,gBAAgB,EAAE,wBAAwB;EAC1C,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;EACtB,OAAO,EAAE,MAAM;CAClB;;AAED,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,OAAO,CAAA;EACH,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;CACZ",
-    "sources": [
-        "../src/components/search-page/search-page.scss"
-    ],
-    "names": [],
-    "file": "search-page.css"
-}

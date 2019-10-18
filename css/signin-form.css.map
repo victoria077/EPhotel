@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../src/components/signin-form/signin-form.scss"
-    ],
-    "names": [],
-    "file": "signin-form.css"
-}
