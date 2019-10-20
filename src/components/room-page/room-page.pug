@@ -69,5 +69,7 @@ include ../../blocks/single-airdatepicker/single-airdatepicker.pug
                     +card-room('carousel9', [require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg'), require('./images/room1.jpg')], 666, '5 000₽', '--rating: 5', 'в сутки', 25, 'Отзывов', 'room-card__decor')
                     +card-room('carousel10', [require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg'), require('./images/room3.jpg')], 444, '5 000₽', '--rating: 4', 'в сутки', 15, 'Отзывов', 'room-card__decor')
                     +card-room('carousel11', [require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg'), require('./images/room4.jpg')],  352, '5 000₽', '--rating: 3', 'в сутки', 55, 'Отзывов', 'room-card__decor')
-            +pagination('arrow_back', 'arrow_forward')
-            p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды
+            div(class='settings__pagination')
+                +pagination('arrow_back', 'arrow_forward')
+                p(class="panagination-subtitle") 1 – 12 из 100+ вариантов аренды
+hr

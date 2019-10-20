@@ -1,23 +1,31 @@
-.header{
-  display: flex;
-  justify-content: space-between;
-}
-.menu {
+.menu{
+  padding-bottom: 10px;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .menu {
-  &__toggle {
-    display: none;
+  &__container{
+    display: flex;
+    justify-content: space-between;
   }
-  &__drop {
-    display: none;
-  }
+  &__logo {
+    background-image: url(../images/Logo.svg);
+    background-repeat: no-repeat;
+    width: 250px; 
+    height: 90px;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    display: block;}
+    &__toggle {
+      display: none;
+    }
+    &__drop {
+      display: none;
+    }
   &__nav {
     padding: 15px 0;
     margin: 0;
     list-style: none;
-    position: relative;
     & li {
       margin: 0px;
       display: inline-block;
@@ -33,6 +41,7 @@
     }
   }
 }
+
 .menu li:nth-child(2) > a:after {
   content: "";
   padding: 5px;
@@ -40,7 +49,7 @@
   display: inline-block;
   transform: rotate(-45deg);
   margin-left: 10px;
-  color: rgba(31, 32, 65, 0.5);
+  color:rgba(31, 32, 65, 0.5);
 }
 
 .menu li:nth-child(5) > a:after {
@@ -53,31 +62,43 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
+
+.header-btn-signin{
+  display: inline-block;
+  padding: 11px 30px;
+  border: 2.4px solid #BC9CFF;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-size: 17.5px;
+  color: #BC9CFF;
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+  margin: 16px 25px  16px 23px;
+}
+
 .btn-signup {
   margin-top: 13px;
 }
 
-.header__btn_signup {
+.header__btn_signup{
   display: inline-block;
 }
 @media (max-width: 1300px) {
   .menu {
     margin: 0;
+    &__container{
+      display: block;
+    }
     &__logo {
       display: block;
       padding: 20px 0 10px 0;
       width: 180px;
       height: 50px;
-      text-align: center;
-      float: none;
+      text-align: center;}
       &__toggle {
         display: block;
         padding: 14px 20px;
-        color: linear-gradient(
-          180deg,
-          rgb(188, 156, 255),
-          rgb(139, 164, 249) 100%
-        );
+        color: #BC9CFF;
         font-size: 17px;
         text-decoration: none;
         border: none;
@@ -89,9 +110,8 @@
       &__drop:checked + ul {
         display: block;
       }
-    }
+
     &__nav {
-      float: left;
       width: 100%;
       display: none;
       & li {
@@ -106,22 +126,23 @@
     margin-bottom: 10px;
   }
 
-  .menu__logo__toggle {
+  .menu__toggle{ 
     margin-left: 90%;
     margin-top: -60px;
   }
 
-  .fa-bars {
+  .fa-bars{
     font-size: 34px;
   }
 }
 
+
 @media (max-width: 600px) {
-  .header-btn-signin {
-    margin: 10px 25px 16px 0px;
+  .header-btn-signin{
+    margin: 10px 25px  16px 0px;
   }
 
-  .header__btn_signup {
+  .header__btn_signup{
     margin-top: 10px;
   }
 }
