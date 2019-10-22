@@ -33,3 +33,44 @@
   /* Support for IE. */
   font-feature-settings: "liga";
 }
+
+
+.room-information {
+  width: 410px; 
+}
+  .room-information__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 25px 10px 25px 13px; }
+    .room-information__description h4 {
+      -webkit-margin-before: 0em;
+              margin-block-start: 0em;
+      -webkit-margin-after: 0.1em;
+              margin-block-end: 0.1em;
+      margin-left: 0.83rem;
+      font-style: normal;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.75); }
+    .room-information__description p {
+      -webkit-margin-before: 0;
+              margin-block-start: 0;
+      -webkit-margin-after: 0em;
+              margin-block-end: 0em;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 18px;
+      color: rgba(31, 32, 65, 0.75);
+      margin-left: 15px;
+      font-style: normal;
+      font-size: 1.14rem;
+      font-weight: 300; }
+

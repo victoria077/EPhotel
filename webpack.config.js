@@ -90,6 +90,10 @@ module.exports = {
       filename: 'filter-page.html',
       template: './src/pages/filter-page/filter-page.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'search-page.html',
+      template: './src/pages/search-page/search-page.pug'
+    }),
     new webpack.ProvidePlugin({
       $:"jquery",
       jQuery:"jquery",

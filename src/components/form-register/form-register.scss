@@ -20,30 +20,49 @@
   padding-top: 15px;
 }
 
+.signup__radio-buttons {
+  margin: 19px 0 25px 0;
+}
+
+.signup__radio-buttons_woman {
+  margin-left: 30px;
+}
+
+.signup__title {
+  padding-bottom: 7px;
+}
+
 .signup__input_birthday {
   padding-top: 5px;
 }
 
 .signup__input_data {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .signup__input_data_password {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.signup__button_payment{
-  margin-top: 25px;
-  margin-bottom: 25px;
+.signup__button_payment {
+  margin-top: 35px;
+  margin-bottom: 50px;
 }
 
-.sugnup-text {
+.sugnup__text {
   margin-top: 20px;
   font-size: 19px;
+  margin-right: 60px;
 }
 
-.signup-offer {
+.signup__offer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
   margin-left: 15px;
 }
 

@@ -1,42 +1,42 @@
-.texts {
-  margin: 7px 10px 0 10px;
-}
+// .texts {
+//   margin: 7px 10px 0 10px;
+// }
 
 
-.start-date::before {
-  content: "";
-  padding: 5px;
-  box-shadow: 2px -2px 0 0 #1F2041 inset;
-  display: inline-block;
-  transform: rotate(-45deg);
-  margin-left: 10px;
-  color: #1F2041;
-  background-repeat: no-repeat;
-}
+// .start-date::before {
+//   content: "";
+//   padding: 5px;
+//   box-shadow: 2px -2px 0 0 #1F2041 inset;
+//   display: inline-block;
+//   transform: rotate(-45deg);
+//   margin-left: 10px;
+//   color: #1F2041;
+//   background-repeat: no-repeat;
+// }
 
-.input-date {
-  padding-left: 15px;
-}
+// .input-date {
+//   padding-left: 15px;
+// }
 
-.input__date--single {
-  width: 266px;
-  height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+// .input__date--single {
+//   width: 266px;
+//   height: 44px;
+//   background: #ffffff;
+//   border: 1px solid rgba(31, 32, 65, 0.25);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+// }
 
-.input__date--single::before {
-  content: "";
-  padding: 5px;
-  box-shadow: 2px -2px 0 0 #1F2041 inset;
-  display: inline-block;
-  transform: rotate(-45deg);
-  margin-left: 30px;
-  color: #1F2041;
-  background-repeat: no-repeat;
-}
+// .input__date--single::before {
+//   content: "";
+//   padding: 5px;
+//   box-shadow: 2px -2px 0 0 #1F2041 inset;
+//   display: inline-block;
+//   transform: rotate(-45deg);
+//   margin-left: 30px;
+//   color: #1F2041;
+//   background-repeat: no-repeat;
+// }
 
 .form-search {
   width: 560px;
@@ -48,19 +48,32 @@
 }
 
 .form-search__container{
-  padding: 6% 7%;
+  padding: 6% 8% 6% 7%;
 }
 
+.form-search__title{
+  width: 400px;
+}
+
+.form-search__title_checkin {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
 .form-search__title_checkout {
-  margin-left: 32%;
+  margin-left: 29%;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
+.form-search__title_guests{
+  padding-bottom: 8px;
+}
 .form-search__dropdown .dropdowns .dd-button {
   margin-bottom: 20px;
 }
 
 .form-search__button_confirm {
-  margin: 25px 0;
+  margin: 40px 0 10px;
 }
 
 @media only screen and (max-width: 700px) {

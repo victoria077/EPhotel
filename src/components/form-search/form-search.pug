@@ -1,18 +1,16 @@
 include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/airdatepicker/airdatepicker.pug
 
-mixin form-search(subtitle, text)
+mixin form-search(title, subtitle, text)
   .form-search
       .form-search__container
-        h1(class='title-main form-search__title' style='white-space:pre;')
-          |Найдём номера под 
-          |  ваши пожелания
+        h1(class='title-main form-search__title')= title
         .row
-          h3(class='title')= subtitle.checkin
+          h3(class='title form-search__title_checkin')= subtitle.checkin
           h3(class='title form-search__title_checkout')= subtitle.checkout
         div(class='form-search__dropdown')
           +datepicker()
-        h3(class='title')= subtitle.guests
+        h3(class='title form-search__title_guests')= subtitle.guests
         div(class='form-search__dropdown')
           +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
         div(class='form-search__button_confirm')  

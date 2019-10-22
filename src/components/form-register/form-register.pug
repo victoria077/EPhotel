@@ -12,16 +12,17 @@ mixin form-register(title, birthday,  data, offer, button, login)
         div(class='signup__input_surname')
         +input-text('Фамилия')
 
-        .row.radio-buttons
+        div(class="row signup__radio-buttons")
           +radio-button('radio-button1', 'Мужчина')
-          +radio-button('radio-button2', 'Женщина')
+          div(class="signup__radio-buttons_woman")
+            +radio-button('radio-button2', 'Женщина')
 
         div(class='signup__input_birthday')
-          label(class='title signup-title')= birthday
+          div(class='title signup__title')= birthday
           +input-text('ДД.ММ.ГГГГ')
         
         div(class='signup__input_data')
-          label(class='title signup-title')= data
+          div(class='title signup__title')= data
           +input-text('Email')
 
         div(class='signup__input_data_password')
@@ -33,6 +34,6 @@ mixin form-register(title, birthday,  data, offer, button, login)
 
         button(type='button' class='btn btn-confirm signup__button_payment')= button
         
-        .flex-row
-          p(class='text sugnup-text')= login
+        .row
+          p(class='text sugnup__text')= login
           +button-signin('Войти', 'signin-page.html')
