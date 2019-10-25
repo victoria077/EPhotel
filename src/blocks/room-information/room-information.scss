@@ -1,70 +1,36 @@
-.room_information__wrapper {
-  padding: 25px 10px 25px 0px;
-}
-
-
-.information__info{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.information__info .material-icons {
-  font-family: "MaterialIcons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 3.83rem;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  color: #9ba1fb;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
-
+// .room_information__wrapper {
+//   padding: 25px 10px 25px 0px;
+// }
 
 .room-information {
-  width: 410px; 
-}
-  .room-information__wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  width: 410px;
+  &__wrapper {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 25px 10px 25px 13px; }
-    .room-information__description h4 {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 25px 10px 25px 13px;
+  }
+  & .description {
+    &__quality {
       -webkit-margin-before: 0em;
-              margin-block-start: 0em;
+      margin-block-start: 0em;
       -webkit-margin-after: 0.1em;
-              margin-block-end: 0.1em;
+      margin-block-end: 0.1em;
       margin-left: 0.83rem;
       font-style: normal;
       font-size: 22px;
       font-weight: bold;
       line-height: 24px;
-      color: rgba(31, 32, 65, 0.75); }
-    .room-information__description p {
+      color: rgba(31, 32, 65, 0.75);
+    }
+    &__text {
       -webkit-margin-before: 0;
-              margin-block-start: 0;
+      margin-block-start: 0;
       -webkit-margin-after: 0em;
-              margin-block-end: 0em;
+      margin-block-end: 0em;
       margin-top: 10px;
       font-style: normal;
       font-size: 18px;
@@ -72,5 +38,7 @@
       margin-left: 15px;
       font-style: normal;
       font-size: 1.14rem;
-      font-weight: 300; }
-
+      font-weight: 300;
+    }
+  }
+}

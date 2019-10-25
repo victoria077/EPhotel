@@ -2,36 +2,69 @@
 .settings {
   display: flex;
   justify-content: space-between;
+  &__left-side {
+    margin: 57px 90px 0 0;
+  }
+  &__title{
+    &_price {
+    padding: 45px 0 31px 0;
+  }
+  &_checkboxes {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  &_availability {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+  &_comfort {
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
 }
-
-.left-side {
-  margin: 57px 90px 0 0;
-}
-
-.settings__title_price {
-  padding: 45px 0 31px 0;
-}
-
-.settings__title_checkboxes {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.settings__title_availability {
-  padding-top: 35px;
-  padding-bottom: 20px;
-}
-
-.settings__title_comfort {
-  padding-top: 30px;
-  padding-bottom: 8px;
-}
-
-.settings__range {
+&__range {
   position: relative;
 }
+&__datepicker {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
 
-.room__checkbox {
+&__extracomfort{
+  margin-top: 15px;
+}
+&__pagination{
+  margin-bottom: 100px;
+}
+
+}
+
+
+
+// .settings__title_price {
+//   padding: 45px 0 31px 0;
+// }
+
+// .settings__title_checkboxes {
+//   padding-top: 10px;
+//   padding-bottom: 20px;
+// }
+
+// .settings__title_availability {
+//   padding-top: 35px;
+//   padding-bottom: 20px;
+// }
+
+// .settings__title_comfort {
+//   padding-top: 30px;
+//   padding-bottom: 8px;
+// }
+
+// .settings__range {
+//   position: relative;
+// }
+
+.settings__checkbox .room__checkbox {
   margin-bottom: 17px;
 }
 
@@ -76,26 +109,26 @@ div.room-card__decor {
   width: 400px;
 }
 
-.settings__datepicker {
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-.right-side .fa-arrow-right {
+// .settings__datepicker {
+//   margin-top: 10px;
+//   margin-bottom: 40px;
+// }
+.settings__right-side .fa-arrow-right {
   font-size: 1.67rem;
   color: #6fcf97;
 }
 
-.settings__comfort .comfort-button {
-  scroll-margin-bottom: 20px;
-}
+// .settings__comfort .comfort-button {
+//   scroll-margin-bottom: 20px;
+// }
 
-.settings__extracomfort{
-  margin-top: 15px;
-}
+// .settings__extracomfort{
+//   margin-top: 15px;
+// }
 
-.settings__pagination{
-  margin-bottom: 100px;
-}
+// .settings__pagination{
+//   margin-bottom: 100px;
+// }
 
 @media only screen and (max-width: 1600px) {
   .settings__title-main{
@@ -104,12 +137,12 @@ div.room-card__decor {
 }
 
 @media only screen and (max-width: 1000px) {
-  .left-side {
+  .settings__left-side {
     margin-right: 10px;
   }
 }
 @media only screen and (max-width: 750px) {
-  .right-side {
+  .settings__right-side {
     display: none;
   }
 

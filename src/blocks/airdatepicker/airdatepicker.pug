@@ -1,17 +1,17 @@
 
 mixin datepicker()
-    .flex-row
-        .datepicker__input
+    div(class='flex-row')
+        div(class='datepicker__input')
             input(type='text'
                 data-range='true'
                 data-multiple-dates-separator=' - ' 
-                class='dateRange range'
+                class='dateRange datepicker__range'
                 class='datepicker-here'
                 id='startDate'
                 placeholder='ДД.ММ.ГГГГ')
                 
-        .datepicker__input
+        div(class='datepicker__input')
             input(type='text'
-                class='range'
+                class='datepicker__range'
                 id='endDate'
                 placeholder='ДД.ММ.ГГГГ')

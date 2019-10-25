@@ -2,31 +2,52 @@
   width: 395px;
   height: 6px;
   background-color: white;
+  & .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    outline: 0;
+    margin-top: -3px;
+  }
+  & .ui-slider-horizontal {
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  & .ui-widget-header {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  }
 }
 
-#slider-range .ui-state-default,
-#slider-range .ui-widget-content .ui-state-default,
-#slider-range .ui-widget-header .ui-state-default {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  outline: 0;
-  margin-top: -3px;
-}
+// #slider-range .ui-state-default,
+// #slider-range .ui-widget-content .ui-state-default,
+// #slider-range .ui-widget-header .ui-state-default {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+//   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+//   border: 2px solid #ffffff;
+//   border-radius: 20px;
+//   outline: 0;
+//   margin-top: -3px;
+// }
 
-#slider-range .ui-slider-horizontal {
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 3px;
-}
+// #slider-range .ui-slider-horizontal {
+//   background: #ffffff;
+//   border: 1px solid rgba(31, 32, 65, 0.25);
+//   box-sizing: border-box;
+//   border-radius: 3px;
+// }
 
-#slider-range .ui-widget-header {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-}
+// #slider-range .ui-widget-header {
+//   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+// }
 
 .slider-range-price {
   font-size: 0.9rem;

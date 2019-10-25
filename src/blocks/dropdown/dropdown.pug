@@ -1,26 +1,26 @@
 mixin dropdown(title,  subtitle1,  subtitle2,  subtitle3) 
-  label.dropdowns
-    .dd-button(id= title.id)= title.name
-    input(type='checkbox' class='dd-input' id='test')
-    ul(class='dd-menu')
-      li()
-        p(class='title')= subtitle1.name
+  label.dropdown
+    .dd__item(id= title.id)= title.name
+    input(type='checkbox' class='dd__input' id='test')
+    ul(class='dd__menu')
+      li(class='menu__row')
+        p(class='dd__title')= subtitle1.name
         .flex-row
-          button(class='plus button' id= subtitle1.plus) +
-          p(class='text' id= subtitle1.number) 0
-          button(class='minus button' id= subtitle1.minus) -
-      li()
-        p(class='title')= subtitle2.name
+          button(class='plus dd__button' id= subtitle1.plus) +
+          p(class='dd__text' id= subtitle1.number) 0
+          button(class='minus dd__button' id= subtitle1.minus) -
+      li(class='menu__row')
+        p(class='dd__title')= subtitle2.name
         .flex-row
-          button(class='plus button' id= subtitle2.plus) +
-          p(class='text' id= subtitle2.number) 0
-          button(class='minus button' id= subtitle2.minus) -
-      li( )
-        p(class='title')= subtitle3.name
+          button(class='plus dd__button' id= subtitle2.plus) +
+          p(class='dd__text' id= subtitle2.number) 0
+          button(class='minus dd__button' id= subtitle2.minus) -
+      li(class='menu__row')
+        p(class='dd__title')= subtitle3.name
         .flex-row
-          button(class='plus button' id= subtitle3.plus) +
-          p(class='text' id= subtitle3.number) 0
-          button(class='minus button' id= subtitle3.minus) -
-      li( )
+          button(class='plus dd__button' id= subtitle3.plus) +
+          p(class='dd__text' id= subtitle3.number) 0
+          button(class='minus dd__button' id= subtitle3.minus) -
+      li(class='menu__row')
           button(class='clean' id='clean') Очистить
           button(class='apply' id='apply') Применить  

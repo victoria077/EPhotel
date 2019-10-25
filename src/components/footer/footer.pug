@@ -10,22 +10,22 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
             p(class='footer__slogan')= slogan
         .nav__column
           h3(class='subtitle')= title.name1
-          ul
+          ul(class="column__items")
             each link in linkList1
-              li
-               a= link
+              li(class="items__item")
+               a(class="item__link")= link
         .nav__column
           h3(class='subtitle')= title.name2
-          ul
+          ul(class="column__items")
             each link in linkList2
-              li
-               a= link
+              li(class="items__item")
+               a(class="item__link")= link
         .nav__column
           h3(class='subtitle')= title.name3
-          ul
+          ul(class="column__items")
             each link in linkList3
-              li
-               a= link
+              li(class="items__item")
+               a(class="item__link")= link
         .nav__column.nav__column_offer
           h3(class='subtitle')= title.name4
           p(class='subtitle_describtion')= offer

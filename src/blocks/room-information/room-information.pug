@@ -3,5 +3,5 @@ mixin room-information(icon, quality, descr, className)
       div(class='room-information__wrapper row' class= className)
          i(class='material-icons')= icon
          div(class='room-information__description')
-            h4= quality
-            p= descr
+            h4(class='description__quality')= quality
+            p(class='description__text')= descr

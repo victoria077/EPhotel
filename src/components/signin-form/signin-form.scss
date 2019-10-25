@@ -1,70 +1,108 @@
-.signin-container-form {
-  padding: 32px 30px 40px 40px;
+.form-signin {
+  width: 560px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: 0 auto;
+  &__container {
+    padding: 32px 30px 40px 40px;
+  }
+  &__input {
+    margin-top: 8px;
+    margin-bottom: 3px;
+    &_second {
+      margin-top: 12px;
+    }
+  }
+  &__button {
+    margin-top: 26px;
+    &_create {
+      margin-top: 45px;
+    }    
+  }
+  &__text {
+    margin-top: 65px;
+    font-family: "OpenSans-Bold";
+    font-size: 0;
+    line-height: 18px;
+  }
 }
 
-.input-signin {
-  margin-top: 8px;
-  margin-bottom: 3px;
-}
+// .form-signin__container {
+//   padding: 32px 30px 40px 40px;
+// }
 
-.input-signin--second {
-  margin-top: 12px;
-}
+// .form-signin__input {
+//   margin-top: 8px;
+//   margin-bottom: 3px;
+// }
 
-.btn-signin {
-  margin-top: 26px;
-}
+// .form-signin__input_second {
+//   margin-top: 12px;
+// }
 
-.text {
-  font-family: "OpenSans-Bold";
-  font-size: 0;
-  line-height: 18px;
-}
+// .form-signin__button {
+//   margin-top: 26px;
+// }
 
-.text-signin {
-  margin-top: 65px;
-}
+// .form-signin__text {
+//   margin-top: 65px;
+//   font-family: "OpenSans-Bold";
+//   font-size: 0;
+//   line-height: 18px;
+// }
 
-.btn-create {
-  margin-top: 45px;
-}
-
+// .form-signin__button_create {
+//   margin-top: 45px;
+// }
 
 @media only screen and (max-width: 600px) {
-  .wrap {
+  .form-signin  {
     width: 450px;
+    &__container {
+      padding: 15px 5px;
+    }
+  
   }
 
-  .signin-container-form {
-    padding: 15px 5px;
-  }
+  // .form-signin__container {
+  //   padding: 15px 5px;
+  // }
 
-  .input-text {
-    width: 420px;
-  }
+  // .input-text {
+  //   width: 420px;
+  // }
 }
-
 
 @media only screen and (max-width: 450px) {
-  .wrap {
+  .form-signin {
     width: 400px;
+    &__container {
+      padding: 15px 5px;
+    }
+    &__text {
+      margin: 0 auto;
+      margin-top: 35px;
+    }
   }
 
-  .signin-container-form {
-    padding: 15px 5px;
-  }
+  // .form-signin__container {
+  //   padding: 15px 5px;
+  // }
 
-  .input-text {
-    width: 390px;
-  }
+  // .input-text {
+  //   width: 390px;
+  // }
 
-  .text-signin {
-    margin: 0 auto;
-    margin-top: 35px;
-  }
+  // .form-signin__text {
+  //   margin: 0 auto;
+  //   margin-top: 35px;
+  // }
 }
 @media only screen and (max-width: 400px) {
-  .wrap {
+  .form-signin {
     width: 310px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -72,18 +110,25 @@
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin: 0 auto;
+    &__container {
+      padding: 15px 5px;
+    }
+    &__text {
+      margin: 0 auto;
+      margin-top: 35px;
+    }
   }
 
-  .signin-container-form {
-    padding: 15px 5px;
-  }
+  // .form-signin__container {
+  //   padding: 15px 5px;
+  // }
 
-  .input-text {
-    width: 300px;
-  }
+  // .input-text {
+  //   width: 300px;
+  // }
 
-  .text-signin {
-    margin: 0 auto;
-    margin-top: 35px;
-  }
+  // .form-signin__text {
+  //   margin: 0 auto;
+  //   margin-top: 35px;
+  // }
 }

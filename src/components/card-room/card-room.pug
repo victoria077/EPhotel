@@ -10,7 +10,7 @@ mixin card-room(slickName, imgList, number, price, style='--rating: level', day,
               ul(class= slickName + '__items')
                 each img in imgList
                   li(class= slickName + '__item')
-                    img(src= img)
+                    img(src= img class="card__img")
               .carousel__prev
                 label(for= slickName + '-1')
                 label(for= slickName + '-2')

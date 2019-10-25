@@ -2,17 +2,13 @@ include ../input-text/input-text.pug
 include ../signin-button/signin-button.pug
 
 mixin form-signin(title, login)
-  .wrapper
-    .wrap
-      .signin-container-form
-          h1(class='title-main')= title
-          
-          +input-text('Email')
-          div(class='input-signin input-signin--second')
-            +input-text('Пароль')
-
-          button(type='button' class='btn  btn-confirm btn-signin')= title
-          
-          .flex-row
-            div(class='text text-signin')= login
-            +button-signin('Создать', 'signin-page.html', 'btn-create')
+  div(class='form-signin')
+    div(class='form-signin__container')
+      h1(class='title-main')= title
+      +input-text('Email')
+      div(class='form-signin__input form-signin__input_second')
+        +input-text('Пароль')
+      button(type='button' class='btn  btn-confirm form-signin__button')= title
+      div(class='flex-row')
+        div(class='text form-signin__text')= login
+        +button-signin('Создать', 'signin-page.html', 'form-signin__button_create')

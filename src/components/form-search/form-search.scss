@@ -45,32 +45,53 @@
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
+  &__container{
+    padding: 6% 8% 6% 7%;
+  }
+  &__title{
+    width: 400px;
+    &_checkin {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    &_checkout {
+      margin-left: 29%;
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    &_guests{
+      padding-bottom: 8px;
+    }
+  }
+  &__dropdown .dd-button {
+    margin-bottom: 20px;
+  }
 }
 
-.form-search__container{
-  padding: 6% 8% 6% 7%;
-}
+// .form-search__container{
+//   padding: 6% 8% 6% 7%;
+// }
 
-.form-search__title{
-  width: 400px;
-}
+// .form-search__title{
+//   width: 400px;
+// }
 
-.form-search__title_checkin {
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-.form-search__title_checkout {
-  margin-left: 29%;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
+// .form-search__title_checkin {
+//   padding-top: 5px;
+//   padding-bottom: 10px;
+// }
+// .form-search__title_checkout {
+//   margin-left: 29%;
+//   padding-top: 5px;
+//   padding-bottom: 10px;
+// }
 
-.form-search__title_guests{
-  padding-bottom: 8px;
-}
-.form-search__dropdown .dropdowns .dd-button {
-  margin-bottom: 20px;
-}
+// .form-search__title_guests{
+//   padding-bottom: 8px;
+// }
+// .form-search__dropdown .dropdowns .dd-button {
+//   margin-bottom: 20px;
+// }
 
 .form-search__button_confirm {
   margin: 40px 0 10px;
@@ -99,19 +120,25 @@
     width: 500px;
     padding: 20px 10px;
     margin: 0 auto;
+    &__container {
+      padding: 3% 1%;
+    }
+    &__dropdown .dd-button::after {
+      left: 27.5em;
+    }
   }
 
-  .form-search__container {
-    padding: 3% 1%;
-  }
+  // .form-search__container {
+  //   padding: 3% 1%;
+  // }
 
   .form-search .title-main {
     font-size: 23px;
   }
 
-  .form-search .dropdowns .dd-button::after {
-    left: 27.5em;
-  }
+  // .form-search .dropdowns .dd-button::after {
+  //   left: 27.5em;
+  // }
 }
 
 @media only screen and (max-width: 500px) {
@@ -119,14 +146,23 @@
     width: 340px;
     padding: 20px 10px;
     margin: 0 auto;
+    &__dropdown{ 
+      & .range {
+      width: 150px;
+    }
+    & .dd-button {
+      width: 320px;
+    }
   }
 
-  .form-search__dropdown .range {
-    width: 150px;
-  }
-  .form-search__dropdown .dropdowns .dd-button {
-    width: 320px;
-  }
+}
+
+  // .form-search__dropdown .range {
+  //   width: 150px;
+  // }
+  // .form-search__dropdown .dropdowns .dd-button {
+  //   width: 320px;
+  // }
 
   .form-search .btn-confirm {
     width: 320px;
@@ -146,11 +182,12 @@
 @media only screen and (max-width: 400px) {
   .form-search {
     width: 310px;
-  }
-
-  .forn-search {
     margin-left: 0px;
   }
+
+  // .forn-search {
+  //   margin-left: 0px;
+  // }
 
   .form-search .range {
     width: 130px;

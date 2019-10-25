@@ -1,37 +1,37 @@
 include ../airdatepicker/airdatepicker.pug
 mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, addTax, additionalTax, totalPrice, button )
-    .calculator
-        .calculator__container
-            .flex-row
-                p(class='calculator__room') 
-                    span(class='calculator__room room__symbol') &#8470;
-                    span(class='calculator__room room__number')= roomNumber
-                p(class='calculator__room room__price')= pricePerDay
+    div(class='calculator')
+        div(class='calculator__container')
+            div(class='flex-row')
+                p(class='calculator__text') 
+                    span  &#8470;
+                    span= roomNumber
+                p(class='calculator__text')= pricePerDay
                     span= day
-            .row.calculator__title_datepicker
+            div(class='row calculator__title_datepicker')
                 p(class='title')= checkin
                 p(class='title calculator__title_datepicker_checkout')= checkout
             div(class='calculator__datepicker')
                 +datepicker
             p(class='title')= titleDropdown
-            .calculator__dropdown
+            div(class='calculator__dropdown')
                 +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
-            .flex-row.calculator__count
-                .flex-row.count__price
-                    p= calculationOfThePrice
-                    p= fullPrice
-            .flex-row.calculator__count
-                .row
-                    p= tax
+            div(class='flex-row calculator__price')
+                div(class='flex-row price__count')
+                    p(class='calculator__text')= calculationOfThePrice
+                    p(class='calculator__text')= fullPrice
+            div(class='flex-row calculator__price')
+                div(class='row')
+                    p(class='calculator__text')= tax
                     div
-                        span.count__info i
-                p 0P
-            .flex-row.calculator__count
-                .row
-                    p(style='white-space:pre;')= addTax
+                        span(class='price__info') i
+                p(class='calculator__text') 0P
+            div(class='flex-row calculator__price')
+                div(class='row')
+                    p(class='calculator__text')= addTax
                     div
-                        span.count__info.count__info_extra i
-                p= additionalTax
+                        span(class='price__info.price__info_extra') i
+                p(class='calculator__text')= additionalTax
             h3(class='calculator__total-price')= totalPrice
             button(type='button' class='btn btn-confirm')= button
                 

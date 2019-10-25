@@ -4,40 +4,66 @@
       flex-direction: row;
       margin-left: -15px;
       margin-top: 30px;
-      & img {
-        width: 120px;
-        height: 120px;
-      }
-      & h4 {
-        margin-block-start: 1em;
-        margin-block-end: 0.4em;
-        font-size: 21px;
-        font-weight: bold;
-      }
-      & p {
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        font-size: 20px;
-        font-weight: 300;
-        color: rgba(31, 32, 65, 0.75);
-      }
+      // & img {
+      //   width: 120px;
+      //   height: 120px;
+      // }
+      // & h4 {
+      //   margin-block-start: 1em;
+      //   margin-block-end: 0.4em;
+      //   font-size: 21px;
+      //   font-weight: bold;
+      // }
+      // & p {
+      //   margin-block-start: 0em;
+      //   margin-block-end: 0em;
+      //   font-size: 20px;
+      //   font-weight: 300;
+      //   color: rgba(31, 32, 65, 0.75);
+      // }
     }
     &__evaluation {
       display: flex;
       margin-top: -24px;
-      & p {
-        margin-left: 27px;
-        margin-top: 2px;
-        font-weight: 500;
-        line-height: 36px;
-        color: rgba(31, 32, 65, 0.75);
-      }
+      // & p {
+      //   margin-left: 27px;
+      //   margin-top: 2px;
+      //   font-weight: 500;
+      //   line-height: 36px;
+      //   color: rgba(31, 32, 65, 0.75);
+      // }
+    }
+    &__text {
+      margin-left: 20px;
+    }  
+  }
+
+  .person {
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    margin-top: 30px;
+    &__photo {
+      width: 120px;
+      height: 120px;
+    }
+    &__name {
+      margin-block-start: 1em;
+      margin-block-end: 0.4em;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    &__date {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      font-size: 20px;
+      font-weight: 300;
+      color: rgba(31, 32, 65, 0.75);
     }
   }
-  
-  .room-feedback__text {
-    margin-left: 20px;
-  }
+  // .room-feedback__text {
+  //   margin-left: 20px;
+  // }
   
   
   .btn-like {
@@ -66,24 +92,6 @@
         flex-direction: row;
         margin-left: -15px;
         margin-top: -7px;
-        & img {
-          width: 120px;
-          height: 120px;
-        }
-        & h4 {
-          margin-block-start: 1em;
-          margin-block-end: 0.4em;
-          font-size: 17px;
-          font-weight: bold;
-          margin-left: -14px;
-        }
-        & p {
-          margin-block-start: 0em;
-          margin-block-end: 0em;
-          font-size: 14px;
-          font-weight: 300;
-          margin-left: -14px;
-        }
       }
       &__evaluation {
         display: flex;
@@ -122,6 +130,27 @@
             }
           }
         }
+      }
+    }
+
+    .person{
+      &__photo {
+        width: 120px;
+        height: 120px;
+      }
+      &__name {
+        margin-block-start: 1em;
+        margin-block-end: 0.4em;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: -14px;
+      }
+      &__date {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: -14px;
       }
     }
   }

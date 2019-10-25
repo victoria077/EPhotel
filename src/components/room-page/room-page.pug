@@ -7,7 +7,7 @@ include ../../blocks/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../../blocks/little-dropdown/little-dropdown.pug
 include ../../blocks/single-airdatepicker/single-airdatepicker.pug
 .container.settings
-        .left-side
+        .settings__left-side
             div(class='sidebar' id='sidebar')
                 a(href='#' class='close')
                     i(class='fa fa-arrow-left')
@@ -23,12 +23,12 @@ include ../../blocks/single-airdatepicker/single-airdatepicker.pug
                 div(class='settings__range')
                     +range-slider('Стоимость за сутки пребывания в номере')
                 h3(class='title settings__title_checkboxes') Checkbox Buttons             
-                .blocks
+                div(class='settings__checkbox')
                     +checkbox('Smoking', 'Можно курить', 'room__checkbox')
                     +checkbox('Pets', 'Можно с питомцами', 'room__checkbox')
                     +checkbox('Guests',  'Можно пригласить гостей (до 10 человек)')
                 h3(class='title settings__title_availability') Доступность 
-                .blocks
+                div
                     +description-checkbox('Широкий коридор', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
                     +description-checkbox('Помощник для инвалидов', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
                 h3(class='title settings__title_comfort') Удобства номера
@@ -47,7 +47,7 @@ include ../../blocks/single-airdatepicker/single-airdatepicker.pug
                                 +checkbox('Bed', 'Кроватка')
                             li(class='extracomfort__checkbox')
                                 +checkbox('Shampoo', 'Шампунь')
-        .right-side
+        .settings__right-side
             h1(class='title-main settings__title-main') Номера, которые мы для вас подобрали
             span(class='slide' id='slide')
                 a(href='#')

@@ -1,106 +1,189 @@
 // @import "../components/variables.scss";
-.dropdowns {
+.dropdown {
   display: inline-block;
   position: relative;
+  & .dd__item {
+    position: relative;
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 480px;
+    height: 65px;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.35);
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    color: rgba(31, 32, 65, 0.75);
+    &::after {
+      content: "";
+      padding: 5px;
+      box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5)  inset;
+      display: inline-block;
+      transform: rotate(-45deg);
+      color: rgba(31, 32, 65, 0.5);
+      position: absolute;
+      left: 21.5em;
+      top: 1.2em;
+    }
+  }  
+  & .dd__input {
+    display: none;
+    & + .dd__menu {
+      display: none;
+    }
+    &:checked + .dd__menu {
+      display: block;
+    }    
+  }
+  & .dd__menu {
+    width: 478px;
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+    margin-top: 0;
+    & > .menu__row {
+      padding: 5px 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      justify-content: space-between;
+      &:hover {
+        background-color: #f6f6f6;
+      }  
+    }
+  }
+  & .dd__button {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 22px;
+    background: #ffffff;
+    outline: none;
+    cursor: pointer;
+  } 
+  & .dd__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #1f2041;
+  }
+  & .dd__text {
+    margin: 17px 17px 0 17px;
+  }
 }
 
-.dropdowns .dd-button {
-  position: relative;
-  display: inline-block;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  width: 480px;
-  height: 65px;
-  margin-top: 5px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.14rem;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.35);
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 20px;
-  color: rgba(31, 32, 65, 0.75);
-}
+// .dropdowns .dd-button {
+//   position: relative;
+//   display: inline-block;
+//   border: 1px solid rgba(31, 32, 65, 0.25);
+//   border-radius: 4px;
+//   width: 480px;
+//   height: 65px;
+//   margin-top: 5px;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 1.14rem;
+//   line-height: 18px;
+//   color: rgba(31, 32, 65, 0.35);
+//   display: table-cell;
+//   vertical-align: middle;
+//   padding-left: 20px;
+//   color: rgba(31, 32, 65, 0.75);
+// }
 
-.dropdowns .dd-button::after {
-  content: "";
-  padding: 5px;
-  box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5)  inset;
-  display: inline-block;
-  transform: rotate(-45deg);
-  color: rgba(31, 32, 65, 0.5);
-  position: absolute;
-  left: 21.5em;
-  top: 1.2em;
-}
+// .dropdowns .dd-button::after {
+//   content: "";
+//   padding: 5px;
+//   box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5)  inset;
+//   display: inline-block;
+//   transform: rotate(-45deg);
+//   color: rgba(31, 32, 65, 0.5);
+//   position: absolute;
+//   left: 21.5em;
+//   top: 1.2em;
+// }
 
-.dropdowns .dd-input {
-  display: none;
-}
+// .dropdowns .dd-input {
+//   display: none;
+// }
 
-.dropdowns .dd-menu {
-  width: 478px;
-  position: absolute;
-  top: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  list-style-type: none;
-  margin-top: 0;
-}
+// .dropdowns .dd-menu {
+//   width: 478px;
+//   position: absolute;
+//   top: 100%;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   padding: 0;
+//   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+//   background-color: #ffffff;
+//   list-style-type: none;
+//   margin-top: 0;
+// }
 
-.dropdowns .dd-input + .dd-menu {
-  display: none;
-}
+// .dropdowns .dd__input + .dd__menu {
+//   display: none;
+// }
 
-.dropdowns .dd-input:checked + .dd-menu {
-  display: block;
-}
+// .dropdowns .dd__input:checked + .dd__menu {
+//   display: block;
+// }
 
-.dropdowns .dd-menu li {
-  padding: 5px 20px;
-  cursor: pointer;
-  white-space: nowrap;
-  display: flex;
-  justify-content: space-between;
-}
+// .menu__row {
+//   padding: 5px 20px;
+//   cursor: pointer;
+//   white-space: nowrap;
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.dropdowns .dd-menu li:hover {
-  background-color: #f6f6f6;
-}
+// .menu__row:hover {
+//   background-color: #f6f6f6;
+// }
 
-.dropdowns .button {
-  width: 45px;
-  height: 45px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-  background: #ffffff;
-  outline: none;
-  cursor: pointer;
-}
+// .dd__button {
+//   width: 45px;
+//   height: 45px;
+//   border: 1px solid rgba(31, 32, 65, 0.25);
+//   box-sizing: border-box;
+//   border-radius: 22px;
+//   background: #ffffff;
+//   outline: none;
+//   cursor: pointer;
+// }
 
-.dropdowns .title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 15px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  color: #1f2041;
-}
+// .dd__title {
+//   font-family: "Montserrat";
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 1rem;
+//   line-height: 15px;
+//   margin-top: 20px;
+//   text-transform: uppercase;
+//   color: #1f2041;
+// }
 
-.dropdowns .flex {
-  display: flex;
-}
+// .dropdowns .flex {
+//   display: flex;
+// }
 
-.dropdowns .text {
-  margin: 17px 17px 0 17px;
-}
+// .dropdowns .dd__text {
+//   margin: 17px 17px 0 17px;
+// }
 
 .clean {
   font-family: "Montserrat";
@@ -132,7 +215,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .dropdowns .dd-menu {
+  .dropdown .dd__menu {
     width: 310px;
   }
 }
