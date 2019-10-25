@@ -10,32 +10,32 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
             p(class='footer__slogan')= slogan
         .nav__column
           h3(class='subtitle')= title.name1
-          ul(class="column__items")
+          ul(class='column__items')
             each link in linkList1
-              li(class="items__item")
-               a(class="item__link")= link
+              li(class='items__item')
+               a(class='item__link')= link
         .nav__column
           h3(class='subtitle')= title.name2
-          ul(class="column__items")
+          ul(class='column__items')
             each link in linkList2
-              li(class="items__item")
-               a(class="item__link")= link
+              li(class='items__item')
+               a(class='item__link')= link
         .nav__column
           h3(class='subtitle')= title.name3
-          ul(class="column__items")
+          ul(class='column__items')
             each link in linkList3
-              li(class="items__item")
-               a(class="item__link")= link
+              li(class='items__item')
+               a(class='item__link')= link
         .nav__column.nav__column_offer
           h3(class='subtitle')= title.name4
-          p(class='subtitle_describtion')= offer
+          p(class='offer__text')= offer
           +input-subscription('Email')
     hr(class='footer__strip')
     div(class='footer__details').container
       .flex-row
           p(class='footer__details details__copyright')= copyright 
-          ul.row
-              li
+          ul(class='details__icons row')
+              li(class='icons__item')
                 a(href='#')
                   svg(width='0' height='0')
                     radialGradient(id='rg' r='150%' cx='30%' cy='107%')
@@ -46,7 +46,7 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
                       stop(stop-color='#BC9CFF' offset='0.9')
                   div.div
                     i(class='fab fa-twitter' aria-hidden='true')
-              li
+              li(class='icons__item')
                 a(href='#')
                   svg(width='0' height='0')
                     radialGradient(id='rg' r='150%' cx='30%' cy='107%')
@@ -57,7 +57,7 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
                       stop(stop-color='#8BA4F9' offset='0.9')
                   div.div
                     i(class='fab fa-facebook-square' aria-hidden='true')
-              li
+              li(class='icons__item')
                 a(href='#')
                   svg(width='0' height='0')
                     radialGradient(id='rg' r='150%' cx='30%' cy='107%')

@@ -1,55 +1,81 @@
-
 .footer {
-  background-color:#fff;
+  background-color: #fff;
   &__nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px 10px;
     margin-top: 100px;
+  }
+  &__details {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    &-copyright {
+      color: #1f2041;
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 1.14rem;
+      line-height: 33px;
+      margin-left: 20px;
+      margin-block-start: 0.8em;
+    }
+  }
+  &__slogan {
+    margin-top: 20px;
+  }
 }
-}
-.nav{
-    &__column {
-      margin: 0 10px 10px;
-      text-decoration: none;
-      & p {
-        color: rgba(31, 32, 65, 0.75);
-        font-family: "Montserrat";
-        font-weight: bold;
-        font-size: 1.14rem;
-        line-height: 33px;
-      }
-      & ul {
+.nav {
+  &__column {
+    margin: 0 10px 10px;
+    text-decoration: none;
+    &_slogan {
+      max-width: 380px;
+    }
+    &_offer {
+      max-width: 380px;
+    }
+    & > .offer__text {
+      color: rgba(31, 32, 65, 0.75);
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 1.14rem;
+      line-height: 33px;
+    }
+    & > .column {
+      &__items {
         padding: 0;
-        & li {
-          margin: 28px 0;
-          & a {
-            font-family: "Montserrat";
-            font-size: 1.14rem;
-            color:rgba(31, 32, 65, 0.5);
+        & > .items {
+          &__item {
+            margin: 28px 0;
+            & > .item__link {
+              font-family: "Montserrat";
+              font-size: 1.14rem;
+              color: rgba(31, 32, 65, 0.5);
+            }
           }
         }
       }
     }
   }
-
-.footer__details {
-  padding-top: 5px;
-  padding-bottom: 20px;
-  justify-content: space-between;
-  &-copyright {
-    color: #1F2041;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 1.14rem;
-    line-height: 33px;
-    margin-left: 20px;
-    margin-block-start: 0.8em;
-  }
 }
 
-.details__copyright{
+// .footer__details {
+//   padding-top: 5px;
+//   padding-bottom: 20px;
+//   justify-content: space-between;
+//   &-copyright {
+//     color: #1f2041;
+//     font-family: "Montserrat";
+//     font-weight: bold;
+//     font-size: 1.14rem;
+//     line-height: 33px;
+//     margin-left: 20px;
+//     margin-block-start: 0.8em;
+//   }
+// }
+
+.details__copyright {
   color: rgba(31, 32, 65, 0.75);
   font-family: "Montserrat";
   font-weight: bold;
@@ -57,7 +83,7 @@
   line-height: 33px;
 }
 
-.footer__details ul li {
+.icons__item {
   height: 30px;
   width: 40px;
   margin-top: -25px;
@@ -74,13 +100,14 @@
     margin-right: 20px;
   }
 }
-.footer__slogan {
-  margin-top: 20px;
-}
+// .footer__slogan {
+//   margin-top: 20px;
+// }
 
-.nav__column_slogan, .nav__column_offer{
-  max-width: 380px;
-}
+// .nav__column_slogan,
+// .nav__column_offer {
+//   max-width: 380px;
+// }
 .div {
   display: flex;
   font-size: 50px;
@@ -91,45 +118,56 @@
   fill: url(#rg);
 }
 
-
 @media only screen and (max-width: 600px) {
   .footer {
     padding-bottom: 30px;
     &__nav {
       padding: 0 0px 10px;
+      padding-top: 50px;
+      margin-top: 20px;
     }
-    .nav{
-      &__column{
-        margin: 0 0px 10px;
-        text-decoration: none;
-        & p {
-          color: #1F2041;
-          font-weight: bold;
-          font-size: 0.9rem;
-          line-height: 33px;
-        }
-        & ul {
+    &__strip {
+      display: none;
+    }
+    &__details {
+      display: none;
+    }
+  }
+
+  .nav {
+    &__column {
+      margin: 0 0px 10px;
+      text-decoration: none;
+      &  > .offer__text  {
+        color: #1f2041;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 33px;
+      }
+      & .column {
+        &__items {
           padding: 0;
-          li {
+          & > .items__item {
             margin: 28px 0;
-            & a {
+            & > .item__link {
               font-size: 0.9rem;
-              color: #1F2041;
+              color: #1f2041;
             }
           }
         }
       }
     }
   }
-  .footer__nav {
-    padding-top: 50px;
-    margin-top: 20px;
-  }
-  .footer__strip {
-    display: none;
-  }
-
-  .footer__details {
-    display: none;
-  }
 }
+// .footer__nav {
+//   padding-top: 50px;
+//   margin-top: 20px;
+// }
+// .footer__strip {
+//   display: none;
+// }
+
+//   .footer__details {
+//     display: none;
+//   }
+// }

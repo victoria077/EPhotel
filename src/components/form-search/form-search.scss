@@ -49,7 +49,7 @@
     padding: 6% 8% 6% 7%;
   }
   &__title{
-    width: 400px;
+    max-width: 400px;
     &_checkin {
       padding-top: 5px;
       padding-bottom: 10px;
@@ -101,18 +101,18 @@
   .form-search .dropdowns .dd-button::after {
     left: 21.5em;
   }
-  .menu-logo {
-    display: block;
-    padding: 20px 0 10px 0;
-    width: 180px;
-    height: 50px;
-    text-align: center;
-    float: none;
-  }
+  // .menu-logo {
+  //   display: block;
+  //   padding: 20px 0 10px 0;
+  //   width: 180px;
+  //   height: 50px;
+  //   text-align: center;
+  //   float: none;
+  // }
 
-  .menu-logo-toggle {
-    margin-left: 80%;
-  }
+  // .menu-logo-toggle {
+  //   margin-left: 80%;
+  // }
 }
 
 @media only screen and (max-width: 600px) {
@@ -146,8 +146,8 @@
     width: 340px;
     padding: 20px 10px;
     margin: 0 auto;
-    &__dropdown{ 
-      & .range {
+    &__datepicker{ 
+      & .datepicker__range {
       width: 150px;
     }
     & .dd-button {
@@ -170,12 +170,13 @@
 }
 @media only screen and (max-width: 550px) {
 
-  .form-search .datepicker {
-    width: 280px;
-  }
-
-  .title-checkout {
-    margin-left: 25%;
+  .form-search{
+    & > .datepicker {
+      width: 280px;
+    }
+    &__title_checkout {
+      margin-left: 25%;
+    }
   }
 }
 
@@ -183,43 +184,50 @@
   .form-search {
     width: 310px;
     margin-left: 0px;
+    &__datepicker{ 
+      & .datepicker__range {
+        width: 130px;
+        height: 50px;
+    }
+    & > .dd__item {
+      width: 290px;
+      height: 50px;
+    }
+    & > .dd__menu {
+      width: 280px;
+      &::after {
+        left: 16em;
+      }
+    }
+    &__title_checkout {
+      margin-left: 20%;
+    }
   }
 
   // .forn-search {
   //   margin-left: 0px;
   // }
 
-  .form-search .range {
-    width: 130px;
-    height: 50px;
-  }
 
-  .form-search .datepicker {
-    width: 280px;
-  }
-  .form-search .dropdowns .dd-button {
-    width: 290px;
-    height: 50px;
-  }
+  // .form-search  .datepicker__range {
+  //   width: 130px;
+  //   height: 50px;
+  // }
 
-  .form-search .dropdowns .dd-menu {
-    width: 280px;
-  }
+  // .form-search .dropdowns .dd-menu {
+  //   width: 280px;
+  // }
 
   .form-search .btn-confirm {
     width: 290px;
     height: 50px;
   }
 
-  .form-search .dropdowns .dd-button::after {
-    left: 16em;
-  }
-
-  .title-checkout {
-    margin-left: 20%;
-  }
+  // .form-search .dropdowns .dd-button::after {
+  //   left: 16em;
+  // }
 }
-
+}
 @media only screen and (max-width: 350px) {
   .form-search {
     margin: 0px;

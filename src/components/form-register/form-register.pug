@@ -4,8 +4,8 @@ include ../../blocks/radio-button/radio-button.pug
 include ../../blocks/toggle/toggle.pug
 
 mixin form-register(title, birthday,  data, offer, button, login)
-  .wrap
-    .container-form
+  div(class='signup')
+    div(class='signup__container')
         h1( class='title-main')= title
         div(class='signup__input_name')
         +input-text('Имя')

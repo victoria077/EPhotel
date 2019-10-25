@@ -32,46 +32,6 @@
   border-bottom: 2px solid rgb(220,220,220);
 }
 
-:root {
-  --star-size: 24px;
-  --star-outline: #4caf50 solid 1px;
-  --star-color: #fff;
-  --star-background: #9BA1FB;
-}
-
-.Stars {
-  --percent: calc(var(--rating) / 5 * 100%);
-  display: inline-block;
-  font-size: var(--star-size);
-  font-family: Times;
-  line-height: 1;
-}
-
-.Stars::before {
-  content: "★★★★★";
-  font-size: 1.88rem;
-  letter-spacing: 7px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--star-background)),
-    to(var(--star-color))
-  );
-  background: linear-gradient(
-    90deg,
-    var(--star-background) var(--percent),
-    var(--star-color) var(--percent)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #9BA1FB;
-}
-
-.stars__decor {
-  margin-top: 5px;
-}
-
 @media only screen and (max-width: 1550px) {
   .card {
     width: 350px;
