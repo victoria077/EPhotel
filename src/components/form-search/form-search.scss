@@ -165,7 +165,7 @@
   // }
 
   .form-search .btn-confirm {
-    width: 320px;
+    max-width: 320px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -216,16 +216,15 @@
 
   // .form-search .dropdowns .dd-menu {
   //   width: 280px;
-  // }
-
-  .form-search .btn-confirm {
-    width: 290px;
-    height: 50px;
-  }
+  // 
 
   // .form-search .dropdowns .dd-button::after {
   //   left: 16em;
   // }
+}
+.form-search .btn-confirm {
+  width: 280px;
+  height: 50px;
 }
 }
 @media only screen and (max-width: 350px) {

@@ -1,0 +1,17 @@
+.btn-like {
+  border: 2px solid rgba(31, 32, 65, 0.25);
+  outline: none;
+  color: rgba(31, 32, 65, 0.25);
+  background: #ffffff;
+  border-radius: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 60px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.btn-like span {
+  margin-left: 5px;
+}

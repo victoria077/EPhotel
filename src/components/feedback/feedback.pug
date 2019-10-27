@@ -1,12 +1,13 @@
-mixin feedback(imgName, personName, date, quantity,  text)
+mixin feedback(imgName, personName, date, text)
   div(class='room-feedback')
       div(class='room-feedback__person')
         img(src= imgName class="person__photo")
         div
           h4(class="person__name")= personName
           p(class="person__date")= date
-      div(class='room-feedback__evaluation') 
-        button(class='btn-like evaluation__button') 
-          i(class='fas fa-heart') 
-          span(class='evaluation__quantity')= quantity
-        p(class='evaluation__text')= text
+      div(class='room-feedback__evaluation row') 
+        div(class='evaluation__btn-like')
+          if block
+            block
+        div 
+          p(class='evaluation__text')= text

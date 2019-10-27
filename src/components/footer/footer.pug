@@ -13,19 +13,19 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
           ul(class='column__items')
             each link in linkList1
               li(class='items__item')
-               a(class='item__link')= link
+               a(class='item__name')= link
         .nav__column
           h3(class='subtitle')= title.name2
           ul(class='column__items')
             each link in linkList2
               li(class='items__item')
-               a(class='item__link')= link
+               a(class='item__name')= link
         .nav__column
           h3(class='subtitle')= title.name3
           ul(class='column__items')
             each link in linkList3
               li(class='items__item')
-               a(class='item__link')= link
+               a(class='item__name')= link
         .nav__column.nav__column_offer
           h3(class='subtitle')= title.name4
           p(class='offer__text')= offer
