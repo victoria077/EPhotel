@@ -12,7 +12,7 @@
   &__title_datepicker {
     margin-top: 30px;
     &_checkout {
-      margin-left: 28%;
+      margin-left: 30%;
     }
   }
   &__total-price {
@@ -22,7 +22,7 @@
   }
   &__price {
     margin-top: 25px;
-    & > .price {
+    & .price {
       &__count {
         margin-top: 35px;
       }
@@ -38,9 +38,6 @@
         box-sizing: border-box;
         border-radius: 50%;
         margin-left: 1vw;
-        &_extra {
-          margin-left: 2.6vw;
-        }
       }
     }
   }
@@ -48,75 +45,6 @@
     font-size: 1.1rem;
   }
 }
-
-// .calculator__text {
-//   font-size: 1.1rem;
-// }
-
-// .calculator__title_datepicker{
-//   margin-top: 30px;
-// }
-// .calculator__total-price {
-//   font-size: 1.5rem;
-//   font-weight: bold;
-//   margin-top: 45px;
-// }
-
-// .price {
-//   &__count {
-//     margin-top: 35px;
-//   }
-//   &__info {
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 20px;
-//     line-height: 14px;
-//     text-align: right;
-//     color: rgba(31, 32, 65, 0.25);
-//     border: 1px solid rgba(31, 32, 65, 0.25);
-//     padding: 3px 12px;
-//     box-sizing: border-box;
-//     border-radius: 50%;
-//     margin-left: 1vw;
-//     &_extra {
-//       margin-left: 2.6vw;
-//     }
-//   }
-// }
-
-// .price__info_extra {
-//   margin-left: 2.6vw;
-// }
-
-// .calculator__title_datepicker_checkout {
-//   margin-left: 28%;
-// }
-// .room-number {
-//   font-size: 1.78rem;
-//   margin-top: 0;
-// }
-
-.material-icons--info {
-  font-size: 24px;
-  font-family: "MaterialIcons";
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-// .calculator__price {
-//   margin-top: 25px;
-// }
-
-// .price__count {
-//   margin-top: 35px;
-// }
 
 @media only screen and (max-width: 1600px) {
   .calculator {
@@ -127,6 +55,7 @@
 @media only screen and (max-width: 600px) {
   .calculator {
     width: 480px;
+    height: 650px;
     &__container {
       margin: 10px;
     }
@@ -145,37 +74,9 @@
     &__total-price {
       font-weight: bold;
     }
-  }
-
-  // .calculator__container {
-  //   margin: 10px;
-  // }
-
-  // .calculator__datepicker .range {
-  //   width: 180px;
-  // }
-
-  // .calculator__datepicker .datepicker {
-  //   width: 280px;
-  // }
-  // .calculator__dropdown .dropdowns .dd-button {
-  //   width: 460px;
-  // }
-
-  // .calculator__title_datepicker_checkout {
-  //   margin-left: 40%;
-  // }
-
-  // .calculator .dropdowns .dd-menu {
-  //   width: 460px;
-  // }
-
-  // .calculator__total-price {
-  //   font-weight: bold;
-  // }
-
-  .calculator .btn-confirm {
-    width: 460px;
+    & .btn-confirm {
+      width: 460px;
+    }
   }
 }
 
@@ -186,7 +87,7 @@
       margin: 10px;
     }
     &__datepicker {
-      & .range {
+      & .datepicker__range {
         width: 180px;
       }
       & .datepicker {
@@ -207,44 +108,11 @@
     &__title_datepicker_checkout {
       margin-left: 25%;
     }
-  }
-
-  .calculator .btn-confirm {
-    width: 370px;
+    & .btn-confirm {
+      width: 370px;
+    }
   }
 }
-// .calculator__container {
-//   margin: 10px;
-// }
-
-// .calculator__datepicker .range {
-//   width: 180px;
-// }
-
-// .calculator__datepicker .datepicker {
-//   width: 280px;
-// }
-// .calculator__dropdown .dropdowns .dd-button {
-//   width: 370px;
-// }
-
-// .calculator .dropdowns .dd-menu {
-//   width: 370px;
-// }
-
-// .calculator__total-price {
-//   font-weight: bold;
-// }
-
-// .calculator .btn-confirm {
-//   width: 370px;
-// }
-
-//   .calculator__title_datepicker_checkout {
-//     margin-left: 25%;
-//   }
-// }
-
 @media only screen and (max-width: 400px) {
   .calculator {
     width: 310px;
@@ -252,7 +120,7 @@
       margin: 10px;
     }
     &__datepicker {
-      & .range {
+      & .datepicker__range {
         width: 130px;
         height: 55px;
       }
@@ -276,46 +144,9 @@
     &__title_datepicker_checkout {
       margin-left: 20%;
     }
-  }
-
-  .calculator .btn-confirm {
-    width: 290px;
-    height: 55px;
+    & .btn-confirm {
+      width: 290px;
+      height: 55px;
+    }
   }
 }
-// .calculator__container {
-//   margin: 10px;
-// }
-
-// .calculator__datepicker .range {
-//   width: 130px;
-//   height: 55px;
-// }
-
-// .calculator__datepicker .datepicker {
-//   width: 280px;
-// }
-// .calculator__dropdown .dropdowns .dd-button {
-//   width: 290px;
-//   height: 55px;
-// }
-
-// .calculator .dropdowns .dd-menu {
-//   width: 290px;
-// }
-
-// .calculator__total-price {
-//   font-weight: bold;
-//   font-size: 16px;
-// }
-
-// .calculator .btn-confirm {
-//   width: 290px;
-//   height: 55px;
-// }
-
-//   .calculator__title_datepicker_checkout {
-//     margin-left: 20%;
-//   }
-// }
-

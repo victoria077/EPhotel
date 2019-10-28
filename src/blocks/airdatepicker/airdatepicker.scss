@@ -33,59 +33,7 @@
     }
   }
 }
-// .datepicker__input::before {
-//   position: absolute;
-//   top: 25%;
-//   left: 78%;
-//   content: "";
-//   padding: 5px;
-//   box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
-//   display: inline-block;
-//   transform: rotate(-45deg);
-//   margin-left: 10px;
-//   color: rgba(31, 32, 65, 0.5);
-// }
-
-// .single-datepicker {
-//   position: relative;
-//   display: inline-block;
-// }
-// .single-datepicker::before {
-//   margin-top: 5px;
-//   position: absolute;
-//   top: 30%;
-//   left: 87%;
-//   content: "";
-//   padding: 5px;
-//   box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
-//   display: inline-block;
-//   transform: rotate(-45deg);
-//   margin-left: 10px;
-//   color:rgba(31, 32, 65, 0.5);
-// }
-
-// .datepicker__range {
-//   width: 220px;
-//   height: 65px;
-//   border-radius: 4px;
-//   margin-bottom: 30px;
-//   outline: none;
-//   border: none;
-//   border: 1px solid rgba(31, 32, 65, 0.25);
-//   padding-left: 20px;
-//   &::placeholder {
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 1rem;
-//     line-height: 18px;
-//     color: rgba(31, 32, 65, 0.75);
-//   }
-// }
 @media only screen and (max-width: 400px) {
-  // .datepicker__range {
-  //   padding-left: 10px;
-  // }
-
   .datepicker {
     background: #fff;
     border: 1px solid #dbdbdb;

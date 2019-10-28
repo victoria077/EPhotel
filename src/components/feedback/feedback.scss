@@ -2,14 +2,10 @@
   &__person {
     display: flex;
     flex-direction: row;
-    // margin-left: -15px;
     margin-top: 30px;
   }
   &__evaluation {
-    // display: flex;
-    // justify-content: space-between;
     & > .evaluation__text {
-      // display: inline-block;
       margin-left: 20px;
       margin-top: 0;
     }
@@ -44,23 +40,6 @@
     color: rgba(31, 32, 65, 0.75);
   }
 }
-// .room-feedback__text {
-//   margin-left: 20px;
-// }
-
-// .btn-like {
-//   border: 2px solid rgba(31, 32, 65, 0.25);
-//   outline: none;
-//   color: rgba(31, 32, 65, 0.25);
-//   background: #ffffff;
-//   border-radius: 15px;
-//   font-size: 14px;
-//   cursor: pointer;
-//   width: 90px;
-//   height: 30px;
-//   margin-left: 20px;
-//   margin-top: 5px;
-// }
 
 @media only screen and (max-width: 600px) {
   .room-feedback {
@@ -98,14 +77,6 @@
             color: #bc9cff;
             transform: scale(1.2);
             border-color: #bc9cff;
-            // span {
-            //   opacity: 1;
-            //   font-style: normal;
-            //   font-weight: normal;
-            //   font-size: 10px;
-            //   line-height: 12px;
-            //   padding-top: 5px;
-            // }
           }
         }
       }

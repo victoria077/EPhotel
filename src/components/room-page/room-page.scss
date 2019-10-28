@@ -1,137 +1,82 @@
-
 .settings {
   display: flex;
   justify-content: space-between;
   &__left-side {
     margin: 57px 90px 0 0;
   }
-  &__title{
+  &__title {
     &_price {
-    padding: 45px 0 31px 0;
+      padding: 45px 0 31px 0;
+    }
+    &_checkboxes {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    &_availability {
+      padding-top: 35px;
+      padding-bottom: 20px;
+    }
+    &_comfort {
+      padding-top: 30px;
+      padding-bottom: 8px;
+    }
   }
-  &_checkboxes {
-    padding-top: 10px;
-    padding-bottom: 20px;
+  &__range {
+    position: relative;
   }
-  &_availability {
-    padding-top: 35px;
-    padding-bottom: 20px;
+  &__checkbox {
+    & .room__checkbox {
+      margin-bottom: 17px;
+    }
   }
-  &_comfort {
-    padding-top: 30px;
-    padding-bottom: 8px;
+  &__datepicker {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__extracomfort {
+    margin-top: 15px;
+  }
+  &__pagination {
+    margin-bottom: 100px;
+  }
+  &__right-side {
+    & .right-side__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      & .room-card__decor {
+        flex-basis: 400px;
+        margin-top: 4px;
+      }
+    }
+    & .fa-arrow-right {
+      font-size: 1.67rem;
+      color: #6fcf97;
+    }
+    & .fa-arrow-left {
+      font-size: 1.67rem;
+      color: #6fcf97;
+    }
+  }
+  
+  & .show {
+    position: relative;
+    width: 340px;
+    z-index: 10;
+  }
+  
+  & .slide {
+    display: none;
+  }
+  
+  & .close {
+    display: none;
   }
 }
-&__range {
-  position: relative;
-}
-&__datepicker {
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-
-&__extracomfort{
-  margin-top: 15px;
-}
-&__pagination{
-  margin-bottom: 100px;
-}
-
-}
-
-
-
-// .settings__title_price {
-//   padding: 45px 0 31px 0;
-// }
-
-// .settings__title_checkboxes {
-//   padding-top: 10px;
-//   padding-bottom: 20px;
-// }
-
-// .settings__title_availability {
-//   padding-top: 35px;
-//   padding-bottom: 20px;
-// }
-
-// .settings__title_comfort {
-//   padding-top: 30px;
-//   padding-bottom: 8px;
-// }
-
-// .settings__range {
-//   position: relative;
-// }
-
-.settings__checkbox .room__checkbox {
-  margin-bottom: 17px;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-div.room-card__decor {
-  flex-basis: 400px;
-  margin-top: 4px;
-}
-
-.show {
-  position: relative;
-  width: 340px;
-  z-index: 10;
-}
-
-.slide {
-  display: none;
-}
-
-.card-number__symbol {
-  font-size: 1.1rem;
-}
-.close {
-  display: none;
-}
-
-.right-side {
-  margin-top: 30px;
-}
-
-.fa-arrow-left {
-  font-size: 1.67rem;
-  color: #6fcf97;
-}
-
-.settings__datepicker .datepickers-container {
-  width: 400px;
-}
-
-// .settings__datepicker {
-//   margin-top: 10px;
-//   margin-bottom: 40px;
-// }
-.settings__right-side .fa-arrow-right {
-  font-size: 1.67rem;
-  color: #6fcf97;
-}
-
-// .settings__comfort .comfort-button {
-//   scroll-margin-bottom: 20px;
-// }
-
-// .settings__extracomfort{
-//   margin-top: 15px;
-// }
-
-// .settings__pagination{
-//   margin-bottom: 100px;
-// }
 
 @media only screen and (max-width: 1600px) {
-  .settings__title-main{
+  .settings__title-main {
     text-align: center;
   }
 }
@@ -142,44 +87,41 @@ div.room-card__decor {
   }
 }
 @media only screen and (max-width: 750px) {
-  .settings__right-side {
-    display: none;
-  }
-
-  .slide {
-    display: block;
-  }
-
-  .close {
-    display: block;
+  .settings {
+    &__right-side {
+      display: none;
+    }
+    & .slide {
+      display: block;
+    }
+    & .close {
+      display: block;
+    }
   }
 }
-
 @media only screen and (max-width: 400px) {
-
-
-
-  .slide {
-    display: block;
-  }
-
-  .close {
-    display: block;
-  }
-
-  .settings__datepicker #single__input__range {
-    width: 300px;
-  }
-
-  .settings__dropdown .little-dropdowns .dd-button {
-    width: 300px;
-  }
-
-  .settings__range #slider-range {
-    width: 300px;
-  }
-
-  .slider-range-price {
-    left: 12em;
+  .settings {
+    &__datepicker {
+      & #single-range {
+        width: 300px;
+      }
+    }
+    &__dropdown {
+      & .little-dd__item {
+        width: 300px;
+      }
+    }
+    &__range #slider-range {
+      width: 300px;
+    }
+    & .slide {
+      display: block;
+    }
+    & .close {
+      display: block;
+    }
+    & .slider-range-price {
+      left: 12em;
+    }
   }
 }

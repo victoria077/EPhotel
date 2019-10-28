@@ -1,43 +1,3 @@
-// .texts {
-//   margin: 7px 10px 0 10px;
-// }
-
-
-// .start-date::before {
-//   content: "";
-//   padding: 5px;
-//   box-shadow: 2px -2px 0 0 #1F2041 inset;
-//   display: inline-block;
-//   transform: rotate(-45deg);
-//   margin-left: 10px;
-//   color: #1F2041;
-//   background-repeat: no-repeat;
-// }
-
-// .input-date {
-//   padding-left: 15px;
-// }
-
-// .input__date--single {
-//   width: 266px;
-//   height: 44px;
-//   background: #ffffff;
-//   border: 1px solid rgba(31, 32, 65, 0.25);
-//   box-sizing: border-box;
-//   border-radius: 4px;
-// }
-
-// .input__date--single::before {
-//   content: "";
-//   padding: 5px;
-//   box-shadow: 2px -2px 0 0 #1F2041 inset;
-//   display: inline-block;
-//   transform: rotate(-45deg);
-//   margin-left: 30px;
-//   color: #1F2041;
-//   background-repeat: no-repeat;
-// }
-
 .form-search {
   width: 560px;
   background: #ffffff;
@@ -45,10 +5,10 @@
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
-  &__container{
+  &__container {
     padding: 6% 8% 6% 7%;
   }
-  &__title{
+  &__title {
     max-width: 400px;
     &_checkin {
       padding-top: 5px;
@@ -59,60 +19,22 @@
       padding-top: 5px;
       padding-bottom: 10px;
     }
-    &_guests{
+    &_guests {
       padding-bottom: 8px;
     }
   }
   &__dropdown .dd-button {
     margin-bottom: 20px;
   }
+  &__button_confirm {
+    margin: 40px 0 10px;
+  }
+  
 }
-
-// .form-search__container{
-//   padding: 6% 8% 6% 7%;
-// }
-
-// .form-search__title{
-//   width: 400px;
-// }
-
-// .form-search__title_checkin {
-//   padding-top: 5px;
-//   padding-bottom: 10px;
-// }
-// .form-search__title_checkout {
-//   margin-left: 29%;
-//   padding-top: 5px;
-//   padding-bottom: 10px;
-// }
-
-// .form-search__title_guests{
-//   padding-bottom: 8px;
-// }
-// .form-search__dropdown .dropdowns .dd-button {
-//   margin-bottom: 20px;
-// }
-
-.form-search__button_confirm {
-  margin: 40px 0 10px;
-}
-
 @media only screen and (max-width: 700px) {
   .form-search .dropdowns .dd-button::after {
     left: 21.5em;
   }
-  // .menu-logo {
-  //   display: block;
-  //   padding: 20px 0 10px 0;
-  //   width: 180px;
-  //   height: 50px;
-  //   text-align: center;
-  //   float: none;
-  // }
-
-  // .menu-logo-toggle {
-  //   margin-left: 80%;
-  // }
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,17 +50,9 @@
     }
   }
 
-  // .form-search__container {
-  //   padding: 3% 1%;
-  // }
-
   .form-search .title-main {
     font-size: 23px;
   }
-
-  // .form-search .dropdowns .dd-button::after {
-  //   left: 27.5em;
-  // }
 }
 
 @media only screen and (max-width: 500px) {
@@ -146,31 +60,22 @@
     width: 340px;
     padding: 20px 10px;
     margin: 0 auto;
-    &__datepicker{ 
+    &__datepicker {
       & .datepicker__range {
-      width: 150px;
-    }
-    & .dd-button {
-      width: 320px;
+        width: 150px;
+      }
+      & .dd-button {
+        width: 320px;
+      }
     }
   }
-
-}
-
-  // .form-search__dropdown .range {
-  //   width: 150px;
-  // }
-  // .form-search__dropdown .dropdowns .dd-button {
-  //   width: 320px;
-  // }
 
   .form-search .btn-confirm {
     max-width: 320px;
   }
 }
 @media only screen and (max-width: 550px) {
-
-  .form-search{
+  .form-search {
     & > .datepicker {
       width: 280px;
     }
@@ -184,48 +89,30 @@
   .form-search {
     width: 310px;
     margin-left: 0px;
-    &__datepicker{ 
+    &__datepicker {
       & .datepicker__range {
         width: 130px;
         height: 50px;
-    }
-    & > .dd__item {
-      width: 290px;
-      height: 50px;
-    }
-    & > .dd__menu {
-      width: 280px;
-      &::after {
-        left: 16em;
+      }
+      & > .dd__item {
+        width: 290px;
+        height: 50px;
+      }
+      & > .dd__menu {
+        width: 280px;
+        &::after {
+          left: 16em;
+        }
+      }
+      &__title_checkout {
+        margin-left: 20%;
       }
     }
-    &__title_checkout {
-      margin-left: 20%;
-    }
   }
-
-  // .forn-search {
-  //   margin-left: 0px;
-  // }
-
-
-  // .form-search  .datepicker__range {
-  //   width: 130px;
-  //   height: 50px;
-  // }
-
-  // .form-search .dropdowns .dd-menu {
-  //   width: 280px;
-  // 
-
-  // .form-search .dropdowns .dd-button::after {
-  //   left: 16em;
-  // }
-}
-.form-search .btn-confirm {
-  width: 280px;
-  height: 50px;
-}
+  .form-search .btn-confirm {
+    width: 280px;
+    height: 50px;
+  }
 }
 @media only screen and (max-width: 350px) {
   .form-search {
