@@ -1,9 +1,8 @@
 include ../input-text/input-text.pug
-include ../signin-button/signin-button.pug
 include ../../blocks/radio-button/radio-button.pug
 include ../../blocks/toggle/toggle.pug
 
-mixin form-register(title, birthday,  data, offer, button, login)
+mixin form-register(title, birthday,  data, offer, login)
   div(class='signup')
     div(class='signup__container')
         h1( class='title-main')= title
@@ -32,8 +31,8 @@ mixin form-register(title, birthday,  data, offer, button, login)
           +toggle
           p(class='signup__offer')= offer
 
-        button(type='button' class='btn btn-confirm signup__button_payment')= button
-        
+        +button('перейти к оплате','#', 'btn__confirm signup__button_payment')
+
         .row
           p(class='text signup__text')= login
-          +button-signin('Войти', 'signin-page.html')
+          +button('Войти', 'signin-page.html', 'btn__signin')

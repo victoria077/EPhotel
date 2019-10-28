@@ -1,7 +1,7 @@
 include ../../components/footer/footer.pug
 include ../../components/signin-form/signin-form.pug
 include ../../components/header/header.pug
-include ../../components/button-signin-header/button-signin-header.pug
+include ../../components/button/button.pug
 doctype html
 html
   head
@@ -9,9 +9,8 @@ html
     meta(name="viewport", content="width=, initial-scale=1.0")
   body
     +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
-      +button-signin-header('Войти', 'signin-page.html', 'header-btn-signin' )
-      .header__btn_signup
-        +button-signup('Зарегистрироватьcя', 'signup-page.html')
+      +button('Войти', 'signin-page.html', 'btn__signin_header')
+      +button('Зарегистрироватьcя', 'signup-page.html', 'btn__signup')
     .signin__background
       +form-signin('Войти', 'Нет аккаунта на Toxin?')
     +footer('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', {name1: 'навигация', name2: 'о нас', name3: 'Служба поддержки', name4: 'Подписка'}, ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'], 

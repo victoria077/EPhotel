@@ -1,6 +1,4 @@
 include ../input-text/input-text.pug
-include ../signin-button/signin-button.pug
-
 mixin form-signin(title, login)
   div(class='form-signin')
     div(class='form-signin__container')
@@ -8,7 +6,7 @@ mixin form-signin(title, login)
       +input-text('Email')
       div(class='form-signin__input form-signin__input_second')
         +input-text('Пароль')
-      button(type='button' class='btn  btn-confirm form-signin__button')= title
+      +button('Войти', '#', 'btn__confirm form-signin__button')
       div(class='flex-row')
         div(class='text form-signin__text')= login
-        +button-signin('Создать', 'signin-page.html', 'form-signin__button_create')
+        +button('Создать', 'signin-page.html', 'btn__signin form-signin__button_create')

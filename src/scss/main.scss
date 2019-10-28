@@ -75,30 +75,6 @@ hr {
   border: 1px solid rgba(31, 32, 65, 0.25);
 }
 
-.btn-confirm {
-  width: 472px;
-  height: 65px;
-  background-color: #bc9cff;
-  border-radius: 45px;
-  border: none;
-  box-sizing: border-box;
-  font-weight: bold;
-  font-size: 19.4px;
-  line-height: 15px;
-  font-family: "OpenSans-Bold";
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-image: url(../images/white-arrow.svg);
-  background-repeat: no-repeat;
-  background-position-x: 24rem;
-  background-position-y: 1.2rem;
-  top: 20px;
-  &:focus {
-    outline: none;
-  }
-}
-
 .subtitle {
   font-size: 18px;
   font-family: "Montserrat";
@@ -128,11 +104,6 @@ hr {
   body {
     font-size: 16px;
   }
-  .btn-confirm {
-    width: 390px;
-    background-position-x: 22rem;
-    background-position-y: 1.4rem;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -140,25 +111,11 @@ hr {
   body {
     font-size: 14px;
   }
-
-  .btn-confirm {
-    width: 390px;
-    background-image: none;
-  }
 }
 
 @media only screen and (max-width: 400px) {
   html,
   body {
     font-size: 14px;
-  }
-
-  .btn-confirm {
-    width: 300px;
-  }
-
-  .btn-link {
-    margin: 0 auto;
-    margin-top: 10px;
   }
 }
