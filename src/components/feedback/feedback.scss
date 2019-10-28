@@ -28,7 +28,7 @@
     }
   }
   &__evaluation {
-    &  .evaluation__text {
+    & .evaluation__text {
       margin-left: 40px;
       margin-top: 0px;
       font-size: 1.14rem;
@@ -38,11 +38,6 @@
   }
 }
 
-// .evaluation__text {
-
-// }
-
-
 @media only screen and (max-width: 600px) {
   .room-feedback {
     &__person {
@@ -50,13 +45,33 @@
       flex-direction: row;
       margin-left: -15px;
       margin-top: -7px;
+      & .person {
+        &__photo {
+          width: 120px;
+          height: 120px;
+        }
+        &__name {
+          margin-block-start: 1em;
+          margin-block-end: 0.4em;
+          font-size: 17px;
+          font-weight: bold;
+          margin-left: -14px;
+        }
+        &__date {
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+          font-size: 14px;
+          font-weight: 300;
+          margin-left: -14px;
+        }
+      }
     }
     &__evaluation {
       display: flex;
       margin-top: -24px;
-      & > .evaluation {
+      & .evaluation {
         &__text {
-          margin-left: 27px;
+          margin-left: 10px;
           margin-top: -2px;
           font-size: 16px;
           font-weight: 500;
@@ -82,27 +97,6 @@
           }
         }
       }
-    }
-  }
-
-  .person {
-    &__photo {
-      width: 120px;
-      height: 120px;
-    }
-    &__name {
-      margin-block-start: 1em;
-      margin-block-end: 0.4em;
-      font-size: 17px;
-      font-weight: bold;
-      margin-left: -14px;
-    }
-    &__date {
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-      font-size: 14px;
-      font-weight: 300;
-      margin-left: -14px;
     }
   }
 }
