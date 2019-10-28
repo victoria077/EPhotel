@@ -110,13 +110,17 @@
       margin-left: 0px;
     }
     &__gallery {
-      & > .gallery {
+      & .gallery {
         &__big-img {
           display: none;
           &_responsive {
             display: block;
             width: 100%;
             height: auto;
+            & img {
+                width: 100%;
+                height: auto;
+              }
           }
         }
         &__small-img {
