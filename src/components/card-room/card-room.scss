@@ -333,7 +333,7 @@
 
 @include carousel(4);
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1600px) {
   .carousel__nav,
   .carousel1__nav,
   .carousel2__nav,
@@ -346,7 +346,7 @@
   .carousel9__nav,
   .carousel10__nav,
   .carousel11__nav {
-    margin-top: -130px;
+    margin-top: -150px;
     margin-left: 100px;
   }
 }
