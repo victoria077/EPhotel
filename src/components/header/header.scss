@@ -79,6 +79,17 @@
   }
 }
 
+@media (max-width: 1700px) {
+  .menu__nav {
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .menu__nav {
+    margin-left: 200px;
+  }
+}
 @media (max-width: 1300px) {
   .menu {
     margin: 0;
@@ -109,6 +120,7 @@
     &__nav {
       width: 100%;
       display: none;
+      margin-left: 0;
     }
   }
   .nav {
