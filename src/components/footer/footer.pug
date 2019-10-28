@@ -31,7 +31,7 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
           p(class='offer__text')= offer
           +input-subscription('Email')
     hr(class='footer__strip')
-    div(class='footer__details').container
+    div(class='footer__details container')
       .flex-row
           p(class='footer__details details__copyright')= copyright 
           ul(class='details__icons row')

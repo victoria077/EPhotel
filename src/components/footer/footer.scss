@@ -6,6 +6,36 @@
     justify-content: space-between;
     padding: 0 10px 10px;
     margin-top: 100px;
+    & .nav {
+      &__column {
+        margin: 0 10px 10px;
+        text-decoration: none;
+        &_slogan {
+          max-width: 380px;
+        }
+        &_offer {
+          max-width: 380px;
+        }
+        & .offer__text {
+          color: rgba(31, 32, 65, 0.75);
+          font-family: "Montserrat";
+          font-weight: bold;
+          font-size: 1.14rem;
+          line-height: 33px;
+        }
+        & .column__items {
+          padding: 0;
+          & > .items__item {
+            padding: 28px 0;
+            & > .item__name {
+              font-family: "Montserrat";
+              font-size: 1.14rem;
+              color: rgba(31, 32, 65, 0.5);
+            }
+          }
+        }
+      }
+    }
   }
   &__details {
     padding-top: 5px;
@@ -19,6 +49,28 @@
       line-height: 33px;
       margin-left: 20px;
       margin-block-start: 0.8em;
+      color: rgba(31, 32, 65, 0.75);
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 1.14rem;
+      line-height: 33px;
+    }
+    & .svg-inline--fa {
+      font-size: 35px;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-left: 15px;
+      &:last-child {
+        margin-right: 20px;
+      }
+      & .icons__item {
+        height: 30px;
+        width: 40px;
+        margin-top: -25px;
+        margin-right: 22px;
+      }
     }
   }
   &__slogan {
@@ -30,63 +82,8 @@
     line-height: 33px;
   }
 }
-.nav {
-  &__column {
-    margin: 0 10px 10px;
-    text-decoration: none;
-    &_slogan {
-      max-width: 380px;
-    }
-    &_offer {
-      max-width: 380px;
-    }
-    & > .offer__text {
-      color: rgba(31, 32, 65, 0.75);
-      font-family: "Montserrat";
-      font-weight: bold;
-      font-size: 1.14rem;
-      line-height: 33px;
-    }
-    & > .column__items {
-        padding: 0;
-        & > .items__item {
-          padding: 28px 0;
-            & > .item__name {
-              font-family: "Montserrat";
-              font-size: 1.14rem;
-              color: rgba(31, 32, 65, 0.5);
-            }
-          }
-        }
-    }
-  }
 
-.details__copyright {
-  color: rgba(31, 32, 65, 0.75);
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 1.14rem;
-  line-height: 33px;
-}
-
-.icons__item {
-  height: 30px;
-  width: 40px;
-  margin-top: -25px;
-  margin-right: 22px;
-}
-.footer__details .svg-inline--fa {
-  font-size: 35px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: 15px;
-  &:last-child {
-    margin-right: 20px;
-  }
-}
-
+//These styles need for the gradient
 .div {
   display: flex;
   font-size: 50px;
@@ -104,6 +101,31 @@
       padding: 0 0px 10px;
       padding-top: 50px;
       margin-top: 20px;
+      & .nav {
+        &__column {
+          margin: 0 0px 10px;
+          text-decoration: none;
+          & > .offer__text {
+            color: rgba(31, 32, 65, 0.75);
+            font-family: "Montserrat";
+            font-weight: bold;
+            font-size: 1.14rem;
+            line-height: 33px;
+          }
+          & .column {
+            &__items {
+              padding: 0;
+              & > .items__item {
+                padding: 10px 0;
+                & > .item__name {
+                  font-size: 1.3rem;
+                  color: #1f2041;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     &__strip {
       display: none;
@@ -112,30 +134,4 @@
       display: none;
     }
   }
-
-  .nav {
-    &__column {
-      margin: 0 0px 10px;
-      text-decoration: none;
-      &  > .offer__text  {
-        color: #1f2041;
-        font-weight: bold;
-        font-size: 1.4rem;
-        line-height: 33px;
-      }
-      & .column {
-        &__items {
-          padding: 0;
-          & > .items__item {
-            padding: 10px 0;
-            & > .item__name {
-              font-size: 1.3rem;
-              color: #1f2041;
-            }
-          }
-        }
-      }
-    }
-  }
 }
-
