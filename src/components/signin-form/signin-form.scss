@@ -20,7 +20,7 @@
     margin-top: 26px;
     &_create {
       margin-top: 45px;
-    }    
+    }
   }
   &__text {
     margin-top: 65px;
@@ -31,14 +31,18 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .form-signin  {
+  .form-signin {
     width: 450px;
     &__container {
       padding: 15px 5px;
     }
-  & .btn-confirm{
-    margin-bottom: 30px;
-  }
+    & .btn-confirm {
+      margin-bottom: 30px;
+      width: 440px;
+    }
+    &  .input-text {
+      max-width: 440px;
+    }
   }
 }
 
@@ -52,8 +56,12 @@
       margin: 0 auto;
       margin-top: 35px;
     }
-    & .btn__signin{
+    & .btn__signin {
       margin: 0 auto;
+    }
+    & .btn-confirm {
+      margin-bottom: 30px;
+      width: 390px;
     }
   }
 }
@@ -72,6 +80,10 @@
     &__text {
       margin: 0 auto;
       margin-top: 35px;
+    }
+    & .btn-confirm {
+      margin-bottom: 30px;
+      width: 300px;
     }
   }
 }

@@ -93,6 +93,7 @@
 @media (max-width: 1300px) {
   .menu {
     margin: 0;
+    padding-bottom: 20px;
     &__container {
       display: block;
     }
@@ -121,30 +122,19 @@
       width: 100%;
       display: none;
       margin-left: 0;
+      & .nav {
+        &__item {
+          display: block;
+          width: 100%;
+          margin-top: -20px;
+        }
+      }
+    }
+    & .header-btn-signin {
+      margin: 16px 25px 30px 0px;
     }
   }
-  .nav {
-    &__item {
-      display: block;
-      width: 100%;
-      margin-top: -20px;
-    }
-  }
-  .btn-menu {
-    margin-bottom: 10px;
-  }
-
   .fa-bars {
     font-size: 34px;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-btn-signin {
-    margin: 10px 25px 16px 0px;
-  }
-
-  .header__btn_signup {
-    margin-top: 10px;
   }
 }

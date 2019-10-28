@@ -48,10 +48,12 @@
     &__dropdown .dd-button::after {
       left: 27.5em;
     }
-  }
-
-  .form-search .title-main {
-    font-size: 23px;
+    & .title-main {
+      font-size: 23px;
+    }
+    & .btn-confirm{
+      width: 470px;
+    }
   }
 }
 
