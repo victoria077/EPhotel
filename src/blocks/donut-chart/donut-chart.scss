@@ -50,17 +50,27 @@
 
 .figure-key {
   margin-top: 65px;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & .list__grade {
+      margin: 0 0 9px;
+      padding: 0;
+      font-size: 19px;
+    }
+  }
 }
-.figure-key-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.figure-key-list li {
-  margin: 0 0 9px;
-  padding: 0;
-  font-size: 19px;
-}
+// .figure-key__list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+// .list__grade {
+//   margin: 0 0 9px;
+//   padding: 0;
+//   font-size: 19px;
+// }
 .shape-circle {
   display: inline-block;
   vertical-align: middle;
@@ -93,28 +103,30 @@
   border: 0;
 }
 
-.chart-text {
-  fill: #8ba4f9;
-  -moz-transform: translateY(0.25em);
-  -ms-transform: translateY(0.25em);
-  -webkit-transform: translateY(0.25em);
-  transform: translateY(0.25em);
-}
-.chart-number {
-  font-size: 2em;
-  line-height: 1;
-  text-anchor: middle;
-  -moz-transform: translateY(-0.25em);
-  -ms-transform: translateY(-0.25em);
-  -webkit-transform: translateY(-0.25em);
-  transform: translateY(-0.25em);
-}
-.chart-label {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  text-anchor: middle;
-  -moz-transform: translateY(0.7em);
-  -ms-transform: translateY(0.7em);
-  -webkit-transform: translateY(0.7em);
-  transform: translateY(0.7em);
+.chart {
+  &__text {
+    fill: #8ba4f9;
+    -moz-transform: translateY(0.25em);
+    -ms-transform: translateY(0.25em);
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
+  }
+  &__number {
+    font-size: 2em;
+    line-height: 1;
+    text-anchor: middle;
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+  }
+  &__label {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-anchor: middle;
+    -moz-transform: translateY(0.7em);
+    -ms-transform: translateY(0.7em);
+    -webkit-transform: translateY(0.7em);
+    transform: translateY(0.7em);
+  }
 }

@@ -36,7 +36,9 @@
     &__container {
       padding: 15px 5px;
     }
-  
+  & .btn-confirm{
+    margin-bottom: 30px;
+  }
   }
 }
 
@@ -49,6 +51,9 @@
     &__text {
       margin: 0 auto;
       margin-top: 35px;
+    }
+    & .btn__signin{
+      margin: 0 auto;
     }
   }
 }

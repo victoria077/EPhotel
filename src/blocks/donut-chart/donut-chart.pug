@@ -5,20 +5,20 @@ mixin chart-donut(voices, text, grade1, grade2, grade3, grade4)
             circle(class='circle1')
             circle(class='circle2')
             circle(class='circle3')   
-            g(class='chart-text')
-                text(x='42%' y='35%' class='chart-number')= voices
-                text(x='42%' y='36%' class='chart-label')= text
+            g(class='chart__text')
+                text(x='42%' y='35%' class='chart__number')= voices
+                text(x='42%' y='36%' class='chart__label')= text
         figcaption(class='figure-key')
-            ul(class='figure-key-list' aria-hidden='true' role='presentation')
-                li
+            ul(class='figure-key__list' aria-hidden='true' role='presentation')
+                li(class='list__grade')
                     span(class='shape-circle shape-fuschia')
                     = grade1
-                li
+                li(class='list__grade')
                     span(class='shape-circle shape-lemon-lime') 
                     = grade2
-                li
+                li(class='list__grade')
                     span(class='shape-circle shape-blue')
                     = grade3
-                li
+                li(class='list__grade')
                     span(class='shape-circle shape-grey')
                     = grade4
