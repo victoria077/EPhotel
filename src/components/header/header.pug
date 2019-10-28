@@ -8,6 +8,6 @@ mixin header(links)
       ul(class='menu__nav')
         each i in links
           li(class='nav__item')
-            a(class='item__link')= i
+            a(class='nav__item item__link')= i
         if block
           block

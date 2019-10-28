@@ -26,15 +26,15 @@ mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, 
                 label(for= slickName + '-2')
                 label(for= slickName + '-3')
                 label(for= slickName + '-4')
-        .card__container
-            .flex-row.card-border
+        div(class='card__container')
+            div(class='flex-row')
                 p(class='card__number') 
                     span(class='card__number_symbol') &#8470; 
                     span=  number
                 p(class='card__price')= price  
                     span(class='card__price_per-day')= day
-            .line
-            .flex-row
+            div(class='card__line')
+            div(class='flex-row')
               if block
                 block
               p(class='card__feedback')= feedback

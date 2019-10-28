@@ -1,6 +1,6 @@
 mixin expandable-checkbox-list(title)
-    label.extracomfort
-        .extracomfort-button.title(id='extracomfort__button')= title
+    label(class='extracomfort')
+        div(class='title' id='extracomfort__button')= title
         input(type='checkbox' class='extracomfort__input' id='extracomfort__input')
         if block 
             block
