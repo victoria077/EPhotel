@@ -118,9 +118,9 @@
             width: 100%;
             height: auto;
             & img {
-                width: 100%;
-                height: auto;
-              }
+              width: 100%;
+              height: auto;
+            }
           }
         }
         &__small-img {
@@ -187,8 +187,11 @@
       display: none;
     }
     &__text {
-      font-size: 12px;
+      font-size: 13px;
       margin-top: 20px;
+    }
+    & .bullet-list__item {
+      font-size: 12px;
     }
   }
 }

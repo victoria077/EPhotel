@@ -115,10 +115,10 @@
 
 
 @media only screen and (max-width: 380px) {
-  .little-dropdowns {
-    & .dd__menu {
+  .little-dropdown {
+    & .little-dd__menu {
       width: 300px;
-      & .menu__row {
+      & .little-menu__row {
         padding: 10px 0px;
       }
     }

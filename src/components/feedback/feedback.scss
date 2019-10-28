@@ -3,43 +3,45 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    & .person {
+      display: flex;
+      flex-direction: row;
+      margin-left: -15px;
+      margin-top: 30px;
+      &__photo {
+        width: 120px;
+        height: 120px;
+      }
+      &__name {
+        margin-block-start: 1em;
+        margin-block-end: 0.4em;
+        font-size: 21px;
+        font-weight: bold;
+      }
+      &__date {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(31, 32, 65, 0.75);
+      }
+    }
   }
   &__evaluation {
-    & > .evaluation__text {
-      margin-left: 20px;
-      margin-top: 0;
+    &  .evaluation__text {
+      margin-left: 40px;
+      margin-top: 0px;
+      font-size: 1.14rem;
+      line-height: 36px;
+      color: rgba(31, 32, 65, 0.75);
     }
   }
 }
 
+// .evaluation__text {
 
-.evaluation__text {
-  margin-left: 40px;
-  margin-top: 0px;
-}
-.person {
-  display: flex;
-  flex-direction: row;
-  margin-left: -15px;
-  margin-top: 30px;
-  &__photo {
-    width: 120px;
-    height: 120px;
-  }
-  &__name {
-    margin-block-start: 1em;
-    margin-block-end: 0.4em;
-    font-size: 21px;
-    font-weight: bold;
-  }
-  &__date {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    font-size: 20px;
-    font-weight: 300;
-    color: rgba(31, 32, 65, 0.75);
-  }
-}
+// }
+
 
 @media only screen and (max-width: 600px) {
   .room-feedback {
