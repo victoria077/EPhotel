@@ -1,11 +1,14 @@
 @import "../../components/variables.scss";
 
 .checkbox__box,
-.checkbox__name {
+.checkbox__label {
   display: block;
   cursor: pointer;
   &:before {
-    content: "\2714";
+    content: '';
+    background-position-x: center;
+    background-position-y: 4px;
+    background-repeat: no-repeat;
     font-family: "Times New Roman", Times, serif;
     border-radius: 0.2em;
     display: inline-block;
@@ -14,15 +17,16 @@
     vertical-align: bottom;
     color: transparent;
     transition: 0.2s;
-    border: $border-state;
     box-sizing: border-box;
     border-radius: 4px;
     margin-right: 14px;
     padding-left: 5px;
+    background-image: none;
+    border: $border-state;
   }
 }
 
-.checkbox__name {
+.checkbox__label {
   font-size: 20px;
   letter-spacing: 0.5px;
 }
@@ -30,11 +34,12 @@
 .checkbox__box {
   display: none;
 }
-.checkbox__box + .checkbox__name:active:before {
+.checkbox__box + .checkbox__label:active:before {
   transform: scale(0);
 }
 
-.checkbox__box:checked + .checkbox__name:before {
+.checkbox__box:checked + .checkbox__label:before {
+  background-image: url('./images/vector.jpg');
   color: #bc9cff;
   border: 1.5px solid #bc9cff;
 }

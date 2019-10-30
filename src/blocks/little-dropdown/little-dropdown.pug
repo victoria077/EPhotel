@@ -1,6 +1,6 @@
 mixin little-dropdown(title,  subtitle1,  subtitle2,  subtitle3) 
-  label.little-dropdown
-    .little-dd__item(id= title.id)= title.name
+  label(class='little-dd')
+    div(class='little-dd__item' id= title.id)= title.name
     input(type='checkbox' class='little-dd__input' id='test')
     ul(class='little-dd__menu')
       li(class='menu__row')

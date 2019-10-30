@@ -9,7 +9,6 @@ require('../node_modules/jquery-ui-themes/themes/ui-lightness/jquery-ui.css');
 require('../node_modules/jquery-ui-themes/themes/ui-lightness/theme.css');
 import 'owl.carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
 import '../node_modules/material-icons/css/material-icons.min.css';
 
 

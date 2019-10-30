@@ -1,7 +1,7 @@
 mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, className)
     div(class= className, class='card')
-      a(href="info-page.html")
-        .carousel-container
+      a(href="info-page.html" class="carousel")
+        div(class='carousel__container')
           div(class= slickName)
               input(type='radio' id= slickName + '-1' name='carousel[]' checked)
               input(type='radio' id= slickName + '-2' name='carousel[]')
@@ -10,7 +10,7 @@ mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, 
               ul(class= slickName + '__items')
                 each img in imgList
                   li(class= slickName + '__item')
-                    img(src= img class="card__img")
+                    img(src= img class="carousel__img")
               .carousel__prev
                 label(for= slickName + '-1')
                 label(for= slickName + '-2')
@@ -26,16 +26,17 @@ mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, 
                 label(for= slickName + '-2')
                 label(for= slickName + '-3')
                 label(for= slickName + '-4')
-        div(class='card__container')
-            div(class='flex-row')
-                p(class='card__number') 
-                    span(class='card__number_symbol') &#8470; 
-                    span=  number
-                p(class='card__price')= price  
-                    span(class='card__price_per-day')= day
-            div(class='card__line')
-            div(class='flex-row')
-              if block
-                block
-              p(class='card__feedback')= feedback
-                    span= textFeedback
+      div(class='description')
+        div(class='description__container')
+              div(class='description__wrap')
+                  p(class='description__number') 
+                      span(class='description__symbol') &#8470; 
+                      span=  number
+                  p(class='description__price')= price  
+                      span(class='description__per-day')= day
+              div(class='description__line')
+              div(class='description__wrap')
+                if block
+                  block
+                p(class='description__feedback')= feedback
+                      span= textFeedback

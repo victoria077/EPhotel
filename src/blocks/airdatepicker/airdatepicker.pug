@@ -1,16 +1,16 @@
 mixin datepicker()
-    div(class='flex-row')
-        div(class='datepicker__input')
+    div(class='date-dropdown flex-row')
+        div(class='date-dropdown__range')
             input(type='text'
                 data-range='true'
                 data-multiple-dates-separator=' - ' 
-                class='dateRange datepicker__range'
-                class='datepicker-here'
+                class='dateRange date-dropdown__input'
+
                 id='startDate'
                 placeholder='ДД.ММ.ГГГГ')
                 
-        div(class='datepicker__input')
+        div(class='date-dropdown__range')
             input(type='text'
-                class='datepicker__range'
+                class='date-dropdown__input'
                 id='endDate'
                 placeholder='ДД.ММ.ГГГГ')

@@ -1,13 +1,13 @@
 mixin feedback(imgName, personName, date, text)
   div(class='room-feedback')
-      div(class='room-feedback__person')
-        img(src= imgName class="person__photo")
+      div(class='room-feedback__person row')
+        img(src= imgName class="room-feedback__photo")
         div
-          h4(class="person__name")= personName
-          p(class="person__date")= date
+          h4(class="room-feedback__name")= personName
+          p(class="room-feedback__date")= date
       div(class='room-feedback__evaluation row') 
-        div(class='evaluation__btn-like')
+        div(class='room-feedback__btn-like')
           if block
             block
         div 
-          p(class='evaluation__text')= text
+          p(class='room-feedback__text')= text

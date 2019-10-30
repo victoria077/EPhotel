@@ -1,80 +1,71 @@
-.menu {
+.header {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   &__container {
     display: flex;
     justify-content: space-between;
   }
-  &__logo {
-    background-image: url(../images/Logo.svg);
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 90px;
-    margin-top: 25px;
-    background-repeat: no-repeat;
-    display: block;
-  }
-  &__toggle {
-    display: none;
-  }
-  &__drop {
-    display: none;
-  }
+}
+
+.menu {
   &__nav {
     padding: 15px 0;
     margin: 0;
     list-style: none;
   }
-  & .nav {
-    &__item {
-      margin: 0px;
+  &_toggle {
+    display: none;
+  }
+  &_drop {
+    display: none;
+  }
+  &__item {
+    margin: 0px;
+    display: inline-block;
+    &:nth-child(2) > .menu__link:after {
+      content: "";
+      padding: 6px;
+      box-shadow: 3px -3px 0 0 rgba(31, 32, 65, 0.5) inset;
       display: inline-block;
-      &:nth-child(2) > .item__link:after {
-        content: "";
-        padding: 5px;
-        box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
-        display: inline-block;
-        transform: rotate(-45deg);
-        margin-left: 10px;
-        color: rgba(31, 32, 65, 0.5);
-      }
-      &:nth-child(5) > .item__link:after {
-        content: "";
-        padding: 5px;
-        box-shadow: 2px -2px 0 0 rgba(31, 32, 65, 0.5) inset;
-        display: inline-block;
-        transform: rotate(-45deg);
-        margin-left: 10px;
-        color: rgba(31, 32, 65, 0.5);
-      }
-    }
-  }
-  & .item {
-    &__link {
-      display: block;
-      text-decoration: none;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.12rem;
+      transform: rotate(-45deg);
+      margin-left: 10px;
+      margin-bottom: 3px;
       color: rgba(31, 32, 65, 0.5);
-      padding: 26px 18.5px;
+    }
+    &:nth-child(5) > .menu__link:after {
+      content: "";
+      padding: 6px;
+      box-shadow: 3px -3px 0 0 rgba(31, 32, 65, 0.5) inset;
+      display: inline-block;
+      transform: rotate(-45deg);
+      margin-left: 10px;
+      margin-bottom: 3px;
+      color: rgba(31, 32, 65, 0.5);
     }
   }
-  & .btn__signin_header {
-    display: inline-block;
-    padding: 11px 30px;
-    border: 2.4px solid #bc9cff;
-    text-transform: uppercase;
-    border-radius: 30px;
-    font-size: 17.5px;
-    color: #bc9cff;
+  &__link {
+    display: block;
     text-decoration: none;
-    font-family: "OpenSans-Bold";
-    margin: 16px 25px 16px 23px;
-    display: inline-block;
-    background: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.12rem;
+    color: rgba(31, 32, 65, 0.5);
+    padding: 26px 18.5px;
   }
 }
-
+.btn__signin_header {
+  display: inline-block;
+  padding: 11px 30px;
+  border: 2.4px solid #bc9cff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-size: 17.5px;
+  color: #bc9cff;
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+  margin: 16px 25px 16px 23px;
+  display: inline-block;
+  background: white;
+}
 @media (max-width: 1700px) {
   .menu__nav {
     margin-left: 400px;
@@ -87,20 +78,20 @@
   }
 }
 @media (max-width: 1300px) {
-  .menu {
+  .header {
     margin: 0;
     padding-bottom: 20px;
     &__container {
       display: block;
     }
-    &__logo {
-      display: block;
-      padding: 20px 0 10px 0;
-      width: 180px;
-      height: 50px;
-      text-align: center;
+  }
+  .menu {
+    &__nav {
+      width: 100%;
+      display: none;
+      margin-left: 0;
     }
-    &__toggle {
+    &_toggle {
       display: block;
       padding: 14px 20px 14px 0;
       color: #bc9cff;
@@ -111,26 +102,17 @@
       margin-left: 90%;
       margin-top: -60px;
     }
-    &__drop:checked + &__nav {
+    &_drop:checked + &__nav {
       display: block;
     }
-    &__nav {
+    &__item {
+      display: block;
       width: 100%;
-      display: none;
-      margin-left: 0;
-      & .nav {
-        &__item {
-          display: block;
-          width: 100%;
-          margin-top: -20px;
-        }
-      }
-    }
-    & .header-btn-signin {
-      margin: 16px 25px 30px 0px;
+      margin-top: -20px;
     }
   }
   .fa-bars {
     font-size: 34px;
   }
+  
 }
