@@ -9,8 +9,27 @@
   &__container {
     margin: 55px 41px;
   }
-  &__title_datepicker {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__subtitles {
+    display: flex;
+    flex-direction: row;
     margin-top: 30px;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.8px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    letter-spacing: 0.2px;
+    margin-block-end: 0.1em;
+    margin-block-start: 0.1em;
+    margin-bottom: 5px;
     &_checkout {
       margin-left: 30%;
     }
@@ -20,32 +39,40 @@
     font-weight: bold;
     margin-top: 45px;
   }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+  }
   &__price {
     margin-top: 25px;
-    & .price {
-      &__count {
-        margin-top: 35px;
-      }
-      &__info {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 14px;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25);
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        padding: 3px 12px;
-        box-sizing: border-box;
-        border-radius: 50%;
-        margin-left: 1vw;
-      }
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__count {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+  &__info {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    padding: 3px 12px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-left: 1vw;
   }
   &__text {
     font-size: 1.1rem;
   }
 }
-
 @media only screen and (max-width: 1600px) {
   .calculator {
     margin: 0 auto;
@@ -59,16 +86,16 @@
     &__container {
       margin: 10px;
     }
-    &__datepicker .range {
+    &__datepicker .date-dropdown__input {
       width: 180px;
     }
     &__datepicker .datepicker {
       width: 280px;
     }
-    &__dropdown .dropdowns .dd-button {
+    &__dropdown .dd-button {
       width: 460px;
     }
-    &__title_datepicker_checkout {
+    &__subtitle_checkout {
       margin-left: 40%;
     }
     &__total-price {
@@ -87,7 +114,7 @@
       margin: 10px;
     }
     &__datepicker {
-      & .datepicker__range {
+      & .date-dropdown__input {
         width: 180px;
       }
       & .datepicker {
@@ -105,7 +132,7 @@
     &__total-price {
       font-weight: bold;
     }
-    &__title_datepicker_checkout {
+    &__subtitle_checkout {
       margin-left: 25%;
     }
     & .btn__confirm {
@@ -120,7 +147,7 @@
       margin: 10px;
     }
     &__datepicker {
-      & .datepicker__range {
+      & .date-dropdown__input {
         width: 130px;
         height: 55px;
       }
@@ -141,7 +168,7 @@
       font-weight: bold;
       font-size: 16px;
     }
-    &__title_datepicker_checkout {
+    &__subtitle_checkout {
       margin-left: 20%;
     }
     & .btn__confirm {

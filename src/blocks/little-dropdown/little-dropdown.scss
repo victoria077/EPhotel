@@ -1,7 +1,7 @@
 .little-dd {
   display: inline-block;
   position: relative;
-  & .little-dd__item {
+  &__item {
     position: relative;
     display: inline-block;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -30,7 +30,7 @@
       color: rgba(31, 32, 65, 0.5);
     }
   }
-  & .little-dd__input {
+  &__input {
     display: none;
     &:checked + .little-dd__menu {
       display: block;
@@ -39,7 +39,7 @@
       display: none;
     }
   }
-  & .little-dd__menu {
+  &__menu {
     position: absolute;
     top: 100%;
     border: 1px solid #ccc;
@@ -51,20 +51,27 @@
     list-style-type: none;
     z-index: 10;
     width: 395px;
-    & > .menu__row {
-      padding: 10px 20px;
-      white-space: nowrap;
-      display: flex;
-      justify-content: space-between;
-      &:hover {
-        background-color: #f6f6f6;
-      }
+  }
+  &__row {
+    padding: 10px 20px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+      background-color: #f6f6f6;
     }
   }
-  & .little-dd__text {
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__text {
     margin: 7px 30px 0 30px;
   }
-  & .little-dd__title {
+  &__title {
     margin-top: 15px;
     font-family: "Montserrat";
     font-style: normal;
@@ -75,7 +82,7 @@
     vertical-align: middle;
     color: #1f2041;
   }
-  & .little-dd__button {
+  &__button {
     width: 45px;
     height: 45px;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -85,7 +92,7 @@
     outline: none;
     cursor: pointer;
   }
-  & .clean {
+  &__clean {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -98,8 +105,8 @@
     outline: none;
     cursor: pointer;
   }
-  
-  & .apply {
+
+  &__apply {
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -113,14 +120,13 @@
   }
 }
 
-
 @media only screen and (max-width: 380px) {
-  .little-dropdown {
-    & .little-dd__menu {
+  .little-dd {
+    &__menu {
       width: 300px;
-      & .little-menu__row {
-        padding: 10px 0px;
-      }
+    }
+    &__row {
+      padding: 10px 0px;
     }
   }
 }

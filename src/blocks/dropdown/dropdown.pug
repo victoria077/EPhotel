@@ -5,19 +5,19 @@ mixin dropdown(title,  subtitle1,  subtitle2,  subtitle3)
     ul(class='dd__menu')
       li(class='dd__row')
         p(class='dd__title')= subtitle1.name
-        .flex-row
+        div(class='dd__wrapper')
           button(class='dd__button' id= subtitle1.plus) +
           p(class='dd__text' id= subtitle1.number) 0
           button(class='dd__button' id= subtitle1.minus) -
       li(class='dd__row')
         p(class='dd__title')= subtitle2.name
-        .flex-row
+        div(class='dd__wrapper')
           button(class='dd__button' id= subtitle2.plus) +
           p(class='dd__text' id= subtitle2.number) 0
           button(class='dd__button' id= subtitle2.minus) -
       li(class='dd__row')
         p(class='dd__title')= subtitle3.name
-        .flex-row
+        div(class='dd__wrapper')
           button(class='dd__button' id= subtitle3.plus) +
           p(class='dd__text' id= subtitle3.number) 0
           button(class='dd__button' id= subtitle3.minus) -

@@ -71,6 +71,15 @@
     font-size: 1.14rem;
     line-height: 33px;
   }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__icons{
+    display: flex;
+    flex-direction: row;
+  }
   &__icon {
     height: 30px;
     width: 40px;

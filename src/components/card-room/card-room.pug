@@ -36,7 +36,7 @@ mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, 
                       span(class='description__per-day')= day
               div(class='description__line')
               div(class='description__wrap')
-                if block
-                  block
+                if block 
+                  block 
                 p(class='description__feedback')= feedback
-                      span= textFeedback
+                  span(class='description__text')= textFeedback

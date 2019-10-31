@@ -3,24 +3,24 @@ mixin little-dropdown(title,  subtitle1,  subtitle2,  subtitle3)
     div(class='little-dd__item' id= title.id)= title.name
     input(type='checkbox' class='little-dd__input' id='test')
     ul(class='little-dd__menu')
-      li(class='menu__row')
+      li(class='little-dd__row')
         p(class='little-dd__title')= subtitle1.name
-        .flex-row
-          button(class='plus little-dd__button' id= subtitle1.plus) +
+        div(class='little-dd__wrapper')
+          button(class='little-dd__button' id= subtitle1.plus) +
           p(class='little-dd__text' id= subtitle1.number) 0
-          button(class='minus little-dd__button' id= subtitle1.minus) -
-      li(class='menu__row')
+          button(class='little-dd__button' id= subtitle1.minus) -
+      li(class='little-dd__row')
         p(class='little-dd__title')= subtitle2.name
-        .flex-row
-          button(class='plus little-dd__button' id= subtitle2.plus) +
+        div(class='little-dd__wrapper')
+          button(class='little-dd__button' id= subtitle2.plus) +
           p(class='little-dd__text' id= subtitle2.number) 0
-          button(class='minus little-dd__button' id= subtitle2.minus) -
-      li(class='menu__row')
+          button(class='little-dd__button' id= subtitle2.minus) -
+      li(class='little-dd__row')
         p(class='little-dd__title')= subtitle3.name
-        .flex-row
-          button(class='plus little-dd__button' id= subtitle3.plus) +
+        div(class='little-dd__wrapper')
+          button(class='little-dd__button' id= subtitle3.plus) +
           p(class='little-dd__text' id= subtitle3.number) 0
-          button(class='minus little-dd__button' id= subtitle3.minus) -
-      li(class='menu__row')
-          button(class='clean' id='clean') Очистить
-          button(class='apply' id='apply') Применить  
+          button(class='little-dd__button' id= subtitle3.minus) -
+      li(class='little-dd__row')
+          button(class='little-dd__clean' id='clean') Очистить
+          button(class='little-dd__apply' id='apply') Применить  

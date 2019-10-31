@@ -19,21 +19,21 @@ mixin footer(slogan, title, linkList1, linkList2, linkList3, offer, copyright)
             each link in linkList2
               li(class='footer__item')
                a(class='footer__link')= link
-        div(footer__column)
+        div(class='footer__column')
           h3(class='footer__subtitle')= title.name3
           ul(class='footer__items')
             each link in linkList3
               li(class='footer__item')
                a(class='footer__link')= link
-        div(footer__column footer__column_offer)
+        div(class='footer__column footer__column_offer')
           h3(class='footer__subtitle')= title.name4
           p(class='footer__text')= offer
           +input-subscription('Email')
     hr(class='footer__strip')
     div(class='footer__details container')
-      div(class='flex-row')
+      div(class='footer__row')
           p(class='footer__copyright')= copyright 
-          ul(class='footer__icons row')
+          ul(class='footer__icons')
               li(class='footer__icon')
                 a(href='#')
                   svg(width='0' height='0')
