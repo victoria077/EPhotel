@@ -1,33 +1,32 @@
-.information {
+.room-details {
   margin-top: -20px;
-  &__top-part {
-    display: flex;
+}
+.gallery {
+  display: flex;
+  &__big-img {
+    flex: 2;
   }
-  &__gallery {
-    & .gallery {
-      &__big-img {
-        flex: 2;
-        &_responsive {
-          display: none;
-        }
-      }
-      &__small-img {
-        flex: 1;
-        &_second {
-          margin-top: -7px;
-        }
-      }
+  &__img-responsive {
+    display: none;
+  }
+  &__small-img {
+    flex: 1;
+    &_second {
+      margin-top: -7px;
     }
   }
-  &__bottom-part {
-    padding-top: 70px;
+}
+.information {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80.5vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  &__data {
+    width: 53vw;
     display: flex;
     flex-wrap: wrap;
-    & > .bottom-part__left {
-      width: 53vw;
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
   &__title {
     font-family: "OpenSans-Bold";
@@ -63,6 +62,8 @@
   }
   &__impression {
     margin-left: 5.6vw;
+  }
+  &__feedback{
     &_second {
       margin-top: 5px;
     }
@@ -73,7 +74,7 @@
     line-height: 36px;
     color: rgba(31, 32, 65, 0.75);
   }
-  &__info {
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
     & .material-icons {
@@ -100,7 +101,6 @@
     margin-bottom: 13px;
   }
 }
-
 @media only screen and (max-width: 1850px) {
   .information {
     &__impression {
@@ -109,29 +109,28 @@
     &__cancel {
       margin-left: 0px;
     }
-    &__gallery {
-      & .gallery {
-        &__big-img {
-          display: none;
-          &_responsive {
-            display: block;
-            width: 100%;
-            height: auto;
-            & img {
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-        &__small-img {
-          display: none;
-        }
-      }
-    }
-    & .bottom-part__left {
+
+    &__data {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+  .gallery {
+    &__big-img {
+      display: none;
+    }
+    &__img-responsive {
+      display: block;
+      width: 100%;
+      height: auto;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__small-img {
+      display: none;
     }
   }
 }
@@ -151,12 +150,10 @@
 
 @media only screen and (max-width: 600px) {
   .information {
-    &__bottom-part {
+    &__calculator {
       padding-top: 0px;
-      & .bottom-part__right {
-        margin: 0 auto;
-        margin-top: 25px;
-      }
+      margin: 0 auto;
+      margin-top: 25px;
     }
     &__title {
       &_rules {

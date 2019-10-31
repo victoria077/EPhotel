@@ -1,6 +1,10 @@
 .settings {
-  display: flex;
-  justify-content: space-between;
+  &__container{
+    width: 80.5vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
   &__left-side {
     margin: 57px 90px 0 0;
   }

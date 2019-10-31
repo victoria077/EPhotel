@@ -7,8 +7,9 @@ include ../../blocks/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../../blocks/little-dropdown/little-dropdown.pug
 include ../../blocks/single-airdatepicker/single-airdatepicker.pug
 include ../../blocks/stars/stars.pug
-.container.settings
-        .settings__left-side
+div(class='settings')
+    div(class='settings__container')
+        div(class='settings__left-side')
             div(class='sidebar' id='sidebar')
                 a(href='#' class='close')
                     i(class='fa fa-arrow-left')
