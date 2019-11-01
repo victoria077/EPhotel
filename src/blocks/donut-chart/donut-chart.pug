@@ -1,24 +1,24 @@
 mixin chart-donut(voices, text, grade1, grade2, grade3, grade4)
-    .row.donut
-        svg
-            circle(class='circle')
-            circle(class='circle1')
-            circle(class='circle2')
-            circle(class='circle3')   
-            g(class='chart__text')
-                text(x='42%' y='35%' class='chart__number')= voices
-                text(x='42%' y='36%' class='chart__label')= text
-        div(class='figure-key')
-            ul(class='figure-key__list' aria-hidden='true' role='presentation')
-                li(class='list__grade')
-                    span(class='shape-circle shape-fuschia')
+    div(class='donut-chart')
+        svg(class='svg')
+            circle(class='svg__circle')
+            circle(class='svg__circle1')
+            circle(class='svg__circle2')
+            circle(class='svg__circle3')   
+            g(class='svg__text')
+                text(x='42%' y='35%' class='svg__number')= voices
+                text(x='42%' y='36%' class='svg__label')= text
+        div(class='chart-label')
+            ul(class='chart-label__list' aria-hidden='true' role='presentation')
+                li(class='chart-label__grade')
+                    span(class='chart-label__circle chart-label__circle_peach')
                     = grade1
-                li(class='list__grade')
-                    span(class='shape-circle shape-lemon-lime') 
+                li(class='chart-label__grade')
+                    span(class='chart-label__circle chart-label__circle_green') 
                     = grade2
-                li(class='list__grade')
-                    span(class='shape-circle shape-blue')
+                li(class='chart-label__grade')
+                    span(class='chart-label__circle chart-label__circle_blue')
                     = grade3
-                li(class='list__grade')
-                    span(class='shape-circle shape-grey')
+                li(class='chart-label__grade')
+                    span(class='chart-label__circle chart-label__circle_grey')
                     = grade4

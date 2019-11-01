@@ -26,13 +26,44 @@
 }
 
 .slider-range-price {
+  display: block;
   font-size: 0.9rem;
   color: black;
   border: none;
+  margin-top: -3rem;
+  margin-left: 16rem;
+  margin-bottom: 30px;
 }
 
 .slider-range__title {
   padding-top: 25px;
   padding-bottom: 38px;
   font-size: 17.7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider-range-price {
+    display: block;
+    font-size: 16px;
+    color: black;
+    border: none;
+    margin-top: -3rem;
+    margin-left: 18rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  .slider-range-price {
+    margin-top: -4rem;
+    margin-left: 18rem;
+  }
+}
+
+
+@media only screen and (max-width:400px) {
+  .slider-range-price {
+    margin-top: -4rem;
+    margin-left: 14rem;
+  }
 }

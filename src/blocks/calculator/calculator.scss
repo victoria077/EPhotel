@@ -48,13 +48,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  &__count {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 35px;
+    &_count {
+      margin-top: 35px;
+    }
   }
   &__info {
     font-style: normal;
@@ -71,6 +67,9 @@
   }
   &__text {
     font-size: 1.1rem;
+    &_tax{
+      max-width: 300px;
+    }
   }
 }
 @media only screen and (max-width: 1600px) {

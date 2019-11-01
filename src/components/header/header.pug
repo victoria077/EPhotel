@@ -1,7 +1,8 @@
+include ../logo/logo.pug
 mixin header(links)
   div(class='header')
     div(class='header__container')
-      div(id='logo' class='logo')
+      +logo
       div(class='menu')
         label(for='drop' class='menu_toggle') 
           i(class='fa fa-bars' aria-hidden='true')

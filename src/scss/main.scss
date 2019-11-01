@@ -16,16 +16,6 @@ p {
   margin-inline-end: 0px;
 }
 
-.logo {
-  background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
-  width: 210px;
-  height: 60px;
-  vertical-align: middle;
-  margin-top: 25px;
-  display: inline-block;
-}
-
 ol,
 ul {
   list-style: none;
@@ -37,7 +27,6 @@ a {
 hr {
   border: 1px solid rgba(31, 32, 65, 0.25);
 }
-
 
 @media only screen and (max-width: 1000px) {
   .container {
