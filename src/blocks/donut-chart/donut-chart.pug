@@ -8,7 +8,7 @@ mixin chart-donut(voices, text, grade1, grade2, grade3, grade4)
             g(class='chart__text')
                 text(x='42%' y='35%' class='chart__number')= voices
                 text(x='42%' y='36%' class='chart__label')= text
-        figcaption(class='figure-key')
+        div(class='figure-key')
             ul(class='figure-key__list' aria-hidden='true' role='presentation')
                 li(class='list__grade')
                     span(class='shape-circle shape-fuschia')

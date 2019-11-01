@@ -1,40 +1,40 @@
 include ../airdatepicker/airdatepicker.pug
-mixin calculator(roomNumber, pricePerDay, day, checkin, checkout, titleDropdown, calculationOfThePrice, fullPrice, tax, addTax, additionalTax, totalPrice)
+mixin calculator(calculator)
     div(class='calculator')
         div(class='calculator__container')
             div(class='calculator__wrapper')
                 p(class='calculator__text') 
                     span  &#8470;
-                    span= roomNumber
-                p(class='calculator__text')= pricePerDay
-                    span= day
+                    span= calculator.roomNumber
+                p(class='calculator__text')= calculator.pricePerDay
+                    span= calculator.day
             div(class='calculator__subtitles')
-                p(class='calculator__subtitle')= checkin
-                p(class='calculator__subtitle calculator__subtitle_checkout')= checkout
+                p(class='calculator__subtitle')= calculator.checkin
+                p(class='calculator__subtitle calculator__subtitle_checkout')= calculator.checkout
             div(class='calculator__datepicker')
                 +datepicker
-            p(class='calculator__subtitle')= titleDropdown
+            p(class='calculator__subtitle')= calculator.titleDropdown
             div(class='calculator__dropdown')
                 +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
             div(class='calculator__price')
                 div(class='calculator__count')
                     div
-                        p(class='calculator__text')= calculationOfThePrice
+                        p(class='calculator__text')= calculator.calculationOfThePrice
                     div
-                        p(class='calculator__text')= fullPrice
+                        p(class='calculator__text')= calculator.fullPrice
             div(class='calculator__price')
                 div(class='calculator__wrap')
-                    p(class='calculator__text')= tax
+                    p(class='calculator__text')= calculator.tax
                     div
                         span(class='calculator__info') i
                 p(class='calculator__text') 0P
             div(class='calculator__price')
                 div(class='calculator__wrap')
-                    p(class='calculator__text')= addTax
+                    p(class='calculator__text')= calculator.addTax
                     div
                         span(class='calculator__info calculator__info_extra') i
-                p(class='calculator__text')= additionalTax
-            h3(class='calculator__total-price')= totalPrice
+                p(class='calculator__text')= calculator.additionalTax
+            h3(class='calculator__total-price')= calculator.totalPrice
             +button('забронировать', '#', 'btn__confirm')
                 
 

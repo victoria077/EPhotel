@@ -1,8 +1,9 @@
-mixin pagination(backButton, forwardButton)
+mixin pagination(backButton, forwardButton, title)
     div(class='cdp' actpage='1')
         a(href='#!-1' class='cdp_i cdp_i_back')
             i(class='material-icons')= backButton
         each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
             a(href='#!'+ val class='cdp_i')= val
-        a(href='#!+1' class='cdp_i forward') 
+        a(href='#!+1' class='cdp_i_forward') 
             i(class='material-icons')= forwardButton
+    p(class="cdp-title")= title

@@ -1,6 +1,6 @@
-mixin checkbox(name, label, nameClass, descr)
+mixin checkbox(name, label, nameClass, descr, boxClass)
   div(class='checkbox__button' class=nameClass)
     input(type='checkbox' class='checkbox__box' id= name name= name value= name)
-    label(class='checkbox__label' for= name)= label
+    label(class='checkbox__label'   class= boxClass for= name)= label
     if block 
       block

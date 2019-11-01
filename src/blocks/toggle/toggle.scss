@@ -1,4 +1,4 @@
-.tgl {
+.tgl__input {
   display: none;
   &,
   &:after,
@@ -49,7 +49,7 @@
   }
 }
 
-.tgl_light {
+.tgl__input{
   + .tgl__btn {
     background: #fff;
     border-radius: 2em;

@@ -1,16 +1,16 @@
 $(document).ready(function() {
-  $('.close').click(function() {
+  $('.sidebar__close').click(function() {
     $('#sidebar').hide();
-    $('.settings__left-side').width('0');
-    $('.settings__right-side').show();
-    $('.settings__right-side').width('100%');
+    $('.sidebar').width('0');
+    $('.rooms').show();
+    $('.rooms').width('100%');
   });
-  $('.slide').click(function() {
+  $('.rooms__slide').click(function() {
     $('#sidebar').show();
-    $('.settings__left-side').css('display', 'block');
-    $('.settings__left-side').addClass('show');
-    $('.settings__left-side').width('700px');
-    $('.settings__right-side').hide();
-    $('.settings__right-side').width('0');
+    $('.sidebar').css('display', 'block');
+    $('.sidebar').addClass('show');
+    $('.sidebar').width('700px');
+    $('.rooms').hide();
+    $('.rooms').width('0');
   });
 });

@@ -28,6 +28,10 @@
     line-height: 36px;
     color: rgba(31, 32, 65, 0.75);
   }
+  &__evaluation{
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media only screen and (max-width: 600px) {
   .room-feedback {

@@ -1,4 +1,7 @@
 .date-dropdown{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   &__range{
     position: relative;
     display: inline-block;
