@@ -11,6 +11,7 @@
   text-decoration: none;
   font-family: "OpenSans-Bold";
   background: white;
+  cursor: pointer;
 }
 
 .btn__signup {
@@ -25,6 +26,7 @@
   font-weight: bold;
   font-size: 17.5px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn__confirm {
@@ -46,6 +48,7 @@
   background-position-x: 24rem;
   background-position-y: 1.2rem;
   top: 20px;
+  cursor: pointer;
   &:focus {
     outline: none;
   }

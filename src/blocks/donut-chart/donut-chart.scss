@@ -8,7 +8,6 @@
   height: 250px;
   margin-top: 7px;
   margin-left: 7px;
-
   &__circle {
     cx: 85px;
     cy: 85px;
@@ -27,7 +26,6 @@
     stroke-dasharray: 230px;
     stroke-dashoffset: 340px;
   }
-
   &__circle2 {
     cx: 84px;
     cy: 84px;
@@ -39,7 +37,6 @@
     stroke-dashoffset: 485px;
     transform: rotate(-90deg) translateX(-169px);
   }
-
   &__circle3 {
     cx: 84px;
     cy: 84px;
@@ -77,6 +74,7 @@
     transform: translateY(0.7em);
   }
 }
+
 .chart-label {
   margin-top: 65px;
   &__list {
@@ -95,9 +93,6 @@
     font-size: 1.14rem;
     font-weight: 300;
   }
-}
-
-.chart-label {
   &__circle {
     display: inline-block;
     vertical-align: middle;

@@ -15,6 +15,7 @@
     text-decoration: none;
     &_slogan {
       max-width: 380px;
+      margin-top: -10px;
     }
     &_offer {
       max-width: 380px;
@@ -31,6 +32,7 @@
   }
   &__item {
     padding: 28px 0;
+    cursor: pointer;
   }
   &__link {
     font-family: "Montserrat";
@@ -91,6 +93,7 @@
     width: 40px;
     margin-top: -25px;
     margin-right: 22px;
+    cursor: pointer;
   }
 }
 //These styles need for the gradient

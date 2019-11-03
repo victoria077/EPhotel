@@ -1,3 +1,6 @@
+- blocks = {}
+mixin set(key)
+  - blocks[key] = this.block 
 mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, className)
     div(class= className, class='card')
       a(href="info-page.html" class="carousel")
@@ -32,6 +35,10 @@ mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, 
                   p(class='description__number') 
                       span(class='description__symbol') &#8470; 
                       span=  number
+                      div(class='description__luxe')
+                        if blocks.luxe
+                          - blocks.luxe()
+                        else
                   p(class='description__price')= price  
                       span(class='description__per-day')= day
               div(class='description__line')
@@ -40,3 +47,5 @@ mixin card-room(slickName, imgList, number, price, day, feedback, textFeedback, 
                   block 
                 p(class='description__feedback')= feedback
                   span(class='description__text')= textFeedback
+
+

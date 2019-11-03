@@ -95,7 +95,7 @@
 }
 @media only screen and (max-width: 550px) {
   .form-search {
-    & > .datepicker {
+    & .datepicker {
       width: 280px;
     }
     &__subtitle_checkout {

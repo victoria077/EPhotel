@@ -52,6 +52,7 @@
     font-size: 1.12rem;
     color: rgba(31, 32, 65, 0.5);
     padding: 26px 18.5px;
+    cursor: pointer;
   }
 }
 .btn__signin_header {
@@ -67,6 +68,7 @@
   margin: 16px 25px 16px 23px;
   display: inline-block;
   background: white;
+  cursor: pointer;
 }
 @media (max-width: 1700px) {
   .menu__nav {

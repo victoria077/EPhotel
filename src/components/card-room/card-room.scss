@@ -10,7 +10,7 @@
   &__container {
     padding: 25px 30px;
   }
-  &__wrap{
+  &__wrap {
     display: flex;
     justify-content: space-between;
   }
@@ -19,15 +19,17 @@
     font-family: "OpenSans-Bold";
     font-size: 1.3rem;
     margin-top: 5px;
-    color: #1F2041;
+    color: #1f2041;
   }
-  &__luxe{
+  &__luxe {
     font-style: normal;
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 1.3rem;
     margin-top: 5px;
-    color: #BC9CFF;
+    color: #bc9cff;
+    margin-left: -15px;
+    margin-top: 6px;
   }
   &__price,
   &__feedback {
@@ -39,7 +41,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  &__text{
+  &__symbol {
+    font-size: 19px;
+  }
+  &__text {
     color: rgba(31, 32, 65, 0.5);
   }
   &__line {

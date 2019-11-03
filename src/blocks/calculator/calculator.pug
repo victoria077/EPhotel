@@ -4,10 +4,12 @@ mixin calculator(calculator)
         div(class='calculator__container')
             div(class='calculator__wrapper')
                 p(class='calculator__text') 
-                    span  &#8470;
-                    span= calculator.roomNumber
-                p(class='calculator__text')= calculator.pricePerDay
-                    span= calculator.day
+                    span(class='calculator__symbol')  &#8470;
+                    span(class='calculator__number')= calculator.roomNumber
+                    if block
+                        block
+                p(class='calculator__cost')= calculator.pricePerDay
+                    span(class="calculator__per-day")= calculator.day
             div(class='calculator__subtitles')
                 p(class='calculator__subtitle')= calculator.checkin
                 p(class='calculator__subtitle calculator__subtitle_checkout')= calculator.checkout

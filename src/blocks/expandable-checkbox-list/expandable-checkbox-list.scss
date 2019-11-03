@@ -1,6 +1,7 @@
 .extracomfort {
   display: inline-block;
   position: relative;
+  width: 395px;
   &__button {
     font-style: normal;
     font-weight: bold;
@@ -15,8 +16,7 @@
       display: inline-block;
       transform: rotate(-45deg);
       position: absolute;
-      top: 35%;
-      left: 95%;
+      left: 90%;
       color: black;
     }
   }

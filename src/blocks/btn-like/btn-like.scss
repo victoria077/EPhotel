@@ -13,8 +13,9 @@
   &:visited{
     color:  #BC9CFF;;
   }
+  &__quantity {
+    margin-left: 5px;
+  }
+  
 }
 
-.btn-like__quantity {
-  margin-left: 5px;
-}

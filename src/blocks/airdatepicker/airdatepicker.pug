@@ -1,7 +1,7 @@
 mixin datepicker()
     div(class='date-dropdown')
         div(class='date-dropdown__range')
-            input(type='text'
+            input(
                 data-range='true'
                 data-multiple-dates-separator=' - ' 
                 class='dateRange date-dropdown__input'
@@ -9,7 +9,7 @@ mixin datepicker()
                 placeholder='ДД.ММ.ГГГГ')
                 
         div(class='date-dropdown__range')
-            input(type='text'
+            input(
                 class='date-dropdown__input'
                 id='endDate'
                 placeholder='ДД.ММ.ГГГГ')
