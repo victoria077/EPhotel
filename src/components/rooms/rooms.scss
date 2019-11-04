@@ -1,0 +1,55 @@
+.rooms {
+  &__slide {
+    display: none;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    & .room-card__decor {
+      flex-basis: 400px;
+      margin-top: 4px;
+    }
+  }
+  &__card {
+    margin: 20px 0;
+  }
+  &__pagination {
+    margin-bottom: 100px;
+  }
+  & .fa-arrow-right {
+    font-size: 1.67rem;
+    color: #6fcf97;
+  }
+  & .fa-arrow-left {
+    font-size: 1.67rem;
+    color: #6fcf97;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .rooms {
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .rooms {
+    display: none;
+    &__slide {
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rooms {
+    &__slide {
+      display: block;
+    }
+    & .slider-range-price {
+      left: 12em;
+    }
+  }
+}
