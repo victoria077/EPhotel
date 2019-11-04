@@ -2,7 +2,6 @@
   &__person {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
   }
   &__photo {
     width: 120px;
@@ -22,15 +21,19 @@
     color: rgba(31, 32, 65, 0.75);
   }
   &__text {
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: 0px;
     font-size: 1.14rem;
     line-height: 36px;
     color: rgba(31, 32, 65, 0.75);
   }
-  &__evaluation{
+  &__evaluation {
     display: flex;
     flex-direction: row;
+  }
+  &__btn-like {
+    margin-left: 30px;
+    margin-top: 5px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -38,8 +41,6 @@
     &__person {
       display: flex;
       flex-direction: row;
-      margin-left: -15px;
-      margin-top: -7px;
     }
     &__photo {
       width: 120px;

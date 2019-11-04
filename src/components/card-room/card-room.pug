@@ -43,8 +43,9 @@ mixin card-room(carousel, card)
                       span(class='description__per-day')= card.day
               div(class='description__line')
               div(class='description__wrap')
-                if block 
-                  block 
+                div(class="description__stars")
+                  if block 
+                    block 
                 p(class='description__feedback')= card.feedback
                   span(class='description__text')= card.textFeedback
 

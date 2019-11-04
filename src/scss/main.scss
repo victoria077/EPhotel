@@ -8,26 +8,6 @@ body {
   font-size: 18px;
 }
 
-p {
-  display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
-hr {
-  border: 1px solid rgba(31, 32, 65, 0.25);
-}
-
 @media only screen and (max-width: 600px) {
   html,
   body {
@@ -36,13 +16,6 @@ hr {
 }
 
 @media only screen and (max-width: 450px) {
-  html,
-  body {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
   html,
   body {
     font-size: 14px;

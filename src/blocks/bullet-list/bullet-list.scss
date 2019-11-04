@@ -32,13 +32,17 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .bullet-list__item {
-    font-size: 14px;
+  .bullet-list {
+    &__item {
+      font-size: 14px;
+    }
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .bullet-list__item {
-    font-size: 11px;
+  .bullet-list {
+    &__item {
+      font-size: 11px;
+    }
   }
 }

@@ -1,78 +1,83 @@
-.btn__signin {
-  display: inline-block;
-  width: 145px;
-  height: 65px;
-  border: 2.4px solid #bc9cff;
-  text-transform: uppercase;
-  border-radius: 35px;
-  font-size: 19px;
-  text-align: center;
-  color: #bc9cff;
-  text-decoration: none;
-  font-family: "OpenSans-Bold";
-  background: white;
-  cursor: pointer;
-}
+.btn {
+  &__signin {
+    display: inline-block;
+    width: 145px;
+    height: 65px;
+    border: 2.4px solid #bc9cff;
+    text-transform: uppercase;
+    border-radius: 35px;
+    font-size: 19px;
+    text-align: center;
+    color: #bc9cff;
+    text-decoration: none;
+    font-family: "OpenSans-Bold";
+    background: white;
+    cursor: pointer;
+  }
 
-.btn__signup {
-  font-family: "OpenSans-Bold";
-  letter-spacing: 1.3px;
-  border: none;
-  padding: 15px 32px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-radius: 30px;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: bold;
-  font-size: 17.5px;
-  display: inline-block;
-  cursor: pointer;
-}
+  &__signup {
+    font-family: "OpenSans-Bold";
+    letter-spacing: 1.3px;
+    border: none;
+    padding: 15px 32px;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17.5px;
+    display: inline-block;
+    cursor: pointer;
+  }
 
-.btn__confirm {
-  width: 475px;
-  height: 65px;
-  background-color: #bc9cff;
-  border-radius: 45px;
-  border: none;
-  box-sizing: border-box;
-  font-weight: bold;
-  font-size: 19.4px;
-  line-height: 15px;
-  font-family: "OpenSans-Bold";
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-image: url(../images/white-arrow.svg);
-  background-repeat: no-repeat;
-  background-position-x: 24rem;
-  background-position-y: 1.2rem;
-  top: 20px;
-  cursor: pointer;
-  &:focus {
-    outline: none;
+  &__confirm {
+    width: 475px;
+    height: 65px;
+    background-color: #bc9cff;
+    border-radius: 45px;
+    border: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 19.4px;
+    line-height: 15px;
+    font-family: "OpenSans-Bold";
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-image: url(../images/white-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 24rem;
+    background-position-y: 1.2rem;
+    top: 20px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
 }
-
-
 @media only screen and (max-width: 600px) {
-  .btn__confirm {
-    width: 390px;
-    background-position-x: 22rem;
-    background-position-y: 1.4rem;
+  .btn {
+    &__confirm {
+      width: 390px;
+      background-position-x: 22rem;
+      background-position-y: 1.4rem;
+    }
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .btn__confirm {
-    width: 390px;
-    background-image: none;
+  .btn {
+    &__confirm {
+      width: 390px;
+      background-image: none;
+    }
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .btn__confirm {
-    width: 300px;
+  .btn {
+    &__confirm {
+      width: 300px;
+    }
   }
 }
-

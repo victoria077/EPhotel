@@ -71,14 +71,18 @@
   cursor: pointer;
 }
 @media (max-width: 1700px) {
-  .menu__nav {
-    margin-left: 400px;
+  .menu {
+    &__nav {
+      margin-left: 400px;
+    }
   }
 }
 
 @media (max-width: 1500px) {
-  .menu__nav {
-    margin-left: 200px;
+  .menu {
+    &__nav {
+      margin-left: 200px;
+    }
   }
 }
 @media (max-width: 1300px) {
@@ -118,5 +122,4 @@
   .fa-bars {
     font-size: 34px;
   }
-  
 }

@@ -36,7 +36,7 @@ mixin calculator(calculator)
                         span(class='calculator__info calculator__info_extra') i
                 p(class='calculator__text')= calculator.additionalTax
             h3(class='calculator__total-price')= calculator.totalPrice
-            +button('забронировать', '#', 'btn__confirm')
+            +button({name: 'забронировать', link: '#', className: 'btn__confirm'})
                 
 
 

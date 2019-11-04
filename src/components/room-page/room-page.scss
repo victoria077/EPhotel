@@ -43,6 +43,7 @@
   }
   &__checkboxes{
     padding-left: 0;
+    list-style: none;
   }
   &__checkbox {
       margin-bottom: 17px;
@@ -69,6 +70,9 @@
       margin-top: 4px;
     }
   }
+  &__card{
+    margin: 20px 0;
+  }
   &__pagination {
     margin-bottom: 100px;
   }
@@ -83,9 +87,10 @@
 }
 
 @media only screen and (max-width: 1600px) {
-  .rooms__title {
+  .rooms{
+    &__title {
     text-align: center;
-  }
+  }}
 }
 
 @media only screen and (max-width: 1000px) {

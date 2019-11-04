@@ -8,7 +8,6 @@
     border-radius: 4px;
     width: 480px;
     height: 65px;
-    margin-top: 5px;
     font-style: normal;
     font-weight: normal;
     font-size: 1.14rem;
@@ -63,7 +62,7 @@
     }
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -123,7 +122,9 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .dd__menu {
-    width: 310px;
+  .dd {
+    &__menu {
+      width: 310px;
+    }
   }
 }
