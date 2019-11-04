@@ -1,4 +1,4 @@
-mixin chart-donut(voices, text, grade1, grade2, grade3, grade4)
+mixin chart-donut(chart)
     div(class='donut-chart')
         svg(class='svg')
             circle(class='svg__circle')
@@ -6,19 +6,19 @@ mixin chart-donut(voices, text, grade1, grade2, grade3, grade4)
             circle(class='svg__circle2')
             circle(class='svg__circle3')   
             g(class='svg__text')
-                text(x='42%' y='35%' class='svg__number')= voices
-                text(x='42%' y='36%' class='svg__label')= text
+                text(x='42%' y='35%' class='svg__number')= chart.voices
+                text(x='42%' y='36%' class='svg__label')= chart.text
         div(class='chart-label')
             ul(class='chart-label__list' aria-hidden='true' role='presentation')
                 li(class='chart-label__grade')
                     span(class='chart-label__circle chart-label__circle_peach')
-                    = grade1
+                    = chart.grade1
                 li(class='chart-label__grade')
                     span(class='chart-label__circle chart-label__circle_green') 
-                    = grade2
+                    = chart.grade2
                 li(class='chart-label__grade')
                     span(class='chart-label__circle chart-label__circle_blue')
-                    = grade3
+                    = chart.grade3
                 li(class='chart-label__grade')
                     span(class='chart-label__circle chart-label__circle_grey')
-                    = grade4
+                    = chart.grade4

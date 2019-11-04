@@ -1,7 +1,7 @@
-mixin room-information(icon, quality, descr, className)
+mixin room-information(room)
     div(class='room-information')
-      div(class='room-information__wrapper' class= className)
-         i(class='material-icons')= icon
+      div(class='room-information__wrapper' class= room.className)
+         i(class='material-icons')= room.icon
          div(class='room-information__description')
-            h4(class='room-information__quality')= quality
-            p(class='room-information__text')= descr
+            h4(class='room-information__quality')= room.quality
+            p(class='room-information__text')= room.descr

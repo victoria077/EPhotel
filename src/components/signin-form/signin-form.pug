@@ -7,8 +7,9 @@ mixin form-signin(title, login)
       div(class='form-signin__input form-signin__input_second')
         +input-text('Пароль')
       div(class='form-signin__button')
-        +button('Войти', '#', 'btn__confirm')
+        +button({name: 'Войти', link: '#', className: 'btn__confirm'} )
       div(class='form-signin__wrapper')
         div(class='form-signin__text')= login
         div(class='form-signin__create')
-          +button('Создать', 'signin-page.html', 'btn__signin')
+          +button({name: 'Создать', link: 'signin-page.html', className: 'btn__signin'} )
+          

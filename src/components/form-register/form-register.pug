@@ -2,10 +2,10 @@ include ../input-text/input-text.pug
 include ../../blocks/radio-button/radio-button.pug
 include ../../blocks/toggle/toggle.pug
 
-mixin form-register(title, birthday,  data, offer, login)
+mixin form-register(signup)
   div(class='signup')
     div(class='signup__container')
-        h1( class='signup__title')= title
+        h1( class='signup__title')= signup.title
         div(class='signup__input signup__input_name')
           +input-text('Имя')
         div(class='signup__input signup__input_surname')
@@ -17,11 +17,11 @@ mixin form-register(title, birthday,  data, offer, login)
             +radio-button('radio-button2', 'Женщина')
 
         div(class='signup__input signup__input_birthday')
-          div(class='signup__subtitle')= birthday
+          div(class='signup__subtitle')= signup.birthday
           +input-text('ДД.ММ.ГГГГ')
         
         div(class='signup__input signup__input_data')
-          div(class='signup__subtitle')= data
+          div(class='signup__subtitle')= signup.data
           +input-text('Email')
 
         div(class='signup__input signup__input_data_password')
@@ -29,11 +29,11 @@ mixin form-register(title, birthday,  data, offer, login)
 
         div(class='signup__wrap')
           +toggle
-          p(class='signup__offer')= offer
+          p(class='signup__offer')= signup.offer
 
         div(class='signup__button')
-          +button('перейти к оплате','#', 'btn__confirm')
+          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm'})
 
         div(class='signup__wrap')
-          p(class='signup__text')= login
-          +button('Войти', 'signin-page.html', 'btn__signin')
+          p(class='signup__text')= signup.login
+          +button({name: 'Войти', link: 'signin-page.html', className: 'btn__signin'})
