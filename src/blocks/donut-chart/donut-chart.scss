@@ -102,17 +102,19 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
     margin-right: 10px;
-    &_peach {
-      background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
-    }
-    &_green {
-      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    }
-    &_blue {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    }
-    &_grey {
-      background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
+    &_color {
+      &_peach {
+        background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+      }
+      &_green {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+      }
+      &_blue {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      }
+      &_grey {
+        background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
+      }
     }
   }
 }
@@ -120,5 +122,5 @@
 @media only screen and (max-width: 600px) {
   .chart-label {
     margin-top: 0px;
-}
+  }
 }

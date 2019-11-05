@@ -40,6 +40,49 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .date-dropdown__input {
+    &_size {
+      &_calc {
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .date-dropdown__input {
+    &_size {
+      &_search {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .date-dropdown__input {
+    &_size {
+      &_calc {
+        width: 180px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .date-dropdown__input {
+    &_size {
+      &_calc {
+        width: 130px;
+        height: 55px;
+      }
+      &_search{
+        width: 130px;
+      }
+    }
+  }
+}
+
 .datepicker--pointer {
   display: none !important;
 }
@@ -879,4 +922,3 @@
   background: none;
   border: none;
 }
-

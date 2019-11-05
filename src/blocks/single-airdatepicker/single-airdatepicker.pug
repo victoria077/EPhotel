@@ -1,6 +1,7 @@
-mixin single-datepicker()
+mixin single-datepicker(className)
     div(class='single-datepicker')
         input(data-range='true'
+            class= className
             data-multiple-dates-separator=' - '
             placeholder='ДД.ММ.ГГГГ'
-            id='single-range')
+            class='single-range')

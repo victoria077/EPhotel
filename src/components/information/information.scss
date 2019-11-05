@@ -17,21 +17,23 @@
     font-weight: bold;
     margin-left: 15px;
     margin-top: 0;
-    &_info {
-      margin-bottom: 21px;
-    }
-    &_impression {
-      margin-bottom: 20px;
-    }
-    &_rules {
-      margin-left: 40px;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
-    &_cancel {
-      margin-top: 45px;
-      margin-left: 0;
-      margin-bottom: 11px;
+    &_type {
+      &_info {
+        margin-bottom: 21px;
+      }
+      &_impression {
+        margin-bottom: 20px;
+      }
+      &_rules {
+        margin-left: 40px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      &_cancel {
+        margin-top: 45px;
+        margin-left: 0;
+        margin-bottom: 11px;
+      }
     }
   }
   &__rules {

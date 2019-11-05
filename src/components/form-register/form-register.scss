@@ -38,24 +38,26 @@
     }
   }
   &__input {
-    &_name {
-      padding-top: 5px;
-    }
-    &_surname {
-      padding-top: 15px;
-    }
-    &_birthday {
-      padding-top: 5px;
-    }
-    &_data {
-      padding-top: 30px;
-      &_password {
+    &_type {
+      &_name {
+        padding-top: 5px;
+      }
+      &_surname {
         padding-top: 15px;
-        padding-bottom: 15px;
+      }
+      &_birthday {
+        padding-top: 5px;
+      }
+      &_data {
+        padding-top: 30px;
+        &_password {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
       }
     }
   }
-  &__wrap{
+  &__wrap {
     display: flex;
     flex-direction: row;
   }
@@ -82,7 +84,7 @@
     color: rgba(31, 32, 65, 0.75);
     margin-left: 15px;
   }
-  &__button{
+  &__button {
     margin-top: 35px;
     margin-bottom: 50px;
   }
@@ -106,14 +108,6 @@
       font-size: 16px;
       margin-left: 10px;
     }
-    &__input {
-      & > .input-text {
-        width: 400px;
-      }
-    }
-    & .btn__confirm {
-      width: 400px;
-    }
   }
 }
 
@@ -124,7 +118,7 @@
       padding: 15px 25px;
       text-align: left;
     }
-    &__subtitle{
+    &__subtitle {
       font-size: 16px;
     }
     &__input {
@@ -136,11 +130,6 @@
     &__offer {
       font-size: 16px;
       margin-left: 10px;
-    }
-    &__input {
-      & > .input-text {
-        width: 400px;
-      }
     }
   }
 }
@@ -154,14 +143,6 @@
     }
     &__text {
       font-size: 16px;
-    }
-    &__input {
-      & > .input-text {
-        width: 290px;
-      }
-    }
-    & .btn__confirm {
-      width: 290px;
     }
   }
 }

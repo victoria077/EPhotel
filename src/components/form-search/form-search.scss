@@ -8,7 +8,7 @@
   &__container {
     padding: 6% 8% 6% 7%;
   }
-  &__wrap{
+  &__wrap {
     display: flex;
     flex-direction: row;
   }
@@ -18,8 +18,9 @@
     font-style: normal;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 1.89rem;}
-  &__subtitle{
+    font-size: 1.89rem;
+  }
+  &__subtitle {
     font-style: normal;
     font-weight: bold;
     font-size: 17.8px;
@@ -30,33 +31,26 @@
     margin-block-end: 0.1em;
     margin-block-start: 0.1em;
     margin-bottom: 5px;
-    &_checkin {
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
-    &_checkout {
-      margin-left: 29%;
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
-    &_guests {
-      padding-bottom: 8px;
+    &_type {
+      &_checkin {
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+      &_checkout {
+        margin-left: 29%;
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+      &_guests {
+        padding-bottom: 8px;
+      }
     }
   }
-  &__datepicker{
+  &__datepicker {
     margin-bottom: 30px;
   }
-  &__dropdown .dd-button {
-    margin-bottom: 20px;
-  }
-  &__button{
+  &__button {
     margin: 40px 0 10px;
-  }
-  
-}
-@media only screen and (max-width: 700px) {
-  .form-search  .dd-button::after {
-    left: 21.5em;
   }
 }
 
@@ -68,12 +62,6 @@
     &__container {
       padding: 3% 1%;
     }
-    &__dropdown .dd-button::after {
-      left: 27.5em;
-    }
-    & .btn__confirm{
-      width: 470px;
-    }
   }
 }
 
@@ -82,25 +70,10 @@
     width: 340px;
     padding: 20px 10px;
     margin: 0 auto;
-    &__datepicker {
-      & .date-dropdown__input {
-        width: 150px;
-      }
-      & .dd-button {
-        width: 320px;
-      }
-    }
-  }
-
-  .form-search .btn__confirm {
-    max-width: 320px;
   }
 }
 @media only screen and (max-width: 550px) {
   .form-search {
-    & .datepicker {
-      width: 280px;
-    }
     &__subtitle_checkout {
       margin-left: 25%;
     }
@@ -110,32 +83,5 @@
 @media only screen and (max-width: 400px) {
   .form-search {
     width: 310px;
-    margin-left: 0px;
-    &__datepicker {
-      & .date-dropdown__input {
-        width: 130px;
-      }
-      & > .dd__item {
-        width: 290px;
-      }
-      & > .dd__menu {
-        width: 280px;
-        &::after {
-          left: 16em;
-        }
-      }
-      &__subtitle_checkout {
-        margin-left: 20%;
-      }
-    }
-  }
-  .form-search .btn__confirm {
-    width: 280px;
-    height: 50px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .form-search {
-    margin: 0px;
   }
 }

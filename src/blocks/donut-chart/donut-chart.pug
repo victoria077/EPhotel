@@ -11,14 +11,14 @@ mixin chart-donut(chart)
         div(class='chart-label')
             ul(class='chart-label__list' aria-hidden='true' role='presentation')
                 li(class='chart-label__grade')
-                    span(class='chart-label__circle chart-label__circle_peach')
+                    span(class='chart-label__circle chart-label__circle_color_peach')
                     = chart.grade1
                 li(class='chart-label__grade')
-                    span(class='chart-label__circle chart-label__circle_green') 
+                    span(class='chart-label__circle chart-label__circle_color_green') 
                     = chart.grade2
                 li(class='chart-label__grade')
-                    span(class='chart-label__circle chart-label__circle_blue')
+                    span(class='chart-label__circle chart-label__circle_color_blue')
                     = chart.grade3
                 li(class='chart-label__grade')
-                    span(class='chart-label__circle chart-label__circle_grey')
+                    span(class='chart-label__circle chart-label__circle_color_grey')
                     = chart.grade4

@@ -2,7 +2,7 @@
   width: 475px;
   height: 65px;
   background: #ffffff;
-  border:  1.5px solid rgba(31, 32, 65, 0.25);
+  border: 1.5px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 5px;
   padding: 0 20px 0 20px;
@@ -26,6 +26,20 @@
   }
 }
 
+
+
+@media only screen and (max-width: 600px) {
+  .input-text {
+    &_size {
+      &_signup {
+        width: 400px;
+      }
+      &_signin{
+        max-width: 440px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 450px) {
   .input-text {
     width: 390px;
@@ -35,5 +49,10 @@
 @media only screen and (max-width: 400px) {
   .input-text {
     width: 300px;
+    &_size {
+      &_signup {
+        width: 290px;
+      }
+    }
   }
 }

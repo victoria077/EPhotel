@@ -1,15 +1,17 @@
-mixin datepicker()
+mixin datepicker(className)
     div(class='date-dropdown')
         div(class='date-dropdown__range')
             input(
                 data-range='true'
                 data-multiple-dates-separator=' - ' 
                 class='dateRange date-dropdown__input'
+                class= className
                 id='startDate'
                 placeholder='ДД.ММ.ГГГГ')
                 
         div(class='date-dropdown__range')
             input(
                 class='date-dropdown__input'
+                class= className
                 id='endDate'
                 placeholder='ДД.ММ.ГГГГ')

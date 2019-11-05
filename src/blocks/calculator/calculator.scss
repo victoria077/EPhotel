@@ -38,7 +38,7 @@
     color: #bc9cff;
     margin-left: 10px;
   }
-  &__datepicker{
+  &__datepicker {
     margin-bottom: 30px;
   }
   &__cost {
@@ -78,8 +78,10 @@
     margin-block-end: 0.1em;
     margin-block-start: 0.1em;
     margin-bottom: 5px;
-    &_checkout {
-      margin-left: 30%;
+    &_type {
+      &_checkout {
+        margin-left: 30%;
+      }
     }
   }
   &__total-price {
@@ -120,8 +122,10 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 1.1rem;
-    &_tax{
-      max-width: 300px;
+    &_theme {
+      &_tax {
+        max-width: 300px;
+      }
     }
   }
 }
@@ -138,23 +142,13 @@
     &__container {
       margin: 10px;
     }
-    &__datepicker .date-dropdown__input {
-      width: 180px;
-    }
-    &__datepicker .datepicker {
-      width: 280px;
-    }
-    &__dropdown .dd-button {
-      width: 460px;
-    }
-    &__subtitle_checkout {
-      margin-left: 40%;
+    &__subtitle {
+      &_type_checkout {
+        margin-left: 40%;
+      }
     }
     &__total-price {
       font-weight: bold;
-    }
-    & .btn__confirm {
-      width: 460px;
     }
   }
 }
@@ -165,30 +159,13 @@
     &__container {
       margin: 10px;
     }
-    &__datepicker {
-      & .date-dropdown__input {
-        width: 180px;
-      }
-      & .datepicker {
-        width: 280px;
-      }
-    }
-    &__dropdown {
-      & .dd-button {
-        width: 370px;
-      }
-      & .dd-menu {
-        width: 370px;
-      }
-    }
     &__total-price {
       font-weight: bold;
     }
-    &__subtitle_checkout {
-      margin-left: 25%;
-    }
-    & .btn__confirm {
-      width: 370px;
+    &__subtitle {
+      &_type_checkout {
+        margin-left: 25%;
+      }
     }
   }
 }
@@ -198,34 +175,14 @@
     &__container {
       margin: 10px;
     }
-    &__datepicker {
-      & .date-dropdown__input {
-        width: 130px;
-        height: 55px;
-      }
-      & .datepicker {
-        width: 280px;
-      }
-    }
-    &__dropdown {
-      & .dd-button {
-        width: 290px;
-        height: 55px;
-      }
-      & .dd-menu {
-        width: 290px;
-      }
-    }
     &__total-price {
       font-weight: bold;
       font-size: 16px;
     }
-    &__subtitle_checkout {
-      margin-left: 20%;
-    }
-    & .btn__confirm {
-      width: 290px;
-      height: 55px;
+    &__subtitle {
+      &_type_checkout {
+        margin-left: 20%;
+      }
     }
   }
 }

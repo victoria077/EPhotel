@@ -3,15 +3,15 @@ mixin information()
             div(class='information__data')
                 div(class='information__wrapper')
                     div
-                        h3(class='information__title information__title_info') Сведения о номере
+                        h3(class='information__title information__title_type_info') Сведения о номере
                         +room-information({icon: 'mood',  quality: 'Комфорт',  descr: 'Шумопоглощающие стены', className: ' information__border'}) 
                         +room-information({icon: 'location_city',  quality: 'Удобство',  descr:'Окно в каждой из спален', className: ' information__border'})
                         +room-information({icon: 'whatshot',  quality: 'Уют',  descr: 'Номер оснащён камином'})
                     div(class='information__impression')
-                        h3(class='information__title information__title_impression') Впечатления от номера
+                        h3(class='information__title information__title_type_impression') Впечатления от номера
                         +chart-donut({voices: '260', text: 'голосов', grade1: 'Великолепно', grade2: 'Хорошо', grade3: 'Удовлетворительно', grade4: 'Разочарован'})
                     div(class='information__feedback')
-                        h3(class='information__title information__title_details') Отзывы посетителей номера
+                        h3(class='information__title information__title_type_details') Отзывы посетителей номера
                         +feedback({imgName: require('./images/photo1.jpg'), personName: 'Мурад Сарафанов', date: '5 дней назад', text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
                             +btn-like(12)
                         div(class='information__feedback_second')
@@ -19,10 +19,10 @@ mixin information()
                                 +btn-like(12)
                 div(class='information__wrapper')
                     div(class='information__rules')
-                        h3(class='information__title information__title_rules') Правила
+                        h3(class='information__title information__title_type_rules') Правила
                         +bullet-list(['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00' + ', '   +  ' а выезд до 12:00 '])
                     div(class='information__cancel')
-                        h3(class='information__title information__title_cancel') Отмена
+                        h3(class='information__title information__title_type_cancel') Отмена
                         p(style='white-space:pre;' class='information__text')
                             | Бесплатная отмена в течение 48 ч. После
                             | этого при отмене не позднее чем за 5 дн. до 

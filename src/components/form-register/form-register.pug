@@ -6,33 +6,33 @@ mixin form-register(signup)
   div(class='signup')
     div(class='signup__container')
         h1( class='signup__title')= signup.title
-        div(class='signup__input signup__input_name')
-          +input-text('Имя')
-        div(class='signup__input signup__input_surname')
-          +input-text('Фамилия')
+        div(class='signup__input signup__input_type_name')
+          +input-text('Имя', 'input-text_size_signup')
+        div(class='signup__input signup__input_type_surname')
+          +input-text('Фамилия', 'input-text_size_signup')
 
         div(class="signup__radio-buttons")
           +radio-button('radio-button1', 'Мужчина')
           div(class="signup__radio-buttons_woman")
             +radio-button('radio-button2', 'Женщина')
 
-        div(class='signup__input signup__input_birthday')
+        div(class='signup__input signup__input_type_birthday')
           div(class='signup__subtitle')= signup.birthday
-          +input-text('ДД.ММ.ГГГГ')
+          +input-text('ДД.ММ.ГГГГ', 'input-text_size_signup')
         
-        div(class='signup__input signup__input_data')
+        div(class='signup__input signup__input_type_data')
           div(class='signup__subtitle')= signup.data
-          +input-text('Email')
+          +input-text('Email', 'input-text_size_signup')
 
-        div(class='signup__input signup__input_data_password')
-          +input-text('Пароль')
+        div(class='signup__input signup__input_data_type_password')
+          +input-text('Пароль', 'input-text_size_signup')
 
         div(class='signup__wrap')
           +toggle
           p(class='signup__offer')= signup.offer
 
         div(class='signup__button')
-          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm'})
+          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm btn__confirm_size_signup'})
 
         div(class='signup__wrap')
           p(class='signup__text')= signup.login

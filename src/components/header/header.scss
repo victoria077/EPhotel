@@ -55,21 +55,7 @@
     cursor: pointer;
   }
 }
-.btn__signin_header {
-  display: inline-block;
-  padding: 11px 30px;
-  border: 2.4px solid #bc9cff;
-  text-transform: uppercase;
-  border-radius: 30px;
-  font-size: 17.5px;
-  color: #bc9cff;
-  text-decoration: none;
-  font-family: "OpenSans-Bold";
-  margin: 16px 25px 16px 23px;
-  display: inline-block;
-  background: white;
-  cursor: pointer;
-}
+
 @media (max-width: 1700px) {
   .menu {
     &__nav {

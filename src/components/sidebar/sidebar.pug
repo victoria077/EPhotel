@@ -4,27 +4,27 @@ mixin sidebar()
             i(class='fa fa-arrow-left')
         h3(class='sidebar__subtitle') Даты пребывания в отеле
         div(class='sidebar__datepicker')
-            +single-datepicker
+            +single-datepicker('single-range_size_sidebar')
         h3(class='sidebar__subtitle') гости
         div(class='sidebar__dropdown')
             +little-dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
         .flex-row
-            h3(class='sidebar__subtitle sidebar__subtitle_price') Диапазон цены
+            h3(class='sidebar__subtitle sidebar__subtitle_type_price') Диапазон цены
             input(type='text' class='slider-range-price' id='amount')
         div(class='sidebar__range')
-            +range-slider('Стоимость за сутки пребывания в номере')
-        h3(class='sidebar__subtitle sidebar__subtitle_checkboxes') Checkbox Buttons             
+            +range-slider('slider-range', 'Стоимость за сутки пребывания в номере')
+        h3(class='sidebar__subtitle sidebar__subtitle_type_checkboxes') Checkbox Buttons             
         div(class='sidebar__checkbox')
             +checkbox({name:'Smoking', label: 'Можно курить', nameClass: 'sidebar__checkbox'})
             +checkbox({ name:'Pets', label:'Можно с питомцами', nameClass: 'sidebar__checkbox'})
             +checkbox({name:'Guests',  label:'Можно пригласить гостей (до 10 человек)'})
-        h3(class='sidebar__subtitle sidebar__subtitle_availability') Доступность 
+        h3(class='sidebar__subtitle sidebar__subtitle_type_availability') Доступность 
         div
             +checkbox({name:'Широкий коридор',label: 'Широкий коридор', nameClass: 'checkbox', boxClass: 'checkbox__label_descr'})
                 span(class='checkbox__span') Ширина коридоров в номере не менее 91 см.
             +checkbox({name:'Помощник для инвалидов', label:'Помощник для инвалидов',  nameClass: 'checkbox', boxClass: 'checkbox__label_descr'})
                 span(class='checkbox__span') На 1 этаже вас встретит специалист  и проводит до номера.'
-        h3(class='sidebar__subtitle sidebar__subtitle_comfort') Удобства номера
+        h3(class='sidebar__subtitle sidebar__subtitle_type_comfort') Удобства номера
         +little-dropdown( {id: 'comfort-button', name: 'Удобства'}, { name:'спальни', number: 'bedroom_text', plus: 'bedroom_plus', minus: 'bedroom_minus'},  {name: 'кровати', number: 'bed_text', plus: 'bed_plus', minus: 'bed_minus' }, {name: 'ванные', number: 'bathroom_text', plus: 'bathroom_plus', minus: 'bathroom_minus'}, {id:'comfort-clean', title: 'очистить'}, {id:'comfort-apply', title: 'применить'})
         div(class='sidebar__extracomfort')
             +expandable-checkbox-list('Дополнительные удобства')

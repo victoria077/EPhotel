@@ -6,12 +6,12 @@ mixin form-search(title, subtitle)
     div(class='form-search__container')
         h1(class='form-search__title')= title
         div(class='form-search__wrap')
-          h3(class='form-search__subtitle form-search__subtitle_checkin')= subtitle.checkin
-          h3(class='form-search__subtitle form-search__subtitle_checkout')= subtitle.checkout
+          h3(class='form-search__subtitle form-search__subtitle_type_checkin')= subtitle.checkin
+          h3(class='form-search__subtitle form-search__subtitle_type_checkout')= subtitle.checkout
         div(class='form-search__datepicker')
-          +datepicker()
-        h3(class='form-search__subtitle form-search__subtitle_guests')= subtitle.guests
+          +datepicker('date-dropdown__input_size_search')
+        h3(class='form-search__subtitle form-search__subtitle_type_guests')= subtitle.guests
         div(class='form-search__dropdown')
           +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
         div(class='form-search__button')  
-          +button({name: 'подобрать номер', link: 'filter-page.html', className: 'btn__confirm'})
+          +button({name: 'подобрать номер', link: 'filter-page.html', className: 'btn__confirm btn__confirm_size_search'})
