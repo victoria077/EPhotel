@@ -36,7 +36,7 @@ mixin calculator(calculator)
                         span(class='calculator__info') i
                 p(class='calculator__text')= calculator.additionalTax
             h3(class='calculator__total-price')= calculator.totalPrice
-            +button({name: 'забронировать', link: '#', className: 'btn__confirm btn__confirm_size_footer'})
+            +button({name: 'забронировать', link: '#', className: 'btn__confirm', additionalClass: (classes.indexOf('btn__confirm_size_footer') > -1) ? 'btn__confirm_size_footer': ''})
                 
 
 

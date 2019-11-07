@@ -67,6 +67,7 @@
     cursor: pointer;
     &:focus {
       outline: none;
+
     }
   }
 }
@@ -90,6 +91,11 @@
           margin-bottom: 30px;
           width: 440px;
         }
+      } 
+    }
+    &__signup{
+      &_header{
+          margin-left: 10px;
       }
     }
   }

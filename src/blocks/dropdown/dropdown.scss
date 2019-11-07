@@ -121,10 +121,39 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .dd {
     &__menu {
-      width: 310px;
+      width: 468px;
+    }
+    &__item {
+      &::after {
+        content: "";
+        padding: 6px;
+        box-shadow: 3px -3px 0 0 rgba(31, 32, 65, 0.5) inset;
+        display: inline-block;
+        transform: rotate(-45deg);
+        color: rgba(31, 32, 65, 0.5);
+        position: absolute;
+        left: 23.5em;
+        top: 1.2em;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .dd {
+    &__menu {
+      width: 311px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .dd {
+    &__menu {
+      width: 283px;
     }
   }
 }
