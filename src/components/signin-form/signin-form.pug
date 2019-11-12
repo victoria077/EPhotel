@@ -1,15 +1,14 @@
 include ../input-text/input-text.pug
-mixin form-signin(title, login)
+mixin form-signin(signin)
   div(class='form-signin')
     div(class='form-signin__container')
-      h1(class='form-signin__title')= title
-      +input-text('Email', 'input-text_size_signin')
+      h1(class='form-signin__title')= signin.title
+      +input-text({name: 'Email', className: 'input-text_size_signin'})
       div(class='form-signin__input form-signin__input_type_password')
-        +input-text('Пароль', 'input-text_size_signin')
+        +input-text({name: 'Пароль', className: 'input-text_size_signin'})
       div(class='form-signin__button')
-        +button({name: 'Войти', link: '#', className: 'btn__confirm', additionalClass: (classes.indexOf('btn__confirm_size_signin') > -1) ? 'btn__confirm_size_signin': ''} )
+        +button({name: 'Войти', link: '#', className: 'btn__confirm', additionalClass: (names.indexOf('btn__confirm_size_signin') > -1) ? 'btn__confirm_size_signin': ''} )
       div(class='form-signin__wrapper')
-        div(class='form-signin__text')= login
+        div(class='form-signin__text')= signin.login
         div(class='form-signin__create')
           +button({name: 'Создать', link: 'signin-page.html', className: 'btn__signin'} )
-          

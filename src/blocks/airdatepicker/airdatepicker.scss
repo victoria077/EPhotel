@@ -345,6 +345,10 @@
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
     -webkit-transform 0.3s ease;
+  margin: 0;
+  max-height: 650px;
+  position: fixed;
+  overflow: hidden;
 }
 .datepicker.-from-top- {
   -webkit-transform: translateY(-8px);

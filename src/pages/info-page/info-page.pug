@@ -10,7 +10,7 @@ html
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="application-name" content="Toxin Hotel")
   body
-    +header( ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
+    +header({links: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'], names: ["/mock-address/change-me"]})
         +button( {name:'Войти', link: 'signin-page.html',className: 'btn__signin_header'})
         +button({name:'Зарегистрироватьcя', link: 'signup-page.html', className: 'btn__signup'})
     br

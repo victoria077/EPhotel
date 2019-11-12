@@ -3,36 +3,37 @@ include ../../blocks/radio-button/radio-button.pug
 include ../../blocks/toggle/toggle.pug
 
 mixin form-register(signup)
+  - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
   div(class='signup')
     div(class='signup__container')
         h1( class='signup__title')= signup.title
         div(class='signup__input-name')
-          +input-text('Имя', 'input-text_size_signup')
+          +input-text({name:'Имя', className:'input-text_size_signup'})
         div(class='signup__input-surname')
-          +input-text('Фамилия', 'input-text_size_signup')
+          +input-text({name:'Фамилия', className:'input-text_size_signup'})
 
         div(class="signup__radio-buttons")
-          +radio-button('radio-button1', 'Мужчина')
+          +radio-button({idName: 'radio-button1', labelName:'Мужчина'})
           div(class="signup__radio-buttons_woman")
-            +radio-button('radio-button2', 'Женщина')
+            +radio-button({idName: 'radio-button2', labelName:'Женщина'})
 
         div(class='signup__input-birthday')
           div(class='signup__subtitle')= signup.birthday
-          +input-text('ДД.ММ.ГГГГ', 'input-text_size_signup')
+          +input-text({name: 'ДД.ММ.ГГГГ', className: 'input-text_size_signup'})
         
         div(class='signup__input-data')
           div(class='signup__subtitle')= signup.data
-          +input-text('Email', 'input-text_size_signup')
+          +input-text({name: 'Email', className: 'input-text_size_signup'})
 
         div(class='signup__input-password')
-          +input-text('Пароль', 'input-text_size_signup')
+          +input-text({name: 'Пароль', className: 'input-text_size_signup'})
 
         div(class='signup__toggle')
           +toggle
           p(class='signup__offer')= signup.offer
 
         div(class='signup__button')
-          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm', additionalClass: (classes.indexOf('btn__confirm_size_signup') > -1) ? 'btn__confirm_size_signup': ''})
+          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm', additionalClass: (names.indexOf('btn__confirm_size_signup') > -1) ? 'btn__confirm_size_signup': ''})
 
         div(class='signup__wrap')
           p(class='signup__text')= signup.login

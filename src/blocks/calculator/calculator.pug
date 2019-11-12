@@ -1,5 +1,6 @@
 include ../airdatepicker/airdatepicker.pug
 mixin calculator(calculator)
+    - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
     div(class='calculator')
         div(class='calculator__container')
             div(class='calculator__wrapper')
@@ -14,7 +15,7 @@ mixin calculator(calculator)
                 p(class='calculator__subtitle')= calculator.checkin
                 p(class='calculator__subtitle calculator__subtitle_type_checkout')= calculator.checkout
             div(class='calculator__datepicker')
-                +datepicker('date-dropdown__input_size_calc')
+                +datepicker({className: 'date-dropdown__input_size_calc'})
             p(class='calculator__subtitle')= calculator.titleDropdown
             div(class='calculator__dropdown')
                 +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
@@ -36,8 +37,7 @@ mixin calculator(calculator)
                         span(class='calculator__info') i
                 p(class='calculator__text')= calculator.additionalTax
             h3(class='calculator__total-price')= calculator.totalPrice
-            +button({name: 'забронировать', link: '#', className: 'btn__confirm', additionalClass: (classes.indexOf('btn__confirm_size_footer') > -1) ? 'btn__confirm_size_footer': ''})
-                
+            +button({name: 'забронировать', link: '#', className: 'btn__confirm', additionalClass: (names.indexOf('btn__confirm_size_footer') > -1) ? 'btn__confirm_size_footer': ''})
 
 
-            
+

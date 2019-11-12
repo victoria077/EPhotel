@@ -11,9 +11,10 @@ html
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="application-name" content="Toxin Hotel")
   body
+    - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
     div(class='search-page')
-      +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
-        +button({name: 'Войти', link: 'signin-page.html', additionalClass: (classes.indexOf('btn__signin_header') > -1) ? 'btn__signin_header': ''})
+      +header({links: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'], names: ["/mock-address/change-me"]})
+        +button({name: 'Войти', link: 'signin-page.html', additionalClass: (names.indexOf('btn__signin_header') > -1) ? 'btn__signin_header': ''})
         +button({name:'Зарегистрироватьcя', link:'signup-page.html', className: 'btn__signup'})
       div(class='search-page__background')
         +form-search( 'Найдём номера под ваши пожелания', {checkin: 'Прибытие', checkout: 'Выезд', guests: 'Гости'})

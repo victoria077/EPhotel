@@ -1,5 +1,5 @@
-mixin bullet-list(itemList)
+mixin bullet-list(bulletList)
   ul(class='bullet-list')
-    each item in itemList
+    each item in bulletList.itemList
       li(class='bullet-list__item')
         a= item

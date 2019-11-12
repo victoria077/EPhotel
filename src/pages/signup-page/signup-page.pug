@@ -11,9 +11,10 @@ html
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="application-name" content="Toxin Hotel")
   body
+    - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
     div(class='signup-page')
-      +header(['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'])
-        +button({name: 'Войти', link: 'signin-page.html', additionalClass: (classes.indexOf('btn__signin_header') > -1) ? 'btn__signin_header': ''})
+      +header({links: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'], names: ''})
+        +button({name: 'Войти', link: 'signin-page.html', additionalClass: (names.indexOf('btn__signin_header') > -1) ? 'btn__signin_header': ''})
         +button({name: 'Зарегистрироватьcя', link: 'signup-page.html', className: 'btn__signup btn__signup_header'})
       div(class='signup-page__background')
         +form-register({ title: 'Регистрация аккаунта',  birthday: 'дата рождения', data: 'данные для входа в сервис', offer: 'Получать спецпредложения', login: 'Уже есть аккаунт на Toxin'})

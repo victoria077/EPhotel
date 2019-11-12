@@ -5,14 +5,14 @@ mixin sidebar()
             i(class='fa fa-arrow-left')
         h3(class='sidebar__subtitle') Даты пребывания в отеле
         div(class='sidebar__datepicker')
-            +single-datepicker('single-range_size_sidebar')
+            +single-datepicker({className: 'single-range_size_sidebar'})
         h3(class='sidebar__subtitle') гости
         div(class='sidebar__dropdown')
             +little-dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
             h3(class='sidebar__subtitle' class=(subtitles.indexOf('sidebar__subtitle_type_price') > -1) ? 'sidebar__subtitle_type_price': '') Диапазон цены
             input(type='text' class='slider-range-price' id='amount')
         div(class='sidebar__range')
-            +range-slider('Стоимость за сутки пребывания в номере')
+            +range-slider({text: 'Стоимость за сутки пребывания в номере'})
         h3(class='sidebar__subtitle' class=(subtitles.indexOf('sidebar__subtitle_type_checkboxes') > -1) ? 'sidebar__subtitle_type_checkboxes': '') Checkbox Buttons             
         div(class='sidebar__checkbox')
             +checkbox({name:'Smoking', label: 'Можно курить', nameClass: 'sidebar__checkbox'})

@@ -61,6 +61,7 @@ $('#clean').on('click', function() {
 });
 
 $('#apply').on('click', function() {
+  $('#clean').css('color', 'rgba(31, 32, 65, 0.5)');
   guests = valueAd + valueChild + valueBaby;
   if (guests == 1) {
     $('#dd-text').html(guests + ' ' + 'гость');
@@ -137,5 +138,6 @@ $('#comfort-clean').on('click', function() {
 });
 
 $('#comfort-apply').on('click', function() {
+    $('#clean').css('color', 'rgba(31, 32, 65, 0.5)');
     $('#comfort-button').html(bedroom + ' '+ 'спален' + ',' + ' ' + bed + ' ' + 'кровати' + '...');
 });

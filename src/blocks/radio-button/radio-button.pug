@@ -1,5 +1,5 @@
-mixin radio-button(idName, labelName)
+mixin radio-button(radio)
   div(class='radio')
-    input(id= idName name='radio' type='radio' class='radio__input' checked)
-    label(for= idName class='radio__label')
-    label(for= idName class='radio__value')= labelName
+    input(id= radio.idName name='radio' type='radio' class='radio__input' checked)
+    label(for= radio.idName class='radio__label')
+    label(for= radio.idName class='radio__value')= radio.labelName
