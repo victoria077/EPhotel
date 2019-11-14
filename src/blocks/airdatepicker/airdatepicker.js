@@ -2261,6 +2261,7 @@ let dateRange = $('.dateRange').datepicker({
         endDateText = dateRange.selectedDates[1];
         $("#startDate").val(startDateText.getDate() + " " +  month[d.getMonth()]);
         $("#endDate").val(endDateText.getDate() + " " +  month[d.getMonth()]);
-
     },
 }).data('datepicker');
+
+$('.date-dropdown__input').css('color', 'rgba(31, 32, 65, 0.45)');

@@ -1,0 +1,20 @@
+//- base.pug
+include ../components/header/header.pug
+include ../components/form-search/form-search.pug
+include ../components/button/button.pug
+include ../components/footer/footer.pug
+html
+  head
+    title My Site 
+    block scripts
+      script(src='/jquery.js')
+  body
+    block header
+        - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
+        - var signin = true;
+        +header({links: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'], names: ["/mock-address/change-me"]})
+            +button({name: 'Войти', link: 'signin-page.html', additionalClass: (names.indexOf('btn__signin_header') > -1) ? 'btn__signin_header': ''})
+            +button({name:'Зарегистрироватьcя', link:'signup-page.html', className: 'btn__signup'})
+    block content
+    block foot
+       +footer({slogan: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', offer:'Получайте специальные предложения и новости сервиса', copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.'}, {name1: 'навигация', name2: 'о нас', name3: 'Служба поддержки', name4: 'Подписка'}, ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'])

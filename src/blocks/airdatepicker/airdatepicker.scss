@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
   &__range {
     position: relative;
     display: inline-block;
@@ -29,7 +30,6 @@
     padding-left: 20px;
     font-size: 20px;
     line-height: 65px;
-    color: rgba(31, 32, 65, 0.9);
     &::placeholder {
       font-style: normal;
       font-weight: normal;
@@ -316,13 +316,13 @@
 /* -------------------------------------------------
       Datepicker
      ------------------------------------------------- */
-.datepickers-container {
+.datepicker-container {
   position: absolute;
   left: 0;
   top: 0;
 }
 @media print {
-  .datepickers-container {
+  .datepicker-container {
     display: none;
   }
 }
@@ -346,9 +346,6 @@
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s,
     -webkit-transform 0.3s ease;
   margin: 0;
-  max-height: 650px;
-  position: fixed;
-  overflow: hidden;
 }
 .datepicker.-from-top- {
   -webkit-transform: translateY(-8px);

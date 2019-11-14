@@ -10,6 +10,6 @@ include ../sidebar/sidebar.pug
 include ../rooms/rooms.pug
 div(class='settings')
     div(class='settings__container')
-        +sidebar
+        +sidebar({addClass: 'sidebar_position'})
         +rooms
 hr

@@ -4,7 +4,7 @@ include ../../blocks/toggle/toggle.pug
 
 mixin form-register(signup)
   - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
-  div(class='signup')
+  div(class='signup' class=signup.addClass)
     div(class='signup__container')
         h1( class='signup__title')= signup.title
         div(class='signup__input-name')

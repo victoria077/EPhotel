@@ -3,8 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 82.5vw;
-  margin: 0 auto;
   justify-content: space-between;
+  &_position{
+    margin: 0 auto;
+  }
   &__data {
     width: 53vw;
     display: flex;

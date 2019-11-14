@@ -1,21 +1,6 @@
-include ../../components/footer/footer.pug
+extends ../layout.pug
 include ../../components/signin-form/signin-form.pug
-include ../../components/header/header.pug
-include ../../components/button/button.pug
-doctype html
-html
-  head
-    title Hotel signin page
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="application-name" content="Toxin Hotel")
-  body
-    - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
-    div(class='signin-page')
-      +header({links: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'], names: ["/mock-address/change-me"]})
-        +button({name: 'Войти', link: 'signin-page.html', additionalClass: (names.indexOf('btn__signin_header') > -1) ? 'btn__signin_header': ''})
-        +button({name: 'Зарегистрироватьcя', link: 'signup-page.html', className: 'btn__signup'})
-      div(class='signin-page__background')
-        +form-signin({title: 'Войти', login:'Нет аккаунта на Toxin?'})
-      +footer({slogan: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', offer:'Получайте специальные предложения и новости сервиса', copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.'}, {name1: 'навигация', name2: 'о нас', name3: 'Служба поддержки', name4: 'Подписка'}, ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Соглашения', 'Сообщества', 'Связь с нами'])
+
+block content
+  div(class='signin-page__background')
+        +form-signin({ addClass: 'form-signin_position', title: 'Войти', login:'Нет аккаунта на Toxin?'})

@@ -1,5 +1,7 @@
 .sidebar {
-  margin: 57px 90px 0 0;
+  &_position{
+    margin: 57px 90px 0 0;
+  }
   &__close {
     display: none;
   }

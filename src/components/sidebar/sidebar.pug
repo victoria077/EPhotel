@@ -1,6 +1,6 @@
-mixin sidebar()
+mixin sidebar(sidebar)
     - var subtitles = ['sidebar__subtitle_type_price', 'sidebar__subtitle_type_checkboxes', 'sidebar__subtitle_type_availability', 'sidebar__subtitle_type_comfort']
-    div(class='sidebar' id='sidebar')
+    div(class='sidebar' id='sidebar' class= sidebar.addClass)
         a(href='#' class='sidebar__close')
             i(class='fa fa-arrow-left')
         h3(class='sidebar__subtitle') Даты пребывания в отеле
