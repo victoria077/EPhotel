@@ -2434,38 +2434,28 @@
   })();
 })(window, jQuery);
 
-$("#single__input__range").datepicker({
-  range: true,
-  multipleDates: 2,
-  navTitles: {
-    days: "MM yyyy"
-  },
-  dateFormat: "d M"
-});
 
-$("#single__input__range").data("datepicker");
-
-var width = $(".single-range").width();
+var width = $('.single-range').width();
 if (width > 300) {
-  $(".datepicker").width("395px");
+  $('.datepicker').width('415px');
 }
 
-if (width < 302) {
-  $(".datepicker").width("300px");
+if (width < 310) {
+  $('.datepicker').width('320px');
 }
 
-$(".datepicker").on("mouseover", function(e) {
-  $("body").css({ overflow: "hidden" });
-  $(".datepicker").on("scroll touchmove mousewheel", function(e) {
+$('.datepicker').on('mouseover', function(e) {
+  $('body').css({ overflow: 'hidden' });
+  $('.datepicker').on('scroll touchmove mousewheel', function(e) {
     e.preventDefault();
     e.stopPropagation();
     return false;
   });
 });
 
-$(".datepicker").on("click", function(e) {
-  $("body").css({ overflow: "hidden" });
-  $(".datepicker").on("scroll touchmove mousewheel", function(e) {
+$('.datepicker').on('click', function(e) {
+  $('body').css({ overflow: 'hidden' });
+  $('.datepicker').on('scroll touchmove mousewheel', function(e) {
     e.preventDefault();
     e.stopPropagation();
     return false;
@@ -2473,9 +2463,9 @@ $(".datepicker").on("click", function(e) {
 });
 
 
-$(".single-range").on("click", function(e) {
-  $("body").css({ overflow: "hidden" });
-  $(".datepicker").on("scroll touchmove mousewheel", function(e) {
+$('.single-range').on('click', function(e) {
+  $('body').css({ overflow: 'hidden' });
+  $('.datepicker').on('scroll touchmove mousewheel', function(e) {
     e.preventDefault();
     e.stopPropagation();
     return false;
@@ -2484,11 +2474,10 @@ $(".single-range").on("click", function(e) {
 
 
 $(document).mouseup(function(e){
-  var blocksss = $(".single-range");
-  var picker = $(".datepicker");
+  var blocksss = $('.single-range');
   if(blocksss.is(e.target)){
-    $("body").css({ overflow: "hidden" });
+    $('body').css({ overflow: 'hidden'});
   }
   else
-  {$("body").css({ overflow: "scroll" });}
+  {$('body').css({ overflow: 'scroll'});}
 })

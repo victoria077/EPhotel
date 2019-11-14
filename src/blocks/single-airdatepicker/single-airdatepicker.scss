@@ -18,7 +18,7 @@
 }
 
 .single-range {
-  width: 395px;
+  width: 415px;
   height: 65px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -916,15 +916,12 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .single-range {
     &_size{
       &_sidebar{
-        width: 300px;
+        width: 320px;
       }
     }
-  }
-  .datepicker {
-    width: 280px;
   }
 }
