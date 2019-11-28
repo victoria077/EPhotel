@@ -1,0 +1,16 @@
+include ../logo/logo.pug
+mixin header(header)
+  div(class='header')
+    div(class='header__container')
+      +logo({className: 'logo logo_header'})
+      div(class='menu')
+        label(for='drop' class='menu_toggle') 
+          i(class='fa fa-bars' aria-hidden='true')
+        input(type='checkbox' class='menu_drop' id='drop')
+        ul(class='menu__nav')
+          each i in header.links
+            li(class='menu__item')
+              a(class='menu__link' href= header.names)= i
+          if block
+            block
+

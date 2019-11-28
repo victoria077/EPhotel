@@ -1,0 +1,151 @@
+.signup {
+  width: 560px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &_position{
+    margin: 0 auto;
+  }
+  &__container {
+    padding: 33px 30px 40px 40px;
+  }
+  &__title {
+    font-family: "OpenSans-Bold";
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.89rem;
+  }
+  &__subtitle {
+    padding-bottom: 7px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.8px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    letter-spacing: 0.2px;
+    margin-block-end: 0.1em;
+    margin-block-start: 0.1em;
+    margin-bottom: 5px;
+  }
+  &__radio-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 19px 0 25px 0;
+    &_woman {
+      margin-left: 30px;
+    }
+  }
+  &__input-name {
+    padding-top: 5px;
+  }
+  &__input-surname {
+    padding-top: 15px;
+  }
+  &__input-birthday {
+    padding-top: 5px;
+  }
+  &__input-data {
+    padding-top: 30px;
+  }
+  &__input-password {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__toggle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  &__text {
+    margin-top: 20px;
+    font-size: 19px;
+    margin-right: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+  }
+  &__offer {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 15px;
+  }
+  &__button {
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .signup {
+    &__container {
+      padding: 15px 55px;
+      text-align: center;
+    }
+    &__radio-buttons {
+      &_woman {
+        margin-left: 20px;
+      }
+    }
+    &__text {
+      margin-top: 20px;
+    }
+    &__offer {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .signup {
+    width: 450px;
+    &__container {
+      padding: 15px 25px;
+      text-align: left;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__input {
+      width: 400px;
+    }
+    &__text {
+      margin-top: 5px;
+    }
+    &__offer {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .signup {
+    width: 310px;
+    &__container {
+      padding: 15px 5px;
+      text-align: left;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

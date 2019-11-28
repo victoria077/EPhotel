@@ -1,0 +1,111 @@
+.header {
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80.5vw;
+    margin: 0 auto;
+  }
+}
+
+.menu {
+  &__nav {
+    padding: 15px 0;
+    margin: 0;
+    list-style: none;
+  }
+  &_toggle {
+    display: none;
+  }
+  &_drop {
+    display: none;
+  }
+  &__item {
+    margin: 0px;
+    display: inline-block;
+    &:nth-child(2) > .menu__link:after {
+      content: "";
+      padding: 6px;
+      box-shadow: 3px -3px 0 0 rgba(31, 32, 65, 0.5) inset;
+      display: inline-block;
+      transform: rotate(-45deg);
+      margin-left: 10px;
+      margin-bottom: 3px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+    &:nth-child(5) > .menu__link:after {
+      content: "";
+      padding: 6px;
+      box-shadow: 3px -3px 0 0 rgba(31, 32, 65, 0.5) inset;
+      display: inline-block;
+      transform: rotate(-45deg);
+      margin-left: 10px;
+      margin-bottom: 3px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.12rem;
+    color: rgba(31, 32, 65, 0.5);
+    padding: 26px 18.5px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1700px) {
+  .menu {
+    &__nav {
+      margin-left: 400px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .menu {
+    &__nav {
+      margin-left: 200px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .header {
+    margin: 0;
+    padding-bottom: 20px;
+    &__container {
+      display: block;
+    }
+  }
+  .menu {
+    &__nav {
+      width: 100%;
+      display: none;
+      margin-left: 0;
+    }
+    &_toggle {
+      display: block;
+      padding: 14px 20px 14px 0;
+      color: #bc9cff;
+      font-size: 17px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 90%;
+      margin-top: -60px;
+    }
+    &_drop:checked + &__nav {
+      display: block;
+    }
+    &__item {
+      display: block;
+      width: 100%;
+      margin-top: -20px;
+    }
+  }
+  .fa-bars {
+    font-size: 34px;
+  }
+}

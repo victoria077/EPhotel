@@ -11,13 +11,14 @@
     color: #1f2041;
     &::after {
       content: "";
-      padding: 5px;
+      padding: 6px;
       box-shadow: 2px -2px 0 0 black inset;
       display: inline-block;
       transform: rotate(-45deg);
       position: absolute;
       left: 90%;
       color: black;
+      
     }
   }
   &__input {

@@ -2466,21 +2466,20 @@ let dateRange = $(".dateRange")
 
 $(".date-dropdown__input").css("color", "rgba(31, 32, 65, 0.45)");
 
-$(document).mouseup(function(e) {
-  var blockss = $(".date-dropdown__input");
-  if (blockss.is(e.target)) {
-    $("body").css({ overflow: "hidden" });
-  } else {
-    $("body").css({ overflow: "scroll" });
-  }
-});
+// $(document).mouseup(function(e) {
+//   var blockss = $(".date-dropdown__input");
+//   if (blockss.is(e.target)) {
+//     $("body").css({ overflow: "hidden" });
+//   } else {
+//     $("body").css({ overflow: "scroll" });
+//   }
+// });
 
-
-$('.date-dropdown__input').on('click', function(e) {
-    $('body').css({ overflow: 'hidden' });
-    $('.datepicker').on('scroll touchmove mousewheel', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    });
-  });
+// $(".date-dropdown__input").on("click", function(e) {
+//   $("body").css({ overflow: "hidden" });
+//   $(".datepicker").on("scroll touchmove mousewheel", function(e) {
+//     e.preventDefault();
+//     e.stopPropagation();
+//     return false;
+//   });
+// });

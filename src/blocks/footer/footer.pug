@@ -1,0 +1,69 @@
+include ../input-subscription/input-subscription.pug
+include ../logo/logo.pug
+mixin footer(footer, title, linkList1, linkList2, linkList3)
+  footer(class='footer')
+    div(class='footer__container')
+        div(class='footer__column footer__column_theme_slogan')
+          +logo({className: 'logo logo_footer'})
+          div
+            p(class='footer__slogan')= footer.slogan
+        div(class='footer__column')
+          h3(class='footer__subtitle')= title.name1
+          ul(class='footer__items')
+            each link in linkList1
+              li(class='footer__item')
+               a(class='footer__link' href="/mock-address/change-me")= link
+        div(class='footer__column')
+          h3(class='footer__subtitle')= title.name2
+          ul(class='footer__items')
+            each link in linkList2
+              li(class='footer__item')
+               a(class='footer__link' href="/mock-address/change-me")= link
+        div(class='footer__column')
+          h3(class='footer__subtitle')= title.name3
+          ul(class='footer__items')
+            each link in linkList3
+              li(class='footer__item')
+               a(class='footer__link' href="/mock-address/change-me")= link
+        div(class='footer__column footer__column_theme_offer')
+          h3(class='footer__subtitle')= title.name4
+          p(class='footer__text')= footer.offer
+          +input-subscription('Email')
+    hr(class='footer__strip')
+    div(class='footer__details')
+      div(class='footer__row')
+          p(class='footer__copyright')= footer.copyright 
+          ul(class='footer__icons')
+              li(class='footer__icon')
+                a(href="/mock-address/change-me")
+                  svg(width='0' height='0')
+                    radialGradient(id='rg' r='150%' cx='30%' cy='107%')
+                      stop(stop-color='#8BA4F9' offset='0')
+                      stop(stop-color='#8BA4F9' offset='0.05')
+                      stop(stop-color='#8BA4F9' offset='0.45')
+                      stop(stop-color='#BC9CFF' offset='0.6')
+                      stop(stop-color='#BC9CFF' offset='0.9')
+                  div(class='footer__gradient')
+                    i(class='fab fa-twitter' aria-hidden='true')
+              li(class='footer__icon')
+                a(href="/mock-address/change-me")
+                  svg(width='0' height='0')
+                    radialGradient(id='rg' r='150%' cx='30%' cy='107%')
+                      stop(stop-color='#BC9CFF' offset='0')
+                      stop(stop-color='#BC9CFF' offset='0.05')
+                      stop(stop-color='#8BA4F9' offset='0.45')
+                      stop(stop-color='#8BA4F9' offset='0.6')
+                      stop(stop-color='#8BA4F9' offset='0.9')
+                  div(class='footer__gradient')
+                    i(class='fab fa-facebook-square' aria-hidden='true')
+              li(class='footer__icon')
+                a(href="/mock-address/change-me")
+                  svg(width='0' height='0')
+                    radialGradient(id='rg' r='150%' cx='30%' cy='107%')
+                      stop(stop-color='#8BA4F9' offset='0')
+                      stop(stop-color='#8BA4F9' offset='0.05')
+                      stop(stop-color='#8BA4F9' offset='0.45')
+                      stop(stop-color='#8BA4F9' offset='0.6')
+                      stop(stop-color='#8BA4F9' offset='0.9')
+                  div(class='footer__gradient')
+                    i(class='fab fa-instagram' aria-hidden='true')

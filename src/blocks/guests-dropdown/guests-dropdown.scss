@@ -1,0 +1,118 @@
+.guests-dd {
+    display: inline-block;
+    position: relative;
+    &__item {
+      position: relative;
+      display: inline-block;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 4px;
+      width: 395px;
+      height: 65px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.14rem;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.35);
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 20px;
+      color: rgba(31, 32, 65, 0.75);
+      &:after {
+        content: "";
+        padding: 6px;
+        box-shadow: 3px -3px 0 0 rgba(31, 32, 65, 0.5) inset;
+        display: inline-block;
+        transform: rotate(-45deg);
+        position: absolute;
+        margin-top: 3px;
+        left: 90%;
+        color: rgba(31, 32, 65, 0.5);
+        cursor: pointer;
+      }
+    }
+    &__input {
+      display: none;
+      &:checked + .guests-dd__menu {
+        display: block;
+      }
+      & + .guests-dd__menu {
+        display: none;
+      }
+    }
+    &__menu {
+      position: absolute;
+      top: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0;
+      margin: 2px 0 0 0;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      list-style-type: none;
+      z-index: 10;
+      width: 416px;
+    }
+    &__row {
+      padding: 10px 20px;
+      white-space: nowrap;
+      display: flex;
+      justify-content: space-between;
+      &:hover {
+        background-color: #f6f6f6;
+      }
+    }
+  
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    &__text {
+      margin: 13px 30px 0 30px;
+    }
+    &__title {
+      margin-top: 15px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 15px;
+      text-transform: uppercase;
+      vertical-align: middle;
+      color: #1f2041;
+    }
+    &__button {
+      width: 45px;
+      height: 45px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 22px;
+      background: #ffffff;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  
+  @media only screen and (max-width: 380px) {
+    .guests-dd {
+      &__item{
+        width: 300px;
+      }
+      &__menu {
+        width: 300px;
+      }
+      &__row {
+        padding: 10px 0px;
+      }
+    }
+  }
+  
+
+.datepicker{
+  position: relative;
+}
+.datepicker.-bottom-left-.-from-bottom-.active{
+  position: relative;
+
+}

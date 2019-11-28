@@ -1,0 +1,16 @@
+include ../card-room/card-room.pug
+include ../checkbox/checkbox.pug
+include ../range-slider/range-slider.pug
+include ../pagination/pagination.pug
+include ../expandable-checkbox-list/expandable-checkbox-list.pug
+include ../little-dropdown/little-dropdown.pug
+include ../guests-dropdown/guests-dropdown.pug
+include ../single-airdatepicker/single-airdatepicker.pug
+include ../stars/stars.pug
+include ../sidebar/sidebar.pug
+include ../rooms/rooms.pug
+div(class='settings')
+    div(class='settings__container')
+        +sidebar({addClass: 'sidebar_position'})
+        +rooms
+hr

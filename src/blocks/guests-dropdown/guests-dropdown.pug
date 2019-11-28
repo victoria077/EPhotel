@@ -1,0 +1,23 @@
+mixin guests-dropdown(title,  subtitle1,  subtitle2,  subtitle3) 
+  label(class='guests-dd')
+    div(class='guests-dd__item' id= title.id)= title.name
+    input(type='checkbox' class='guests-dd__input' id='test')
+    ul(class='guests-dd__menu')
+      li(class='guests-dd__row')
+        p(class='guests-dd__title')= subtitle1.name
+        div(class='guests-dd__wrapper')
+          button(class='guests-dd__button' id= subtitle1.plus) +
+          p(class='guests-dd__text' id= subtitle1.number) 0
+          button(class='guests-dd__button' id= subtitle1.minus) -
+      li(class='guests-dd__row')
+        p(class='guests-dd__title')= subtitle2.name
+        div(class='guests-dd__wrapper')
+          button(class='guests-dd__button' id= subtitle2.plus) +
+          p(class='guests-dd__text' id= subtitle2.number) 0
+          button(class='guests-dd__button' id= subtitle2.minus) -
+      li(class='guests-dd__row')
+        p(class='guests-dd__title')= subtitle3.name
+        div(class='guests-dd__wrapper')
+          button(class='guests-dd__button' id= subtitle3.plus) +
+          p(class='guests-dd__text' id= subtitle3.number) 0
+          button(class='guests-dd__button' id= subtitle3.minus) -

@@ -1,0 +1,15 @@
+include ../room-information/room-information.pug
+include ../feedback/feedback.pug
+include ../bullet-list/bullet-list.pug
+include ../donut-chart/donut-chart.pug
+include ../calculator/calculator.pug
+include ../dropdown/dropdown.pug
+include ../btn-like/btn-like.pug
+
+include ../gallery/gallery.pug
+include ../information/information.pug
+
+div(class='room-details')
+    +gallery
+    +information({addClass: 'information_position'})
+hr
