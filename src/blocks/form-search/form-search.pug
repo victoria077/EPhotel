@@ -2,7 +2,6 @@ include ../dropdown/dropdown.pug
 include ../airdatepicker/airdatepicker.pug
 
 mixin form-search(title, subtitle)
-  - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
   div(class='form-search')
     div(class='form-search__container')
         h1(class='form-search__title')= title
@@ -15,4 +14,4 @@ mixin form-search(title, subtitle)
         div(class='form-search__dropdown')
           +dropdown( {id: 'dd-text', name: 'Сколько гостей'}, { name:'Взрослые', number: 'adult_text', plus: 'adult_plus', minus: 'adult_minus'},  {name: 'Дети', number: 'child_text', plus: 'child_plus', minus: 'child_minus' }, {name: 'Младенцы', number: 'baby_text', plus: 'baby_plus', minus: 'baby_minus'})
         div(class='form-search__button')  
-          +button({name: 'подобрать номер', link: 'filter-page.html', className: 'btn__confirm', additionalClass: (names.indexOf('btn__confirm_size_search') > -1) ? 'btn__confirm_size_search': ''})
+          +button({name: 'подобрать номер', link: 'filter-page.html', className: 'btn__confirm', additionalClass: 'btn__confirm_type_search'})

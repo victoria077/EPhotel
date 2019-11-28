@@ -1,6 +1,5 @@
 include ../airdatepicker/airdatepicker.pug
 mixin calculator(calculator)
-    - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
     div(class='calculator')
         div(class='calculator__container')
             div(class='calculator__wrapper')
@@ -37,7 +36,7 @@ mixin calculator(calculator)
                         span(class='calculator__info') i
                 p(class='calculator__text')= calculator.additionalTax
             h3(class='calculator__total-price')= calculator.totalPrice
-            +button({name: 'забронировать', link: '#', className: 'btn__confirm', additionalClass: (names.indexOf('btn__confirm_size_footer') > -1) ? 'btn__confirm_size_footer': ''})
+            +button({name: 'забронировать', link: '#', className: 'btn__confirm', additionalClass: 'btn__confirm_type_footer'})
 
 
 

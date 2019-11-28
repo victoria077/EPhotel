@@ -13,20 +13,22 @@
     font-family: "OpenSans-Bold";
     background: white;
     cursor: pointer;
-    &_header {
-      display: inline-block;
-      padding: 11px 30px;
-      border: 2.4px solid #bc9cff;
-      text-transform: uppercase;
-      border-radius: 30px;
-      font-size: 17.5px;
-      color: #bc9cff;
-      text-decoration: none;
-      font-family: "OpenSans-Bold";
-      margin: 16px 25px 16px 23px;
-      display: inline-block;
-      background: white;
-      cursor: pointer;
+    &_type {
+      &_header {
+        display: inline-block;
+        padding: 11px 30px;
+        border: 2.4px solid #bc9cff;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-size: 17.5px;
+        color: #bc9cff;
+        text-decoration: none;
+        font-family: "OpenSans-Bold";
+        margin: 16px 25px 16px 23px;
+        display: inline-block;
+        background: white;
+        cursor: pointer;
+      }
     }
   }
 
@@ -67,7 +69,6 @@
     cursor: pointer;
     &:focus {
       outline: none;
-
     }
   }
 }
@@ -77,25 +78,25 @@
       width: 390px;
       background-position-x: 22rem;
       background-position-y: 1.4rem;
-      &_size {
+      &_type {
         &_footer {
           width: 460px;
         }
         &_signup {
           width: 400px;
         }
-        &_search{
+        &_search {
           width: 470px;
         }
-        &_signin{
+        &_signin {
           margin-bottom: 30px;
           width: 440px;
         }
-      } 
+      }
     }
-    &__signup{
-      &_header{
-          margin-left: 10px;
+    &__signup {
+      &_type_header {
+        margin-left: 10px;
       }
     }
   }
@@ -103,25 +104,24 @@
 
 @media only screen and (max-width: 500px) {
   .btn__confirm {
-    &_size{
-      &_search{
+    &_type {
+      &_search {
         max-width: 320px;
       }
     }
   }
 }
 
-
 @media only screen and (max-width: 450px) {
   .btn {
     &__confirm {
       width: 390px;
       background-image: none;
-      &_size {
+      &_type {
         &_footer {
           width: 370px;
         }
-        &_signin{
+        &_signin {
           margin-bottom: 30px;
           width: 390px;
         }
@@ -134,7 +134,7 @@
   .btn {
     &__confirm {
       width: 300px;
-      &_size {
+      &_type {
         &_footer {
           width: 290px;
           height: 55px;
@@ -146,7 +146,7 @@
           width: 280px;
           height: 50px;
         }
-        &_signin{
+        &_signin {
           margin-bottom: 30px;
           width: 300px;
         }
@@ -154,4 +154,3 @@
     }
   }
 }
-

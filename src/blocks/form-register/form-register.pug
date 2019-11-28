@@ -3,7 +3,6 @@ include ../radio-button/radio-button.pug
 include ../toggle/toggle.pug
 
 mixin form-register(signup)
-  - var names = ['btn__signin_header', 'btn__confirm_size_footer', 'btn__confirm_size_signup', 'btn__confirm_size_search', 'btn__confirm_size_signin']
   div(class='signup' class=signup.addClass)
     div(class='signup__container')
         h1( class='signup__title')= signup.title
@@ -33,7 +32,7 @@ mixin form-register(signup)
           p(class='signup__offer')= signup.offer
 
         div(class='signup__button')
-          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm', additionalClass: (names.indexOf('btn__confirm_size_signup') > -1) ? 'btn__confirm_size_signup': ''})
+          +button({name: 'перейти к оплате', link: '#', className: 'btn__confirm', additionalClass: 'btn__confirm_type_signup'})
 
         div(class='signup__wrap')
           p(class='signup__text')= signup.login
