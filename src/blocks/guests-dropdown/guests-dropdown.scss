@@ -13,10 +13,10 @@
       font-size: 1.14rem;
       line-height: 18px;
       color: rgba(31, 32, 65, 0.35);
-      display: table-cell;
       vertical-align: middle;
       padding-left: 20px;
       color: rgba(31, 32, 65, 0.75);
+      padding-top: 18px;
       &:after {
         content: "";
         padding: 6px;
@@ -50,7 +50,7 @@
       background-color: #ffffff;
       list-style-type: none;
       z-index: 10;
-      width: 416px;
+      width: 395px;
     }
     &__row {
       padding: 10px 20px;
@@ -108,11 +108,3 @@
     }
   }
   
-
-.datepicker{
-  position: relative;
-}
-.datepicker.-bottom-left-.-from-bottom-.active{
-  position: relative;
-
-}

@@ -2435,50 +2435,25 @@
 })(window, jQuery);
 
 
-// var width = $('.single-range').width();
-// if (width > 300) {
-//   $('.datepicker').width('415px');
-// }
+var width = $('.single-range').width();
+if (width > 300) {
+  $('.datepicker').width('395px');
+}
 
-// if (width < 310) {
-//   $('.datepicker').width('320px');
-// }
-
-// $('.datepicker').on('mouseover', function(e) {
-//   $('body').css({ overflow: 'hidden' });
-//   $('.datepicker').on('scroll touchmove mousewheel', function(e) {
-//     e.preventDefault();
-//     e.stopPropagation();
-//     return false;
-//   });
-// });
-
-$('.datepicker').on('click', function(e) {
-  $('.datepicker.-bottom-left-.-from-bottom-.active').css({ overflow: 'hidden', position: 'fixed' });
-  $('.datepicker.-bottom-left-.-from-bottom-.active').on('scroll touchmove mousewheel', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    return false;
-  });
-});
+if (width < 355) {
+  $('.datepicker').width('300px');
+}
 
 
-// $('.single-range').on('click', function(e) {
-//   $('body').css({ overflow: 'hidden' });
-//   $('.datepicker').on('scroll touchmove mousewheel', function(e) {
-//     e.preventDefault();
-//     e.stopPropagation();
-//     return false;
-//   });
-// });
-
-
-// $(document).mouseup(function(e){
-//   var blocksss = $('.single-range');
-//   if(blocksss.is(e.target)){
-//     $('body').css({ overflow: 'hidden'});
-//   }
-//   else
-//   {$('body').css({ overflow: 'scroll'});}
-// })
+$(document).mouseup(function(e){
+  var blocksss = $('.single-range');
+  var blockss = $('.datepicker--cell');
+  var dateR = $('#startDate');
+  if(blocksss.is(e.target) || blockss.is(e.target) ||  dateR.is(e.target)){
+    $('body').css({ overflow: 'hidden'});
+  }
+  else
+  {$('body').css({ overflow: 'scroll'});}
+  $('body').css({ overflowX: 'hidden'});
+})
  

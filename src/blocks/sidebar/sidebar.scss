@@ -1,5 +1,6 @@
 .sidebar {
-  &_position{
+  max-width: 420px;
+  &_position {
     margin: 57px 90px 0 0;
   }
   &__close {
