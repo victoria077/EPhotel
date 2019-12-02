@@ -2434,37 +2434,37 @@
   })();
 })(window, jQuery);
 
-var width = $(".single-range").width();
+var width = $('.single-range').width();
 if (width > 300) {
-  $(".datepicker").width("395px");
+  $('.datepicker').width('395px');
 }
 
 if (width < 355) {
-  $(".datepicker").width("300px");
+  $('.datepicker').width('300px');
 }
 
 $(document).mouseup(function(e) {
-  var blocksss = $(".single-range");
-  var blockss = $(".datepicker--cell");
-  var dateR = $("#startDate");
+  var blocksss = $('.single-range');
+  var blockss = $('.datepicker--cell');
+  var dateR = $('#startDate');
   if (blocksss.is(e.target) || blockss.is(e.target) || dateR.is(e.target)) {
-    $("body").css({ overflow: "hidden" });
+    $('body').css({ overflow: 'hidden' });
   } else {
-    $("body").css({ overflow: "scroll" });
+    $('body').css({ overflow: 'scroll' });
   }
-  $("body").css({ overflowX: "hidden" });
+  $('body').css({ overflowX: 'hidden' });
 });
 
 $(document).on({
   touchstart: function(e) {
-    var blocksss = $(".single-range");
-    var blockss = $(".datepicker--cell");
-    var dateR = $("#startDate");
+    var blocksss = $('.single-range');
+    var blockss = $('.datepicker--cell');
+    var dateR = $('#startDate');
     if (blocksss.is(e.target) || blockss.is(e.target) || dateR.is(e.target)) {
-      $("body").css({ overflow: "hidden" });
+      $('body').css({ overflow: 'hidden' });
     } else {
-      $("body").css({ overflow: "scroll" });
+      $('body').css({ overflow: 'scroll' });
     }
-    $("body").css({ overflowX: "hidden" });
+    $('body').css({ overflowX: 'hidden' });
   }
 });
